@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" prefix="og: http://ogp.me/ns#">
+<head>
+    <title>Vinissimo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/styles/styles.css?ver=131">
+    <link rel="stylesheet" href="assets/styles/styles-mobile.css?ver=113">
+</head>
+<body>
+
+<div class="form form-version-1 form-version-iframe">
+    <form method="post" action="#">
+        <div class="title">Приобрести сертификат</div>
+        <div class="text-center margin-b-20">Сертификатом можно как оплатить вина в любой из наших винотек, так и оплатить билет на любое мероприятие сети</div>
+        <div class="select-with-text">
+            <span>Сертификат на: </span>
+            <div class="select-emulator show-hidden-content">
+                <div class="show btn btn-gray-red">1000 р.</div>
+                <div class="hidden">
+                    <div class="item"><input type="radio" name="price" id="1000"><label for="1000">1000 р.</label></div>
+                    <div class="item"><input type="radio" name="country" id="2000"><label for="2000">2000 р.</label></div>
+                    <div class="item"><input type="radio" name="country" id="5000"><label for="5000">5000 р.</label></div>
+                </div>
+            </div>
+        </div>
+
+        <input type="text" name="name" value="" placeholder="ФИО получател *">
+        <input type="email" name="email" value="" placeholder="Email получателя *">
+        <div class="text-ted">* - Поля, отмеченные звездочкой, обязательны для заполнения</div>
+        <input type="submit" class="btn btn-white-red" value="Купить сертификат">
+    </form>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.maskedinput.min.js"></script>
+<script src="assets/js/script.js?ver=120"></script>
+</body>
+</html>

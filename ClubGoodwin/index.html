@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Спортивный Клуб "Гудвин"</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css?ver=101">
+    <link rel="stylesheet" href="assets/styles/jquery.fancybox.css">
+</head>
+<body>
+<div class="menu_mobile"><span></span></div>
+<div class="menu">
+    <a data-type="main">Good:Win</a>
+    <a data-type="photo">Фотографии клуба</a>
+    <a data-type="game-sports">Игровые виды спорта</a>
+    <a data-type="mb">Body&Mind</a>
+    <a data-type="gymnastics">Гимнастика</a>
+    <a data-type="martial-arts">Боевые искусства</a>
+    <a data-type="pilates">Reformer Pilates</a>
+    <a data-type="parents">Здоровые родители</a>
+    <a data-type="priorities">Приоритеты клуба</a>
+    <a data-type="contacts">Контакты</a>
+</div>
+<!-- Первый (главный) блок -->
+<div class="screen" id="main">
+    <div class="block-1 block">
+        <div class="header-block">
+            <a href="http://maps.google.com/maps?ll=55.844940, 37.372197" target="_blank" class="address">Москва, ул. Митинская, 24а стр.1 <span class="metro">Митино</span></a>
+            <div class="right-header-block">
+                <div class="phone">
+                    <a href="tel:+74951061666">8 495 106-16-66</a>
+                    <span>Отдел продаж</span>
+                </div>
+                <div class="social-networks">
+                    <a href="https://web.facebook.com/sportclubgoodwin/?_rdc=1&_rdr" target="_blank"><svg class="svg-facebook"><use xlink:href="#facebook"></use></svg></a>
+                    <a href="https://vk.com/clubgoodwin17" target="_blank"><svg class="svg-vk"><use xlink:href="#vk"></use></svg></a>
+                </div>
+                <div class="circle-mobile"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="center-info">
+            <div class="text-xl">Новый спортивный клуб<br>для детей и взрослых</div>
+            <div class="good-win">
+                <svg class="svg-good"><use xlink:href="#good"></use></svg>
+                <svg class="svg-two-points"><use xlink:href="#two-points"></use></svg>
+                <span><svg class="svg-win"><use xlink:href="#win"></use></svg></span>
+            </div>
+            <div class="text-xl right-text">Открылся 1 октября 2017</div>
+            <div class="center">
+                <a data-type="application" class="button-white">Записаться на бесплатную тренировку</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Блок "Фотографии"-->
+<div class="screen" id="photo">
+    <div class="block">
+        <div class="header-block">
+            <div class="phone">
+                <a href="tel:+74951061666">8 495 106-16-66</a>
+                <span>Отдел продаж</span>
+            </div>
+            <a data-type="main" class="logo-small">
+                <div class="good-win">
+                    <svg class="svg-good"><use xlink:href="#good"></use></svg>
+                    <svg class="svg-two-points"><use xlink:href="#two-points"></use></svg>
+                    <span><svg class="svg-win"><use xlink:href="#win"></use></svg></span>
+                </div>
+            </a>
+        </div>
+        <div class="clear"></div>
+        <div class="center-info">
+            <h3>Фотографии клуба</h3>
+            <div class="slider-gallery-img">
+                <div class="js-slider2 dev-carousel2">
+                    <div class="item"><a class="gallery" rel="group" title="Фото1" href="assets/images/slider1.jpg"><img src="assets/images/slider1.jpg"><div class="fullS"></div></a></div> <!-- ++ -->
+                    <div class="item"><a class="gallery" rel="group" title="Фото2" href="assets/images/slider2.jpg"><img src="assets/images/slider2.jpg"><div class="fullS"></div></a></div> <!-- ++ -->
+                    <div class="item"><a class="gallery" rel="group" title="Фото3" href="assets/images/slider3.jpg"><img src="assets/images/slider3.jpg"><div class="fullS"></div></a></div> <!-- ++ -->
+                    <div class="item"><a class="gallery" rel="group" title="Фото4" href="assets/images/slider4.jpg"><img src="assets/images/slider4.jpg"><div class="fullS"></div></a></div> <!-- ++ -->
+                    <div class="item"><a class="gallery" rel="group" title="Фото5" href="assets/images/slider5.jpg"><img src="assets/images/slider5.jpg"><div class="fullS"></div></a></div> <!-- ++ -->
+                    <div class="item"><a class="gallery" rel="group" title="Фото6" href="assets/images/slider6.jpg"><img src="assets/images/slider6.jpg"><div class="fullS"></div></a></div> <!-- ++ -->
+                    <div class="item"><a class="gallery" rel="group" title="Фото7" href="assets/images/slider7.jpg"><img src="assets/images/slider7.jpg"><div class="fullS"></div></a></div> <!-- ++ -->
+                    <div class="item"><a class="gallery" rel="group" title="Фото8" href="assets/images/slider8.jpg"><img src="assets/images/slider8.jpg"><div class="fullS"></div></a></div> <!-- ++ -->
+                    <div class="item"><a class="gallery" rel="group" title="Фото9" href="assets/images/slider9.jpg"><img src="assets/images/slider9.jpg"><div class="fullS"></div></a></div> <!-- ++ -->
+                    <div class="item"><a class="gallery" rel="group" title="Фото10" href="assets/images/slider10.jpg"><img src="assets/images/slider10.jpg"><div class="fullS"></div></a></div> <!-- ++ -->
+                </div>
+                <div class="arrow-number">
+                    <div class="arrow-slides">
+                        <span class="prev"><svg class="svg-arrow"><use xlink:href="#arrow"></use></svg></span>
+                        <span class="next"><svg class="svg-arrow"><use xlink:href="#arrow"></use></svg></span>
+                    </div>
+                    <div class="number_slides">
+                        <span id="slider-current1">1</span> /
+                        <span id="slider-count1"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="js-slider1 dev-carousel">
+                <div class="item"><img src="assets/images/slider1.jpg"></div>
+                <div class="item"><img src="assets/images/slider2.jpg"></div>
+                <div class="item"><img src="assets/images/slider3.jpg"></div>
+                <div class="item"><img src="assets/images/slider4.jpg"></div>
+                <div class="item"><img src="assets/images/slider5.jpg"></div>
+                <div class="item"><img src="assets/images/slider6.jpg"></div>
+                <div class="item"><img src="assets/images/slider7.jpg"></div>
+                <div class="item"><img src="assets/images/slider8.jpg"></div>
+                <div class="item"><img src="assets/images/slider9.jpg"></div>
+                <div class="item"><img src="assets/images/slider10.jpg"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Блок "Игровые виды спорта" -->
+
+<div class="screen" id="game-sports">
+    <div class="block game-sports">
+        <div class="header-block">
+            <div class="phone">
+                <a href="tel:+74951061666">8 495 106-16-66</a>
+            </div>
+            <a data-type="main" class="logo-small">
+                <div class="good-win">
+                    <svg class="svg-good"><use xlink:href="#good"></use></svg>
+                    <svg class="svg-two-points"><use xlink:href="#two-points"></use></svg>
+                    <span><svg class="svg-win"><use xlink:href="#win"></use></svg></span>
+                </div>
+            </a>
+            <div class="right-header-block">
+                <div class="menu-internal">
+                    <a data-type="game-sports-directions">Направления</a>
+                    <a data-type="game-sports-schedule">Расписания</a>
+                    <a data-type="game-sports-trainers">Тренеры</a>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="center-info">
+            <img class="people" src="assets/images/people1.png?ver=1">
+            <div class="ball"></div>
+            <div class="text">
+                <h3>Игровые виды спорта</h3>
+                <p>Одна из самых позитивных и интересных спортивных
+                    категорий, отличный способ отдыха. Теннис и бадминтон
+                    развивают скорость, ловкость, выносливость, улучшают
+                    настроение, укрепляют психику. Ребенок развивает
+                    лидерские качества, воспитывает в себе командный дух.</p>
+            </div>
+            <div class="center">
+                <a data-type="application" class="button-white">Записаться на бесплатную тренировку</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="screen" id="game-sports-directions">
+    <div class="block detail-info">
+        <h3>Направления</h3>
+        <div class="directions">
+            <div class="item">
+                <div class="img-title">
+                    <img src="assets/images/directions1.jpg">
+                    <b>Большой<br>теннис</b>
+                </div>
+                <div class="text">
+                    <p>Занятия теннисом улучшают реакцию, координацию и внимание, развивают память и стратегическое мышление,
+                        вырабатывают у игрока напористость и энергичность, развивают физическую форму спортсмена.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-title">
+                    <img src="assets/images/directions2.jpg">
+                    <b>Настольный<br>теннис</b>
+                </div>
+                <div class="text">
+                    <p>Этот вид спорта не только полезен для здоровья, но и помогает развить прекрасную спортивную форму,
+                        способность быстро принимать решения, мгновенно реагировать на изменение обстоятельств.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-title">
+                    <img src="assets/images/directions3.jpg">
+                    <b>Бадминтон</b>
+                </div>
+                <div class="text">
+                    <p>Бадминтон укрепляет организм, повышает его выносливость, полезен для сердечно-сосудистой системы,
+                        помогает снизить риск возникновения инфаркта, инсульта и гипертонии, улучшает зрение.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-title">
+                    <img src="assets/images/directions4.jpg">
+                    <b>Чемпионика</b>
+                </div>
+                <div class="text">
+                    <p>Футбольная школа для мальчиков и девочек от 3-х лет. Всестороннее развитие ребенка в игровой форме
+                        по авторской методике. Занятия формируют в ребенке яркое и положительное отношение к спорту, обучают
+                        работать в команде.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-title">
+                    <img src="assets/images/directions5.jpg">
+                    <b>Волейбол</b>
+                </div>
+                <div class="text">
+                    <p>Один из самых популярных видов спорта. Тренирует внимательность, умение сосредотачиваться. Повышается
+                        сила, выносливость, быстрота реакции. Вырабатывается умение работать в команде и доверять окружающим. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="screen" id="game-sports-schedule">
+    <div class="block detail-info">
+        <div class="note">
+            <h3>Расписание<b>!</b></h3>
+            <div class="text">
+                Расписание формируется, поэтому возможны изменения. Уточняйте у администраторов клуба. Все тренировки - по предварительной записи.
+            </div>
+        </div>
+        <div class="schedule">
+            <div class="schedule-time schedule-time1">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>пн</td>
+                        <td>вт</td>
+                        <td>ср</td>
+                        <td>чт</td>
+                        <td>пт</td>
+                        <td>сб</td>
+                        <td>вс</td>
+                    </tr>
+                    <tr><td>07:00</td></tr>
+                    <tr><td>08:00</td></tr>
+                    <tr><td>09:00</td></tr>
+                    <tr><td>10:00</td></tr>
+                    <tr><td>11:00</td></tr>
+                </table>
+            </div>
+            <div class="schedule-slider schedule-slider1">
+                <div class="item">
+                    <table>
+                        <tr><td>пн</td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span><b class="turquoise">Николай</b><span>взрослые</span><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                    </table>
+                </div>
+                <div class="item">
+                    <table>
+                        <tr><td>вт</td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                    </table>
+                </div>
+                <div class="item">
+                    <table>
+                        <tr><td>ср</td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                    </table>
+                </div>
+                <div class="item">
+                    <table>
+                        <tr><td>чт</td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                    </table>
+                </div>
+                <div class="item">
+                    <table>
+                        <tr><td>пт</td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                    </table>
+                </div>
+                <div class="item">
+                    <table>
+                        <tr><td>сб</td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                    </table>
+                </div>
+                <div class="item">
+                    <table>
+                        <tr><td>вс</td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                        <tr><td><b class="turquoise">Николай</b><span>взрослые</span></td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="screen" id="game-sports-trainers">
+    <div class="block detail-info">
+        <h3>Тренеры</h3>
+        <div class="trainer">
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/photo1.jpg"></div>
+                <div class="name">Анастасия Аксёнова</div>
+                <div class="hidden">
+                    <div class="name">Анастасия Аксёнова</div>
+                    <p>Мастер спорта по теннису. Высшее образование, РГУФК, специалист. Стаж работы тренером 28 лет.
+                        Неоднократная победительница чемпионатов Москвы и призер чемпионатов России. Член команды юношеской
+                        сборной СССР.</p>
+                    <p>Участник международных турниров. Тренировала в международном центре «Росинка». Работала тренером в
+                        Фитнес клубах «WorldGym», «ФизКульт», «WorldClass».</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/no_photo.jpg"></div>
+                <div class="name">Галина Дегтярёва</div>
+                <div class="hidden">
+                    <div class="name">Галина Дегтярёва</div>
+                    <p>Мастера Спорта по настольному теннису. Стаж работы тренером более 18 лет. Образование высшее, ГЦОЛИФК,
+                        специалист. Абсолютная чемпионка Панармянских игр. Многократная чемпионка Москвы. Неоднократная
+                        чемпионка России. Многократная чемпионка международных турниров. 5-ти кратная чемпионка Московской
+                        области. Тренер детско-юношеской спортивной школы «Шахтер».</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/photo2.jpg"></div>
+                <div class="name">Константин Дёма</div>
+                <div class="hidden">
+                    <div class="name">Константин Дёма</div>
+                    <p>Высшее образование, РГУФК, магистр физической культуры. КМС по настольному теннису.</p>
+                    <p>Чемпион Сибирского Федерального Округа, призер Московских студенческих игр. Неоднократный участник
+                        чемпионатов Московской области. Победитель международных соревнований в КНР. Участник чемпионата Европы.</p>
+                    <p>Проходил сертификацию в ГЦОЛИФК. Проводил детские и юношеские турниры по настольному теннису.</p>
+                    <p>Опыт работы тренером c 2012 года.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/photo3.jpg"></div>
+                <div class="name">Михаил Зуев</div>
+                <div class="hidden">
+                    <div class="name">Михаил Зуев</div>
+                    <p>Кандидат в Мастера Спорта по теннису. Стаж работы тренером более 5 лет. Институт ИМСГС специальность
+                        педагогика и психология. ГЦОЛИФК курсы повышения квалификации по теннису.</p>
+                    <p>Сертифицированный тренер профессиональной теннисной лиги. Организация соревнований детской и юношеской
+                        категории по Москве и Московской области. Судья 5-ой категории. Иностранные: Английский, Сербский.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/photo4.jpg"></div>
+                <div class="name">Александр Кузнецов</div>
+                <div class="hidden">
+                    <div class="name">Александр Кузнецов</div>
+                    <p>Кандидат в Мастера Спорта по бадминтону. Опыт работы тренером более 5 лет. Многократный призер
+                        первенств Москвы. Призер студенческого чемпионата России. Многократный чемпион Московских
+                        Студенческих Игр. Победитель и призер многих всероссийских и Гран-при турниров.</p>
+                    <p>Призер Чемпионата Москвы. Член сборной России на студенческом Чемпионате Европы 2015. С отличием
+                        закончил обучение на спортивном факультете Московского Педагогического Государственного Университета.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/photo5.jpg"></div>
+                <div class="name">Иван Кузнецов</div>
+                <div class="hidden">
+                    <div class="name">Иван Кузнецов</div>
+                    <p>Кандидат в Мастера Спорта побадминтону. Опыт работы тренером более 5 лет. Многократный призер
+                        первенствМосквы. Призер студенческого чемпионата России. Многократный чемпион МосковскихСтуденческих
+                        Игр. Победитель Открытого Чемпионата Московской Области.</p>
+                    <p>Победитель и призер многих всероссийских и Гран-при турниров. Призер ЧемпионатаМосквы. Член сборной
+                        России на студенческом Чемпионате Европы 2015 г. В 2014гокончил обучение на спортивном факультете
+                        Московского ПедагогическогоГосударственного Университета.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/no_photo.jpg"></div>
+                <div class="name">Альберт Масюткин</div>
+                <div class="hidden">
+                    <div class="name">Альберт Масюткин</div>
+                    <p>МС по волейболу, КМС по настольному теннису. Образование высшее, ДГПУ, факультет физкультуры и спорта,
+                        тренер специалист. Опыт работы более 20 лет. Чемпион Москвы по пляжному волейболу.</p>
+                    <p>Призер Чемпионата России. Призер ЮФО по волейболу. Ведущий специалист в СДЮШОР ЮАО. Неоднократный
+                        призер Студенческих игр по настольному теннису. Многократный чемпион международных турниров по
+                        настольному теннису. Сертифицированный специалист в направлении совершенствование техники настольного
+                        тенниса.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/photo6.jpg"></div>
+                <div class="name">Татьяна Кузнецова</div>
+                <div class="hidden">
+                    <div class="name">Татьяна Кузнецова</div>
+                    <p>Кандидат в Мастера Спорта по бадминтону. Опыт работы тренером более 5 лет. Многократный победитель
+                        городских турниров. 13 лет опыт работы педагогом-организатором. Призер международных турниров.</p>
+                    <p>Серебреный призер чемпионата Москвы. Неоднократная победительница студенческих игр. Ведущий тренер в
+                        СДЮШОР. Образование высшее, закончила МПГУ с отличием. Сертифицированный специалист в области
+                        психология.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/photo7.jpg"></div>
+                <div class="name">Григорий Одинцов</div>
+                <div class="hidden">
+                    <div class="name">Григорий Одинцов</div>
+                    <p>Кандидат в Мастера Спорта по бадминтону. Опыт работы тренером более 5 лет. Многократный победитель
+                        городских турниров. Неоднократный победитель студенческих игр. Образование высшее, закончил обучение
+                        МПГУ с отличием. 3-кратный чемпион Московских Студенческих Игр.</p>
+                    <p>Закончил ГБОУ Центр спорта и образования «Олимп». Организатор детских и юношеских соревнований по
+                        бадминтону. Участник семинаров в Махачкале и Санкт-Петербурге на тему «Развитее детского спорта в России»</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/no_photo.jpg"></div>
+                <div class="name">Сергей Стаханов</div>
+                <div class="hidden">
+                    <div class="name">Сергей Стаханов</div>
+                    <p>Образование высшее МПГУ, бакалавр. Трёхкратный победитель «Кубка по минифутболу». Победитель Кубка
+                        ЦАО по минифутболу. Победитель Кубка FIGA. Серебренный призер первого дивизиона ЛФЛ ЗАО по минифутболу.
+                        Серебреный призер ВДВ по рукопашному бою.</p>
+                    <p>Стаж работы тренером более 3-х лет. Неоднократный победитель чемпионата Москвы и Московской области
+                        по минифутболу. Неоднократный победитель Студенческих игр. Организатор турниров детей и юношей в
+                        Москве и Московской области.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/photo8.jpg"></div>
+                <div class="name">Анастасия Снимщикова</div>
+                <div class="hidden">
+                    <div class="name">Анастасия Снимщикова</div>
+                    <p>Кандидат в Мастера Спорта по бадминтону. Опыт работы тренером более 5 лет. Многократный победитель
+                        городских турниров. Неоднократная победительница студенческих игр. Бронзовый призер международных турниров.</p>
+                    <p>Образование высшее, закончила обучение на дефектологическом факультете МПГУ с отличием. 2-кратный
+                        чемпион Московских Студенческих Игр. Более 5 лет опыта работы с детьми дошкольного и школьного
+                        возраста, в том числе и с ограниченными возможностями здоровья.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/photo9.jpg"></div>
+                <div class="name">Елена Рыцина</div>
+                <div class="hidden">
+                    <div class="name">Елена Рыцина</div>
+                    <p>Кандидат в Мастера Спорта по теннису. Стаж работы тренером более 25 лет. Образование высшее ГЦОЛИФК,
+                        специалист. Многократная чемпионка Москвы и Московской области в парном разряде.</p>
+                    <p>Сертифицированный специалист по программе теннис 10s. Неоднократный участник городских, областных,
+                        всероссийских, и всесоюзных соревнованиях. Неоднократный призер России. Член сборной команды СССР.
+                        Принимала участие в научно-методической группе. Работала в РГУФК на кафедре тенниса на должности зав.
+                        Учебной лаборатории</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/photo10.jpg"></div>
+                <div class="name">Николай Халютин</div>
+                <div class="hidden">
+                    <div class="name">Николай Халютин</div>
+                    <p>КМС по теннису. Опыт работы более 9 лет. Призер областных соревнований. Образование высшее.
+                        Окончил БГУФК, специалист. Участник семинаров по теннису Санкт-Петербурге. Проходил курсы повышения
+                        квалификации в Германии. Был членом сборной Белоруссии. Неоднократный призер чемпионатов Белоруссии.
+                        Участник международных турниров.</p>
+                    <p>Серебренный призер чемпионата Москвы по теннису. Организовывал детские и юношеские соревнования.
+                        Сертифицированный специалист по теннисной программе 10s.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/photo11.jpg"></div>
+                <div class="name">Иван Сухов</div>
+                <div class="hidden">
+                    <div class="name">Иван Сухов</div>
+                    <p>КМС по бадминтону. Многократный победитель городских турниров. Двухкратный чемпион Московских
+                        Студенческих Игр. Участник международных турниров.</p>
+                    <p>Закончил Московский педагогический государственный университет. Прошел аттестацию в Академии по
+                        авторской методике на основе Китайского опыта, одобренной РБА. Проходил практику и обучение на базе
+                        Российского государственного университета физической культуры.</p>
+                    <p>Опыт работы тренером более 5 лет.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/photo12.jpg"></div>
+                <div class="name">Александр Халанский</div>
+                <div class="hidden">
+                    <div class="name">Александр Халанский</div>
+                    <p>Мастер спорта по теннису. Стаж работы более 5 лет. Многократный чемпион и призер международных
+                        соревнований. Работал тренером в клубе «Royal Tennis Club Marbella» (Испания). Работал спарринг-партнером
+                        с Рафаелем Надалем, Андреем Кузнецовым, Андреем Рублевым. Чемпион Андалусии 2014 г.</p>
+                    <p>Работал в детской академии тенниса «Sixth Sense Tennis Academy» (Бельгия). В настоящее время обучение
+                        в высшем учебном заведении по специальности тренер-педагог. Проведение тренировок на английском и
+                        испанском языках.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/no_photo.jpg"></div>
+                <div class="name">Александр Шейкин</div>
+                <div class="hidden">
+                    <div class="name">Александр Шейкин</div>
+                    <p>КМС по настольному теннису. КМС по футболу. Опыт работы тренером более 5 лет. Многократный победитель
+                        городских турниров по настольному теннису. Неоднократный победитель студенческих игр по футболу.</p>
+                    <p>Образование высшее, закончил обучение МПГУ с отличием. 3-кратный чемпион Московских Студенческих Игр.
+                        Сертифицированный специалист, неоднократный участник международных конференций по настольному теннису.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-trainer"><img src="assets/images/no_photo.jpg"></div>
+                <div class="name">Даниил Морозов</div>
+                <div class="hidden">
+                    <div class="name">Даниил Морозов</div>
+                    <p>Закончил Российский Государственный Университет физической культуры, спорта, молодежи и туризма.
+                        Воспитанник академии «Шахтер» Донецк.Чемпион Украины 2007/08, Серебряный призер Украины 2008 и 2009.</p>
+                    <p>В 2010 году был приглашен в академию «Спартак» в Москве. Победитель и призер международных турниров.
+                        В 2014 году — Германия, команда «Chemnitz CFC» 3 Bundes liga.</p>
+                    <p>Обучался спорту, реабилитации и фитнесу в Университете города Темниц с 2014 по 2016 г.</p>
+                    <p>Опыт работы более 3-х лет.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Блок "Приоритеты клуба" -->
+
+<div class="screen" id="priorities">
+    <div class="block priorities-block">
+        <div class="header-block">
+            <div class="phone">
+                <a href="tel:+74951061666">8 495 106-16-66</a>
+            </div>
+            <a data-type="main" class="logo-small">
+                <div class="good-win">
+                    <svg class="svg-good"><use xlink:href="#good"></use></svg>
+                    <svg class="svg-two-points"><use xlink:href="#two-points"></use></svg>
+                    <span><svg class="svg-win"><use xlink:href="#win"></use></svg></span>
+                </div>
+            </a>
+        </div>
+        <div class="clear"></div>
+        <div class="center-info">
+            <h3>Приоритеты клуба</h3>
+            <ul class="priorities">
+                <li data-type="priorities1">Умные<br>вложения</li>
+                <li data-type="priorities2">Ваше желание —<br>закон для нас</li>
+                <li data-type="priorities3">Экономия<br>времени</li>
+                <li data-type="priorities4">Всё под<br>контролем</li>
+                <li data-type="priorities5">Не гонимся<br>за количеством</li>
+                <li data-type="priorities6">Комфорт —<br>прежде всего</li>
+                <li data-type="priorities7">Регулярные<br>бесплатные<br>тренировки</li>
+                <li data-type="priorities8">Дети и взрослые<br>для нас важны<br>одинаково</li>
+                <li data-type="priorities9">Карта иного<br>спортклуба —<br>не помеха</li>
+            </ul>
+        </div>
+        <div class="hidden-priorities">
+            <div class="priorities1">Никаких лишних трат на услуги, которыми вы никогда не воспользуетесь. Выбираете только то, что вам интересно и важно. </div>
+            <div class="priorities2">Открываем уроки по вашим просьбам. Удобное время и интересное направление - ваш выбор.</div>
+            <div class="priorities3">Больше вас ничто не задержит. Сразу на тренировку, минуя ресепшн и отдел продаж.</div>
+            <div class="priorities4">Оплаты, количество тренировок, посещения, услуги и даже покупки в кафе - всегда у вас под рукой.</div>
+            <div class="priorities5">Детские группы — 8-10 человек. <br>Взрослые группы — 6-12 человек. <br>Группы родители с детьми — 5-7пар.</div>
+            <div class="priorities6">Отдельные раздевалки для детей и взрослых. В раздевалке любой шкафчик по вашему выбору.</div>
+            <div class="priorities7">Бонусы и подарки для детей и взрослых с первого посещения.</div>
+            <div class="priorities8">Ставьте цели для себя и и детей. Побеждайте вместе. Тренировки с профессионалами для детей и взрослых в каждом из представленных направлений. Восполняем дефицит внимания к подросткам.</div>
+            <div class="priorities9">Платные уроки фитнес-клубов у нас по привлекательной цене. Специальные условия для владельцев карт фитнес-клубов.</div>
+            <div class="cancel"></div>
+        </div>
+        <div class="bg_opacity"></div>
+    </div>
+</div>
+
+<!-- Блок "Карта" -->
+
+<div class="screen" id="contacts">
+    <div class="block map">
+        <div class="header-block">
+            <div class="phone">
+                <a href="tel:+74951061666">8 495 106-16-66</a>
+            </div>
+            <a data-type="main" class="logo-small">
+                <div class="good-win">
+                    <svg class="svg-good"><use xlink:href="#good"></use></svg>
+                    <svg class="svg-two-points"><use xlink:href="#two-points"></use></svg>
+                    <span><svg class="svg-win"><use xlink:href="#win"></use></svg></span>
+                </div>
+            </a>
+        </div>
+        <h3>Митинская, 24а стр.1</h3>
+        <div class="opening-hours">Мы работаем<br>c 7 до 23 в будни<br>c 8 до 22 в выходные.</div>
+    </div>
+</div>
+
+<!-- Блок "Заявка" -->
+
+<div class="screen" id="application">
+    <div class="block application">
+        <div class="header-block">
+            <div class="phone">
+                <a href="tel:+74951061666">8 495 106-16-66</a>
+            </div>
+            <a data-type="main" class="logo-small">
+                <div class="good-win">
+                    <svg class="svg-good"><use xlink:href="#good"></use></svg>
+                    <svg class="svg-two-points"><use xlink:href="#two-points"></use></svg>
+                    <span><svg class="svg-win"><use xlink:href="#win"></use></svg></span>
+                </div>
+            </a>
+        </div>
+        <h3>Заявка на бесплатную тренировку</h3>
+        <form method="post" action="">
+            <input type="text" placeholder="Как вас зовут?">
+            <input type="text" class="phone_mask" placeholder="Телефон">
+            <input type="text" placeholder="E-mail">
+            <select>
+                <option>Вид спорта</option>
+                <option>Вид спорта2</option>
+                <option>Вид спорта3</option>
+            </select>
+            <input type="submit" value="Отправить">
+            <div>Нажимая на кнопку, вы соглашаетесь на <a href="">обработку персональных данных</a></div>
+        </form>
+    </div>
+</div>
+
+<script src="assets/js/jquery-2.1.3.js?ver=1"></script>
+<script src="assets/js/jquery.fancybox.js"></script> <!-- ++ -->
+<script src="assets/js/jquery.fancybox-thumbs.js"></script> <!-- ++ -->
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/jquery.maskedinput.min.js"></script>
+<script src="assets/js/svg-sprite.js"></script>
+<script src="assets/js/script.js?ver=55"></script>
+</body>
+</html>

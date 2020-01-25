@@ -1,0 +1,697 @@
+/* Общие стили */
+@font-face {font-family: 'Roboto-Regular'; src: url('../fontlocation/Roboto-Regular.eot'), url('../fontlocation/Roboto-Regular.ttf') format("truetype");}
+@font-face {font-family: 'Roboto-Light'; src: url('../fontlocation/Roboto-Light.eot'), url('../fontlocation/Roboto-Light.woff'), url('../fontlocation/Roboto-Light.ttf') format("truetype");}
+@font-face {font-family: 'Roboto-Bold'; src: url('../fontlocation/Roboto-Bold.eot'), url('../fontlocation/Roboto-Bold.ttf') format("truetype");}
+@font-face {font-family: 'Roboto-Italic'; src: url('../fontlocation/Roboto-Italic.ttf') format("truetype");}
+@font-face {font-family: 'OpenSans-Regular'; src: url('../fontlocation/OpenSans-Regular.eot'), url('../fontlocation/OpenSans-Regular.ttf') format("truetype");}
+@font-face {font-family: 'OpenSans-Italic'; src: url('../fontlocation/OpenSans-Italic.eot'), url('../fontlocation/OpenSans-Italic.ttf') format("truetype");}
+* {padding: 0; margin: 0; font-size: 16px; text-decoration: none; color: #464646; font-family: 'Roboto-Light'; font-weight: normal; box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box}
+html * { max-height: 1000000px;}
+body {max-width: 1920px; margin: 0 auto; width: 100%}
+h1, h2, h3, h4, h5, .title-h1 {font-weight: normal; color: #4e6a14; margin-bottom: 30px}
+h5 {font-size: 24px}
+h4 {font-size: 27px}
+h3 {font-size: 30px}
+h2 {font-size: 33px}
+h1, .title-h1 {font-size: 36px; text-align: left}
+a {color: #464646}
+a:hover, a:focus {color: #464646; text-decoration: none}
+img {display: block}
+b {font-family: 'Roboto-Regular'}
+p {margin-bottom: 12px; line-height: 23px}
+ul, ol {padding-left: 20px; margin-bottom: 35px}
+ul li {list-style-type: disc; margin-bottom: 15px}
+ol li {margin-bottom: 15px}
+.main-content {max-width: 1185px; position: relative; padding: 0 15px; margin: 0 auto; width: 100%; min-height: calc(100vh - 427px); color: #464646}
+.main-content > .title-h1 {clear: both}
+.center-content {max-width: 1185px; margin: 0 auto; position: relative; padding: 0 10px}
+.clear {clear: both}
+
+/* Шапка */
+header {height: 96px}
+header .full-bg {width: 100%; height: 100%; background: linear-gradient(to right, #ffffff 20%, #f3f4ee 30%);}
+header .center-content {width: 100%; height: 100%; background: #f3f4ee url("../images/bg-header.jpg") left no-repeat; padding: 12px 15px}
+.menu a {font-family: 'Roboto-Regular'; margin-right: 25px; border-bottom: 3px solid transparent}
+.entrance {font-family: 'Roboto-Regular'; border-bottom: 3px solid transparent; display: inline-block; vertical-align: middle; margin: 11px 0}
+.menu a:hover, .entrance:hover {border-bottom: 3px solid #88ac2e}
+.logo {position: relative; width: 22%; display: block;}
+.logo img {width: 100%}
+.menu {margin: 0 5% 0 0}
+.search {width: 17px; height: 17px; background: url("../images/lupa.png") no-repeat; background-size: 100%; cursor: pointer; margin-right: 25px}
+.language {display: none!important; width: 20px; height: 20px; margin-left: 17px; background: #88ac2e; color: white; font-size: 14px; text-align: center; cursor: pointer}
+.header-right {float: right; width: 77%; margin: 13px 1px 0 0; text-align: right}
+body.fix-header .full-bg {position: fixed; top: 0; left: 0; right: 0; z-index: 3; height: 65px}
+body.fix-header .full-bg .logo {left: 0; top: -6px; width: 190px}
+body.fix-header .full-bg .header-right {margin-top: -2px}
+body.fix-header .full-bg .panel-search {height: 60px; line-height: 60px}
+
+/* Хлебные крошки */
+.breadcrumb ul {padding: 0; margin: 27px 0 10px 0}
+.breadcrumb span {color: #324044; font-size: 12px; font-family: 'Roboto-Regular';}
+.breadcrumb span:after {content: "/"; padding-left: 4px}
+.breadcrumb li:last-child span:after {content: ""}
+.breadcrumb li {list-style-type: none; display: inline-block; vertical-align: top; margin: 0}
+.bxe-list li {list-style-type: none}
+
+/* Мероприятия */
+.btn-green, .btn.btn-default, .btn.btn-primary, .mfeedback input[type="submit"], .bx_my_order_cancel input[type="submit"], .bx-authform-formgroup-container .btn-link {display:inline-block; vertical-align: middle; border-radius: 0; cursor: pointer; background: #88ac2e!important; border: 1px solid #88ac2e!important; -webkit-appearance: none; color: white; font-size: 16px; font-family: 'Roboto-Regular'; padding: 8px 30px; margin-bottom: 25px; cursor: pointer;}
+.btn-green:hover, .btn.btn-default:hover, .btn.btn-primary, .mfeedback input[type="submit"]:hover, .btn-green.active, .bx_my_order_cancel input[type="submit"]:hover {background: #93ba31; border: 1px solid #93ba31; box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3); color: white}
+.btn-green:focus {color: white; outline: none}
+.activity-header > .item {margin-bottom: 35px}
+.activity-header .btn-green {font-size: 14px; padding: 8px; margin: 0; min-width: 112px; text-align: center}
+.activity-header .btn-green.active {background: #4e6a14!important; border: 1px solid #4e6a14!important;}
+.activity-header input[type="radio"], .activity-header input[type="checkbox"], .switch input {display: none}
+.activity-header-set, .activity-header-city {float: right; margin-top: 7px}
+.activity-header-set .item {margin-left: 60px}
+.activity-header-set .item label {color: #324044; cursor: pointer; margin-bottom: 0}
+.activity-header-set .item label.active {font-family: 'Roboto-Regular';}
+.activity-header-set .left, .switch .left {position: relative; padding-right: 25px; left: 17px; z-index: 1}
+.activity-header-set .right, .switch .right {position: relative; padding-left: 25px; margin-left: -17px; z-index: 1}
+.activity-header-set .slider, .switch .slider {position: relative; width: 53px; height: 30px; border-radius: 20px; background: #88ac2e}
+.activity-header-set .slider span, .switch .slider span {position: absolute; left: 4px; top: 4px; width: 22px; height: 22px; background: white; border-radius: 50%; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5)}
+.activity-header-set .right, .switch .right  {padding-left: 70px; margin-left: -56px}
+.activity-header-set .right.active, .switch .right.active {padding-left: 13px; margin-left: -6px}
+.activity-header-set .left, .switch .left {padding-right: 70px; left: 0}
+.activity-header-set .left.active, .switch .left.active {padding-right: 18px; left: 0}
+.activity-header-set .left.active + .slider, .switch .left.active + .slider {margin-left: -6px}
+.activity-header-set .left + .slider, .switch .left + .slider  {margin-left: -57px}
+.right-set .slider span {left: inherit; right: 2px}
+.switch {margin-bottom: 30px; position: relative; left: -15px}
+.switch label {display: inline-block; vertical-align: middle; cursor: pointer; padding: 6px 0; margin: 0}
+.switch label.active, .pressed + label, .pressed-checkbox + label {font-family: 'Roboto-Regular';}
+
+.radio-block, .checkbox-block {margin-bottom: 30px}
+.radio + label {cursor: pointer;}
+.radio:not(checked) {position: absolute; opacity: 0;}
+.radio:not(checked) + label {position: relative; padding: 3px 0 0 30px}
+.radio:not(checked) + label:before {content: ''; position: absolute; top: 0; left: 0; width: 18px; height: 18px; border: 2px solid #9dba55; border-radius: 50%;}
+.pressed + label:after {content: ''; position: absolute; top: 6px; left: 6px; width: 10px; height: 10px; border-radius: 50%; background: #9dba55; opacity: 0;}
+.pressed + label:after {opacity: 1;}
+
+.checkbox + label {cursor: pointer;}
+.checkbox:not(checked) {position: absolute; opacity: 0;}
+.checkbox:not(checked) + label {position: relative; padding: 3px 0 0 30px}
+.checkbox:not(checked) + label:before {content: ''; position: absolute; top: 0; left: 0; width: 18px; height: 18px; border: 2px solid #9dba55; border-radius: 2px}
+.pressed-checkbox + label:after {content: ''; position: absolute; top: 6px; left: 5px; width: 12px; height: 10px; background: url("../images/check2.png") no-repeat; background-size: 100% 100%; opacity: 0;}
+.pressed-checkbox + label:before {background: #9dba55;}
+.pressed-checkbox + label:after {opacity: 1;}
+
+.activity-header-topic .title {font-size: 21px; margin: 0 25px 0 0}
+.topic-list label {display: inline-block; padding: 8px 13px; background: #eeece4; cursor: pointer; margin: 5px 5px 5px 0}
+.topic-list label:after {content: ""; display: inline-block; vertical-align: middle; width: 13px; height: 13px; background: url("../images/add-remove.png"); margin-left: 12px}
+.topic-list label.active {background: #d9d7d0; font-family: 'Roboto-Regular';}
+.topic-list label.active:after {background-position: 0 -13px}
+.activity-header-city div {font-family: 'Roboto-Regular'; color: #324044; font-size: 14px;}
+.activity-header-city div span {font-family: inherit; color: #acacac; font-size: inherit; text-decoration: underline; padding-left: 7px; cursor: pointer}
+
+.activity-list .item {margin-bottom: 18px}
+.activity-list .left-content {width: 200px; color: #4e6a14; padding: 0 20px 0 0; font-size: 16px; vertical-align: top}
+.activity-list .left-content span {color: #4e6a14; font-size: 30px;  display: block}
+.activity-list .right-content {width: calc(100% - 205px); box-shadow: 0 0 5px 1px rgba(0,0,0,0.15); background: #fdfdfb; position: relative}
+.activity-list .img-container, .activity-list .text-container, .activity-list .img-container a {display: inline-block; vertical-align: top}
+.activity-list .img-container a {width: 285px; height: 200px; border-radius: 5px;}
+.img-container {overflow: hidden}
+.img-container > img, .activity-list .img-container img, .img-container span img {width: auto; height: 100%; position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%)}
+.img-container span {height: 100%; display: block}
+.activity-list .text-container {width: calc(100% - 290px); padding: 13px 3%}
+.activity-list .text-container .title {display: block; max-height: 51px; overflow: hidden; font-size: 18px; line-height: 23px; font-family: 'Roboto-Regular'; color: #464646; margin-bottom: 10px}
+.activity-list .text-container .title:hover {color: #88ac2e}
+.activity-list .text-container p {height: 70px; overflow: hidden; margin-bottom: 10px}
+.activity-list .text-container .btn-green {position: absolute; right: 12px; bottom: 12px; margin: 0}
+.btn-white {display: inline-block; vertical-align: middle; cursor: pointer; background: white; border: 1px solid #324044; border-radius: 0; padding: 8px 30px; color: #324044; font-family: 'Roboto-Regular'; margin-bottom: 25px; -webkit-appearance: none;}
+.btn-white:hover, .article-list .title:hover, #navigation_1_previous_page:hover, #navigation_1_next_page:hover   {box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3)}
+
+/* Мероприятия (детальная) */
+.backwards {display: block; margin-bottom: 50px;}
+.backwards:hover {color: #88ac2e}
+.backwards:before {content: ""; display: inline-block; width: 8px; height: 13px; background: url("../images/backwards.png") no-repeat; padding-right: 17px}
+.event-main-block {position: relative; height: 305px; overflow: hidden; margin-bottom: 50px}
+.event-main-block:after {content: ""; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: black; opacity: 0.5}
+.event-main-block.img-container > img {width: 100%; height: auto}
+.event-title {position: absolute; z-index: 1; bottom: 25px; left: 0; right: 0; text-align: center}
+.event-title .title {font-size: 50px; line-height: 43px; color: white; font-family: 'Roboto-Bold'; margin-bottom: 30px; padding: 0 10px}
+.event-date {position: absolute; z-index: 1; right: 15px; top: 23px; padding: 6px 25px; font-size: 16px; background: rgba(0,0,0,0.5); color: white; font-family: 'Roboto-Regular';}
+.event-navigation-container {margin-bottom: 17px}
+.event-navigation {display: flex; justify-content: space-around}
+.event-navigation a {margin: 0}
+.event-detail .href-nav {height: 70px; display: block}
+.event-detail .title-h1 {margin-bottom: 27px}
+.event-detail p {margin-bottom: 20px}
+.event-detail .right-block {float: right; width: 440px; background: white; box-shadow: 1px 5px 10px rgba(0,0,0,0.2); margin: 0 0 25px 6%; padding: 25px}
+.event-detail .right-block table tr td {vertical-align: top; padding: 0 0 20px 5px; line-height: 23px}
+.event-detail .right-block table tr td:first-child {text-align: right; width: 38%}
+.event-detail .right-block table tr td:last-child {padding-left: 30px}
+.event-detail .price {color: #4e6a14; font-size: 24px}
+.event-program-list .item {margin-bottom: 40px}
+.event-program-list .item > div {display: inline-block; vertical-align: top}
+.event-program-list .time {width: 150px; background: #88ac2e; color: white; font-family: 'Roboto-Regular'; font-size: 22px; text-align: center; margin-right: 6%}
+.event-program-list .text {width: calc(94% - 155px); font-size: 20px}
+.event-program-list .text b {font-size: 22px}
+#map, #map-contacts {display: block; margin: 38px 0; width: 100%; height: 400px; border: 20px solid white}
+#map-contacts {border: none; height: 460px}
+
+body.fix-menu-event .event-navigation {position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; width: 100%; max-width: 1185px; background: white; box-shadow: 0 3px 10px rgba(0,0,0,0.2);}
+body.fix-menu-event .event-navigation a {border: none; padding: 15px 30px}
+body.fix-menu-event header .full-bg {display: none}
+.mobile-block-title {display: none}
+
+/* Заказать лекцию */
+.form-class {margin-bottom: 250px}
+.form-class .center input {width: calc(50% - 2px)}
+label, .bx-authform-label-container {display: block; margin-bottom: 5px; font-size: 16px}
+label b {color: #fa5151; position: relative; top: -4px}
+input[type="text"], input[type="password"], textarea {margin-bottom: 30px}
+input[type="text"], input[type="password"], textarea, .emulator-select-title, .emulator-select-list label {display: inline-block; vertical-align: middle; height: 43px; max-width: 500px; width: 100%; border: 1px solid #324044!important; background: white!important; padding: 0 15px!important; border-radius: 0!important;}
+textarea {height: 100px; padding: 15px!important;}
+.emulator-select {position: relative; display: inline-block; vertical-align: middle; max-width: 500px; width: 100%; cursor: pointer; margin-bottom: 30px}
+.emulator-select input[type='radio'] {display: none}
+.emulator-select-title, .emulator-select-list label {padding: 12px 15px!important; cursor: pointer; overflow: hidden}
+.emulator-select-title:before {content: ""; width: calc(100% - 6px); height: 7px; background: white; z-index: 2; position: absolute; left: 3px; bottom: 1.5px}
+.emulator-select-title:after {content: ""; display: inline-block; position: absolute; top: 17px; right: 15px; width: 16px; height: 10px; background: url("../images/backwards2.png")}
+.emulator-select-list label {border-top: none!important; color: #818181; height: auto; border-bottom: 1px solid #d2d2d2!important; margin: 0 }
+.emulator-select-list {border-bottom: 1px solid #324044}
+.emulator-select-list {display: none; position: absolute; z-index: 2; top: 43px; left: 0; max-width: 500px; width: 100%; max-height: 240px; overflow: hidden; overflow-y: auto}
+.emulator-select-list label.active {display: none}
+.emulator-select.open .emulator-select-list {display: block}
+.emulator-select.open .emulator-select-title:after {transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg)}
+.form-successful-send.item-form {width:320px}
+
+/* Для корпоративных клиентов */
+.block-collage {display: table; width: 100%; height: 415px; margin-bottom: 50px; font-size: 0}
+.block-collage .text { max-height: 334px; margin: 32px 20px 32px 65px; padding-right: 50px; overflow: hidden; overflow-y: auto}
+.block-collage .text p {line-height: 24px; margin-bottom: 10px;}
+.block-collage .left-text, .block-collage .collage {position: relative; display: table-cell; vertical-align: middle; width: 50%; height: 415px; background: #f9f8f5; font-size: 0}
+.block-collage .left-text:before {content: ""; z-index: 1; display: block; width: calc(100% - 28px); height: 25%; position: absolute; bottom: 0; left: 0; background: linear-gradient(to bottom, rgba(255,255,255,0), #f9f8f5); }
+.block-collage .left-text.remove-before:before {display: none}
+.block-collage .collage .item {display: inline-block; vertical-align: top; width: calc(50% - 2px); height: 205px; overflow: hidden}
+.block-collage .collage .item {margin: 0 4px 4px 0}
+.block-collage .collage .item:nth-child(2n) {margin-right: 0}
+.block-collage .collage .item img {width: auto; height: 100%; min-width: 100%;  position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%)}
+.block-collage .text::-webkit-scrollbar {width: 8px}
+.block-collage .text::-webkit-scrollbar-button {  background-color: #f9f8f5}
+.block-collage .text::-webkit-scrollbar-track-piece { background-color: #e9ece1}
+.block-collage .text::-webkit-scrollbar-thumb {background-color: #88ac2e;}
+.block-collage.one-photo .text {margin: 40px 20px 30px 40px; padding-right: 30px; max-height: 260px}
+.block-collage.one-photo .left-text .btn-green {position: relative; z-index: 1; margin: 0 0 40px 40px}
+.block-collage.one-photo .left-text:before {bottom: 75px}
+.block-collage.one-photo h3 {margin-bottom: 7px}
+.block-collage.one-photo .check-list {margin-bottom: 0}
+.block-collage.one-photo .check-list li {margin-bottom: 12px}
+.collage .img-container {height: 100%}
+.collage .img-container a {position: absolute; bottom: 10px; left: 40px}
+
+.main-list-corporate {padding: 0}
+.main-list-corporate > li {font-family: 'Roboto-Regular'; margin-bottom: 30px}
+.text-block {margin: 30px 0 30px -20px}
+
+.child-list-corporate {list-style-type: none; margin: 30px 0 30px -20px; padding-left: 0}
+.child-list-corporate li {margin-bottom: 50px}
+.child-list-corporate .img-theme {position: relative; top: 15px; width: 355px; min-height: 80px; display: inline-block; vertical-align: top;}
+.child-list-corporate .img-theme span {position: absolute; left: 63px; top: 53px; padding: 2px 0; color: white; min-width: 200px; text-align: center; font-size: 16px; font-family: 'Roboto-Regular';}
+
+.text-theme {display: inline-block; vertical-align: top; width: calc(100% - 450px); padding: 13px 0}
+.text-theme p {margin-bottom: 10px; font-size: 16px; line-height: 22px}
+.list-theme {margin: 25px 0 40px 0; padding: 30px 50px; background: #fdfdfb}
+.list-theme .title-h1 {margin-bottom: 30px; font-size: 30px}
+.list-theme ul {column-count: 3; -moz-column-count: 3; -webkit-column-count: 3; margin-bottom: 15px; padding: 0}
+.list-theme ul li, .check-list li {list-style-type: none; margin-bottom: 10px; position: relative; padding: 0 35px; width: 100%; font-size: 16px; line-height: 23px; page-break-inside: avoid}
+.list-theme ul li:before, .check-list li:before {position: absolute; left: 0; content: ""; width: 18px; height: 26px; background: url("../images/check.png") no-repeat; padding-right: 15px}
+.check-list li {margin-bottom: 20px; padding-right: 0}
+.check-list {margin: 0; padding: 0}
+.center {text-align: center}
+.center a {margin: 10px 2px}
+.fl-left {float: left; padding: 0 30px 14px 0}
+.fl-right {float: right; padding: 0 0 14px 30px}
+img.fl-right, img.fl-left {max-width: 280px}
+
+.turquoise-color .img-theme {background: url("../images/corporate1.png") left no-repeat}
+.turquoise-color .img-theme span {background: linear-gradient(-125deg, transparent 15px, #56b59d 0) right no-repeat, linear-gradient(60deg, transparent 15px, #56b59d 0) left no-repeat; background-size: 50% 100%;}
+.turquoise-color .list-theme {border: 2px solid #56b59d;}
+.blue-color .img-theme {background: url("../images/corporate2.png") left no-repeat}
+.blue-color .img-theme span {background: linear-gradient(-125deg, transparent 15px, #4ab7f0 0) right no-repeat, linear-gradient(60deg, transparent 15px, #4ab7f0 0) left no-repeat; background-size: 50% 100%;}
+.blue-color .list-theme {border: 2px solid #4ab7f0;}
+.orange-color .img-theme {background: url("../images/corporate3.png") left no-repeat}
+.orange-color .img-theme span {background: linear-gradient(-125deg, transparent 15px, #fdba11 0) right no-repeat, linear-gradient(60deg, transparent 15px, #fdba11 0) left no-repeat; background-size: 50% 100%;}
+.orange-color .list-theme {border: 2px solid #fdba11;}
+.pink-color .img-theme {background: url("../images/corporate4.png") left no-repeat}
+.pink-color .img-theme span {background: linear-gradient(-125deg, transparent 15px, #f0a3c7 0) right no-repeat, linear-gradient(60deg, transparent 15px, #f0a3c7 0) left no-repeat; background-size: 50% 100%;}
+.pink-color .list-theme {border: 2px solid #f0a3c7;}
+.info-block {text-align: center; background: #f9f8f5; margin: 50px 0; padding: 30px 90px}
+
+/* Слайдер "Отзывы" */
+.slick-list {overflow: hidden; margin: 0 -10px}
+.slick-slide {margin: 5px 10px}
+.reviews-title {position: relative; background: #5ec4af; color: white; padding: 55px 30px 25px 30px; font-family: 'Roboto-Regular';}
+.reviews-title span {position: absolute; top: 0; left: 0; max-height: 32px; overflow: hidden; background: linear-gradient(-63deg, transparent 15px, #fdba11 0) right no-repeat; background-size: 100%; color: white; font-family: 'Roboto-Regular'; padding: 7px 37px 7px 30px}
+.reviews-title span.pink-color {background: linear-gradient(-63deg, transparent 15px, #f0a3c7 0) right no-repeat; background-size: 100%;}
+.reviews-title span.blue-color {background: linear-gradient(-63deg, transparent 15px, #4ab7f0 0) right no-repeat; background-size: 100%;}
+.reviews-title a {position: absolute; cursor: pointer; right: 30px; bottom: -16px; display: block; width: 33px; height: 33px; background: white url("../images/backwards.png") center no-repeat; transform: rotate(180deg); border-radius: 50%; box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);}
+.reviews-title b {color: white; display: block; height: 38px; overflow: hidden}
+.reviews-text {margin: 17px 30px; line-height: 23px; height: 157px; overflow: hidden;}
+.slider-3 {position: relative; margin-bottom: 85px}
+.slider-3 .item {display: inline-block; vertical-align: top; position: relative;  box-shadow: 0 0 5px 1px rgba(0,0,0,0.15); background: white}
+.slick-prev, .slick-next {cursor: pointer; outline: none; border: none; color: transparent; top: 50%; margin-top: -7px; position: absolute; width: 28px; height: 28px; border-radius: 50%; display: block; background: url("../images/backwards.png") 47% no-repeat}
+.slick-next:hover {box-shadow: inset -1px -1px 3px 1px rgba(0, 0, 0, 0.5)}
+.slick-prev:hover {box-shadow: inset 1px 1px 3px 1px rgba(0, 0, 0, 0.5)}
+.slick-prev {left: -37px}
+.slick-next {right: -37px; transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg)}
+.slick-dots {position: relative; z-index: 1; text-align: center; padding: 0}
+.slick-dots li {display: inline-block; vertical-align: middle; margin: 0}
+.slick-dots li button {color: transparent; border: none; background: #cacccb; width: 15px; height: 15px; margin: 8px 10px; border-radius: 50%; outline: none; cursor: pointer}
+.slick-dots li.slick-active button {background: #88ac2e}
+
+/* Главная */
+.main-block {height: 760px; position: relative; background-size: cover!important;}
+.main-block .center-content {width: 100%; height: 100%}
+.main-block-info {position: absolute; z-index: 1; right: 24px; bottom: 75px; max-width: 420px; width: 100%}
+.main-block-info h1 {font-size: 60px; line-height: 60px; font-family: 'Roboto-Bold'; margin-bottom: 20px}
+.main-block-info span {font-family: 'Roboto-Regular'; font-size: 18px; color: #88ac2e; display: block; margin-bottom: 40px}
+
+.img-under-text {position: relative; margin-bottom: 85px}
+.img-under-text .img-container {height: 570px; width: 70%; overflow: hidden}
+.text-over {position: absolute; right: 0; top: 50%; transform: translate(0,-50%); -webkit-transform: translate(0,-50%); -ms-transform: translate(0,-50%); background: white; width: 52%; padding: 70px 50px}
+.text-over b {color: #88ac2e}
+.text-over p {margin-bottom: 35px; max-height: 140px; overflow: hidden}
+.text-over a {margin: 5px 0}
+.title-h1 a {margin: 0; float: right; width: 200px; text-align: center}
+.title-h1 span {font-size: 30px; color: #b3b3b3; padding-left: 18px}
+
+.event-main-page {font-size: 0; margin-bottom: 85px}
+.event-main-page .inl-top {width: calc(50% - 8px); margin-right: 15px}
+.event-main-page .inl-top:nth-child(2n) {margin-right: 0}
+.event-one-main-page .img-container {height:420px; position: relative}
+.event-one-main-page .img-container:before {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 50%; z-index: 1; background: linear-gradient(to bottom, transparent, black);}
+.event-one-main-page .img-container .info-bottom {position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px; color: white; z-index: 1}
+.info-bottom .date b {font-size: 60px; line-height: 45px; color: white; display: block; font-family: 'Roboto-Light';}
+.info-bottom .date {width: 70px; text-align: center}
+.info-bottom .time-place {width: calc(70% - 75px); padding-left: 15px}
+.info-bottom .time-place b {color: white; font-size: 18px; display: block; max-height: 44px; overflow: hidden}
+.info-bottom .time-place b:hover {text-decoration: underline}
+.info-bottom .time-place span {color: white; display: block; margin: 6px 0; position: relative; padding-left: 18px; max-height: 36px; overflow: hidden}
+.time-place, .date {display: inline-block; vertical-align: top; font-size: 18px; color: white}
+.time-event:before, .place-event:before {content: ""; display: inline-block; vertical-align: middle; position: absolute; left: 0; top: 2px; width: 14px; height: 14px; background: url("../images/icon2.png") no-repeat; padding-right: 10px}
+.place-event:before {background-position: 0 -15px}
+
+.event-list-main-page .item {height: 130px; box-shadow: 0 0 5px 1px rgba(0,0,0,0.15); margin-bottom: 15px; background: white}
+.event-list-main-page .img-container {height: 100%; width: 180px; display: inline-block; vertical-align: top;}
+.event-list-main-page .info-bottom {width: calc(100% - 184px); display: inline-block; vertical-align: top; padding: 15px; position: relative}
+.event-list-main-page .time-place {width: calc(100% - 75px)}
+.event-list-main-page .date b, .event-list-main-page .date {color: #88ac2e}
+.event-list-main-page .time-place b, .event-list-main-page .time-place span {color: #464646}
+
+.news-block {margin-bottom: 85px}
+.news-block .item {width: calc(33% - 10px); margin-right: 15px; margin-bottom: 15px; display: inline-block; vertical-align: top; background: white; box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);}
+.news-block .item:nth-child(3n) {margin-right: 0}
+.news-block .title {position: relative}
+.news-block .text {padding: 20px 30px}
+.news-block .text p {height: 70px; overflow: hidden; margin: 0}
+.news-block .img-container {height: 280px; position: relative}
+.news-block .img-container:before {content: ""; display: block; z-index: 1; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: black; opacity: 0.4}
+.news-block .bottom-block {z-index: 1; position: absolute; bottom: 0; left: 0; width: 100%; padding: 25px 30px}
+.news-block .bottom-block a { color: white; font-size: 18px; font-family: 'Roboto-Regular'; display: block; height: 44px; overflow: hidden}
+.news-block .bottom-block a:hover {text-decoration: underline}
+.news-block .bottom-block span {color: white; font-size: 18px; display: block; margin-bottom: 12px}
+.news-block .title > a {position: absolute; z-index: 1; right: 30px; bottom: -16px; display: block; width: 33px; height: 33px; background: white url("../images/backwards.png") center no-repeat; transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); border-radius: 50%; box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);}
+
+.expert-slider .item {box-shadow: none; background: #f9f8f5}
+.expert-img.img-container {height: 140px; width: 140px; display: inline-block; vertical-align: top}
+.expert-text {width: calc(100% - 165px); margin: 10px; line-height: 17px; display: inline-block; vertical-align: top; height: 120px; overflow: hidden}
+.expert-text b {display: block; margin: 10px 0 5px 0; height: 35px; overflow: hidden}
+.expert-img.img-container > img {width: 100%; height: auto; transform: translate(0, 0); -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); top: 0; left: 0}
+
+/* Личные данные */
+.personal-photo, .personal-info {display: inline-block; vertical-align: top}
+.personal-photo .img-container {width: 300px; height: 300px; border-radius: 50%}
+.personal-info {width: 380px; margin-left: 8%}
+.social-connect img {width: 39px; height: 39px}
+hr {margin: 37px 0; border: none; color: #d7d7d7; background-color: #d7d7d7; height: 2px;}
+.btn-sub {max-width: 500px}
+.btn-sub input {width: calc(50% - 4px); text-align: center; margin-right: 2px}
+.personal-photo {position: relative}
+.personal-photo input, .edit-icon {position: absolute; right: 65px; bottom: 0; z-index: 1; width: 32px; height: 32px; overflow: hidden; outline: none; padding-top: 32px; background: white url("../images/edit.jpg") center no-repeat; font-size: 0; cursor: pointer; border-radius: 50%; box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);}
+.private-office {display: inline-block; vertical-align: middle}
+.private-office .img-container {display: inline-block; vertical-align: middle; width: 45px; height: 45px; padding: 0; border: 3px solid #8eb039; border-radius: 50%; overflow: hidden; cursor: pointer}
+.private-office:hover .private-office-list {display: block}
+.private-office-list:after {content: ""; display: block; width: 100%; height: 100px; position: absolute; left: 0; top: -40px}
+.private-office-list {display: none; position: absolute; right: 10px; top: 100%; background: white; width: 380px; padding: 40px 0 8px 0; z-index: 3; text-align: center; box-shadow: 0 0 12px 2px rgba(0,0,0,0.15); border-radius: 15px}
+.private-office-list:before {content: ""; display: block; position: absolute; right: 22px; top: -7px; width: 15px; height: 15px; background: white; box-shadow: -5px -5px 12px -3px rgba(0,0,0,0.15); transform: rotate(45deg)}
+.private-office-list a {display: inline-block; vertical-align: top; width: 30%; margin-bottom: 38px}
+.private-office-list a:hover {color: #88ac2e; text-decoration: underline}
+.private-office-list span {display: block; width: 52px; height: 52px; background: url("../images/icon-private-office.png") no-repeat; margin: 0 auto 7px auto}
+.private-office-list span.private-profile {background-position: 0 0}
+.private-office-list span.private-profile.full-2 {background-position: -52px 0}
+.private-office-list span.private-profile.full-3 {background-position: -104px 0}
+.private-office-list span.private-tasks {background-position: 0 -52px}
+.private-office-list span.private-tasks.full-2 {background-position: -52px -52px}
+.private-office-list span.private-tasks.full-3 {background-position: -104px -52px}
+.private-office-list span.private-parameter {background-position: 0 -104px}
+.private-office-list span.private-parameter.full-2 {background-position: -52px -104px}
+.private-office-list span.private-parameter.full-3 {background-position: -104px -104px}
+.private-office-list span.private-courses {background-position: 0 -156px}
+.private-office-list span.private-basket {background-position: 0 -208px}
+.private-office-list span.private-exit {background-position: 0 -260px}
+
+/* Задания курса */
+.border-green-white {border: 2px solid #88ac2e; padding: 40px; background: white; margin-bottom: 50px; overflow: hidden}
+.border-green-white p a {text-decoration: underline}
+.border-green-white a {word-break: break-all}
+.border-green-white p img {max-width: 100%; height: auto}
+.border-green-gray {border: 2px solid #88ac2e; padding: 20px 40px; background: #fdfdfb; margin-bottom: 65px}
+.border-green-gray h3 {margin-bottom: 10px}
+.btn-navigation {float: right; font-size: 0; margin-top: 5px; text-align: left}
+.btn-navigation .btn-white {padding: 6px 18px; margin: 0 0 0 8px}
+.btn-white.prev, .btn-white.next {background: white url("../images/backwards.png") center no-repeat; width: 33px; height: 33px; padding: 0; margin: 0}
+.btn-white.next, #navigation_1_next_page  {margin-left: 3px; transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg)}
+.btn-white.next:hover, #navigation_1_next_page:hover  {box-shadow: 0 0 10px 0 rgba(0,0,0,0.3)}
+.tasks-list {width: calc(100% - 390px); display: inline-block; vertical-align: top; text-align: left}
+.tasks-list .item {clear: both; margin-bottom: 20px}
+.tasks-list .item:after {content:''; display: block; overflow: hidden; height: calc(100% - 12px); border-bottom: 2px dotted #c4c4c4}
+.tasks-list .left {display: block; float: left; z-index: 2; padding-right: 43px; max-width: 82%; position: relative}
+.tasks-list .right {display: block; float: right; z-index: 2; padding-left: 12px; margin-top: 8px}
+.margin-bottom {margin-bottom: 60px; clear: both}
+.tasks-list .checkbox:not(checked) + label:before {width: 28px; height: 28px; }
+.tasks-list .pressed-checkbox + label:before {background: #88ac2e; box-shadow: inset 1px 1px 8px 0 rgba(0, 0, 0, 0.4); border: none; width: 32px!important; height: 32px!important;}
+.tasks-list .checkbox:not(checked) + label:before {top:50%; margin-top: -16px}
+.tasks-list .pressed-checkbox + label:after {width: 14px; height: 14px; top: 50%; left: 9px; margin-top: -7px}
+.tasks-list .checkbox:not(checked) + label {padding: 8px 0 8px 60px;  font-family: 'Roboto-Light'!important; min-height: 32px}
+.tasks-list .quest, .quest2 {position: absolute; right: 0; top: 50%; margin-top: -11px; margin-right: 10px; width: 19px; height: 19px; background: url("../images/question.png") no-repeat; cursor:  pointer}
+.quest2 {background: url("../images/question2.png") no-repeat; margin-right: 0}
+
+#diagram-points {width: 300px; position: relative; display: inline-block; vertical-align: top; float: right; background: white; margin-bottom: 50px; padding: 10px 0 38px 0; box-shadow: 0 0 5px 1px rgba(0,0,0,0.15); text-align: center}
+.legend-line {white-space: nowrap; top: 50%!important; left: 50%!important; transform: translate(-43%, -53%); -webkit-transform: translate(-43%, -53%); -ms-transform: translate(-43%, -53%);}
+.legend-line div:first-child {color: #a0c63d; font-size: 48px}
+.legend-line div:last-child {color: #4ab7f0; font-size: 48px}
+.common-points, .day-points {font-family: 'Roboto-Regular'; position: absolute; left: 0; right: 0}
+.common-points {color: #a0c63d; top: 17px;}
+.day-points {color: #4ab7f0; bottom: 17px;}
+
+.article-list .item {display: inline-block; vertical-align: top; width: calc(50% - 16px); height: 130px; margin-right: 27px; box-shadow: 0 0 5px 1px rgba(0,0,0,0.15); background: white}
+.article-list .item:nth-child(2n) {margin-right: 0}
+.article-list .item .img-container {height: 100%; width: 180px; display: inline-block; vertical-align: top}
+.article-list .item .text {height: calc(100% - 10px); width: calc(100% - 195px); overflow: hidden; margin: 0 10px 10px 0; padding: 10px 0 0 10px; display: inline-block; vertical-align: top}
+.article-list .item .title {background: #f1eee4; display: inline-block; padding: 8px 12px; margin-bottom: 7px}
+
+.icon-play {position: absolute; right: 0; left: 0; top: 50%; margin: -22px auto 0 auto; width: 94px; height: 94px; background: url("../images/play.png") center no-repeat; background-size: 100% 100%}
+.video-block .video {display: inline-block; vertical-align: top; width: calc(50% - 17px); margin-right: 30px; position: relative; height: 410px; padding: 20px}
+.video-block .video:nth-child(2n) {margin-right: 0}
+.video-block .img-container {display: block;width: 100%; height: 100%; position: absolute; top: 0; left: 0}
+.video-block .img-container:after {content: ""; position: absolute; left: 0; top: 0; display: block; width: 100%; height: 100%; background: black; opacity: 0.4}
+.video-block .title {color: white; font-size: 24px; position: relative}
+.error-404 {text-align: center; margin: 110px 0}
+.error-404 img {display: inline; max-width: 100%; margin-bottom: 70px}
+.video-block, .news-block {clear: both}
+.video-block.item-3 > a {height: 280px}
+.video-block.item-3 > a .title {font-size: 17px}
+.video-block.item-3 > a:nth-child(2n) {margin-right: 15px}
+
+/* Параметры */
+.navigation-parameters {margin-bottom: 10px}
+.navigation-parameters .switch {left: -50px}
+.navigation-parameters .btn-navigation {float: none; margin-right: 45px}
+.navigation-parameters > div {display: inline-block; vertical-align: middle; margin: 0}
+
+/* Параметры "Таблица" */
+.parameters-table {margin: 0 auto 120px auto; font-size: 0; box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);}
+.parameters-table input {width: calc(100% - 4px); height: 97%; text-align: center; border: none; outline: none; -moz-appearance:textfield;}
+.parameters-table input:focus { box-shadow: 0 0 5px 2px rgba(0,0,0,0.15); background: white}
+.parameters-table input::-webkit-outer-spin-button, .parameters-table input::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0}
+.parameters-table table {border-collapse: collapse; width: 100%}
+.parameters-table table tr td {height: 62px; padding: 0; border: 1px solid #f6f6f6;}
+.parameters-table table tr:first-child td {background: #eff2e8; color: #787878; font-size: 18px; font-family: 'Roboto-Regular';}
+.parameters-table table tr:first-child td.active {background: #4ab7f0; color: white; font-size: 24px}
+.parameters-table .slick-list, .parameters-table .slick-slide {margin:0}
+.parameters-table td.old_value {text-align: center;}
+.parameters-table td.date_param_td {text-align: center;}
+
+.parameters-title {display: inline-block; vertical-align: top; width: 24%}
+.parameters-title td {padding: 10px}
+.parameters-title td {display: none; padding: 10px!important }
+.parameters-title td span { font-size: 14px; color: white; max-height: 35px; overflow: hidden; display: block; position: relative; padding: 2px 20px 2px 0}
+.parameters-title td span.quest:after {background: url("../images/question2.png") no-repeat}
+.parameters-title td:first-child {display: table-cell}
+
+.parameters-slider {display: inline-block; vertical-align: top; width: 76%; font-size: 0; text-align: center; background: white}
+.parameters-slider .item {display: inline-block; vertical-align: top; width: 14.28%; margin: 0; outline: none}
+.parameters-slider .item:first-child .not-filled > div {left: 0; margin-left: 0}
+.parameters-slider .item:first-child .not-filled > div:before {margin-left: 0; left: 28%}
+.parameters-slider .item:last-child .not-filled > div {left: inherit; right: 0}
+.parameters-slider .item:last-child .not-filled > div:before {left: 68%}
+
+.not-filled {background: #f9f9f9 url("../images/not-filled.png") center no-repeat; position: relative}
+.not-filled:hover {background: #f5f4f4 url("../images/not-filled.png") center no-repeat}
+.not-filled > div {display: none; position: absolute; z-index: 1; top: calc(-100% - 25px); left: 50%; margin-left: -100px; width: 200px; padding: 23px 8px; background: white; box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);}
+.not-filled:hover > div {display: block}
+.not-filled:hover > div:before {content: ""; display: block; position: absolute; left: 50%; margin-left: -7px; bottom: -7px; width: 15px; height: 15px; background: white; box-shadow: 5px 5px 12px -3px rgba(0,0,0,0.15); transform: rotate(45deg)}
+.gray {background: #f9f9f9}
+.border-green-white .center {text-align: left}
+.saved-value {position:fixed; top: 50%; left: 50%; background: #a1c73e; color: white; padding: 25px; border-radius: 10px; font-family: 'Roboto-Regular'; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);}
+.saved-value.error-value {background: #f46363}
+
+.req-param-notify {position:fixed; width: 100%; max-width: 630px; top: 0; z-index: 999; right: 0; background: #5ec4af; color: white; padding: 25px; border-radius: 10px; font-family: 'Roboto-Regular'}
+.req-param-notify a {color: white; text-decoration: underline; font-family: 'Roboto-Regular';}
+.req-param-notify .exit {position: absolute; right: 10px; top: 10px; background: url("../images/exit2.png") no-repeat; background-size: 100% 100%; width: 15px; height: 15px}
+
+
+    /* Эксперты */
+.row-4 .item {width: calc(25% - 15px); margin-right: 15px; margin-bottom: 15px; display: inline-block; vertical-align: top}
+.row-4 .item:nth-child(4n) {margin-right: 0}
+.row-4 .item .title {font-family: 'Roboto-Regular'; margin-bottom:5px; height: 38px; overflow: hidden; }
+.row-4 .item .text {padding: 20px; width: 100%; background: #f9f8f5}
+.row-4 .item .text p {margin: 0; height: 160px; overflow: hidden}
+
+
+    /* Подвал */
+footer .center-content > div {display: inline-block; vertical-align: top}
+footer {border-top: 1px solid #d2d5d6; padding: 30px 0; margin-top: 100px; position: relative; background: white; clear: both}
+.contacts {width: 19%}
+.contacts a {display:block; margin-bottom: 10px; line-height: 21px; font-size: 14px}
+.contacts a:hover, .mail {text-decoration: underline}
+.contacts .logo {left: 0; width: 130px; margin-bottom: 15px}
+.menu-footer {width: 50%; margin-left: 11%; margin-top: 45px}
+.menu-footer > div {width: 49%}
+.menu-footer > div:nth-child(3) {width: 20%}
+.menu-footer div div {margin-bottom: 11px; padding-right: 3px}
+.menu-footer a, .mobile-entrance {font-size: 14px; font-family: 'Roboto-Regular'; }
+.menu-footer a:hover {border-bottom: 2px solid #88ac2e}
+.social-block {float: right; text-align: center; margin-top: 23px}
+.question {background: url("../images/bg-question.png") no-repeat; padding: 34px 27px 22px 27px; margin-bottom: 10px; color: white; cursor: pointer; font-size: 16px; font-family: 'Roboto-Regular'}
+.social-networks a {border: 1px solid #989fa1; width: 24px; height: 24px; padding: 1px 0 0 2px; display: inline-block; margin: 0 4px; text-align: left}
+.social-networks a:hover {background: #495559}
+.social-networks {margin-bottom: 10px;}
+.mobile-entrance {display: none}
+.development {font-size: 14px}
+.development a {font-size: 14px; color: #88ac2e; text-decoration: underline}
+
+/* Фиксированная боковая панель */
+.fix-side-buttons {position: fixed; z-index: 2; right: 0; top: 50%; transform: translate(0, -50%); -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%);}
+.fix-side-buttons .item {position: relative; cursor: pointer; border-bottom: 1px solid white;}
+.fix-side-buttons .item div {position: relative; padding: 12px 10px; z-index: 1; background: #88ac2e}
+.fix-side-buttons .item div span {display: block; position: relative; z-index: 1; width: 33px; height: 26px; background: #88ac2e url("../images/side-buttons.png");}
+.fix-side-buttons div.btn-question span {background-position: 0 0}
+.fix-side-buttons div.btn-call span {background-position: 0 -26px}
+.fix-side-buttons div.btn-quiz span {background-position: 0 -52px}
+.fix-side-buttons div.btn-review span {background-position: 0 -78px}
+.hidden-text {position: absolute;z-index: 0; top: 0; left: 50vw; width: 200px; height: 100%; display: block; background: #88ac2e; color: white; padding: 15px 10px; text-align: center; transition: all 0.7s ease-in-out;}
+.fix-side-buttons > div:hover .hidden-text {left: -200px;}
+.hidden-text:hover, .hidden-text:focus {color: white!important;}
+
+/* Форма "Выбрать город" */
+.item-form, .popup-form {display: none; position: fixed;z-index: 5; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); background: white; padding: 20px; width: 600px; max-width: 1180px; max-height: calc(100vh - 100px); overflow-y: auto; -webkit-overflow-scrolling:touch}
+.item-form .exit {position: absolute; top: 20px; right: 20px; width: 25px; height: 25px;}
+.item-form .title {margin: 0 0 40px 0; line-height: 28px; font-size: 30px}
+.item-form p {margin-bottom: 8px}
+.item-form .backwards {margin: 20px 0 10px 0;}
+.city-list {column-count: 3; -moz-column-count: 3; -webkit-column-count: 3;}
+.letter {position: relative; padding-left: 15px; margin-bottom: 15px; page-break-inside: avoid}
+.letter > span {position: absolute; left: 0; top: 0; font-family: 'Roboto-Regular'; color: #88ac2e}
+.letter li {list-style-type: none; margin: 0}
+.letter li label {display: inline-block; padding: 2px 7px; border-radius: 5px; cursor: pointer}
+.letter li.active label {background: #88ac2e; color: white }
+
+/* Форма "Заказать мероприятие" */
+.form-order {width: 470px; padding: 60px;}
+.form-order .form-class {margin: 0}
+.form-order .form-class, .form-order  .emulator-select-title, .form-order .emulator-select-list label, .form-order input[type="text"], .form-order textarea, .form-order .emulator-select, .form-order .emulator-select-list {width: 100%}
+.form-order .emulator-select {left: 0}
+.form-order .item {margin-bottom: 20px}
+.form-order label {margin-bottom: 5px; width: 100%}
+.form-order .emulator-select-list label {margin-bottom: 0}
+.form-order .form-class .btn-green {float: none}
+.form-order .form-class .center input {min-width: 49.4%}
+
+/* Поисковая панель */
+.panel-search {position: absolute; z-index: 3; top: -100vh; left: 0; width: 100%; height: 87px; line-height: 87px; background: white}
+.panel-search form {text-align: center; display: block}
+.panel-search input[type="search"] {vertical-align: middle; background: none; width: 90%; padding: 0 10px; border: none; border-radius: 0; -webkit-appearance: none; border-left: 2px solid #a9a9a9; height: 20px; margin-right: 10px; outline: none;}
+.panel-search input[type="submit"]{vertical-align: middle; width: 20px; height: 20px; background: url("../images/lupa.png") no-repeat; background-size: 100%; border: none; margin-right: 10px; cursor: pointer}
+.exit {display: inline-block; vertical-align: middle; width: 20px; height: 20px; background: url("../images/exit.png") no-repeat; background-size: 100%; cursor: pointer}
+.bg-opacity {display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: black; opacity: 0.5; z-index: 3}
+.panel-search-active .panel-search {top: 0; left: 23%; width: 77%}
+.panel-search-active header .full-bg, .panel-search-active header .center-content {background: white}
+.title-search-result {display: none!important;}
+
+/* Iframe для попап */
+.popup-form.active {display: block}
+.popup-form {padding: 40px 20px; max-width: 470px; width: 100%; border: 19px solid #9e9e9e}
+.popup-form iframe {width: 100%; border: none}
+.popup-form .exit {position: absolute; right: 35px; top: 45px}
+.popup-form .title {padding-right: 45px}
+.loading {display: none; position: fixed; z-index: 6; left: 50%; top: 50%; margin: -50px 0 0 -50px; width: 100px; height: 100px; background: white url("../images/loading.gif") no-repeat; background-size: 100% 100%; border-radius: 10px}
+body.fix {overflow: hidden}
+body.fix .bg-opacity {display: block}
+.fancybox-content {max-width: 450px!important; padding: 35px}
+.fancybox-content h3 {font-size: 24px}
+.fancybox-slide--video .fancybox-content {max-width: 100%!important;}
+.fancybox-content .btn-green {margin: 15px 0 0 0}
+
+/* SVG спрайты */
+.hidden-xmlns {display: none}
+.svg-social {position: relative; top: 2px; width: 19px; height: 16px; fill: #495559}
+.social-networks a:hover .svg-social use {fill: #ebeced}
+
+.inl-mid, .activity-header-set .item, .activity-header-set input, .activity-header-set label, .topic-list div, header .center-content > div, header .logo, header .header-right, .menu, .search, .slider  {display: inline-block; vertical-align: middle}
+.inl-top {display: inline-block; vertical-align: top}
+
+/* Команда (Страница Заданий) */
+.editable-card {margin-bottom: 100px; position: relative}
+.editable-card .personal-photo {position: absolute; left: 0; top: -10px; width: 137px; height: 137px;}
+.editable-card .personal-photo .edit-icon {right: 0; z-index: 2}
+.editable-card .legend-line, .team-list .legend-line {display: none}
+.editable-card #diagram-achievements2 {position: absolute; top: -24px; left: -24px; width: 180px; z-index: 1; height: 180px;}
+.editable-card #diagram-achievements2 span {display: none; position: absolute; top: 24px; right: -30px; background: white; box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); z-index: 1; font-size: 14px; padding: 3px 6px}
+.editable-card #diagram-achievements2 span:before {content: ""; width: 5px; height: 5px; display: block; background: url("../images/traingle.png"); position: absolute; left: 0; bottom: -5px}
+.editable-card .photo-in-diagram, .team-list .photo-in-diagram  {position: relative; top: 19px; left: 1px; padding: 3px 0; background: white; border-radius: 50%}
+.editable-card .photo-in-diagram .xl, .team-list .photo-in-diagram .xl {height: 94px; width: 94px; overflow: hidden; border-radius: 50%; display: block; margin: 0 auto}
+.editable-card .photo-in-diagram .xl img {z-index: 2}
+
+.editable-card-text .item, .editable-card-text .text  { position: relative}
+.editable-card-text .item {margin-bottom: 6px;}
+.editable-card-text .item:last-child {margin-bottom: 0}
+.editable-card-text {border: 2px solid #88AC2E; border-left: none; background: white; min-height: 113px; margin-left: 68px; padding: 12px 60px 12px 83px; position: relative}
+.editable-card-text textarea {border: none!important; outline: none; padding: 0!important; height: 25px; resize: none; margin: 0; max-width: 100%; pointer-events: none}
+.editable-card-text .title {font-size: 24px; line-height: 24px; color: #88AC2E}
+.editable-card-text .city b {position: absolute; top: 3px; width: 8px; height: 11px; background: url("../images/location.png")}
+.editable-card-text .city textarea {padding-left: 12px!important;}
+.editable-card-text .text b {position: absolute}
+.editable-card-text .text textarea {padding-left: 125px!important;}
+.editable-card-text .edit-icon {right: 15px; top: 50%; margin-top: -16px; cursor: pointer;}
+
+.show-block {position: absolute; right: 0; bottom: -30px; background: #88AC2E; padding: 6px 30px 6px 10px; color: white; cursor: pointer}
+.show-block:after {content: ""; position: absolute; top: 13px; right: 10px; width: 11px; height: 7px; background: url("../images/backwards3.png"); background-size: 100%}
+.show-block.active:after {transform: rotate(180deg)}
+
+.team-list {display: none; background: white; box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); font-size: 0; margin-bottom: 60px; max-height: 432px; overflow: hidden; overflow-y: auto}
+.team-list .item {position: relative; width: 50%; min-height: 110px; display: inline-block; vertical-align: top; padding: 15px 20px; border-right: 1px solid #F1EEE5; border-bottom: 1px solid #F1EEE5}
+.team-list::-webkit-scrollbar {width: 8px}
+.team-list::-webkit-scrollbar-button {  background-color: #f9f8f5}
+.team-list::-webkit-scrollbar-track-piece { background-color: #e9ece1}
+.team-list::-webkit-scrollbar-thumb {background-color: #88ac2e;}
+
+.team-list .personal-photo {width: 55px; height: 55px; position: absolute}
+.team-list .diagram-achievements {position: absolute; width: 80px; height: 80px; top: -13px; left: -13px}
+.team-list .photo-in-diagram {top: 5px; left: 1px; background: none}
+.team-list .photo-in-diagram .xl {width: 40px; height: 40px}
+.team-list .personal-text {margin-left: 78px; font-size: 14px}
+.team-list .personal-text div, .challenge-list .challenge-text div {font-size: 14px; margin-bottom: 13px}
+.team-list .personal-text .title {color: #57731E; font-family: 'Roboto-Regular';}
+.team-list .personal-text .title span {color: white; font-size: 14px; background: linear-gradient(-70deg, transparent 10px, #4AB7F0 0); padding: 3px 17px 3px 8px; margin-left: 15px}
+.team-list .personal-text .text {color: #4a4a4c; max-height: 17px; overflow: hidden}
+.team-list .personal-text .age {color: #c7c7c7; font-style: italic; margin-bottom: 0}
+
+.challenge-parent {margin-bottom: 60px}
+.challenge-list .item {position: relative; display: inline-block; vertical-align: top; width: calc(33% - 13px); margin: 0 20px 20px 0;  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); padding: 16px; background: white}
+.challenge-list .item:nth-child(3n) {margin-right: 0}
+.challenge-list .img {position: absolute; top: 0 ; left: 0; height: 100%; width: 79px; overflow: hidden}
+.challenge-list .img img {height: 100%}
+.challenge-list .challenge-text {margin-left: 74px}
+.challenge-list .challenge-text .title {font-family: 'Roboto-Regular'; max-height: 38px; overflow: hidden; }
+.challenge-list .challenge-text .text {max-height: 57px; overflow: hidden; line-height: 19px}
+.btn-check {padding: 7px 26px; font-size: 14px; color: white; display: inline-block; margin-bottom: 0!important;}
+.btn-blue {background: #4AB7F0}
+.btn-orange {background: #FD9F11}
+.btn-green2 {background: #88AC2E}
+.btn-green2:hover { box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3); color: white}
+
+.editable-card .photo-in-diagram .xl img, .photo-in-diagram img {width: 100%; height: auto}
+.save-icon {position: absolute; top: -31px; right: 0;}
+.save-icon input {font-family: inherit; padding: 5px 31px}
+
+
+
+
+
+
+
+
+
+/* Для IE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {}
+img {border: none}
+select::-ms-expand {display: none;}
+textarea {overflow: hidden;}
+
+/* Для Mozilla */
+select {-moz-appearance: none;}
+@-moz-document url-prefix() {}
+
+/* Для Safari */
+@media all and (-webkit-min-device-pixel-ratio:0){}
+
+.bx-authform-formgroup-container .checkbox {
+	z-index:-1;
+}
+
+.bx-authform .bx-authform-link-container b {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 225px;
+    text-align: center;
+    cursor: pointer;
+    background: #88ac2e!important;
+    border: 1px solid #88ac2e!important;
+    -webkit-appearance: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto-Regular';
+    padding: 8px 30px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+}
+
+.main-list-corporate > li {
+	font-size: 30px;
+    margin: 0 0 0 30px;
+	color: #4e6a14;
+    font-family: 'Roboto-Light';
+}
+
+.main-list-corporate  li > div > b {
+	font-size: 30px;
+    text-align: left;
+	font-weight: normal;
+    color: #4e6a14;
+    margin-bottom: 30px;
+    font-family: 'Roboto-Light';
+}
+
+
+.fancybox-slide--video .fancybox-content {max-width: 100%!important;}
+
+.news-block .item, .video-block.item-3 > a {width: calc(33% - 10px); margin-right: 15px; margin-bottom: 15px; display: inline-block; vertical-align: top; background: white; box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);}
+.news-block .item:nth-child(3n), .video-block.item-3 > a:nth-child(3n) {margin-right: 0!important;}
+
+.border-green-white blockquote {
+	margin-left: 29px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.review-block {
+    display: none;
+    max-width: 30% !important;
+}
+
+.errortext {
+    opacity: 0;
+}

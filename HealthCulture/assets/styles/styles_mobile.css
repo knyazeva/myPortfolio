@@ -1,0 +1,303 @@
+.menu-mobile {display: none!important; position: absolute; left: 0; top: 9px; width: 45px; height: 50px; z-index: 2; cursor: pointer; background: none; border-radius: 50%}
+.menu-mobile span {display: block; float: right; position: absolute; top: 20px; left: 10px; right: 10px; height: 3px; background: #49494a}
+.menu-mobile span:before, .menu-mobile span:after {position: absolute; display: block; left: 0; width: 100%; height: 3px; content: ""; background: #49494a}
+.menu-mobile span:before {top: -8px}
+.menu-mobile span:after {bottom: -8px}
+.active-menu .menu-mobile span {background: none}
+.active-menu .menu-mobile span:before, .active-menu .menu-mobile span:after {transition-delay: 0s, 0.3s; -webkit-transition-delay: 0s, 0.3s; background: #49494a; transition-duration: 0.3s, 0.3s; -webkit-transition-duration: 0.3s, 0.3s}
+.active-menu .menu-mobile span:before {top: 0; transform: rotate(45deg); -webkit-transform: rotate(45deg); transition-property: top, transform; -webkit-transition-property: top, -webkit-transform}
+.active-menu .menu-mobile span:after {bottom: 0; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transition-property: bottom, transform; -webkit-transition-property: bottom, -webkit-transform}
+
+.active-menu {overflow: hidden; position: fixed}
+.active-menu .menu-footer {left: 0;}
+
+
+@media only screen and (max-width: 1280px) {
+    .expert-img.img-container {display: block; width: 100%;}
+    .expert-text {width: calc(100% - 20px); display: block; height: 90px;}
+    .slick-list {margin: 0 20px}
+    .slick-prev {left: -7px}
+    .slick-next {right: -7px}
+    .logo {left: 0}
+}
+@media only screen and (max-width: 1185px) {
+    .activity-list .left-content span {font-size: 26px}
+    .info-bottom .time-place span {font-size: 14px}
+    .event-list-main-page .info-bottom, .event-one-main-page .img-container .info-bottom {padding: 15px 10px}
+    .event-list-main-page .img-container img {width: 100%; height: auto}
+    .info-bottom .time-place b, .info-bottom .date {font-size: 16px}
+    .info-bottom .date b {font-size:33px; line-height: 33px}
+    .event-list-main-page .item {height: 110px}
+    .info-bottom .time-place {width: calc(100% - 75px)}
+    .event-one-main-page .img-container {height: 360px}
+    .event-main-page .inl-top {width: calc(40% - 8px)}
+    .event-main-page .inl-top.event-list-main-page {width: calc(60% - 8px)}
+    .img-under-text .img-container {height: 470px}
+    .text-over {padding: 50px 40px}
+    .reviews-text {margin: 15px 20px}
+    .contacts {width: 20%}
+    header {height: 70px}
+    body.fix-header header .full-bg {height: 60px}
+    .panel_search input[type="search"] {width: 73%}
+    header .center-content {padding: 10px}
+    .logo {width: 175px}
+    .menu a, .entrance {font-size: 16px}
+    .menu a {margin-right: 14px}
+    .header-right {margin-top: 2px}
+    .menu-footer {margin-left: 4%}
+    .panel-search-active .panel-search {height: 58px; line-height: 58px; padding-right: 15px; left: 53px; width: calc(100% - 55px)}
+}
+
+@media only screen and (max-width: 1024px) {
+    .challenge-list .item {width: calc(50% - 13px)}
+    .challenge-list .item:nth-child(2n) {margin-right: 0}
+    .challenge-list .item:nth-child(3n) {margin-right: 20px}
+}
+
+@media only screen and (max-width: 992px) {
+    .parameters-table input {margin-left: 2px; width: calc(100% - 4px)}
+    .margin-bottom {text-align: center}
+    .row-4 .item {width: calc(33% - 15px);}
+    .row-4 .item:nth-child(3n) {margin-right: 0}
+    .row-4 .item:nth-child(4n) {margin-right: 15px}
+    .mobile-entrance.search-mobile:before {content: ""; display: inline-block; vertical-align: middle; width: 16px; height: 16px; margin-right: 10px; background: url("../images/lupa.png") no-repeat; background-size: 100% 100%}
+    .mobile-entrance.search-mobile {background: white; color: #464646}
+    .private-office .img-container {margin-right: 7px}
+    .block-collage.one-photo .block-collage, .block-collage.one-photo .collage, .block-collage.one-photo .img-container {height: auto}
+    .block-collage.one-photo .img-container img {width: auto; height: auto; top: 0; left: 0; transform: inherit; max-width: 100%; display: block; margin: 0 auto}
+    .parameters-title {width: 35%}
+    .parameters-slider {width: 65%}
+    .video-block .video {height: 310px}
+    #diagram-points {margin: 15px auto; display: block; float: none}
+    .tasks-list {width: 100%}
+    .activity-header-set .item {margin: 7px 0}
+    .activity-header-set, .activity-header-city {float: none; display: block; margin: 10px 0}
+    .main-content {min-height: calc(100vh - 345px)}
+    .private-office-list:after {display: none}
+    .private-personal .search, .private-office:hover .private-office-list {display: none}
+    .private-personal .private-office .img-container {margin-right: 5px; width: 40px; height: 40px}
+    .social-block {margin-top: 0}
+    .text-over p {max-height: inherit}
+    .text-over {position: relative; top: 0; transform: translate(0,0); width: 100%; padding: 30px}
+    .img-under-text .img-container {height: 250px; width: 100%}
+    .img-under-text .img-container img, .event-one-main-page .img-container img {width: 100%; height: auto}
+    .event-one-main-page .img-container {height: 250px}
+    .event-main-page .inl-top {width: 100%!important; margin-bottom: 30px}
+    .main-block-info > img {max-width: 170px}
+    .main-block-info h1 {font-size: 32px; line-height: 32px}
+    .main-block-info .btn-green {margin-bottom: 10px}
+    .main-block-info {max-width: 320px; right: 40px}
+    .main-block {height: 550px; background-position: 56% top!important; margin-bottom: 40px}
+    .logo img {margin-top: 6px}
+    .block-collage {margin-bottom: 50px}
+    body.fix-header header .full-bg .logo {width: 175px; top: -2px}
+    body.fix-header header .full-bg .header-right {margin-top: 0}
+    .event-program-list .item {margin-bottom: 25px}
+    .event-program-list .text, .event-program-list .text b {font-size: 18px}
+    .event-title {bottom: 0}
+    .event-title h1 {font-size: 40px; line-height: 35px}
+    .event-main-block {height: 220px}
+    .event-detail .right-block table tr td:first-child {width: 28%; text-align: left; font-family: 'Roboto-Regular';}
+    .event-detail .right-block {float: none; width: 100%; margin: 0 0 25px 0}
+    .question, .event-program-list .time {margin-bottom: 10px}
+    .contacts {width: 50%}
+    footer {padding: 20px 0}
+    .menu-mobile, .contacts div a {display: block!important;}
+    .logo {position: absolute;  right: 0; left: 0; margin: 0 auto; width: 175px; height: 60px; line-height: 60px;}
+    header,.panel_search {height: 60px; line-height: 53px}
+    header .center-content {padding: 0}
+    .entrance, .language, .contacts .logo, .menu {display: none!important;}
+    .menu-footer {position: fixed; left: -150vw; top: 60px; width: 100%; height: calc(100vh - 60px); border-top: 1px solid #e9ece1; background: white; z-index: 5; margin: 0; overflow: hidden; overflow-y: auto}
+    .menu-footer div div {margin: 0}
+    .menu-footer a, .mobile-entrance {display: block; padding: 10px 15px; margin: 0; border-bottom: 1px solid #e9ece1}
+    .mobile-entrance {background: #88ac2e; color: white}
+    .menu-footer .inl-top:last-child div:last-child a:last-child {border: none}
+    .menu-footer > div {width: 100%!important;}
+    .search {width: 22px; height: 22px; margin-right: 10px; margin-top:4px}
+    .header-right {margin-top: 0}
+}
+
+@media only screen and (max-width: 820px) {
+    .data-table input[type="text"] {display: block; margin: 5px 0 10px 0}
+    .block-collage.one-photo .text {max-height: inherit}
+    .block-collage.one-photo .left-text .btn-green { margin-left: 20px}
+    .video-block.item-3 a {width: calc(50% - 15px)}
+    .video-block.item-3 a:nth-child(3n) {margin-right: 15px!important;}
+    .video-block.item-3 a:nth-child(2n) {margin-right: 0!important;}
+    .block-collage .collage .item img {width: 100%; height: auto}
+    .article-list .item {width: 100%; margin: 0 0 25px 0}
+    .news-block .bottom-block a {font-size: 16px; height: 40px}
+    .news-block .bottom-block span {margin-bottom: 0; font-size: 16px}
+    .news-block .bottom-block {position: relative; padding: 10px 10px 15px 150px; background: #5ec4af}
+    .news-block .text {padding: 25px 15px}
+    .news-block .item {width: 100%; margin: 0 0 15px 0}
+    .news-block .img-container {height: auto}
+    .personal-photo .img-container {width: 280px; height: 280px; margin: 0 auto}
+    .personal-photo {display: block; width: 300px; margin: 0 auto 40px auto}
+    .personal-info {display: block; margin: 0 auto;}
+    .block-collage .left-text, .block-collage .collage {display: block; height: auto}
+    .list-theme ul {column-count: 2; -moz-column-count: 2; -webkit-column-count: 2;}
+    .text-theme {display: block; width: 100%; margin-top: 20px}
+    .block-collage .collage {height: 460px}
+    .block-collage .left-text:before {display: none}
+    .news-block .img-container img {position: absolute; top: 50%; left: 0; width: 135px; height: auto; z-index: 2; transform: translate(0, -50%); -webkit-transform: translate(0, -50%);}
+    .block-collage {height: auto}
+    .block-collage .text {max-height: inherit; padding: 20px; margin: 0!important;}
+    .activity-list .left-content {padding: 0; margin-bottom: 15px}
+    .activity-list .left-content, .activity-list .right-content, .block-collage .left-text, .block-collage .collage {width: 100%}
+    .activity-list .left-content span {display:block; padding-right: 10px}
+}
+
+@media only screen and (max-width: 768px) {
+    .team-list .personal-text .text {max-height: inherit}
+    .editable-card-text .edit-icon {margin: 0; top: -16px}
+    .editable-card-text .text textarea {padding: 0!important;}
+    .editable-card-text {margin: 0; padding: 12px 20px; border-left: 2px solid #88AC2E}
+    .editable-card .personal-photo, .editable-card-text .text b {position: relative; top: 0}
+    .challenge-list .item {width: 100%; margin: 0 0 20px 0!important;}
+    .row-4 {text-align: center}
+    .row-4 .item {width: calc(50% - 15px); text-align: left}
+    .row-4 .item:nth-child(2n) {margin-right: 0}
+    .row-4 .item:nth-child(3n) {margin-right: 15px}
+    img.fl-right, img.fl-left {max-width: 100%}
+    .parameters-slider .slick-dots {margin: 20px 0 20px -100%}
+    .parameters-title, .parameters-slider  {width: 50%}
+    .video-block .video {height: 250px}
+    .icon-play {width: 60px; height: 60px}
+    body.fix {position: fixed; overflow-y: hidden; width: 100vw; height: 100vh}
+    .main-block-info {right: 10px; width: 300px}
+    .slick-list {margin: 0}
+    .slick-slide {margin: 5px}
+    .info-block {padding: 30px}
+    .event-title .title {font-size: 30px; line-height: 33px}
+    h5 {font-size: 18px}
+    h4 {font-size: 21px}
+    h3 {font-size: 24px}
+    h2 {font-size: 27px}
+    h1, .title-h1 {font-size: 30px}
+    .activity-header .btn-green {text-align: left}
+    .type-event label {width: 100%; display: none; margin: 0}
+    .type-event.open label {display: block}
+    .type-event.open label.active {display: none}
+    .type-event .mobile-block-title:after {background: url("../images/backwards3.png") no-repeat; top: 12px}
+    .type-event.open .mobile-block-title:after {transform: rotate(180deg)}
+    .mobile-entrance {display: block}
+    .activity-header-topic .title {margin: 0}
+    .activity-header .btn-green {margin: 0; border-bottom: 1px solid white}
+    .form-class {margin-bottom: 70px}
+    .form-class input[type='submit'] {float: none}
+    .form-class .emulator-select-list label {margin-bottom: 0}
+    .form-class .item {margin-bottom: 20px}
+    .form-class label {display: block; margin-bottom: 10px; width: 100%}
+    .form-class, .emulator-select-title, input[type="text"], textarea, .emulator-select, .emulator-select-list label, .emulator-select-list  {width: 100%!important; left:0}
+    .event-detail {display: none}
+    .event-detail.active {display: block}
+    .mobile-block-title {display: block; position: relative; border-bottom: none}
+    .mobile-block-title:hover {background: white; color: #324044}
+    .mobile-block-title.btn-green:hover {background: #88ac2e; color: white}
+    .mobile-block-title:after {content: ""; display: inline-block; position: absolute; top: 13px; right: 10px; width: 16px; height: 10px; background: url("../images/backwards2.png")}
+    .event-navigation a {display: none!important;}
+    .event-navigation.open a {display: block!important;}
+    .event-navigation.open a.active{display: none!important;}
+    .event-navigation.open .mobile-block-title:after {transform: rotate(180deg)}
+    .event-navigation .btn-white {padding: 10px; margin: 0}
+    .event-detail .href-nav {height: 0}
+    .event-date {left: 0; right: 0; text-align: center}
+    .event-main-block {height: 250px}
+    .event-main-block.img-container > img {width: auto; height: 100%}
+    #map {border: none}
+    .event-program-list .item > div {display: block}
+    .event-program-list .text, .team-list .item {width: 100%}
+    .event-detail .right-block table tr td {width: 100%!important; display: block; padding: 0!important; margin-bottom: 10px}
+    .event-title h1 {font-size: 30px; line-height: 25px}
+    .event-navigation, .event-navigation a {display: block; border-bottom: none}
+    .event-navigation {border-bottom: 1px solid #324044}
+    .fix-side-buttons {display: none}
+    h1, h2, h3, h4, h5, .title-h1, .activity-header > .item, .backwards {margin-bottom: 20px}
+    .item-form {width: 100%; height: auto; max-height: 100vh}
+    .form-order {padding: 50px 10px}
+    .city-list {column-count: 1; -moz-column-count: 1; -webkit-column-count: 1;}
+    .inl-mid {width: 100%!important;}
+    .contacts {width: 100%; text-align: center}
+    .social-block {display: block!important; width: 208px; margin: 10px auto; float: none}
+    .panel-search {height: 56px; line-height: 56px}
+    .panel-search input[type="search"] {width: calc(100% - 80px)}
+}
+
+@media only screen and (max-width: 600px) {
+    .news-block .bottom-block a {height: auto}
+    .news-block .bottom-block span {margin-bottom: 5px}
+    .news-block .bottom-block {padding: 10px 10px 15px 10px}
+    .news-block .img-container {height: auto; overflow: visible; margin-top: 200px}
+    .news-block .img-container img {top: -200px; left: 0; right: 0; margin: 0 auto; width: auto; max-width: 100%; height: 200px; z-index: 2; transform: none; -webkit-transform: none}
+    .table-small td {display: block; width: 100%; border: none}
+    .row-4 .item .text p {height: auto}
+    .video-block.item-3 a {width: 100%; height: 200px; margin: 0 0 15px 0!important;}
+    .btn-navigation .switch {left: 0}
+    .row-4 .item {width: 100%; margin: 0 0 15px 0!important;}
+    .user-authorized header .search {display: none}
+    .border-green-white .center {text-align: center}
+    .video-block .video {width: 100%; margin: 0 0 25px 0}
+    .article-list .item .img-container img {width: 100%; height: auto}
+    .article-list .item .text {width: 100%; height: auto; padding: 10px; margin: 0 }
+    .article-list .item .img-container {width: 100%; height: 200px}
+    .article-list .item {height: auto}
+    .tasks-list .left, .tasks-list .right {max-width: 100%; float: none;}
+    .tasks-list .right, .tasks-list .checkbox:not(checked) + label {padding-left: 45px}
+    .tasks-list .item:after {display: none}
+    .title-h1 span {display: block; padding: 0}
+    .btn-navigation, .border-green-white {float: none; margin-bottom: 25px}
+    .border-green-white, .border-green-gray, .data-table {padding: 20px}
+    .fancybox-content {max-width: 100%!important; padding: 30px 20px!important;}
+    .item-form, .popup-form {max-height: 100vh; max-width: 100%}
+    .info-bottom .time-place span {max-height: inherit}
+    .personal-info {width: 100%}
+    .text-over {padding: 30px 0 0 0; background: none}
+    .text-over ul {margin: 0}
+
+    .event-list-main-page .item .info-bottom {padding-top: 25px}
+    .event-list-main-page .info-bottom .date {position: absolute; right: 8px; top: -45px; background: white; width: auto; padding: 7px}
+    .event-one-main-page .date {text-align: left; margin-bottom: 10px}
+    .event-list-main-page .item .info-bottom, .event-list-main-page .item .info-bottom .time-place, .news-block .item {width: 100%}
+    .event-list-main-page .item {height: auto; background: #f5f4f0}
+    .event-list-main-page .item .img-container {width: 100%; height: 180px}
+    .info-bottom .time-place {width: 100%; padding: 0}
+    .img-under-text .img-container img, .event-one-main-page .img-container img {width: auto; height: 100%}
+    .event-one-main-page .img-container:before {height: 100%}
+    .title-h1 a {float: none; display: block; margin: 20px 0}
+    .img-under-text, .event-main-page, .news-block, .slider-3 {margin-bottom: 40px}
+    .main-block-info {left: 10px; bottom: 50px; text-align: center; margin: 0 auto}
+    .main-block:before {content: ""; display: block; z-index: 1; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: white; opacity: 0.7}
+    .main-block-info > img {display: none}
+    .main-block {height: 380px}
+    .info-block {margin: 50px 0}
+    .block-collage .collage {height: auto}
+    .block-collage .collage .item {height: 130px}
+    .child-list-corporate .img-theme {width: 100%}
+    .fl-left, .fl-right {float: none; margin: 0 auto 10px auto; display: block; padding: 0}
+    .list-theme {padding: 15px}
+    .list-theme ul {column-count: 1; -moz-column-count: 1; -webkit-column-count: 1;}
+    .list-theme ul li {padding: 0 0 0 35px}
+    .activity-list .left-content {padding: 0; margin-bottom: 10px}
+    .activity-list .img-container, .activity-list .img-container a {display: block; margin: 0 auto 10px auto; width: 100%}
+    .activity-list .text-container {width: 100%; padding: 0 10px}
+    .activity-list .text-container p {height: auto; margin-bottom: 10px}
+    .activity-list .text-container .btn-green {display: inline-block; margin: 10px 0; position: relative; right: inherit; bottom: inherit}
+}
+
+@media only screen and (max-width: 400px) {
+    .bx-authform .btn.btn-primary, .bx-authform .bx-authform-link-container b{min-width: 100%}
+    .title-h1 a {width: 225px}
+    .btn-green, .btn.btn-default, .btn.btn-primary, .mfeedback input[type="submit"] {min-width: 225px; text-align: center}
+    .block-collage .collage .item {height: 100px}
+    .not-filled > div {width: 170px; margin-left: -85px}
+    .navigation-parameters .switch {margin: 15px}
+    .popup-form {padding: 20px}
+    .popup-form .exit {right: 15px; top: 25px}
+    .private-office-list:before {top: -3px}
+    .private-office-list {right: 0}
+    .btn-sub input, .private-office-list {width: 100%}
+}
+
+
+

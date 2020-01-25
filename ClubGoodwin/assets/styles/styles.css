@@ -1,0 +1,471 @@
+@font-face {font-family: 'ProximaNovaCond-Reg'; src: url('../fontlocation/ProximaNovaCond-Reg.eot'), url('../fontlocation/ProximaNovaCond-Reg.ttf') format("truetype");}
+@font-face {font-family: 'Proxima Nova Light'; src: url('../fontlocation/Proxima Nova Light.eot'), url('../fontlocation/Proxima Nova Light.otf') format("truetype");}
+@font-face {font-family: 'ProximaNovaCond-ExtrabldIt'; src: url('../fontlocation/Proxima Nova Extra Condensed Extrabold Italic.eot'), url('../fontlocation/Proxima Nova Extra Condensed Extrabold Italic.otf') format("truetype");}
+@font-face {font-family: 'Roboto-Bold'; src: url('../fontlocation/Roboto-Bold.eot'), url('../fontlocation/Roboto-Bold.ttf') format("truetype");}
+
+* {padding: 0; margin: 0; list-style: none; text-decoration: none; font-family: 'ProximaNovaCond-Reg'; font-size: 16px; box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box;}
+html * { max-height: 1000000px;}
+body {max-width: 2560px; margin: 0 auto; position: relative;}
+.clear {clear: both}
+.fix {overflow: hidden; height: 100%!important;}
+
+/* SVG спрайты */
+.hidden-xmlns {display: none}
+#main .svg-good {left: -100vw}
+#main .svg-two-points {top: -100vh}
+#main .svg-win {right: -100vw}
+.svg-facebook, .svg-vk {width: 40px; height: 40px; fill: white}
+.svg-good {position: relative; width: 51.6%; height: 245px; fill: #fa4200}
+.svg-two-points {position: relative; width: 7%; height: 180px; fill: #fa4200}
+.svg-win {position: relative; width: 35.5%; height: 236px; fill: white}
+.svg-logo-two { width: 60px; height: 60px}
+.logo-two {position: absolute; top: 72%; left: 60%; width: 60px; height: 60px; background: white; border-radius: 50%}
+.svg-arrow {width: 50px; height: 50px}
+.next .svg-arrow {transform: rotate(180deg)}
+
+/* Первый (главный) блок */
+@media only screen and (min-width: 1050px) {.screen {position: fixed; top: 0; left: 0; width: 100%}}
+#main {z-index: 9999;}
+.block {position: relative; top: 0; left: 0; width: 100%; height: 100vh; background: url("../images/bg1.jpg") no-repeat; background-size: 100% 100%; overflow: hidden}
+.block.detail-info {height: auto; min-height: 100vh; padding-top: 50px; text-align: center}
+.header-block {position: relative; z-index: 1; max-width: 91%; margin: 0 auto; padding-top: 34px}
+.block-1 .header-block .address, .phone a, .phone span, .menu-internal a, .metro, .opening-hours  {color: white; font-size: 30px; font-style: italic;}
+.block-1 .header-block .address {line-height: 27px; float: left; margin-left: 100px}
+.block-1 .phone {padding-left: 0}
+.metro {display: inline-block; vertical-align: middle; height: 30px; margin: 0 0 0 28px; padding-left: 40px; background: url("../images/metro.png") left no-repeat}
+.right-header-block {float: right}
+.social-networks, .phone {display: inline-block; vertical-align: top}
+.social-networks a {margin-left: 8px}
+.phone {margin-right: 50px; padding-left: 65px}
+.phone span {color: #85768b; margin-left: 6px}
+.center-info {position: relative; max-width: 1550px; margin: 0 auto; top: 45%; transform: translateY(-50%)}
+.block-1 .center-info {/*padding: 10vh 0 0 0*/}
+.center-info .text-xl {font-size: 76px; line-height: 69px; font-style: italic; font-weight: bold; color: white; margin-left: 3vw}
+.good-win {margin: 6vh 0 3vh 0; text-align: center}
+.good-win span {padding-left: 29px}
+.right-text {text-align: right}
+.block-1 .center-info .right-text {padding-right: 7vw; margin-bottom: 11vh}
+.button-white {border: 2px solid; color: white; font-style: italic; padding: 13px 30px; font-size: 30px; cursor: pointer}
+.button-white:hover {background: #f63e1c; border: 2px solid #f63e1c}
+.center {position: relative;}
+.block-1 .center {text-align: center; padding: 0 2%}
+.center .button-white {margin-left: 2%}
+.center-info.text-left .center .button-white {margin-left: 0}
+
+/* Блок "Фотографии" */
+.logo-small {cursor: pointer}
+.logo-small .good-win {display: inline-block; vertical-align: top; width: 165px; margin-top: 0}
+.logo-small .good-win span {padding: 0}
+.logo-small {position: relative; z-index: 2; float: right}
+.logo-small .svg-good, .logo-small .svg-two-points, .logo-small .svg-win {height: 30px}
+.logo-small .svg-good {width: 87px;}
+.logo-small .svg-two-points {width: 18px; height: 19px}
+.logo-small .svg-win {width: 53px;}
+h3 {text-align: center; color: white; font-size: 87px; font-style: italic; margin-bottom: 2vh; padding: 0 10px; font-family: 'ProximaNovaCond-ExtrabldIt'; }
+.detail-info h3 {font-size: 76px; margin-bottom: 5vh}
+.note {position: relative}
+.note b {display: inline-block; vertical-align: top; width: 40px; height: 40px; margin-left: 15px; text-align: center; font-size: 25px; line-height: 40px; font-style: normal; color: white; background: #484353; border-radius: 50%; transform: rotate(180deg); -webkit-transform: rotate(180deg);}
+.note .text {display: none; position: absolute; z-index: 2; top: 100px; left: 22%; right: 0; text-align: center; margin: 0 auto; width: 450px; padding: 20px; background: white; border-radius: 15px; font-size: 24px; font-style: italic}
+.note:hover .text {display: block}
+
+/* Слайдер "Фотоальбом" */
+.slider-gallery-img, .dev-carousel {width: 1200px; margin: 0 auto; position: relative}
+.dev-carousel {margin-top: 15px}
+.slider-gallery-img img {width: 100%; height: auto; max-height: 650px}
+.dev-carousel img {width: 100%; height: 100%; opacity: 0.5; padding: 0 7px}
+.dev-carousel .slick-current img, .dev-carousel .item:hover img  {opacity: 1}
+.slick-track {font-size: 0}
+.slick-dots {display: none!important;}
+.slick-list {overflow: hidden; margin: 0}
+.dev-carousel2 {position: relative; width: 100%}
+.dev-carousel2 .item {display: inline-block; position: relative; width: 100%}
+.arrow-slides span {cursor: pointer; z-index: 1; display: block; outline: none; position: absolute; width: 38px; height: 48px}
+.arrow-slides span.prev {left: 0; top: 3px}
+.arrow-slides span.next {right: 15px; top: 17px}
+.arrow-number {position: absolute; bottom: 16px; left: 0; right: 0; width: 190px; height: 75px; background: rgba(0, 0, 0, 0.4); border-radius: 35px; text-align: center; margin: 0 auto}
+.number_slides {position: absolute; right: 0; left: 0; top: 22px; text-align: center; color: white; font-size: 19px}
+.number_slides span {font-size: 20px}
+.dev-carousel .item {display: inline-block; position: relative; height: 90px; width: 100%; outline: none; cursor: pointer}
+.fullS {position: absolute; right: 20px; top: 20px; width: 25px; height: 25px; background: url("../images/fullscreen.png") no-repeat; background-size: 100% 100%}
+
+/* Меню (мобильная версия)*/
+.menu_mobile {position: fixed; top: 24px; left: 87px; display: inline-block; vertical-align: top; width: 50px; height: 50px; z-index: 999 ; cursor: pointer; background: rgba(104, 104, 104, 0.96); border-radius: 50%}
+.menu_mobile:hover {background: #313131}
+.menu_mobile span {display: block; float: right; position: absolute; top: 23px; left: 15px; right: 15px; height: 2px; background: white}
+.menu_mobile span:before, .menu_mobile span:after {position: absolute; display: block; left: 0; width: 20px; height: 2px; content: ""; background: white}
+.menu_mobile span:before {top: -6px}
+.menu_mobile span:after {bottom: -6px}
+.menu_mobile.active {top: 24px; left: 215px;}
+.menu_mobile.active span {background: none}
+.menu_mobile.active span:before, .menu_mobile.active span:after {transition-delay: 0s, 0.3s; -webkit-transition-delay: 0s, 0.3s; background: white; transition-duration: 0.3s, 0.3s; -webkit-transition-duration: 0.3s, 0.3s}
+.menu_mobile.active span:before {top: 0; transform: rotate(45deg); -webkit-transform: rotate(45deg); transition-property: top, transform; -webkit-transition-property: top, -webkit-transform}
+.menu_mobile.active span:after {bottom: 0; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transition-property: bottom, transform; -webkit-transition-property: bottom, -webkit-transform}
+
+.menu {position: fixed; z-index: 998; left: -100%; top: 0; width: 280px; height: 100vh; background: rgba(0,0,0,0.9); padding-top: 70px; -o-transition: transform 0.9s linear; -ms-transition: transform 0.9s linear; -moz-transition: transform 0.9s linear; -webkit-transition: transform 0.9s linear; transition: transform 0.9s linear;}
+.menu a {display: block; padding: 10px; color: white; font-size: 25px; font-style: italic; cursor: pointer}
+.menu.active {left: 0}
+
+/* Блок "Игровые виды спорта" */
+.game-sports, .mb, .gymnastics, .martial-arts, .pilates, .parents {background: url("../images/bg2.jpg") center no-repeat; background-size: 100% 100%}
+.people {position: absolute}
+.game-sports .people {width: 47%; top: -10vh}
+.ball {position: absolute; left: 0; bottom: -100vh; width: 60px; height: 60px; background: url("../images/ball.png"); background-size: 100% 100%}
+.menu-internal {display: inline-block; vertical-align: top; margin-right: 270px;}
+.menu-internal a {margin-left: 20px; border-bottom: 1px solid #d15c55; cursor: pointer}
+.menu-internal a:hover {color: #ebbab7}
+.center-info .text {position: relative; float: right; padding-top: 8vh; width: 60%;}
+.block-1 .center-info .center {padding: 0}
+.center-info .center {clear: both; padding: 6vh 0 0 0}
+.text h3 {font-family: 'ProximaNovaCond-ExtrabldIt';line-height: 112px; text-transform: uppercase; font-size: 143px; text-align: left; margin-bottom: 8vh}
+.text p {padding: 0 8% 0 13%; font-style: italic; font-size: 30px; color: white; }
+
+/* Блок "Направления" */
+.detail-info {background: #1b0f32}
+.directions {max-width: 1600px; margin: 0 auto; text-align: left}
+.directions .item {display: inline-block; vertical-align: top; width: 448px; margin: 0 30px 100px 30px}
+.directions .item .img-title {position: relative; width: 100%; height: 280px; overflow: hidden; margin-bottom: 15px}
+.directions .item .img-title img {width: 100%; height: 100%}
+.directions .item .img-title b {position: absolute; bottom: 0; left: 0; font-family: 'ProximaNovaCond-ExtrabldIt'; color: white; font-style: italic; font-size: 51px; padding: 20px; line-height: 37px}
+.directions .text p {padding: 0; font-size: 24px; line-height: 30px; font-family: 'Proxima Nova Light';}
+
+/* Блок "Расписание" */
+.schedule {margin: 0 auto 120px auto; font-size: 0;}
+.schedule-time {display: inline-block; vertical-align: top; width: 9.5%}
+.schedule-time td {padding: 10px 0}
+.schedule-slider {display: inline-block; vertical-align: top; width: 90.5%; font-size: 0}
+.schedule-slider .item {display: inline-block; vertical-align: top; width: 14.28%}
+.schedule table {border-collapse: collapse; width: 100.5%}
+.schedule table tr td {height: 70px;color: white; font-style: italic; padding: 10px 0}
+.schedule table tr:first-child td {background: #c73911; color: white; font-family: 'Roboto-Bold'; text-transform: uppercase; font-size: 30px; font-style: italic}
+.schedule table tr:nth-child(odd) {background: #22234f}
+.schedule-time td {display: none; color: white; font-family: 'Roboto-Bold'; text-transform: uppercase; font-size: 35px; font-style: italic}
+.schedule-time td:first-child {display: table-cell}
+.schedule table tr td span {display: block; margin-bottom: 10px}
+.schedule table tr td span:after, .schedule table tr td span:before {content: "/"; display: inline-block; vertical-align: middle; padding: 0 5px}
+.schedule table b.turquoise {color: #6abb76}
+.schedule table b.pink1 {color: #dfc4a7}
+.schedule table b.pink2 {color: #e79bc1}
+.schedule table b.red {color: #d33b0c}
+.schedule table b.yellow {color: #bedc26}
+.schedule.fixed .schedule-time table tr:first-child {position: fixed; z-index: 2; top: 0; width: 100%; font-size: 0}
+.schedule.fixed .schedule-time table tr:first-child td {display: inline-block; vertical-align: top; line-height: 70px; width: 12.9%}
+.schedule.fixed .schedule-time table tr:first-child td:first-child {width: 9.5%}
+.schedule.fixed .schedule-slider table tr:first-child {display: none}
+
+.slick-dots {text-align: center; margin: 50px 0 0 -140px}
+.slick-dots li {display: inline-block; vertical-align: middle; }
+.slick-dots li button {color: transparent; border: none; background: #c73911; width: 20px; height: 20px; margin: 0 10px; border-radius: 50%; outline: none; cursor: pointer}
+.slick-dots li.slick-active button {background: #cc98d8}
+
+/* Блок "Тренера" */
+.trainer {max-width: 1040px; margin: 50px auto 0 auto; text-align: left}
+.trainer .item {position: relative; display: inline-block; vertical-align: top; width: 320px; margin: 0 1% 80px 1%; cursor: pointer}
+.trainer .item:hover .img-trainer {top: -8px;}
+.trainer .item.active .hidden {display: block}
+.img-trainer {position: relative; top: 0; width: 240px; height: 240px; margin: 0 auto; border-radius: 50%; overflow: hidden; transition: top .3s ease-in-out; -webkit-transition: top .3s ease-in-out;}
+.trainer .name {text-align: center; font-family: 'Roboto-Bold'; color: white; font-style: italic; font-size: 30px; margin-top: 15px; line-height: 27px}
+.trainer .hidden {display: none; position: fixed; z-index: 1000; width: 700px; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); left: 0; right: 0; margin: 0 auto; border-radius: 15px; background: #f73e1c url("../images/exit_menu.png") 97% 20px no-repeat; padding: 20px 60px; text-align: left}
+.trainer .hidden .name {text-align: left; margin-bottom: 15px}
+.trainer .hidden p {font-size: 18px; font-style: italic; margin-bottom: 15px; color: white}
+
+.gymnastics .people {top: -550px; width: 66%}
+.pilates .people {bottom: -117px; right: -9%; width: 66%}
+.pilates .center-info.text-left .text h3 {margin-top: 6vh}
+.martial-arts .people {top: -85px; right: 0; width: 66%}
+.parents .people {top: -85px; right: 0; width: 66%}
+.mb .people {top: -633px; right: -190px; width: 62%}
+.parents .center-info .text {width: 62%}
+.parents .text p {padding: 0 21% 0 10%}
+.parents .center-info.text-left .text h3 {padding-left: 0}
+.center-info.text-left .text {float: left; padding-top: 0}
+.center-info.text-left .text p {padding-bottom: 0; padding-left: 0}
+.center-info.text-left .text h3 {margin: 13vh 0 0 0; padding-left: 0}
+.center-info.text-left .center {text-align: left; padding-left: 0}
+
+/* Блок "Приоритеты" */
+.priorities {counter-reset: myCounter; max-width: 1150px; margin: 45px auto 0 auto}
+.priorities li {position: relative; display: inline-block; vertical-align: top; width: 32%; margin-bottom: 17px; padding: 25px 0 25px 80px; line-height: 36px; cursor: pointer; list-style: none;  font-family: 'Roboto-Bold'; color: white; font-size: 35px; font-style: italic}
+.priorities li:before {position: absolute; left: 10px; top: 43px; opacity: 0.1; counter-increment: myCounter; content: counter(myCounter); font-family: 'Roboto-Bold'; color: white; font-style: italic; font-size: 82px;
+    display: inline-block; margin-right: 10px}
+.priorities li:nth-child(3n + 2) {width: 34%}
+.priorities-block .center-info {top: 0; transform: translateY(0); -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0);}
+.priorities li:hover {background: #f63e1c; border-radius: 20px}
+.priorities li:hover:before {opacity: 1}
+.hidden-priorities div {display: none; max-width: 1150px; margin: 15px auto 0 auto; font-size: 40px; color: white; font-style: italic; text-align: center; padding: 0 10px}
+.hidden-priorities div.active {display: block}
+.hidden-priorities {position: relative; z-index: 1000; width: 100%}
+.hidden-priorities div.cancel {display: none;position: absolute; top: -17px; right: 2%; width: 32px; height: 32px; background: url("../images/cancel.png") no-repeat}
+.bg_opacity {display: none; position: fixed; z-index: 999; width: 100%; height: 100%; left: 0; top: 0; background: rgba(0,0,0,0.7)}
+
+/* Блок "Карта" */
+.map {position: relative; background: #6f0513 url("../images/map2.jpg") center no-repeat; background-size: auto 275%}
+.map h3 {padding-top: 50px}
+.opening-hours {position: absolute; bottom: 18vh; left: 20%}
+
+/* Блок "Заявка" */
+.application {background: #1b0f32}
+.application h3 {font-size: 76px; clear: both}
+.application form {max-width: 950px; margin: 25px auto 0 auto; padding: 64px 114px 93px 114px; border-radius: 15px}
+.application form input, .application form select {width: 100%; height: 54px; font-size: 34px; font-style: italic; color: #8e8699; outline: none; background: none; border: none; border-bottom: 2px solid #4a3d5d; margin-bottom: 46px;}
+.application form input::-webkit-input-placeholder {color: #8e8699}
+.application form input::-moz-placeholder {color: #8e8699}
+.application form input:-moz-placeholder {color: #8e8699}
+.application form input:-ms-input-placeholder {color: #8e8699}
+.application form input[type="submit"] {color: white; font-family: 'Roboto-Bold'; border: 2px solid #4a3d5d; height: 62px; font-size: 29px; margin: 20px 0}
+.application form div, .application form div a {font-size: 24px; font-style: italic; color: #8e8699;}
+.application form div a {text-decoration: underline}
+.application .logo-small {background: url("../images/exit_menu.png") no-repeat; width: 32px; height: 32px; background-size: 100% 100%; margin-bottom: 6vh}
+.application .logo-small svg {display: none}
+input[type="checkbox"] {margin-bottom: 0!important;}
+
+
+@media only screen and (max-width: 1920px) {
+    .application form {padding: 50px 70px}
+    .slider-gallery-img, .dev-carousel {width: 1200px}
+    .slider-gallery-img img {max-height: 600px}
+    .dev-carousel .item {height: 70px}
+    .center-info {top: 44%}
+}
+@media only screen and (max-width: 1600px) {
+    .center-info.text-left .text, .center-info.text-left .center  {padding-left: 2%}
+}
+@media only screen and (max-width: 1560px) {.directions {zoom: 0.8}}
+@media only screen and (max-width: 1550px) {
+    .text h3 {font-size: 6.8vw; line-height: 6.8vw}
+    .menu_mobile {left: 1.5%; top: 34px}
+    .svg-two-points {width: 5%}
+    .center-info .text-xl {font-size: 5.2vw; line-height: 5vw}
+    .header-block {max-width: 97%}
+    .metro {display: block; padding-left: 30px; margin: 0; height: 23px; background-size: auto 100%}
+    .phone, .menu-internal {margin-right: 60px}
+    .block-1 .header-block .address, .phone a, .phone span, .menu-internal a, .metro {font-size: 25px}
+    .good-win {text-align: center}
+    .game-sports  .text {padding-right: 2vw; width: 50.4vw}
+    .text p {padding: 0}
+}
+@media only screen and (max-width: 1366px) {.mb .people {top: -500px;}}
+@media only screen and (max-width: 1260px) {.directions {zoom: 0.7} .directions .item {margin-bottom: 60px}}
+@media only screen and (max-width: 1260px) , screen and (max-height: 900px)  {
+    .hidden-priorities div {line-height: 30px; font-size: 27px}
+    .priorities li:before {font-size: 55px; top: 35px}
+    .priorities li {font-size: 27px; line-height: 27px; padding-left: 67px}
+    .martial-arts .people {top: 0}
+    .center-info .center {padding-left: 0}
+    .text p {font-size: 2.1vw}
+    .directions .text p {font-size: 30px}
+    .game-sports .people {top: 0}
+    h3 {font-size: 60px; line-height: 62px}
+    .slider-gallery-img, .dev-carousel {width: 950px}
+    .slider-gallery-img img {max-height: 510px}
+}
+@media only screen and (max-width: 1180px) {
+    .directions {zoom: 0.6}
+    .opening-hours {left: 7%}
+    .map {background-size: auto 180%}
+    .gymnastics .people {top: -440px}
+}
+@media only screen and (max-width: 1024px) {
+    .trainer {max-width: 675px}
+    .schedule-time {width: 140px}
+    .schedule-slider {width: calc(100% - 140px)}
+    .schedule-slider .slick-dots {display: block!important;}
+    .schedule.fixed .schedule-time table tr:first-child {position: relative}
+    .schedule.fixed .schedule-slider table tr:first-child {display: table-cell}
+
+}
+@media only screen and (max-width: 970px) {
+    .block.application {min-height: 100vh; height: auto}
+    .center .button-white {margin: 0 auto!important;}
+    .directions {zoom: 0.8}
+    .directions .item {width: 47.5%; margin: 0 1% 50px 1%}
+    body {height: auto!important;}
+    .menu-internal {position: absolute; width: 100%; top: 75px; left: 0; text-align: center; margin: 0}
+    .menu-internal a {margin: 0 10px}
+    .menu_mobile {left: 10px; top: 20px}
+    .logo-small .good-win {margin: 0}
+    .logo-small {float: none; display: block; text-align: center}
+    .application .logo-small {float: right; position: relative; right: 8px; width: 25px; height: 25px}
+    .arrow-slides span.prev {top: 0}
+    .arrow-number {width: 170px; height: 65px}
+    #photo .block {background: #1b0f32}
+    .ball {width: 40px; height: 40px}
+    .schedule.fixed table tr:first-child td {display: table-cell}
+    .schedule.fixed table tr:first-child {position: relative}
+    .priorities li {font-size: 20px}
+    .phone span {display: none}
+    .block-1 .header-block {position: initial}
+    .circle-mobile {position: absolute; z-index: 1; bottom: -160px; right: -160px; width: 0; height: 0; border-radius: 50%; background: rgba(247,62,28,0.7)}
+    .social-networks {display: block; position: absolute; z-index: 2; bottom: 10px; right: 10px; width: 40px; height: 40px; background: url("../images/networks.png") no-repeat; background-size: 100% 100%}
+    .social-networks a {position: relative; top: 500px; left: 500px}
+    .phone {position: absolute; z-index: 999; top: 20px; right: 10px; width: 40px; height: 42px; background: url("../images/phone.png") no-repeat; background-size: 100% 100%; margin: 0; padding-left: 0}
+    .phone a {color: transparent; display: block; width: 30px; height: 30px}
+    .block-1 .header-block .address {position: absolute; left: 50%; margin: 0 0 0 -157px}
+    .metro {text-align: center; background-position: 35% 0}
+    .slider-gallery-img, .dev-carousel {width: 700px}
+    .slider-gallery-img img {max-height: 390px}
+    .dev-carousel .item {height: 60px}
+    .application h3 {font-size: 48px}
+    .application form {max-width: 98%; padding: 30px}
+    .application form input, .application form select {font-size: 27px}
+    .application form input[type="submit"] {margin: 25px 0}
+    .application .phone {display: none}
+}
+@media only screen and (max-width: 700px) {
+    .trainer {max-width: 320px}
+    .note .text {width: 310px; left: 0; top: 50px;}
+    .directions {zoom: 1}
+    .directions .text p {font-size: 19px; line-height: 25px; padding: 0 20px}
+    .directions .item .img-title b {font-size: 33px; line-height: 25px; padding: 12px 20px}
+    .directions .item .img-title {height: 260px; width: 100%; border-radius: 0}
+    .directions .item .img-title img {height: auto}
+    .directions .item {width: 100%; margin: 0 0 50px 0}
+    .menu-internal a {font-size: 18px}
+    .trainer .hidden {width: 100%; top: 0; transform: translateY(0); -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); border-radius: 0; padding: 20px 10px; background-position: 97% 8px; height: 100vh; overflow: hidden; overflow-y: scroll}
+    .block.priorities-block {height: auto; background: #1b0f32 url("../images/bg2.jpg") top center no-repeat; background-size: 260% 454px;}
+    .priorities li:last-child {margin-bottom: 65px}
+    .priorities li:before {opacity: 1; font-size: 56px; top: 26px; left: 18px}
+    .priorities li {display: block; margin: 0 auto 15px auto; width: 310px!important; border-radius: 15px; font-size: 22px; line-height: 25px; padding: 15px 0 15px 75px; border: 1px solid rgba(255,255,255, 0.2); background: url("../images/note.png") 95% no-repeat; background-size: 25px 25px}
+    .hidden-priorities {position: fixed; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%);}
+    .hidden-priorities div {width: 90%; margin: 0 auto; padding: 20px 10px; font-size: 22px; line-height: 25px; background: white; border-radius: 15px; color: black;}
+    .application form {padding: 3vh 20px}
+    .slider-gallery-img, .dev-carousel {width: calc(100% - 40px)!important;}
+    .slider-gallery-img img {max-height: inherit!important;}
+    .center-info .text p {display: none}
+    .map {background-size: auto 160%; background-position: 39%}
+    .opening-hours {bottom: 8vh}
+    .people {width: 100%!important; right: 0!important; left: 0!important;}
+    .game-sports .people {top: -50%; width: 146%!important; left: -36%!important;}
+    .mb .people {right: 0; width: 110%!important; top: -500px}
+    .text h3 {font-size: 9.8vw; line-height: 9.8vw; text-align: center}
+    .center-info .text {width: 100%; padding: 0; float: none}
+    .center-info.text-left .text, .center-info.text-left .center {padding-left: 0; text-align: center}
+    .parents .center-info .text {width: 100%}
+    .gymnastics .people {top: -524px; width: 150%!important;}
+    .gymnastics .center-info .center {padding-top: 38vh}
+    .martial-arts .people {width: 180%!important; left: -65%!important; top: -22vh}
+    .pilates .people {width: 142%!important; bottom: 0}
+    .parents .people {width: 120%!important; left: -20%!important;}
+}
+@media only screen and (max-width: 550px) {
+    .mb .people {top: -260px}
+    .martial-arts .people {top: -15vh}
+    .gymnastics .people {top: -330px;}
+    .dev-carousel .item {max-height: 50px; height: auto}
+    .trainer .item {margin: 0 0 50px 0}
+    .button-white {display: block; width: 280px; font-weight: bold; text-align: left; font-size: 22px; margin: 0 auto; padding: 10px 20px; letter-spacing: 0.5px}
+    .center-info .text-xl {margin: 0; font-size: 32px; line-height: 34px; text-align: center}
+    .svg-good {width: 37vw; height: 12vw}
+    .svg-two-points {width: 2vw; height: 5vw }
+    .svg-win {width: 25vw; height: 12vw}
+    .good-win span {padding-left: 7px}
+    .block-1 .header-block .address, .phone a, .phone span, .metro {font-size: 16px}
+    .block-1 .header-block .address {margin-left: -100px}
+    .header-block {padding-top: 20px}
+    .menu_mobile {top: 20px; width: 40px; height: 40px}
+    .menu_mobile span {top: 19px; left: 10px; width: 20px}
+    .phone {width: 30px; height: 30px; top: 20px}
+    .block-1 .center-info .right-text {padding: 0}
+}
+@media only screen and (max-width: 470px) {
+    .directions .item .img-title {height: 200px}
+    .directions .item .img-title img {height: auto; width: 100%; min-height: 100%; position: relative; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%);}
+}
+@media only screen and (max-device-width: 970px) {.block {max-width: 100%!important; width: 100%!important;}}
+
+
+
+
+
+/* Высота экрана менее 900px */
+@media only screen and (max-height: 900px)  {
+    .application form input, .application form select {margin-bottom: 4vh}
+    .application form {padding: 3vh 20px}
+    .application h3 {font-size: 60px}
+    .game-sports .people {top: -110px; width: 36%; left: 6%}
+    .center-info .text {padding-top: 0}
+    .text h3 {font-size: 12vh; line-height: 6vw; margin-bottom: 3vh}
+    #photo .center-info {top: 40%}
+    .block-1 .svg-good {width: 63vh}
+    .block-1 .svg-win {width: 44vh}
+    .block-1 .svg-win, .block-1 .svg-good {height: 20vh}
+    .block-1 .svg-two-points {height: 11vh; width: 5vh}
+    .center-info .text-xl {font-size: 8vh; line-height: 7vh}
+    h3 {font-size: 39px; line-height: 47px}
+    .detail-info h3 {font-size: 43px}
+    .slider-gallery-img, .dev-carousel {width: 840px}
+    .slider-gallery-img img {max-height: 400px}
+}
+@media only screen and (max-width: 970px) and (max-height: 900px) {
+    .application h3 {font-size: 32px; line-height: 30px}
+}
+@media only screen and (max-width: 1320px) and (max-height: 900px) {
+    .text h3 {font-size: 9vh; line-height: 9vh}
+}
+@media only screen and (max-width: 1080px) and (max-height: 900px) {
+    .center-info .text-xl {font-size: 6vh; line-height: 5vh}
+    .block-1 .svg-good {width: 37vh; height: 11vh}
+    .block-1 .svg-two-points {width: 2vh; height: 6vh}
+    .block-1 .svg-win {width: 24vh; height: 11vh}
+}
+@media only screen and (max-width: 650px) and (max-height: 900px) {
+    .menu a {font-size: 18px; padding: 7px 10px}
+    .center-info .text-xl {font-size: 5vh; line-height: 5.5vh; padding: 0 10px}
+    .block-1 .svg-good {width: 25vh; height: 8vh}
+    .block-1 .svg-win {width: 17vh; height: 8vh}
+    .good-win span {padding-left: 10px}
+}
+
+/* Высота экрана менее 765px */
+
+@media only screen and (max-height: 765px)  {
+    .application form div, .application form div a {font-size: 18px}
+    .martial-arts .people {top: -15vh}
+    .application form input[type="submit"] {margin: 2vh 0}
+    .application form input, .application form select {height: 38px}
+}
+@media only screen and (max-width: 970px) and (max-height: 765px)  {
+    .center-info {top: 50%}
+    .priorities li {margin-bottom: 15px!important;}
+}
+/* Высота экрана менее 650px */
+
+@media only screen and (max-height: 650px)  {
+    .application form input, .application form select {margin-bottom: 2vh; font-size: 22px}
+    .application form input[type="submit"] {height: 50px}
+    .slider-gallery-img, .dev-carousel {width: 740px}
+    .slider-gallery-img img {max-height: 360px}
+    .dev-carousel .item {height: auto; max-height: 50px}
+    .text h3 {padding: 0 10px}
+    .text p {font-size: 3.7vh}
+    .mb .people {top: -388px; width: 40%; right: 0}
+    .gymnastics .people {top: -657px}
+    .martial-arts .people {top: -21vh; width: 54%; right: 1% }
+    .pilates .people {bottom: -140px}
+}
+@media only screen and (max-width: 1180px) and (max-height: 650px) {.mb .people {top: -523px} .gymnastics .people{top: -440px} .map {background-size: auto 275%}}
+@media only screen and (max-width: 1000px) and (max-height: 650px) {.mb .people {top: -330px}}
+@media only screen and (max-width: 700px) and (max-height: 650px) {.mb .people {top: -550px}
+    .map h3, .application h3 {padding: 50px 10px}
+    .application h3 {font-size: 30px; line-height: 25px; padding: 25px 0 0 0}
+    .map {background-size: auto 158%; background-position: 39% 46%}
+}
+@media only screen and (max-width: 600px) and (max-height: 650px) {.mb .people {top: -210px} .gymnastics .people {top: -240px} h3 {font-size: 40px; line-height: 45px}}
+@media only screen and (max-width: 1370px) and (max-height: 700px) {.priorities {margin-top: 20px} .priorities li {margin-bottom: 0}}
+
+
+
+
+
+
+/* Для IE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {}
+img {border: none}
+select::-ms-expand {display: none;}
+textarea {overflow: hidden;}
+
+    /* Для Mozilla */
+select {-moz-appearance: none;}
+@-moz-document url-prefix() {}
+
+    /* Для Safari */
+@media all and (-webkit-min-device-pixel-ratio:0){}

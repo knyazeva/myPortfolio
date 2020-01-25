@@ -1,0 +1,333 @@
+@font-face {font-family: 'ofont.ru_Roboto Light'; src: url('../fontlocation/ofont.ru_Roboto Light.eot'), url('../fontlocation/ofont.ru_Roboto Light.ttf') format("truetype");}
+@font-face {font-family: 'Roboto-Regular'; src: url('../fontlocation/Roboto-Regular.eot'), url('../fontlocation/Roboto-Regular.ttf') format("truetype");}
+@font-face {font-family: 'CeraRoundProDEMO-Regular'; src: url('../fontlocation/CeraRoundProDEMO-Regular.eot'), url('../fontlocation/CeraRoundProDEMO-Regular.otf') format("truetype");}
+@font-face {font-family: 'CeraRoundProDEMO-Light'; src: url('../fontlocation/CeraRoundProDEMO-Light.eot'), url('../fontlocation/CeraRoundProDEMO-Light.otf') format("truetype");}
+* {padding: 0; margin: 0; list-style: none; text-decoration: none; font-family: 'ofont.ru_Roboto Light', sans-serif;}
+html * { max-height: 1000000px;}
+.scroll_none {overflow-y: hidden; overflow-x: hidden; position: fixed}
+.bg_opacity.active {position: fixed; top: 0; left: 0; z-index: 4; width: 100%; height: 100%;  background: black; opacity: 0.6;}
+
+/*Цвет сообщение уведомления успешной отправки сообщения*/
+font.notetext{
+    color:yellow;
+}
+font.errortext{
+    color:red;
+}
+
+/* Header + block_1 */
+.site {max-width: 1920px;}
+.central_content {position: relative; width: 1020px; margin: 0 auto; z-index: 1}
+header {position: fixed; top: 0; z-index: 3; width: 100%; height: 85px; background: black; border-bottom: 1px solid #92ddda}
+header .logo {display: inline-block; line-height: 85px}
+header .logo img {vertical-align: middle}
+.menu {display: inline-block; width: calc(100% - 201px); text-align: right}
+.menu li {display: inline-block; vertical-align: top; margin-left: 2.8%; cursor: pointer}
+.menu li > * {font-size: 17px; color: #00cae5; text-transform: uppercase;}
+.block_1 {position: relative; width: 100%; height: 1065px; margin-top: 85px; padding-top: 65px; background: #0b0a0e url("../images/bg_block1.jpg") center bottom no-repeat; background-size: cover}
+.percent_50 {display: inline-block; vertical-align: top; width: 49%; box-sizing: border-box}
+.percent_50.right {float: right; padding-left: 4%}
+.big_logo {margin: 21px 0 98px 0}
+.list_logo.marg_r20 img {width: auto; height: auto; vertical-align: top}
+.list_logo {margin-bottom: 15px}
+.list_logo li {display: inline-block; height: 68px;}
+.list_logo li img {height: 100%; width: auto}
+.marg_r20 li {margin-right: 20px}
+.marg_r45 li {margin-right: 45px}
+.date_event {font-family: 'CeraRoundProDEMO-Light'; text-align: left; color: #00cae5; text-transform: uppercase; font-size: 47px; letter-spacing: 4px; margin-bottom: 30px}
+.name_event {font-size: 18px; color: #d1d1d1; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 42px}
+.button_blue.button_fixed:hover {color: white; border: 1px solid #ffa829;}
+.button_blue.button_fixed {position: fixed; z-index: 2; right: 25px; bottom: 25px; background: #ffa829; color: white; border: 1px solid #ffa829;}
+.button_blue.button_fixed a, .button_blue.button_fixed:hover a {color: white}
+.button_blue a {color: #00adc4;}
+.button_blue:hover a {color: #7ddadb}
+.button_blue {display: inline-block; padding: 15px 10px; border: 1px solid #00adc4; color: #00adc4; background: none; cursor: pointer; text-transform: uppercase; font-size: 17px; letter-spacing: 1px; font-weight: bold; border-radius: 10px; -webkit-appearance: none;}
+.button_blue:hover {border: 1px solid #7ddadb; color: #7ddadb;}
+.social_networks {margin-top: 43px}
+.social_networks li {display: inline-block; vertical-align: top; width: 48px; height: 47px;}
+.social_networks li a {display: block; height: 100%}
+.social_networks li a img {width: 100%; height: 100%}
+
+/* about_even */
+.icon_about_even {width: 100%; background: black; height: 230px;}
+.icon_about_even table {width: 100%}
+.icon_about_even table td {width: 25%; height: 230px; padding: 0; text-align: center; text-transform: uppercase; color: #bdbdbd; font-size: 17px;}
+.icon_about_even table td a {color: #bdbdbd;}
+.icon_about_even table b {display: block; margin: 0 auto 25px auto; width: 98px; height: 98px; background: url("../images/icon_about_even.png") top no-repeat;}
+.icon_about_even .participate_icon b {background-position: 0 0; cursor: pointer;}
+.icon_about_even .date_run_icon b {background-position: -98px 0}
+.icon_about_even .time_start_icon b {background-position: -196px 0}
+.icon_about_even .place_start_icon b {background-position: -294px 0}
+.info_about_even {position: relative; width: 100%; height: 1147px; padding-top: 85px; background: url("../images/bg_about_even.jpg") center; background-size: cover}
+.text_about_even {display: inline-block; width: 450px; font-size: 18px; color: white; text-transform: uppercase}
+.right_align {float: right}
+.info_about_even .right_align .button_blue {display: block; margin-bottom: 35px}
+.start_through {width: 550px; margin: 105px auto 0 auto}
+.start_through .title {margin-bottom: 30px; text-transform: uppercase; text-align: center; font-size: 30px; color: #bdbdbd}
+.timer {color: #00cae5; font-size: 74px; text-align: center; text-shadow: 1px -1px 1px #00cae5}
+.timer > div {display: inline-block; vertical-align: middle; width: 99px}
+.time_unit {font-size: 17px; color: #bdbdbd; text-shadow: 1px -1px 1px #bdbdbd}
+.timer span {display: inline-block; vertical-align: middle; width: 8px; height: 31px; background: url("../images/colon.png") no-repeat}
+.day, .hour, .min, .sec {padding: 5px 3px; letter-spacing: 10px; background: url("../images/bg_time.png") no-repeat; background-size: 98px}
+
+/* place_start_block */
+.place_start_block {position: relative; width: 100%; padding-bottom: 340px; background: black url("../images/bg_block4.jpg") center bottom no-repeat; background-size: 100% 580px}
+.line_blue {position: absolute; z-index: 1; top: 129px; left: 0; width: 50%; height: 33px; background: url("../images/line.png"); background-size: 100% 100%}
+.place_start_block .central_content {position: relative; padding-top: 125px;}
+.title_blue { font-family: 'CeraRoundProDEMO-Regular'; padding-left: 44px; color: #00cae5; text-transform: uppercase; font-size: 30px; line-height: 43px; background: black}
+#map {display: block; margin: 90px auto 210px auto; width: 860px; height: 470px}
+.schedule {width: 650px; height: 80px; margin: 0 auto; background: url("../images/schedule.png") center top repeat-y; color: white}
+.schedule_block {margin-bottom: 70px}
+.schedule_block div.schedule:last-child {height: 41px}
+.schedule b {display: block; margin-bottom: 6px; font-size: 18px; color: #fffeff; letter-spacing: 1px}
+.schedule span {font-size: 14px; color: white; text-transform: uppercase}
+.schedule .right, .schedule .left {height: 90px; margin-bottom: 30px}
+.schedule .right {margin-left: calc(50% + 40px)}
+.schedule .left {margin-right: calc(50% + 40px); text-align: right}
+.download_program {text-align: center}
+.download_program a {display: inline-block; padding-left: 50px; text-align: center; line-height: 37px; color: #00cae5; text-transform: uppercase; font-size: 15px; background: url("../images/print.png") left no-repeat}
+
+/* information_block */
+.information_block .icon_about_even td {cursor: pointer}
+.information_block .line_blue {width: 100%}
+.information_block .title_blue {width: 50%}
+.information_block .human_run {background-position: -206px 0; right: 155px; left: inherit; top: -104px}
+.bg_black {position: relative; width: 100%; background: black}
+.top40 .line_blue {top: 46px}
+.top40 .central_content {padding: 40px 0}
+.icon_about_even .pdd_icon b {background-position: -392px 0}
+.icon_about_even .route_icon b {background-position: -490px 0}
+.icon_about_even .regulations_icon b {background-position: -588px 0}
+.icon_about_even .volunteers_icon b {background-position: -686px 0}
+.information_menu_block {position: relative; width: 100%; height: 720px; background: url("../images/bg_information.jpg") center; background-size: cover}
+.information_menu_block .left_menu {position: relative; width: 297px; z-index: 300; display: inline-block; vertical-align: top;}
+.information_menu_block .left_menu a {display: inline-block; font-size: 18px; color: #007585; text-transform: uppercase; padding: 13px 8px 13px 13px; cursor: pointer}
+.information_menu_block .left_menu .active {background: black}
+.information_menu_block .left_menu .active a, .information_menu_block .left_menu .active a:hover  {width: 100%; color: #00cae5; background: black url("../images/border_menu.png") 0 38px no-repeat}
+.information_menu_block .left_menu a:hover {background: #05373b; border-radius: 10px; color: #01bfd8}
+.information_menu_block .right_menu {position: relative; z-index: 0; left: -9px; display: inline-block; vertical-align: top;
+    color: white; width: 50%; border-left: 2px solid #27aae1; padding-left: 76px; border-radius: 0 0 0 15px;
+    background: url("../images/border_menu2.png") -3px bottom no-repeat}
+.information_menu_block .right_menu li {color: #27a9e1; list-style-type: disc; margin-bottom: 15px;}
+.information_menu_block .right_menu li span {color: white; font-size: 16px}
+.information_menu_block .right_menu ul {display: none}
+.information_menu_block .right_menu ul.active {display: block}
+
+    /* activity_block */
+.activity_block .text_about_even {padding: 30px 0 44px 44px}
+.img_center {display: block; margin: 0 auto; width: 100%}
+.activity_block .download_program {margin: 110px auto 20px auto}
+
+/* organizers */
+.list_organizers {width: 100%; min-height: 245px; background: white}
+.list_organizers ul li {display: inline-block; vertical-align: middle; margin: 0 25px 25px 25px; }
+.list_organizers .central_content {padding: 70px 0 40px 0}
+
+/* partners_block */
+.list_partners {background: white; text-align: center}
+.list_partners .title {padding: 0 0 23px 75px; text-align: left; color: #020003; font-size: 19px; text-transform: uppercase; font-family: 'Roboto-Regular'}
+.list_partners .central_content {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding: 75px 20px 0 20px}
+.list_partners .button_blue {border: 1px solid black; color: black; margin-bottom: 50px}
+.list_partners .button_blue:hover {border: 1px solid #27aae1; color: #27aae1}
+.slider_partners {height: 100px; padding-left: 63px; margin-bottom: 70px}
+.slider_partners_small {height: 70px}
+.bxslider1 li img {margin: 0 12px}
+.bxslider2 li img {margin: 0 10px}
+.slider_partners .bx-wrapper {height: 100px; margin: 0 auto}
+.bx-wrapper .bx-controls-direction a {width: 34px; height: 54px; background: url("../images/arrow_slider.png"); margin-top: -26px; cursor: pointer}
+.slider_partners_small .bx-controls-direction a {margin-top: -42px;}
+.bx-wrapper .bx-prev {left: -60px; background-position: 0 0}
+.bx-wrapper .bx-next {right: -65px; background-position: -34px 0!important;}
+
+/* feedback_block */
+.feedback_block {position: relative; width: 100%; height: 590px; background: url("../images/feedback.jpg") center; background-size: cover}
+.feedback_block form {width: 414px; margin: 30px 0 0 44px}
+.input_gray {width: calc(100% - 20px); box-sizing: content-box; padding-left: 20px; height: 40px; margin-bottom: 24px; outline: none; border: none; background: white; border-radius: 10px; text-transform: uppercase}
+textarea.input_gray {height: 100px; padding-top: 20px}
+.feedback_block .button_blue {background: none; padding: 15px 30px}
+
+/* footer */
+footer {height: 120px; padding-top: 40px}
+.left_footer {float: left; margin-top: 10px}
+.left_footer ul {margin-bottom: 25px}
+.left_footer ul li {display: inline-block; vertical-align: top; margin-right: 50px; cursor: pointer; color: white; font-size: 15px;}
+.left_footer div {color: white}
+.right_footer {float: right}
+footer .social_networks {margin-top: 0}
+footer .social_networks li {margin-left: 40px}
+.human_run {position: absolute; top: -140px; left: -132px; width: 103px; height: 138px; background: url("../images/human_run.png")}
+.info_about_even .human_run {background-position: 0 0}
+.place_start_block .human_run {background-position: -103px 0; left: -100px; top: -23px}
+
+/* Form */
+.form_registration, .form_pdd, .form_volunteers, .form_contacts, .form_pravilauchastiya, .form_politika {display: none; z-index: 20}
+.form_route {visibility: hidden}
+.exit_icon {position: absolute; z-index: 12; right: 16px; top: 16px; cursor: pointer}
+.central_form {position: fixed; display: block; z-index: 5; top: 85px; left: 50%; margin-left: -340px; width: 680px; height: 500px; padding: 26px 0; background: white; border-radius: 10px}
+.menu_form {position: relative; z-index: 10}
+.menu_form > ul {padding: 0 50px}
+.menu_form > ul > li {display: inline-block; vertical-align: top;}
+.menu_form > ul > li > a {display: block; line-height: 36px; padding: 0 18px; border-radius: 10px 10px 0 0; font-size: 18px; color: #0090b8; text-transform: uppercase; font-weight: bold; cursor: pointer}
+.menu_form .active > a {color: #006a87; border: 2px solid #2d9fa8; border-bottom: 2px solid white}
+.line_bottom_menu {border-top: 2px solid #2d9fa8; margin-top: -2px;}
+.menu_form .active > div {display: block}
+.menu_form > ul > li > div {display: none; position: absolute; left: 0; width: calc(100% - 100px); padding: 50px 50px 0 50px}
+.input_blue {width: 370px; height: 38px; border: 2px solid #a1d3d7; border-radius: 10px; background: none; font-size: 14px; color: #6e6f7e; text-transform: uppercase; margin-bottom: 16px; padding: 0 20px}
+.input_xs {width: 160px; }
+
+.text_form, .check_blue:not(checked) + label {display: inline-block; vertical-align: middle; width: 203px; line-height: 16px; margin-left: 8px; color: #9b9b9b; font-size: 15px}
+.check_blue + label {cursor: pointer;}
+.check_blue:not(checked) {position: absolute; opacity: 0;}
+.check_blue:not(checked) + label {position: relative; padding: 0 0 0 35px; margin-left: 0; width: 240px}
+.check_blue:not(checked) + label:before {display: block; content: ''; position: absolute; top: 0; left: 0; width: 21px; height: 21px; border: 2px solid #a1d3d7; border-radius: 5px;}
+.pressed + label:after {content: ''; position: absolute; top: -5px; left: 5px; width: 20px; height: 27px; border-radius: 50%; background: url("../images/check_mark.png"); opacity: 0;}
+.pressed + label:after {opacity: 1;}
+
+.button_orange, .button_orange:hover {background: #fcb035; border: none; color: white; margin: 30px 0}
+.human_form {position: absolute; right: 50px; bottom: 40px; width: 166px; height: 166px; background: url("../images/human_form.png")}
+.race .human_form {background-position: -166px 0}
+.list_text {padding-left: 40px}
+.list_text li {color: #27a9e1; list-style-type: disc; margin-bottom: 12px; line-height: 16px}
+.list_text li span {color: black; list-style-type: disc}
+#map2 {width: 520px; height: 336px; margin: 30px 0 0 30px}
+.form_contacts .button_blue {padding: 8px 5px; font-size: 14px}
+.form_contacts .central_form {overflow: hidden; overflow-y: scroll}
+.contact {display: inline-block; vertical-align: top; width: 170px; margin: 0 8px 60px 7px; text-align: center; font-size: 18px; color: #040404;}
+.photo_contact {width: 136px; height: 136px; margin: 0 auto 13px auto; border-radius: 50%; overflow: hidden}
+.name_contact {margin-bottom: 15px}
+.name_contact span {display: block; font-size: 16px}
+.form_contacts .central_form::-webkit-scrollbar {width: 8px}
+.form_contacts .central_form::-webkit-scrollbar-button {  background-color: #f9f8f5}
+.form_contacts .central_form::-webkit-scrollbar-track-piece { background-color: #e9ece1}
+.form_contacts .central_form::-webkit-scrollbar-thumb {background-color: #006a87;}
+
+
+/* Mobile_version*/
+.menu_mobile {display: none; position: absolute; top: 30px; left: 10px; width: 40px; cursor: pointer}
+.menu_mobile div {width: 100%; height: 3px; margin-bottom: 7px; background: #00cae5;}
+.slide_left {position: fixed; margin-left: 82%; overflow-x: hidden; overflow-y: hidden; border-left: 1px solid black}
+
+
+
+@media only screen and (max-width: 1040px) {
+    .site {width: 100%}
+    .central_content {width: calc(100% - 20px); padding: 0 10px}
+    .menu {width: 77%; float: right; line-height: 85px}
+    .date_event {text-align: left; font-size: 42px}
+    .slider_partners {padding-left: 0}
+    .bx-wrapper .bx-prev {left: -40px}
+    .bx-wrapper .bx-next {right: -45px}
+    .list_partners .central_content {padding: 75px 0 0 0 }
+}
+@media only screen and (max-width: 960px) {
+    header .logo {float: right}
+    .menu_mobile {display: block}
+    .button_blue.button_fixed, .line_blue, .human_run {display: none}
+    .menu {position: absolute; width: calc(82vw - 2px); height: 100vh; left: -82vw; padding-top: 30px; border-top: none; overflow: hidden; background: black; border-right: 2px solid #00cae5}
+    .menu li {display: block; margin: 0 0 20px 0; font-weight: bold; text-align: left; padding: 0 20px; line-height: 25px;}
+    .slider_partners {width: 362px; margin: 0 auto 70px auto}
+    .slider_partners_small {width: 345px}
+    .bx-wrapper .bx-prev {left: -40px}
+    .bx-wrapper .bx-next {right: -40px}
+    #map {width: 95%; height: 400px}
+    footer {height: auto; padding: 35px 0}
+    .right_footer, .left_footer {float: none; text-align: center; margin-top: 25px}
+    .social_networks li, .left_footer ul li {margin: 0 20px}
+    .info_about_even {background: black; height: auto}
+    .place_start_block .central_content {padding-top: 60px}
+    #map {margin: 30px auto 110px auto}
+    .place_start_block {padding-bottom: 205px; background-size: 100% 320px}
+    .percent_50.right, .date_event{text-align: center}
+    .block_1 .button_blue {background: #ffa829; color: white; border: 1px solid #ffa829;}
+    .information_menu_block .left_menu {width: 100%;}
+    .information_menu_block .left_menu li {display: inline-block; margin: 0 20px}
+    .information_menu_block .left_menu .active a, .information_menu_block .left_menu .active a:hover {background: black}
+    .information_menu_block .right_menu {display: block; width: 70%; padding: 25px 0 0 85px; left: 0; border: none; background: none}
+    .information_menu_block .central_content {padding: 0}
+}
+@media only screen and (max-width: 800px) {
+    .title_blue {margin-bottom: 10px}
+    .block_1 .percent_50 {display: none}
+    .block_1 .percent_50.right {display: block; width: 100%; padding-left: 0; float: none}
+    .list_logo {margin-bottom: 30px}
+    .block_1 {height: 800px; background-size: 256%; background-position: 60% }
+    .info_about_even {padding: 45px 0 20px 0; width: 100%}
+    .text_about_even, .activity_block .text_about_even {width: calc(100% - 20px); padding: 0 10px 25px 10px; line-height: 25px}
+    .right_align {float: none; text-align: center}
+    .info_about_even .right_align .button_blue {display: inline-block; margin: 20px}
+    .start_through {margin: 70px auto 0 auto}
+    .central_form {left: 0; top: 10px; width: calc(100% - 20px); margin: 0 10px; height: calc(100vh - 68px); overflow: hidden; overflow-y: scroll}
+    .list_organizers ul li {display: block; text-align: center}
+    .menu_form > ul {padding: 0 5px}
+    .exit_icon {top: 5px; right: 5px}
+    .menu_form > ul > li > div {position: fixed; left: 10px; padding: 30px 10px 0 10px; width: calc(100% - 40px); height: calc(100vh - 120px); overflow: hidden; overflow-y: scroll}
+    .input_blue {width: calc(100% - 44px);}
+    .human_form {display: none}
+    .text_form, .check_blue:not(checked) + label {width: 100%; margin-left: 0}
+    .text_form {margin-bottom: 15px}
+    .button_orange {display: block; margin: 20px auto}
+    .contact {display: block; margin: 0 auto 30px auto}
+    #map2 {width: 100%; height: 330px; margin: 0 auto}
+    .line_bottom_menu {margin-top: 0}
+
+}
+@media only screen and (max-width: 680px) {
+    .schedule {height: auto}
+    .schedule {width: 100%; background: none}
+    .schedule .right, .schedule .left {margin: 0 0 28px 0; text-align: left; height: auto}
+    .information_menu_block {background: black}
+    .info_about_even .right_align .button_blue {display: block}
+    .start_through {width: 100%}
+    .icon_about_even {height: auto}
+    .icon_about_even table td {width: 50%; height: auto; font-size: 14px; display: inline-block; margin: 20px auto 10px auto}
+    .icon_about_even table b {margin-bottom: 10px}
+}
+@media only screen and (max-width: 500px) {
+    header {height: 70px}
+    header .logo {width: 160px; line-height: 70px}
+    header .logo img {width: 100%}
+    .menu_mobile {top: 23px}
+    .block_1 {margin-top: 40px; height: 615px; background: black}
+    .timer {font-size: 0;}
+    .day, .hour, .min, .sec {padding: 5px 7px; letter-spacing: 9px; font-size: 38px; background: url("../images/bg_time.png") 5px no-repeat; background-size: 56px;}
+    .time_unit {font-size: 13px}
+    .timer > div {width: 66px}
+    .timer span {width: 5px; background-size: 80%;}
+    .slider_partners {width: 124px}
+    .slider_partners_small {width: 90px}
+    .feedback_block form {width: 100%; margin: 30px 0 0 0}
+    .list_organizers ul li {width: 100%; margin: 0 auto 25px auto}
+    #map {height: 350px; margin: 30px auto 55px auto}
+    .place_start_block {background: black; padding-bottom: 15px}
+    .information_block .title_blue {width: 100%}
+    .information_menu_block {height: auto}
+    .information_menu_block .right_menu {padding: 25px 0 0 30px; width: calc(100% - 30px)}
+    .information_menu_block .left_menu li {display: block; margin: 0}
+    .information_menu_block .left_menu a {padding: 13px 0}
+    .information_menu_block .right_menu li:last-child {margin-bottom: 0}
+    .activity_block .download_program {margin: 50px auto 0 auto }
+    .title_blue {padding-left: 0; text-align: center}
+    .list_partners .title {text-align: center; padding: 0 0 23px 0}
+    footer .social_networks li {margin-left: 0}
+
+}
+
+
+
+
+
+
+
+
+    /* Для IE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {.information_menu_block .right_menu {left: -9px}}
+img {border: none}
+select::-ms-expand {display: none;}
+textarea {overflow: hidden;}
+
+    /* Для Mozilla */
+select {-moz-appearance: none;}
+@-moz-document url-prefix() {}
+
+    /* Для Safari */
+@media all and (-webkit-min-device-pixel-ratio:0){}

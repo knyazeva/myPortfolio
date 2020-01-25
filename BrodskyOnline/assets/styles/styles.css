@@ -1,0 +1,278 @@
+@font-face {font-family: 'Roboto-Bold'; src: url('../fontlocation/Roboto-Bold.eot'), url('../fontlocation/Roboto-Bold.ttf') format("truetype");}
+@font-face {font-family: 'Roboto-Regular'; src: url('../fontlocation/Roboto-Regular.eot'), url('../fontlocation/Roboto-Regular.ttf') format("truetype");}
+@font-face {font-family: 'Roboto-Thin'; src: url('../fontlocation/Roboto-Thin.eot'), url('../fontlocation/Roboto-Thin.ttf') format("truetype");}
+@font-face {font-family: 'Roboto-Light'; src: url('../fontlocation/Roboto-Light.eot'), url('../fontlocation/Roboto-Light.ttf') format("truetype");}
+@font-face {font-family: 'Roboto-Black'; src: url('../fontlocation/Roboto-Black.eot'), url('../fontlocation/Roboto-Black.ttf') format("truetype");}
+@font-face {font-family: 'AmericanTypeItcTOT-Medi'; src: url('../fontlocation/AmericanTypeItcTOT-Medi.eot'), url('../fontlocation/AmericanTypeItcTOT-Medi.otf') format("truetype");}
+* {padding: 0; margin: 0; list-style: none; font-family: 'Roboto-Regular'; text-decoration: none; box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box}
+html * { max-height: 1000000px;}
+body {width: 100%; margin: 0 auto; overflow: hidden; overflow-y: scroll}
+
+/* index.html */
+/* Шапка */
+header {position: fixed; z-index: 5; top: 0; height: 60px; width: 100%; background: #d9d9d9; border-bottom: 1px solid black;}
+header .logo {position: absolute; z-index: 2; left: 0; top: 0; width: 25%; height: 90px; overflow: hidden; background: url("../images/logo.png?ver=1") right no-repeat; background-size: 100% 100%}
+.logo img {position: absolute; top: 22px; right: 50px; width: 173px}
+.logo-right {position: absolute; z-index: 0; top: 5px; right: 0; left: 1020px; margin: 0 auto; text-align: center}
+.search-line {width: 365px; font-size: 0; line-height: 60px;}
+.search-line input[type="text"] {display: inline-block; vertical-align: middle; width: 300px; height: 18px; padding: 0 5px; border: 1px solid black; font-size: 12px}
+.search-line input[type="submit"] {display: inline-block; vertical-align: middle; height: 18px; background: black; color: white; border: none; padding: 0 15px; font-size: 12px; font-family: 'Roboto-Thin'; -webkit-appearance: none;}
+.social-network {float: right; line-height: 60px}
+.social-network a {display: inline-block; vertical-align: middle; width: 17px; height: 17px; background: url("../images/social.png?ver=1"); background-size: 51px; margin-right: 3px}
+.social-network a.vk {background-position: 0 0}
+.social-network a.face {background-position: -17px 0}
+.social-network a.inst {background-position: -34px 0}
+/* Слайдер с датами */
+.slider {position: relative; width: 100%}
+.slider .slick-list {overflow: hidden; margin: 0 auto}
+.slider .item {display: inline-block; vertical-align: top; position: relative;}
+.js-slider-date .slick-list {width: calc(100% - 80px)}
+.js-slider-date {text-align: center; height: 78px; margin: 92px auto -60px auto; background: url("../images/line-date.png") left 27px repeat-x; background-size: 86px; border-bottom: 1px solid black}
+.js-slider-date .item {font-size: 16px}
+.js-slider-date .item a {color: black; font-weight: bold; font-family: 'Roboto-Thin';}
+.slick-prev, .slick-next {position: absolute; z-index: 1; cursor: pointer; outline: none; border: none; font-size: 0; top: 0; width: 10px; height: 20px; display: block;}
+.slick-prev {left: 10px; background: url("../images/social.png?ver=1") 0 -33px;}
+.slick-next {right: 10px; background: url("../images/social.png?ver=1") -10px -33px;}
+.js-slider-date .item.active a {font-family: 'Roboto-Black'!important; color: #854a42!important;}
+/* Сайдбар слева */
+.menu {position: absolute; display: inline-block; vertical-align: top; background: rgba(255,255,255,0.6); z-index: 4; padding: 30px 78px 0 120px}
+.menu.fix {position: fixed; top: 60px; padding: 50px 78px 0 120px}
+.menu a {display: block; margin-bottom: 15px; color: black; font-size: 12px; font-family: 'Roboto-Bold'}
+.menu a.active {color: #854a42; font-family: 'Roboto-Black';}
+/* Основной контент */
+.main-content {position: relative; z-index: 1; max-width: 620px; margin: 27px auto; min-height: calc(100vh - 221px)}
+.main-standard-block {position: relative; margin-bottom: 50px}
+.standard-block, .comments {width: 100%; padding: 30px 40px; background: #ececec}
+p {font-size: 12px; line-height: 18px; font-weight: bold; margin-bottom: 18px}
+.standard-block .social-network {float: none; text-align: right; line-height: 15px; padding-right: 0}
+.date {float: right; font-size: 14px; margin-top: 3px}
+.photo-name {margin-bottom: 40px}
+.photo-name img {width: 70px; height: 70px; margin-right: 7px}
+.photo-name .name {display: inline-block; vertical-align: top; width: calc(100% - 145px)}
+.photo-name .name a {color: black; font-family: 'Roboto-Bold'; font-size: 19px; text-decoration: underline;}
+.photo-name .name span {display: block;font-family: 'Roboto-Bold'; letter-spacing: 2px; color: #9b9b9a; font-size: 16px}
+.photo-one {overflow: hidden}
+.video, .photo-one {position: relative; display: block; width: 100%; height: 350px; margin-bottom: 35px}
+.icon-play {position: absolute; right: 0; left: 0; top: 50%; margin: -22px auto 0 auto; width: 45px; height: 45px; background: rgba(255,255,255,0.7) url("../images/play.png") center no-repeat}
+.photo-three {margin-bottom: 40px}
+.photo-three .one, .photo-three .two {display: inline-block; vertical-align: top; overflow: hidden}
+.photo-three .one {width: 300px; height: 357px; margin-right: 10px}
+.photo-three .two {width: 222px; height: 357px}
+.photo-three .two div {height: 180px; margin-bottom: 10px}
+.photo-three img, .photo-one img, .video img, .img-format img {position: relative; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); width: 100%; height: auto; display: block }
+.img-format a, .photo-one a, .photo-three a {display: block; height: 100%; width: 100%}
+.comments {background: #f9f9f9; padding: 46px 40px}
+.first-comment {width: calc(100% - 55px); margin-bottom: 0}
+.sub-comment {margin: 0 0 20px 70px; padding: 27px 0 0 10px; border-left: 1px solid black}
+.sub-comment .photo-name {margin-bottom: 32px}
+.sub-comment .photo-name:last-child {margin-bottom: 30px}
+.comments .date, .comments .name a {color: #9b9b9a}
+.comments .name a {display: block; margin-bottom: 10px; }
+.comments p {line-height: 15px}
+.comments .name {width: calc(100% - 82px)}
+.quote {border-top: 1px solid black; border-bottom: 1px solid black; padding: 15px 0; margin-bottom: 20px}
+.quote span {display: block; margin-bottom: 18px; font-style: italic; font-size: 16px; font-family: 'Roboto-Light';}
+.quote p {font-weight: bold; font-size: 18px; line-height: 26px; margin-bottom: 10px}
+.read-more {color: #9b9b9a; font-size: 18px}
+/* Фоновые картинки */
+.site {position: relative; z-index: 1; max-width: 1280px; margin: 0 auto; padding-top: 60px; overflow: hidden}
+.bg-img {position: absolute; z-index: 0; left: 0; right: 0; top: 0; max-width: 1280px; width: 100%; height: 100%; margin: 0 auto }
+.bg-img img {position: absolute}
+.bg1 {top: 382px; left: 50px}
+.bg2 {top: 511px; left: 170px}
+.bg3 {top: 538px; right: 186px}
+.bg5 {top: 1725px; right: 94px}
+.bg6 {top: 1200px; left: 192px}
+.bg7 {top: 2480px; left: 100px}
+.bg8 {top: 3200px; right: 100px}
+
+/* biography.html */
+h1 {font-family: 'Roboto-Thin'; font-size: 40px; text-align: center; margin-bottom: 30px}
+h1 span {display: block; margin-top: 12px; font-family: 'Roboto-Regular';}
+h3 {font-size: 27px; margin-bottom: 30px}
+.js-slider-biography .item {height: 405px; overflow: hidden}
+.js-slider-biography img {display: block; width: 100%; height: auto }
+.js-slider-biography .slick-prev, .js-slider-biography .slick-next {width: 45px; height: 45px; background: rgba(255,255,255,0.7) url("../images/play.png") center no-repeat; top: 50%; margin-top: -22px}
+.js-slider-biography .slick-prev {left: 0; transform: rotate(180deg); -moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg)}
+.js-slider-biography .slick-next {right: 0}
+.js-slider-biography .slick-list, .js-slider-biography .slick-track, .js-slider-biography .item {height: 100%}
+.slick-dots {display: none!important; position: relative; z-index: 1; text-align: center;}
+.slick-dots li {display: inline-block; vertical-align: middle; }
+.slick-dots li button {color: transparent; border: none; background: #cacccb; width: 20px; height: 20px; margin: 10px 7px; border-radius: 50%; outline: none; cursor: pointer}
+.slick-dots li.slick-active button {background: black}
+.title-photo {position: absolute; bottom: 0; left: 0; right: 0; background: white; text-align: right; font-family: 'Roboto-Thin'; font-weight: bold; font-style: italic; font-size: 12px; padding: 10px 5px}
+.standard-block .title-photo {background: #ececec}
+.photo-four {border-top: 1px solid black; border-bottom: 1px solid black; padding: 14px 0; font-size: 0; margin: 3px 0 23px 0}
+.photo-four .img-format {display: inline-block; vertical-align: top; width: 147px; height: 112px; margin-right: 10px}
+.photo-four .img-format:last-child {margin-right: 0}
+.img-format {overflow: hidden; height: 100%}
+.biography > p {font-size: 18px; line-height: 25px; font-weight: normal}
+
+.preview-slider {padding: 15px 0; border-top: 1px solid black; border-bottom: 1px solid black;  margin: 3px 0 23px 0}
+.preview-slider .item {display: inline-block; vertical-align: top; outline: none; cursor: pointer}
+.preview-slider .item .img-format {height: 110px; margin: 0 5px}
+.preview-slider img {min-height: 100%}
+
+footer {height: 107px; background: #d9d9d9}
+footer .site {padding: 0; overflow: visible}
+.logo-footer {line-height: 107px; vertical-align: middle; margin-left: 4%}
+.logo-footer img {vertical-align: middle; width: 148px}
+.menu-footer {display: inline-block; vertical-align: middle; margin-left: 2% }
+.menu-footer a, footer .right-block > a {display: block; text-decoration: underline; font-size: 10px; color: black; margin-bottom: 5px}
+.menu-footer a:last-child {margin-bottom: 0}
+.right-block {float: right; text-align: right; padding-right: 12px}
+footer .right-block > a {text-decoration: none}
+footer .social-network {float: none; line-height: 50px; padding: 0}
+
+/* brodsky_circle*/
+.alphabet {text-align: center; margin-bottom: 30px}
+.alphabet a {display: inline-block; vertical-align: top; color: #d8d8d8; font-size: 20px; margin: 0 2px }
+.letter {text-align: center; font-size: 40px; margin-bottom: 23px}
+.people {font-size: 0}
+.people a {display: inline-block; vertical-align: top; width: 29.67%; margin-right: 5.48%; margin-bottom: 52px}
+.people a:nth-child(3n) {margin-right: 0}
+.people a span {position: relative; top: -11px; left: 21px; padding: 4px 0; display: block; width: 100%; text-align: center; background: #f9f9f9; font-size: 20px; font-family: 'Roboto-Light'; color: black}
+.people > img, .biography > img {display: block; max-width: 100%; height: auto; margin: 10px auto}
+
+.contacts h1 {font-family: 'AmericanTypeItcTOT-Medi'; position: absolute; top: 28px; left: 0; right: 0}
+.contacts {position: relative; top: -27px; max-width: 420px; height: 650px; margin: 0 auto; background: url("../images/contacts.jpg?ver=1") no-repeat; background-size: 100% auto}
+.contacts > a, .contacts span {display: block; text-align: center; line-height: 51px; font-size: 21px; font-family: 'AmericanTypeItcTOT-Medi'; color: black}
+.contacts span {padding-top: 115px}
+.contacts > a {font-size: 18px}
+.contacts .social-network {position: absolute; bottom: 50px; left: 0; right: 0; float: none; padding: 0; line-height: 50px; text-align: center}
+.contacts .social-network a {background-size: initial; width: 33px; height: 33px; border-radius: 5px; margin-right: 10px}
+.contacts .social-network a:last-child {margin-right: 0}
+.contacts .social-network a.face {background-position: -33px 0}
+.contacts .social-network a.inst {background-position: -66px 0}
+
+.img_280 {width: 280px; height: 280px; margin: 0 auto}
+h2 {font-size: 30px; text-align: center; margin: 32px 0 18px 0; font-weight: normal}
+.people .quote p {font-size: 24px; line-height: 36px}
+
+    /* Мобильная версия */
+.menu_mobile {display: none; position: absolute; left: 0; top: 8px; width: 47px; height: 40px; z-index: 2; cursor: pointer; background: none; border-radius: 50%}
+.menu_mobile span {display: block; float: right; position: absolute; top: 20px; left: 10px; right: 10px; height: 3px; background: #191919}
+.menu_mobile span:before, .menu_mobile span:after {position: absolute; display: block; left: 0; width: 100%; height: 3px; content: ""; background: #191919}
+.menu_mobile span:before {top: -7px}
+.menu_mobile span:after {bottom: -7px}
+.menu_active, .search_active {overflow-y: hidden}
+.menu_active .menu {top: 60px!important; width: 100%; padding: 18px 0 0 0; text-align: center;}
+.menu_active .menu a {font-size: 18px; padding: 9px 0; margin: 0; border-bottom: 1px solid black}
+.menu_active .logo-right {display: none}
+.search_mobile {display: none}
+.search_active .search-line {top: 60px; padding: 37px 0 17px 0; width: 100%; left: 0; right: 0; line-height: 0; text-align: center}
+.search_active .search-line input[type="text"] {height: 40px}
+.search_active .search-line input[type="submit"] {display: block; margin: 5px auto 0 auto; padding: 0 30px; height: 30px}
+.search_mobile {width: 27px; height: 27px; position: absolute; right: 11px; top: 15px; background: url("../images/lupa.png") no-repeat; background-size: 100%}
+.center-header {position: relative; z-index: 1; width: 450px; margin: 0 auto}
+
+.search-result .item {margin-bottom: 40px}
+.search-result .title {display: block; margin-bottom: 15px; font-size: 28px; color: black; font-weight: bold; padding-right: 70px}
+.search-result p {margin-bottom: 7px; max-height: 54px; overflow: hidden}
+
+.planet {height: 1280px; overflow: hidden}
+.planet-block {overflow: visible}
+.img-map {position: relative; display: inline-block;}
+.img-map a {position: absolute; display: block;}
+.img-map img {width: 100%}
+.img-map1 {z-index:3;width: 60%; left: 410px; top: -24px;}
+.img-map1 a {top: 13%; left: 63%; height: 32%; width: 27%}
+.img-map2 {z-index:3;width:46%;top: -26%; left: 0}
+.img-map2 a {top: 20%; left: 40%; width: 42%; height: 26%}
+.img-map3 {z-index:3; width: 75%;top: -57%; left: 40%}
+.img-map3 a {top: 32%; left: 4%; width: 29%; height: 43%}
+.img-map4 {z-index:3; width: 32%;top: -92%; left: 60%}
+.img-map4 a {top: 18%; left: 46%; width: 50%; height: 24%}
+.img-map5 {z-index:2; width: 41%;top: -96%; left: -28%}
+.img-map5 a {bottom: 0; left: 22%; width: 50%; height: 37%}
+.img-map6 {z-index:1; width: 49%;top: -107%; left: 21%}
+.img-map6 a {top: 14%; left: 59%; width: 35%; height: 35%}
+
+@media only screen and (max-width: 1366px) {.logo-right {left: inherit}}
+@media only screen and (max-width: 1280px) {
+    .js-slider-date {background-size: auto}}
+@media only screen and (max-width: 1180px) {
+    .menu {padding: 30px 20px 0 20px}
+    .main-content {margin: 27px 0 27px 178px}
+    .menu.fix {padding: 50px 25px 0 20px}
+    .bg2 {left: 27px}
+    .bg3 {right: 13px}
+    .bg5 {right: 0}
+    .bg6 {left: 40px}
+    .bg7 {left: 42px}
+    .bg8 {right: 42px}
+    .planet {height: 1180px}
+    .img-map5 {top: -96%}
+    .img-map6 {top: -103%}
+    .img-map3 {top: -57%}
+    .img-map4 {top: -90%}
+}
+@media only screen and (max-width: 1080px) {.planet {height: 1090px}}
+@media only screen and (max-width: 1024px) {
+    .search-line input[type="text"], .search-line input[type="submit"] {width: 220px}
+    .search-line {width: 280px; padding-top: 11px; line-height: initial}
+    .center-header {width: 300px}
+    .planet {height: auto}
+    .img-map {display: block; margin: 0 auto; width: auto!important; max-width: 100%; left: 0!important; top: 0!important;}
+}
+@media only screen and (max-width: 840px) {
+    .slider {margin-bottom: 40px}
+    .site {padding-top: 100px}
+    .js-slider-date {margin: 150px auto -100px auto}
+    .search-line input[type="text"], .search-line input[type="submit"] {width: 300px}
+    .logo-right {left: 0; top: 60px; text-align: center}
+    .bg-img {display: none}
+    header .social-network {display: none}
+    header .logo {width: 290px; height: 80px}
+    .menu.fix {top: -100%}
+    .logo img {top: 14px}
+    .menu_mobile, .search_mobile {display: block}
+    .search-line, .menu {position: fixed; top: -100%; background: white}
+    .js-slider-date .slick-list {width: calc(100% - 40px)}
+    .slick-prev {left: 5px}
+    .slick-next {right: 5px}
+    .main-content {margin: 27px auto}
+    .standard-block, .comments {padding: 30px 10px}
+    .video, .photo-one {height: auto}
+    .photo-three img, .photo-one img, .video img {top: 0; transform: initial; -webkit-transform: initial; -moz-transform: initial; -ms-transform: initial; -o-transform: initial}
+    .photo-three .one, .photo-three .two {width: 100%; height: auto; margin: 0 0 10px 0}
+    .photo-three .two div {height: auto}
+}
+@media only screen and (max-width: 650px) {
+    .alphabet a {margin: 0 3px 5px 3px}
+    .people a {width: 100%; margin: 0 0 52px 0!important;}
+    .main-content {margin: 27px 10px}
+    .preview-slider {display: none}
+    .slick-dots {display: block!important;}
+    .js-slider-biography .slick-prev, .js-slider-biography .slick-next, .menu-footer {display: none!important;}
+    .logo-footer {line-height: 85px; display: block; text-align: center; margin: 0}
+    .logo-footer img {width: inherit}
+    footer {position: relative; height: 240px}
+    footer .right-block {position: absolute; right: 0; left: 0; text-align: center; top: 63px; padding: 0; float: none}
+    footer .social-network {line-height: 70px}
+    footer .social-network a {background-size: initial; width: 33px; height: 33px; border-radius: 5px; margin-right: 10px}
+    footer .social-network a:last-child {margin-right: 0}
+    footer .social-network a.face {background-position: -33px 0}
+    footer .social-network a.inst {background-position: -66px 0}
+    .menu-footer a, footer .right-block > a {font-size: 16px; margin-bottom: 10px}
+}
+@media only screen and (max-width: 450px) {
+    .search_mobile {right: 5px}
+    .search-result .title {font-size: 22px}
+    .contacts {max-width: 300px; width: 300px; height: 505px; margin: 0 auto; background-size: 105% auto}
+    .contacts span {padding-top: 87px}
+    .contacts > a, .contacts span {font-size: 18px; line-height: 38px}
+}
+
+/* Для IE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {}
+img {border: none}
+select::-ms-expand {display: none;}
+textarea {overflow: hidden;}
+
+    /* Для Mozilla */
+select {-moz-appearance: none;}
+@-moz-document url-prefix() {}
+
+    /* Для Safari */
+@media all and (-webkit-min-device-pixel-ratio:0){}
