@@ -1,0 +1,7 @@
+.messages-list .item {padding: 10px; background: white; position: relative; border-radius: 5px; margin: 0 0 15px 30px; width: calc(100% - 60px)}
+.messages-list .item:before {content: ""; position: absolute; left: -7px; bottom: 0; border-top: 7px solid transparent; border-right: 10px solid white}
+.messages-list .img-container {position: absolute; left: -30px; bottom: 0; height: 20px; width: 20px; border-radius: 50%}
+
+.messages-list .item.me-yes {background: #fff2f4}
+.messages-list .item.me-yes:before {left: inherit; right: -7px; border-right: none; border-left: 10px solid #fff2f4}
+.messages-list .item.me-yes .img-container {left: inherit; right: -30px}

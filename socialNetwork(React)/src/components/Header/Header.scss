@@ -1,0 +1,16 @@
+header {
+  padding: 10px; background: cornflowerblue; margin-bottom: 10px;
+  .central-content {padding: 0 15px}
+  .central-content * {color: white; text-decoration: none}
+  .login:hover {text-decoration: underline}
+  .flex-center-between {height: 40px}
+  .logo {font-size: 30px}
+}
+
+.logout {
+  cursor: pointer;
+  background: url("../../assets/img/exit.png") center right no-repeat;
+  background-size: auto 100%;
+  padding: 2px 33px 2px 0
+}
+

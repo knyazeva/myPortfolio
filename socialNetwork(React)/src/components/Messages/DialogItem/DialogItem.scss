@@ -1,0 +1,8 @@
+.dialogs-list {border-right: 3px solid darkgray}
+.dialogs-list .item {padding: 10px; cursor: pointer; text-decoration: none; display: block;}
+.dialogs-list .item.active .name {color: white}
+.dialogs-list .item.active {background: #f27788}
+.dialogs-list .item.active, .dialogs-list .item:hover {border-right: 3px solid cornflowerblue; position: relative; left: 3px}
+
+.dialogs-list .img-container {width: 30px; height: 30px; border-radius: 50%; display: inline-block; vertical-align: top}
+.dialogs-list .name {width: calc(100% - 30px); padding: 7px 0 0 10px; display: inline-block; vertical-align: top}

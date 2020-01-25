@@ -1,0 +1,14 @@
+.menu a {
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    background: gainsboro;
+    &:last-child {
+        border-radius: 0 0 5px 5px
+    }
+    &.active, &:hover {
+        background: cornflowerblue;
+        color: white
+    }
+}

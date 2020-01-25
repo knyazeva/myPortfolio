@@ -1,0 +1,17 @@
+.banner {margin: -15px -20px 20px -20px}
+.banner .img-container {height: 300px; border-radius: 5px 5px 0 0}
+
+.info-profile {margin-bottom: 60px}
+.info-profile .img-change, .text-profile {display: inline-block; vertical-align: top}
+.info-profile .img-change {width: 150px; position: relative}
+.info-profile .img-container {height: 150px; width: 150px; border-radius: 50%}
+.info-profile .img-container img {max-height: 100%; min-width: 100%}
+.info-profile .img-change .input-file {position: absolute; bottom: 10px; right: 10px}
+
+.text-profile {width: calc(100% - 150px); padding-left: 50px; position: relative}
+.text-profile .title.item {font-size: 25px; margin-bottom: 20px; padding-right: 35px}
+.text-profile .item {line-height: 22px; margin-bottom: 8px}
+.text-profile b {padding-right: 5px; width: 120px; display: inline-block; vertical-align: top}
+.text-profile .item > div {width: calc(100% - 130px); display: inline-block; vertical-align: top}
+.text-profile .form-small .item > div {display: block; width: 100%}
+.text-profile .edit-btn {position: absolute; right: 0; top: -3px}
