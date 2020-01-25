@@ -1,0 +1,57 @@
+@media only screen and (max-width: 1250px) {
+    .card-version-4 .item:nth-child(4n + 1) {margin-right: 0}
+    .slider-1-auto, .card-version-4 .item:nth-child(4n + 4) {margin-left: 0}
+}
+
+@media only screen and (max-width: 1200px) {
+    .news .animate-text {padding: 0}
+    .card-version-7 .img-container-v {height: 330px}
+    .card-version-6 .item:nth-child(3n + 2), .card-version-6 .item:nth-child(3n + 1) {margin-left: 0}
+    .description-h1.left-with-img {margin-bottom: 70px}
+    .description-h1.left-with-img .img-container-v {height: 300px; max-width: 460px}
+    .description-h1.left-with-img .item:nth-child(3) {margin: 60px 0 0 17%}
+    .card-inline img {padding-right: 4%}
+    .card-inline2 .date {padding-left: 5%}
+    .card-inline .date {padding-right: 5%}
+    .main-content {margin-top: 0}
+    .footer-bottom .grey-light, .copyright {font-size: 12px; line-height: 18px}
+    .footer-bottom {padding: 25px 10px}
+    .central-letter {padding-left: 60px}
+    header .logo img {height: 120px}
+    .container-letter a {top: 26%}
+    .bg-gift {width: 320px}
+    .bg-gift .text {margin-left: 120px}
+    .card-version-1 .item:nth-child(2) {margin-top: -80px}
+    .card-version-1 .card-img {width: 150px}
+    .news-block .rotate-90 {bottom: -30px}
+    .title-with-text-right {padding-left: 0}
+    .card-version-3 .item {max-width: 320px}
+}
+
+@media only screen and (max-width: 1100px) {
+    .news .column-33 {width: 50%; margin-bottom: 50px}
+    h3, .title-h3 {font-size: 22px; line-height: 28px}
+    .card-version-7 .card-text {padding: 20px}
+    .content-left-indent {padding-left: 0}
+    .card-inline .item {border: 1px solid #B17C8F}
+    .card-inline .item img {-webkit-filter: grayscale(0); filter: grayscale(0); opacity: 1}
+    .card-inline.btn-hidden {opacity: 1}
+    .svg-bg-letter {width: 730px; height: 500px; left: 45px}
+    .container-letter a {top: 23%; right: -170px}
+    .container-letter {top: 24px; left: -35px}
+    .central-letter {max-width: 770px}
+    .footer-contacts {padding: 70px 30px}
+    .menu {padding: 40px 0}
+    .btn-menu {top: 40px}
+    header {padding-top: 25px}
+    .reviews-block .item:nth-child(1) {margin-left: 100px}
+}
+
+
+
+
+/* Высота */
+@media only screen and (max-height: 730px) {
+    .menu-top-block .menu-list .grey {font-size: 30px; line-height: 30px}
+    .menu-list-top {margin-bottom: 5vh}
+}
