@@ -1,0 +1,275 @@
+@media only screen and (max-width: 1640px) {
+    .left-side-title {font-size: 18px; line-height: 27px}
+    .left-side-title b {font-size: 40px}
+    .slider-main .item {height: 560px}
+    .authorized .personal-area, .authorized .messages-personal, .authorized .basket {margin-left: 10px}
+    .accessible-icon .item {width: 40px; height: 40px}
+    .personal-area, .basket, .messages-personal {margin-left: 15px}
+    .search {margin-right: 15px}
+}
+
+@media only screen and (max-width: 1500px) {
+    .block-with-circle, .right-block-circle.block-side-title {min-height: 515px}
+    .slider-company .item {height: 515px}
+    .numbered-blocks .img-container {width: 450px}
+    .numbered-blocks .text-container {width: calc(100% - 456px)}
+    .menu a {padding: 20px 14px}
+    .svg-social {margin: 0 3px}
+}
+
+@media only screen and (max-width: 1460px) {
+    .stock {margin-right: 0}
+    .slider-company {margin-left: 135px}
+    .right-block-circle .left-side-title {left: 110px}
+    .slider-main .img-container {width: calc(100% - 285px)}
+    .slider-main .slider-text > span {font-size: 22px; line-height: 32px}
+    .right-side-title span {font-size: 18px}
+    .column-main > .item.stock-block {padding-left: 35px}
+    .right-block-circle {padding: 0 0 0 120px}
+    .slider-main .slider-text .btn {margin-top: 30px}
+    .slider-main .slider-text small {line-height: 20px}
+    .slider-main .slider-text .title {margin-bottom: 20px}
+    .slider-main .slider-text .title, .slider-main .slider-text .title span {font-size: 40px}
+    .slider-main .item {height: 520px}
+    .accessible-icon.active .item:after {height: 20px; margin-top: -10px}
+    .title-two-line {font-size: 36px}
+    .news .title {font-size: 18px; max-height: 65px}
+    .slider-main .slider-text {left: 0; max-width: 320px}
+    .menu a {padding: 20px 10px}
+    header .accessible-icon .item {width: 28px; height: 28px}
+    .svg-accessible.one {width: 15px}
+    .svg-accessible.two {width: 24px}
+    .svg-accessible.three {width: 22px}
+    .svg-accessible.four {width: 16px}
+    .svg-accessible.five {width: 35px}
+}
+
+@media only screen and (max-width: 1366px) {
+    .menu {margin-left: 30px}
+    .slider-main .slider-text .btn {font-size: 14px}
+    .btn {padding: 14px 40px}
+    .phone, .location, .mail, .stock {margin-right: 0}
+    .social-program > a:first-child {margin-right: 3%}
+    .header-bottom-line .column-40 {width: calc(50% - 75px)}
+    .header-bottom-line .column-20 {width: 150px; padding: 0}
+    .logo img {max-height: 40px; margin: 6px 0}
+}
+
+@media only screen and (max-width: 1335px) {
+    .central-content {padding: 0 30px}
+    .right-block-circle .left-side-title {left: 0}
+    .column-main > .item.stock-block {padding-left: 40px}
+    .right-block-circle {padding: 0}
+    header * {font-size: 13px}
+    .authorized .personal-area, .authorized .messages-personal, .authorized .basket {margin-left: 10px}
+    .left-side-title b {font-size: 34px}
+    .slider-main .item {height: 460px}
+    .slider-main .img-container {width: calc(100% - 270px)}
+    .slider-main .slider-text {width: 250px}
+    .slider-main .slider-text > span {font-size: 16px; line-height: 24px}
+    .slider-main .slider-text .title, .slider-main .slider-text .title span {font-size: 24px}
+    .search, .personal-area, .basket {margin-left: 20px}
+}
+
+@media only screen and (max-width: 1285px) {
+    .stock {display: none}
+    .block-with-circle, .right-block-circle.block-side-title {min-height: 500px}
+    .news-and-stock .column-80 {width: calc(100% - 290px)}
+    .news-and-stock .column-20 {width: 290px}
+    #map-main {height: 400px}
+    .btn {padding: 9px 25px}
+    .num-gray-list li .li-text {padding: 15px 20px}
+    .blue-list .item {font-size: 16px}
+    .header-top-line .column-50 {width: 60%}
+    .header-top-line .column-25 {width: 20%}
+    .menu a {padding: 20px 6px}
+}
+
+@media only screen and (max-width: 1220px) {
+    .circle {left: 0}
+    .block-with-circle .bg-white {left: 430px; width: calc(100% - 430px)}
+    .bvi-panel-open {background-size: 81px; background-position: -18px 0; margin: 15px 0 15px -13px}
+    .svg-eye {width: 38px; height: 19px}
+    .search, .personal-area, .basket {margin: 10px 0 10px 10px}
+}
+
+@media only screen and (max-width: 1180px) {
+    .authorized .personal-area, .authorized .messages-personal, .authorized .basket {margin-left: 3px}
+    .authorized .svg-basket {width: 25px; height: 25px}
+    .authorized .svg-personal-area {width: 17px; height: 17px}
+}
+
+@media only screen and (max-width: 1100px) {
+    .central-content {padding: 0 15px}
+    .menu {margin-left: 15px}
+    .column-main .column-40:first-child .blue-text {margin-right: 15px}
+    .right-block-circle > .column-main > .column-50 {width: 60%}
+    .right-block-circle > .column-main > .column-25 {width: 40%}
+    .right-block-circle .column-main .column-25:last-child {display: none}
+    .authorized .svg-personal-area {width: 17px; height: 17px}
+    .authorized .personal-area, .authorized .messages-personal, .authorized .basket {margin-left: 3px}
+    .accessible-icon.active .item {border: none}
+    header .accessible-icon .item {width: 24px;}
+    .search, .personal-area, .basket {margin-left: 10px}
+    .svg-accessible.one {width: 14px; height: 24px}
+    .svg-accessible.two {width: 25px; height: 22px}
+    .svg-accessible.three {width: 22px; height: 22px}
+    .svg-accessible.four {width: 16px; height: 24px}
+    .svg-accessible.five {width: 40px; height: 40px}
+}
+
+@media only screen and (max-width: 1024px) {
+    .authorized .svg-basket {width: 32px; height: 28px}
+    .circle-for-mobile {display: block}
+    .circle {width: 400px; height: 400px}
+    .news {padding: 0 0 0 120px}
+    .fix-header .header-bottom-line {position: relative}
+    .numbered-blocks .text p, .blue-list2 li {margin-bottom: 15px}
+    .numbered-blocks .text {max-height: calc(100% - 130px)}
+    .numbered-blocks .title b {font-size: 60px; top: 0}
+    .numbered-blocks .title b.big-size-num {font-size: 85px}
+    .numbered-blocks .title span {font-size: 17px}
+    .slider-company {margin-left: 125px}
+    .slider-company .item {height: 465px}
+    .column-main > .item.stock-block {padding-left: 0}
+    .central-content {padding: 0 30px}
+    .right-header-icon {width: 100%; text-align: right}
+    header .menu, .header-mobile-menu {position: fixed; top: 90px; left: -120vw; z-index: 11; transition: all 1s ease-in-out; width: 100%; background: white; margin: 0; text-align: center; height: calc(100% - 90px); overflow: hidden; overflow-y: auto}
+    header .menu .blue-text, .menu-for-mobile, .menu-for-mobile div {display: block!important;}
+    header .menu a {display: block!important; padding: 17px 0; font-size: 18px; max-width: 345px; margin: 0 auto}
+    header .menu a:first-child {border-top: 1px solid black; margin-top: 15px; padding-top: 27px}
+    .header-mobile-menu {display: block!important; top: 0; height: auto; padding: 19px 0;}
+    .menu-gray a {color: rgba(0, 0, 0, 0.54)}
+    .menu-blue a {color: #165D99}
+
+    .active-menu {width: 100%}
+    .active-menu header .menu, .active-menu .header-mobile-menu {left: 0}
+
+    .line-prompt.search-active form {margin-left: -7px!important; width: calc(100% + 7px)!important;}
+    .news-and-stock .column-30 .btn {margin-left: 125px}
+    .news-and-stock .blue-list .item {max-width: 300px}
+    .news-and-stock .blue-list {margin-left: 125px; column-count: 2; -moz-column-count: 2; -webkit-column-count: 2;}
+    .title-with-logo {margin: 30px 0; padding: 8px 0; border-top: 1px solid black; border-bottom: 1px solid black}
+    .title-with-logo {padding-left: 45px}
+    .title-two-line span {font-size: 18px}
+    .authorized .svg-personal-area {width: 24px; height: 24px}
+    .authorized .personal-area, .authorized .messages-personal, .authorized .basket {margin-left: 17px}
+    .header-top-line .item {position: initial}
+    header .phone {position: absolute; top: 42px; left: 18%; color: rgba(0, 0, 0, 0.87); font-size: 14px; z-index: 1}
+    header .svg-phone {fill: black; width: 26px; height: 24px}
+    .news-and-stock > .item {width: 100%}
+    header {padding-bottom: 30px}
+    .slider-main .slider-text > span {line-height: 19px}
+    .slider-main .slider-text {width: 210px}
+    .slider-main .img-container {width: calc(100% - 240px)}
+    .block-central-title {width: calc(100% - 130px); margin-left: 90px}
+    .bvi-panel-open {margin: 9px 0 9px 0}
+    .svg-eye {width: 64px; height: 32px; }
+    .search, .personal-area, .basket {margin-left: 27px}
+    .authorized .search {margin: 14px 0}
+    .burger, footer .burger  {display: inline-block!important;}
+    footer .burger {margin-left: 40px; position: relative; top: -13px}
+    footer .burger span:before, footer .burger span:after, footer .burger span {background: white}
+    .header-top-line {padding: 4px 0}
+    .header-top-line .center-text, header .location, .accessible-icon, header .gray-text, header .blue-text, .fix-header .line-prompt, .contacts-block {display: none!important;}
+}
+
+@media only screen and (max-width: 1000px) {
+    .numbered-blocks .img-container {width: calc(100% - 356px)}
+    .numbered-blocks .text-container {width: 350px}
+}
+@media only screen and (max-width: 880px) {
+    .numbered-blocks .img-container img {width: 100%; height: auto; left: 0; top: 0; transform: inherit}
+    .slider-company .item {height: auto}
+    .numbered-blocks .text {max-height: inherit}
+    .numbered-blocks .text-container {justify-content: normal}
+    .numbered-blocks .title {margin-bottom: 25px}
+    .burger {margin-left: 35px}
+    header .phone {left: 15%}
+    .title-with-logo {padding-left: 10px}
+    .title-with-logo:before {margin: 4px 15px 0 0; width: 35px; height: 35px}
+    .news-and-stock .blue-list, .news-and-stock .column-30 .btn {margin-left: 60px}
+}
+@media only screen and (max-width: 767px) {
+    .numbered-blocks .img-container {display: none}
+    header .central-content {padding: 0 10px}
+    .central-content {padding: 0 20px}
+    .block-slider-main, header .phone, .search, .line-prompt span, .line-prompt .text, .title-two-line span, .news .news-img, .news hr, .block-with-circle .bg-white, footer .column-20 {display: none!important;}
+    .line-prompt, .line-prompt form, .banner-for-mobile {display: block!important;}
+    header {padding-bottom: 10px}
+    .line-prompt {width: calc(100% - 40px); right: 0; bottom: 20px; margin: 0 auto}
+    .line-prompt form {font-size: 0}
+    .line-prompt form input[type='text'] {width: calc(100% - 103.7px); border-left: 0}
+    .header-bottom-line {padding: 5px 0 70px 0}
+    .header-bottom-line:after {position: absolute; bottom: 0}
+    .burger, .personal-area, .basket {margin-left: 20px}
+    .authorized .personal-area, .authorized .messages-personal, .authorized .basket {margin-left: 15px}
+    .title-two-line {margin-bottom: 25px}
+    .news .item, .numbered-blocks .text-container {width: 100%; padding: 0}
+    .right-block-circle {padding: 0 10px}
+    .news .column-main {margin-bottom: 25px}
+    .news .text {padding-left: 25px}
+    .news-and-stock .column-20 .btn {margin-left: 15px}
+}
+
+@media only screen and (max-width: 615px) {
+    .slider-company {padding-left: 125px; margin: 0}
+    .close-menu {top: 9px}
+    .header-mobile-menu {padding: 25px 0}
+    .header-mobile-menu .logo img {margin: 0}
+    .header-bottom-line .column-40 {width: 100%}
+    .news-and-stock .column-20, .fix-header .bvi-panel-open, .fix-header .personal-area, .fix-header .basket, .fix-header .messages-personal{display: none!important;}
+    .block-with-circle, .right-block-circle.block-side-title {min-height: 415px}
+    .header-bottom-line {padding-bottom: 115px}
+    .language {margin-right: 20px}
+    .header-bottom-line .column-main.no-indent {padding-bottom: 5px; border-bottom: 1px solid rgba(0,0,0,0.54)}
+    .header-bottom-line .column-40 {position: absolute; top: 47px}
+    header .logo img {margin: 0 0 0 21px}
+    header .right-mobile {right: 15px}
+    .burger {position: absolute; top: -40px; right: 10px}
+    .fix-header .column-main.no-indent {padding: 0; border: none}
+    .line-prompt {width: calc(100% - 20px)}
+}
+
+@media only screen and (max-width: 550px) {
+    .circle, .circle.circle-right {right: 0; left: 0; top: 50px; margin: 0 auto}
+    .news-and-stock .blue-list {-webkit-column-count: 1; -moz-column-count: 1; column-count: 1}
+    .blue-list {margin-bottom: 0}
+    footer .social-networks, footer .phone, footer .logo {margin-bottom: 15px}
+}
+
+@media only screen and (max-width: 420px) {
+    .slider-company {padding-left: 70px}
+    .circle {width: 350px; height: 350px}
+    .header-mobile-menu .central-content {max-width: 280px}
+    header .menu a {max-width: 280px; font-size: 14px; padding: 10px 0}
+    .right-block-circle.block-side-title {padding-left: 20px}
+    #map-main {height: 300px}
+}
+
+@media only screen and (max-width: 380px) {
+    .slick-dots li button {margin: 0 6px}
+    .hidden-mobile {display: none}
+    .circle {width: 300px; height: 300px}
+    .left-side-title b {line-height: 30px; position: relative; left: 6px}
+    .slider-company {padding-left: 50px}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
