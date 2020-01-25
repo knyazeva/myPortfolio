@@ -1,5 +1,5 @@
 # Links to my works:
-### Sites with jquery:
+### Sites (jQuery):
 - [Beauty school](http://cx29037.tmweb.ru/schoolBeauty/)
 - [Showroom collection of natural stones](http://cx29037.tmweb.ru/charmeStone/)
 - [Sommelier school](http://cx29037.tmweb.ru/millezim/)
@@ -10,3 +10,5 @@
 - [Running marathon](http://cx29037.tmweb.ru/elton/)
 - [ZSD festival](http://cx29037.tmweb.ru/veloProject/)
 
+### SPA (React + Redux):
+- [My social network](http://cx29037.tmweb.ru/socialNetwork)
