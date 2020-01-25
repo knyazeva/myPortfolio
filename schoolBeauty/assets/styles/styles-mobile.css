@@ -1,0 +1,381 @@
+@media only screen and (max-width: 1366px) {
+    .how-this-work .item {margin-bottom: 25px}
+    .table-td-near tr td {padding: 5px}
+    .discount-price .text-1 {font-size: 29px}
+    .discount-price > .item:first-child {width: 60%}
+    .discount-price > .item:last-child {width: 40%}
+    .central-content {max-width: 960px}
+    header .menu a {margin-right: 19px}
+    header .header-call, header .header-search {margin-left: 28px}
+    .menu-faculties .item {padding: 0 15px!important;}
+    .menu-faculties .item:first-child {margin-left: -15px!important;}
+    .menu-faculties .item:last-child {margin-right: -15px!important;}
+    .banner-with-search .central-content {max-width: 830px}
+    .card-version-18 .column-25 {width: 33.3%}
+    .card .column-20 {width: 25%}
+    .card .column-16 {width: 20%}
+    .blocks-left-right .item:nth-child(odd) .item-text {padding-right: 200px}
+    .blocks-left-right .item:nth-child(even) .item-text {padding-left: 200px}
+    .footer-menu {width: 60%}
+    .video-block {max-width: 700px}
+    .max-960px {max-width: 820px}
+    .mobile-100-percent .max-500px {max-width: 380px}
+    .list-with-icon .item {padding: 0 15px}
+    .card-version-13 > .item {width: 330px}
+    .card-version-13 .item-start {padding: 20px 10px}
+    .card-version-13 > .item:nth-child(3) .item-start {padding: 20px 10px 25px 25px}
+    .card-version-13 > .item:nth-child(2) .item-start {padding: 20px 25px 25px 10px}
+    .form-standard-2 select {max-width: 480px}
+}
+
+@media only screen and (max-width: 1270px) {
+    .slider-with-arrow2.slider .slick-arrow.slick-next {right: 25px!important;}
+    .slider-with-arrow2.slider .slick-arrow.slick-prev {left: 25px!important;}
+}
+
+@media only screen and (max-width: 1012px) {
+    .achieve-results .item {margin-bottom: 30px}
+    .achieve-results {padding-top: 300px; max-width: 488px}
+    .various-forms .item-left, .various-forms .item-right {width: 100%; min-height: inherit}
+    .various-forms > .item .item-left {display: none}
+    .various-forms > .item:first-child .item-left {display: block}
+    .various-forms > .item:nth-child(even) .item-left, .various-forms > .item:nth-child(odd) .item-right {top: 0}
+    .order-call-form .input-phone {width: 300px}
+    .card-version-17 {max-width: inherit}
+    .fix-discount.active .central-content {padding-right: 40px}
+    .fix-constructor .mobile-constructor {position: fixed; width: 100%; top: 0; left: 0; z-index: 6}
+    .fix-constructor .main-content {margin-top: 36px}
+
+    .menu-mobile .btn-constructor.active:nth-child(2) {display: none}
+    .hidden-mobile {display: none; margin-bottom: 10px}
+    .btn-mobile {display: inline-block}
+    .success:before {right: 10px; margin: 0 auto}
+    .success {padding: 40px 10px 10px 10px; text-align: center}
+    .discount-price > .item {width: 100%!important;}
+    header .phone-with-icon {border-bottom: 1px dashed; font-size: 14px}
+    header .btn-search {background: url("../images/search2.svg") center no-repeat; height: 23px; border-radius: 0}
+    header .header-call, header .header-search {margin-left: 12px}
+    header {position: relative; z-index: 6}
+    header.version-2 .header-logo {padding-right: 10px}
+    header.version-2 .choose-city {margin: 0; width: 100%}
+    header.version-2 .menu-faculties .item {border-top: 0}
+    header.version-2 .choose-city .hidden {top: 0}
+
+    .form-standard-2 > .item {display: block}
+    .form-standard-2 select {max-width: 100%; margin-bottom: 10px}
+    .form-standard-2 .btn {margin: 0}
+    .table-constructor1 tr {display: inline-block; vertical-align: top; width: 50%}
+    .table-constructor1 tr td {display: block; font-size: 17px}
+    .table-constructor1 tr td:first-child {text-align: center; height: 60px; line-height: 17px; display: flex; align-items: center; justify-content: center}
+    .breadcrumb.ver-2 {display: block; text-align: center; margin: 5px 0}
+    .breadcrumb.ver-2 + .section {padding-bottom: 0!important;}
+
+    .central-content {padding: 0 25px; max-width: inherit}
+    .info-on-map {left: 50px}
+    .header-top, .header-bottom, .header-logo .part2, .header-middle .btn-constructor, header .order-call, header .phone-with-icon:before, .footer-menu .flex-between-top, .breadcrumb, .header-middle .header-address {display: none}
+    .burger {display: block}
+    .header-logo .part1 {max-height: 40px}
+
+    .header-search form {top: 68px; right: -105vw; position: fixed; overflow: visible!important; width: 100%!important; background: #fafafa; padding: 25px;}
+    .header-search .btn {top: 25px; right: 25px; width: 44px; padding: 0; color: transparent!important;}
+    .search-active header {overflow: visible}
+    .search-active .header-search form {right: 0}
+    .search-active .header-search input[type='text'] {padding-right: 60px}
+    .search-active, .menu-active {position: fixed; width: 100%}
+    .search-active .header-call {display: block}
+    .search-active .main-content {position: relative}
+    .search-active .main-content:after {z-index: 5; opacity: 1}
+    .main-content:after {z-index: -1; opacity: 0; content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.8); transition: opacity .5s linear, z-index .5s linear}
+
+    .js-slider1-mobile.slider .slick-list .item-content, .js-slider1-mobile2.slider .slick-list .item-content {margin: 0 10px}
+    .js-slider1-mobile, .js-slider1-mobile2 {margin-left: -25px; width: calc(100% + 50px); margin-bottom: 25px}
+    .js-slider1-mobile .img-container-v img, .js-slider1-mobile2 .img-container-v img {width: auto; height: auto; min-width: 100%; min-height: 100%}
+
+    .js-slider1-mobile3 {margin-bottom: 35px}
+    .js-slider1-mobile3.slider .slick-list .item-content {margin: 0 auto}
+    .js-slider1-mobile3 .img-container-v img {width: auto; height: 100%; min-width: inherit; min-height: inherit}
+
+    .js-slider1-mobile2.slider .item.slick-slide {margin: 0 5px; box-shadow: 0 1px 4px rgba(0,0,0,0.15); text-align: center}
+    .js-slider1-mobile2.slider .slick-list {padding: 0 25%!important}
+
+    footer {text-align: center; position: relative; padding: 25px 0 80px 0}
+    footer .flex-between-top {flex-wrap: wrap}
+    footer .flex-between-top > * {width: 100%}
+    .footer-bottom.flex-between-bottom {flex-direction: column-reverse; flex-wrap: wrap}
+    .footer-contacts, .footer-menu {text-align: center; width: 100%; margin: 10px 0}
+    .payment-method {margin: 10px auto}
+    .payment-method img {margin: 0 10px}
+    .copyright {position: absolute; bottom: 0; left: 0; right: 0; margin: 10px 0 25px 0; padding-top: 25px}
+    .copyright:after {width: auto; left: 25px; right: 25px; top: 0; margin: 0; position: absolute}
+
+    .menu-active .fix-discount {z-index: 0}
+    .menu-active .fix-discount + header {margin-top: 0}
+    .menu-active .burger span {background: none}
+    .menu-active .burger span:before {top: 0; transform: rotate(45deg); -webkit-transform: rotate(45deg); transition-property: top, transform; -webkit-transition-property: top, -webkit-transform; transition-delay: 0s, 0.3s;}
+    .menu-active .burger span:after {bottom: 0; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transition-property: bottom, transform; -webkit-transition-property: bottom, -webkit-transform; transition-delay: 0s, 0.3s;}
+
+    .menu-mobile {display: block; position: fixed; top: 68px; right: -105vw; width: 100%; height: calc(100% - 68px); overflow: hidden; overflow-y: auto; background: white; z-index: 6; transition: right .5s linear}
+    .menu-active .menu-mobile {right: 0}
+    .menu-active .menu-faculties {display: block; height: auto; padding: 0}
+    .choose-city {background: #b9c7cf; margin: 0!important; text-align: center; padding: 17px 10px!important;}
+    .choose-city .border-dashed:before {display: none}
+    .btn-constructor, .btn-constructor:hover {height: 56px; width: 100%!important; padding: 0 20px 0 65px; background-position: 25px center}
+    .btn-constructor .num-product {left: 22px; top: 8px}
+    .menu-faculties .item {padding: 14px 25px!important; border-bottom: 1px solid #b9c7cf!important; font-weight: bold; font-family: inherit; position: relative}
+    .menu-faculties .item:after {content: "\f107"; font-family: 'FontAwesome'; position: absolute; right: 25px; top: 13px; font-size: 20px; color: #7e7c7d; transform: rotate(-90deg)}
+    .menu-faculties .item:hover .border-top {width: 0}
+    .menu-mobile .menu-gray {padding: 25px; background: #e4ebef; column-count: 2; -moz-column-count: 2; -webkit-column-count: 2}
+    .menu-mobile .menu-gray a {display: block; font-size: 14px; line-height: 16px; page-break-inside: avoid; margin-bottom: 15px; text-decoration: underline; margin-right: 10px}
+    .choose-city .hidden {position: relative; margin-top: 20px; top: 0; text-align: left; padding: 20px 0}
+    .choose-city .hidden .item {margin: 0 0 0 30px}
+    .choose-city .hidden .letter {left: -20px}
+
+    .menu-faculties .item:first-child {margin-left: 0!important;}
+    .menu-faculties .item:last-child {margin-right: 0!important;}
+}
+
+@media only screen and (max-width: 970px) {
+    .info-contacts .info-left {margin-left: 85px; width: 37%}
+    .card-version-10.card .column-20 {width: 33%}
+    .card-version-6 .info2 .btn {padding: 14px 25px}
+    .card-version-6 .info2 b {font-size: 24px}
+    .slider.slider-1 .slick-list {margin-left: -25px; width: calc(100% + 50px); padding: 0 30%!important}
+    .slider.slider-1 .max-960px {max-width: 100%;}
+    .slider.slider-1 .item {margin: 0 10px}
+    .slider.slider-1 .column-main > .item {margin: 0}
+    .reviews-video .video-block, .reviews-block:after {display: none}
+    .reviews-video > .item, .info-teacher {width: 100%}
+    .mobile-100-percent > .item {padding: 0 17px}
+    .slider.slider-1 .teacher-block.max-960px {max-width: 370px;}
+    .img-teacher {height: 345px; margin: 0 auto; width: 100%}
+    .teacher-block {height: auto; display: flex; flex-wrap: wrap; flex-direction: column-reverse}
+}
+
+
+@media only screen and (max-width: 900px) {
+    .js-slider1-mobile.card-version-1.slider .slick-list {padding: 0 80px!important;}
+    .margin-last > *:last-child, .list-item-white {margin-bottom: 30px}
+    .card-version-18 .column-25 {width: 50%}
+    .quote i {display: block; min-height: inherit; overflow: hidden}
+    .teacher-block .quote i {height: 325px}
+    .teacher-block .quote:before, .teacher-block .quote:after {display: none}
+    .table-1 td {font-size: 15px!important; padding: 10px 15px}
+    .list-href a {width: 100%; padding: 0!important;}
+    .how-this-work {background: none; padding: 0 0 60px 0; min-height: inherit}
+    .photo-with-text2 .item-text {width: 100%}
+    .list-with-icon.ver-2 .item  {width: 100%; padding: 0 0 0 70px}
+    .info-bottom-line .info > div:last-child, .info-bottom-line .info > div:last-child * {margin-bottom: 0!important;}
+    .info-bottom-line .info {margin-bottom: 50px}
+    .info-bottom-line .info-bottom {position: relative; left: 0; transform: none}
+    .info-bottom-line {padding-bottom: 0; box-sizing: inherit}
+    .photo-with-text .text-container {padding-left: 0}
+    .card-version-16 .item .item-img .time {position: relative; display: inline-block; bottom: 0; left: 50%; transform: translate(-50%,0); top: 15px}
+    .card-version-16 .item:nth-child(even) {display: block}
+    .card-version-16 .item .text-container {max-height: inherit}
+    .card-version-16 .item-img {position: absolute; top: 0; left: 0}
+    .card-version-16 .item {height: auto}
+    .hidden-mobile-900 {display: none}
+    .item-check.big.ver2 {max-width: 100%; margin-bottom: 35px}
+    .card-version-8 .text-container {width: 100%; max-height: inherit}
+    .card-version-8 .item-content * {text-align: center!important;}
+    .card-version-8 .img-container-v {display: block; margin: 0 auto 20px auto}
+    .item-price {margin: 10px 0 0 30px}
+    .width-mobile-100, .width-mobile-50 {display: block}
+    .width-mobile-100 > * {width: 100%!important;}
+    .width-mobile-100 > .item {margin-bottom: 25px!important;}
+    .width-mobile-50 > * {width: 49%;  margin-bottom: 20px; display: inline-block;vertical-align: top}
+    .width-mobile-50 > .item:nth-child(odd) {padding-right: 15px}
+    .full-width-mobile .hidden-container {max-height: inherit!important;}
+    .full-width-mobile .show {display: none!important;}
+    .full-width-mobile {margin-left: -25px; width: calc(100% + 50px)}
+    .content-diploma img {display: block; margin: 0 auto 20px auto}
+    .content-diploma {max-width: 100%}
+    .img-diploma {left: 0; top: 0; right: 0; text-align: center; transform: none; margin-top: -270px}
+    .diploma {margin-top: 300px}
+    .check-list .item {margin: 0 10px 10px 10px}
+    .card-version-9 > div {max-width: 100%; margin-bottom: 35px}
+    .flex-inline {display: block}
+    .show-more.active .btn-with-bg .show {color: white!important;}
+    .bg-under-show-more .item span {width: 100%}
+    .bg-under-show-more .item {width: calc(100% - 20px)}
+    .bg-under-show-more .item:nth-child(2) {width: calc(100% - 80px)}
+    .card-version-8 .num * {font-size: 25px; display: inline-block; line-height: 60px; height: 60px; text-align: left}
+    .card-version-8 .num {width: 100%; padding: 0 18px; position: relative; cursor: pointer}
+    .card-version-8 .num:after {content: "\f107"; font-family: 'FontAwesome'; font-size: 27px; color: #6b5905; position: absolute; right: 18px; top: 50%; margin-top: -11px }
+    .card-version-8 .item-content {display: none; width: 100%; height: auto; padding: 20px}
+    .card-version-8 .item.active .item-content {display: block}
+    .card-version-8 .item.active .num:after {transform: rotate(180deg)}
+    .card-version-8 .text-container {padding-left: 10px}
+    .card-version-7 .btn {width: auto}
+    .card-version-7 > .item {width: 100%}
+    .card-version-5 .item-start {display: none}
+    .card-version-5 .item-middle {width: calc(100% - 240px)}
+    .info-contacts, .info-contacts .info-left {margin-left: 0 }
+    .block-contacts .person {display: none}
+    .info-on-map .close-map {display: inline-block; margin-top: 35px}
+    .info-on-map .title {text-align: center}
+    .info-on-map {left: -25px; width: calc(100% + 50px); max-width: inherit; min-height: inherit; padding: 50px 25px; position: relative; top: 0; border-radius: 0; text-align: center}
+    .flex-between-center.mobile-100-percent {display: block}
+    .flex-between-center.mobile-100-percent > .item {display: block; margin: 0 auto 70px auto; max-width: inherit; padding: 0}
+    .flex-between-center.mobile-100-percent > .item:last-child {margin-bottom: 0}
+    .max-400px {max-width: 100%}
+    .blocks-left-right .item:nth-child(even) .item-text {padding-left: 0}
+    .blocks-left-right .item:nth-child(odd) .item-text {padding-right: 0}
+    .card .column-16 {width: 25%}
+    .bg-img-ver-1 {min-height: 1050px}
+    .list-with-icon {flex-wrap: wrap}
+    .list-with-icon .item {width: 50%; margin-bottom: 35px}
+    .widgets-list {display: none}
+    .card-version-6 .img-translucent-backing .img-container-v img {width: 100%; height: auto}
+    .reverse-mobile {display: flex; flex-wrap: wrap; flex-direction: column-reverse}
+    .reverse-mobile > .item {margin-bottom: 0!important;}
+}
+
+@media only screen and (max-width: 700px) {
+    .various-forms .item-right img {display: none}
+    .various-forms > .item:nth-child(1) .item-right {padding: 30px 0}
+    .various-forms > .item {display: block}
+    .card-version-6 .info2 .btn {padding: 14px 40px}
+    .substrate-version-1 {padding: 20px}
+    .card-version-3 .item-content {margin: 0 5px}
+    .slider.slider-with-arrow .slick-list {margin-left: -25px; width: calc(100% + 50px); padding: 0 30px!important}
+    .info-contacts .info-left {margin: 0 0 30px 0}
+    .info-contacts.flex-around-top {flex-wrap: wrap}
+    .info-contacts > div {width: 100%!important;}
+    .list-style-1 .item {width: 100%}
+    .blocks-left-right .item {margin-bottom: 40px}
+    .card .column-16 {width: 33.3%}
+    .slider.slider-1 .slick-list {padding: 0 22%!important;}
+}
+
+@media only screen and (max-width: 600px) {
+    .js-slider1-mobile.card-version-1.slider .slick-list {padding: 0 140px!important;}
+    .collage-1 .img-container2 img {max-width: 100%}
+    .collage-3 .img-container2 img, .collage-2 .img-container2 img {max-height: 100%}
+    .collage-photo .img-container2 {height: 150px}
+    .collage-3 .item-photo:nth-child(2) .img-container2, .collage-3 .item-photo:nth-child(3) .img-container2 {height: 73px}
+    .mobile-select {position: relative}
+    .mobile-select-title {display: block}
+    .mobile-select-list {display: none; position: absolute; top: 42px; left: 0; z-index: 1; width: 100%; background: white; border: 1px solid #cad2d7; padding: 10px; border-radius: 3px}
+    .mobile-select-list a {display: block; border: none!important; margin: 0 0 10px 0}
+    .mobile-select-list a.active {display: none}
+    .card-version-18 .column-25 {width: 100%}
+    .card-version-18 .height-limit {height: auto}
+    .bg-img-ver-1 {min-height: 950px}
+    .teacher-block .quote i {height: 300px}
+    .complex-title {margin-bottom: 40px}
+    .icon-orientation {display: block}
+    .video-block {margin-left: -25px; width: calc(100% + 50px)}
+    .slider.slider-1 .teacher-block.max-960px {max-width: 100%}
+    .img-teacher {height: 320px}
+    .various-forms .slick-dots {position: absolute; left: 0; right: 0; margin-top: -23px}
+    .various-forms .slider {display: block; width: 100%; height: auto}
+    .various-forms .item-right .text {max-height: inherit}
+    .various-forms .slider.slider-1 .slick-list {margin: 0; width: 100%; padding: 0!important;}
+    .various-forms .slider.slider-1 .item {margin: 0}
+    .various-forms > .item .item-left {display: block; overflow: hidden}
+    .card-version-5 .btn {min-width: 240px}
+    .table-1 td b {display: inline-block; margin-right: 15px; font-size: 12px}
+    .table-1 thead {display: none}
+    .table-1 tr td:first-child {font-weight: bold}
+    .table-1 td {border: none; padding: 3px 0}
+    .achieve-results .item .column-level {height: auto!important;}
+    .achieve-results {max-width: 325px; padding-top: 280px; background-size: 200px!important;}
+    .card-version-5 .text-container {height: auto}
+    .card-version-17 .item-content {margin: 0 auto!important;}
+    .card-version-5 .item-end > * {margin-bottom: 10px}
+    .card-version-5 .item-end > *:last-child {margin-bottom: 0}
+    .margin-0 span {display: block; margin: 0}
+    .with-arrow .item:first-child {padding-bottom: 35px}
+    .bg-arrow:after {content: ""; position: absolute; top: -10px; left: 0; width: 100%; height: 10px; background: white}
+    .bg-arrow:before {border: 115px solid transparent; border-top: 0; border-bottom: 15px solid white; transform: none; top: -25px; left: 50%; margin-left: -115px}
+    .card-version-7 .item-end .flex-center-vertical > * {margin-bottom: 15px}
+    .basket-list .item-right .remove {position: relative; bottom: 0; margin-top: 10px; display: inline-block}
+    .basket-list .item-text {width: 100%}
+    .basket-list .img-container-v {display: none}
+    .basket-list .item-right, .basket-list .item-content {width: 100%; margin-bottom: 10px}
+    .discount-price b {font-size: 15px}
+    .discount-price .text-1 {font-size: 24px}
+    .table-td-near tr td {padding: 5px}
+    .table-td-near tr td:first-child, .table-td-near tr td:first-child * {text-align: left}
+    .discounts-block .item, .discounts-block {width: 100%; margin-bottom: 10px}
+    .card-version-15 img {max-height: 50px; height: auto; max-width: calc(100% - 80px)}
+    .card-version-15 .num {right: 37px}
+    .card-version-7 .item-start, .card-version-7 .item-end {padding: 20px}
+    .js-slider1-mobile.slider .slick-list, .js-slider1-mobile2.slider .slick-list {padding: 0 30px!important}
+    .img-translucent-backing2 .info {padding-top: 50px}
+    .btn2.add-in-constructor:before {background-size: 20px; left: 13px; top: 15px}
+    .btn2.add-in-constructor {padding: 14px 14px 14px 45px; font-size: 16px}
+    .calendar .td {padding: 15px 10px; display: block; border-top: none!important;}
+    .card-version-11 .item {border-right: 0; border-bottom: 2px solid #e9e9e9}
+    .card-version-11 {display: block; padding: 22px 30px}
+    .tabs-block .item {padding: 0!important; text-align: center!important; display: inline-flex; align-items: center; justify-content: center; height: 60px; line-height: 18px}
+    .icon-small.ver-4 {margin: 0 15px 10px -5px!important}
+    .reviews-block .video-block span {position: relative; margin-left: 20px}
+    .reviews-block .video-block span:after {content: "\f01d"; font-family: 'FontAwesome'; position: absolute; left: -20px; top: 0 }
+    .reviews-block .video-block {margin: 10px 0 0 0; width: 100%}
+    .input-2-per-line .align-left, .input-2-per-line .align-right {max-width: 100%; text-align: left; margin-bottom: 10px}
+    .input-2-per-line {display: block}
+    .input-2-per-line .item, .two-price-line .item {width: 100%}
+    .img-bottom img {width: 130%}
+    .title-reviews {width: 100%; margin: 0}
+    .img-reviews {margin-bottom: 20px}
+    .reviews-video {height: auto; text-align: center}
+    .item-banner .btn {bottom: 10px; left: 30px; right: 30px}
+    .filter-checkbox {text-align: left}
+    .filter-checkbox .item {margin: 0 25px 15px 0}
+    .mobile-block {display: block!important;}
+    .desctop-block {display: none!important;}
+    .form-standard {padding: 30px 20px}
+    .info-on-img {right: 10px}
+    .card-version-5 .img-container-h {border-radius: 3px 3px 0 0; display: block}
+    .card-version-5 .item-end {border-radius: 0 0 3px 3px; padding: 20px 10px}
+    .item-start, .item-middle, .item-end {display: block!important; width: 100%!important;; height: auto}
+    .card-version-5 .item {height: auto}
+    table td {display: block; width: 100%; padding-bottom: 20px}
+    img[align='left'], img[align='right'], .img-fl-left, .img-fl-right {margin: 0 auto 50px auto; display: block; float: none}
+    .slider-variable-width .item {height: 430px}
+    .slider-variable-width .item img {width: 100%; height: auto; position: relative; top: 50%; transform: translate(0, -50%)}
+    .slider-variable-width.slider-faculty .item img {width: auto; height: 100%; position: relative; top: 50%; transform: translate(-50%, -50%)}
+    .card-version-2 .hidden-container {max-height: 468px}
+    .card-version-2 .img-container-v {height: 110px}
+    .card-version-2 .text-container {height: 82px}
+    .blocks-left-right .item {margin-bottom: 40px}
+    .card .column-16 {width: 50%}
+    .blocks-left-right .item .item-img {float: none!important; margin: 0 auto!important;}
+    .blocks-left-right .item .item-text {margin: 0!important;}
+    .blocks-left-right .item:nth-child(even) {text-align: left}
+    body input[type='text'] {font-size: 16px}
+    .js-slider1-mobile2.slider .slick-list {padding: 0 22%!important}
+    .block-underlined-title .title {padding: 10px; min-width: 230px}
+    .slider-with-arrow2.slider .slick-arrow {width: 40px; height: 40px}
+}
+
+@media only screen and (max-width: 520px) {
+    .js-slider1-mobile.card-version-1.slider .slick-list {padding: 0 80px!important;}
+    .btn-constructor b, .btn-constructor div {max-width: 100%}
+    .slider.slider-1 .slick-list {padding: 0 30px!important}
+    .slider.slider-1.full-width-mobile-slider .slick-list {padding: 0!important}
+}
+
+@media only screen and (max-width: 375px) {
+    .card-version-6 .info2 b {font-size: 20px}
+    .border-dashed {display: inline; border-bottom: 1px dashed}
+    .border-dashed:before {display: none!important;}
+    .js-slider1-mobile2.slider .slick-list {padding: 0 30px!important}
+    .img-teacher {height: 300px}
+    .teacher-block .quote i {height: 284px}
+    .achieve-results .column-level {margin: 5px 0}
+    .achieve-results {background: none!important; padding-top: 0}
+    .achieve-results .item {width: 100%; margin-right: 0}
+}
+
+@media only screen and (max-width: 350px) {
+    .js-slider1-mobile.card-version-1.slider .slick-list {padding: 0 30px!important;}
+    .card-version-5 .img-container-h img {width: auto; height: auto; min-height: 100%}
+    .card-version-6 .img-translucent-backing .img-container-v img {width: auto; height: 100%}
+}
+
+
+
+

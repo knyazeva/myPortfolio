@@ -1,0 +1,208 @@
+@font-face {font-family: 'OpenSans-Regular'; src: url('../fontlocation/OpenSans-Regular.woff') format("woff"); font-display: swap;}
+@font-face {font-family: 'OpenSans-Bold'; src: url('../fontlocation/OpenSans-Bold.woff') format("woff"); font-display: swap;}
+@font-face {font-family: 'OpenSans-Italic'; src: url('../fontlocation/OpenSans-Italic.woff') format("woff"); font-display: swap;}
+@font-face {font-family: 'tenorsans'; src: url('../fontlocation/tenorsans.woff') format("woff"); font-display: swap;}
+
+
+/* Размер и стиль шрифтов (соответствие макету 'Инструкция') */
+* {font-family: 'OpenSans-Regular'; font-size: 15px; color: #433044; line-height: 21px}
+body {background: #eeeae0}
+b {font-family: 'OpenSans-Bold'!important;}
+i {font-family: 'OpenSans-Italic'!important}
+
+h1, .text-1, h1 .text-1, .complex-title .text-1 {font-size: 40px; line-height: 44px; font-family: 'tenorsans'; text-align: center; margin-bottom: 35px}
+h2, .text-4 {font-size: 32px; line-height: 36px; font-family: 'tenorsans'; text-align: center; margin-bottom: 35px}
+h3, .text-5 {font-size: 26px; line-height: 30px; font-family: 'OpenSans-Bold'; text-align: center; margin-bottom: 17px}
+h4, .text-6 {font-size: 20px; line-height: 21px; font-family: 'OpenSans-Bold'!important; margin-bottom: 10px}
+h5, .text-2 {font-size: 24px; line-height: 28px; font-family: 'OpenSans-Bold'; margin-bottom: 13px}
+.text-3 {font-size: 18px; line-height: 24px; margin-bottom: 7px}
+.text-8 {font-size: 20px; line-height: 23px; font-family: 'OpenSans-Bold'; margin-bottom: 5px}
+.text-9 {font-size: 14px; line-height: 18px}
+.text-13 {font-size: 46px; line-height: 50px; font-family: 'OpenSans-Bold'}
+.text-14 {font-size: 11px; line-height: 15px}
+
+/* Шрифты, которых нет в инструкции, но есть в макетах */
+.text-15 {font-size: 15px; line-height: 21px}
+.text-42 {font-size: 42px; line-height: 45px}
+.text-28, .text-28 * {font-size: 24px; line-height: 30px; font-family: 'tenorsans'}
+.text-30 {font-size: 30px; line-height: 33px}
+.text-1 {font-family: 'OpenSans-Bold'; font-size: 30px}
+.text-28.text-individual-2, .form-standard .text-5 {font-family: 'OpenSans-Bold'}
+.title.text-2 {font-size: 18px}
+.card-version-6 .text-5 {font-size: 23px}
+
+
+header .header-top {background: #554156; padding: 2px 0}
+header .header-top *, header .header-middle * {color: white}
+header .menu a {text-decoration: none; font-size: 13px}
+header .header-middle, .header-search form {background: #433044}
+header .header-bottom {background: white}
+header .header-address .icon-small:before {color: #ee6364}
+header .btn-constructor * {color: #433044}
+.header-logo .part1, .header-logo .part2 {vertical-align: middle}
+.header-logo .part2 {height: 22px; margin-left: 5px}
+.btn-search {background: #f56565 url("../images/search1.svg") center no-repeat; background-size: 20px;}
+.phone-with-icon:before, .choose-city .hidden .city.active, .choose-city .hidden .city:hover {color: #f56565}
+.btn-constructor {background: #f9c665 url("../images/icon-constructor.svg") 11px center no-repeat; width: 220px}
+.btn-constructor:hover {background: #fcb84a url("../images/icon-constructor.svg") 11px center no-repeat}
+.choose-city {margin-right: 0; margin-left: 17px}
+.choose-city .hidden {background: #271a29}
+.choose-city .hidden .letter {color: #9aa2a7}
+.choose-city .hidden .city {font-size: 13px}
+
+.menu-faculties-parent {position: relative}
+.menu-faculties {height: 50px}
+.menu-faculties .item {padding: 0 35px; font-size: 14px; line-height: 18px}
+.menu-faculties .item:hover {background: #f2f1f2}
+
+.banner-with-search {height: 612px}
+.banner-with-search .central-content {padding-top: 90px}
+
+.footer-menu {width: 37%}
+.footer-bottom .footer-menu {width: 50%}
+.footer-menu .flex-between-top {margin-bottom: 18px}
+.copyright {margin: 8px 0 22px 0}
+footer * {font-size: 14px}
+.burger span:before, .burger span:after, .burger span {background: white}
+.check-list.ver-2 {margin-bottom: 15px}
+.check-list.ver-2 .item {width: 100%; margin: 0 0 7px 0; font-size: 14px; padding-left: 30px}
+.list-checkbox.active {background: #fcb84a}
+.card-version-13.card .item .title {font-size: 18px}
+
+.block-underlined-title .title {font-size: 24px; font-family: 'OpenSans-Bold'}
+.main-content {min-height: calc(100vh - 347px)}
+.img-translucent-backing2 .info {padding-top: 100px}
+.list-item-white a:hover {border: 1px solid #d7cdb7}
+
+
+
+/* Хлебные крошки */
+.breadcrumb .item span, .breadcrumb .item a:after {color: #9c8d9d}
+
+/* Цвет кнопок */
+.btn {background: #f56565; border-radius: 25px; font-size: 16px; min-width: 240px; text-align: center!important;}
+.btn:hover {background: #d54a4a}
+.btn.btn-more, .btn2 {background: none; border: 2px solid; color: #f56565!important;}
+.btn.btn-more:hover, .btn2:hover {background: #d54a4a;  border: 2px solid #d54a4a; color: white!important;}
+.btn2.add-in-constructor {position: relative; padding-left: 80px}
+.btn2.add-in-constructor:before {content: ""; position: absolute; left: 32px; top: 11px; width: 26px; height: 26px; background: url("../images/puzzle.png") no-repeat}
+.btn2.add-in-constructor:hover:before {background-position: 0 -26px}
+
+/* Цвет фона */
+.bg-individual-1 {background: linear-gradient(-70deg, #433044, #6d3b5d)}
+.bg-individual-1 *, .bg-individual-7 * {color: white}
+.bg-individual-2 {background: #f56565}
+.bg-individual-3 {background: white}
+.bg-individual-4 {background: #f4f4f4}
+.bg-individual-5 {background: #433044}
+.bg-individual-6  {background: #f9c665}
+.bg-individual-7  {background: #433044}
+.bg-individual-8  {background: #e6e6e6}
+.bg-individual-9  {background: #271a29}
+.bg-individual-10  {background: #eeeae0}
+.bg-individual-11  {background: #988c99}
+.bg-individual-12  {background: #7b487e}
+.bg-individual-13  {background: #e7e0e7}
+.bg-individual-14  {background: #cfc6af}
+.bg-individual-15  {background: #282426}
+.bg-individual-16  {background: #e7e0e7}
+
+.bg-individual-1 .breadcrumb span, .bg-individual-1 .breadcrumb a:after, .bg-individual-7 .breadcrumb span, .bg-individual-7 .breadcrumb a:after, .bg-individual-9, .bg-individual-9 *, .bg-individual-5 *, .bg-individual-5, .bg-individual-12, .bg-individual-12 *, .bg-individual-11, .bg-individual-11 *, .bg-individual-15, .bg-individual-15 *, .bg-individual-2, .bg-individual-2 * {color: white}
+.bg-individual-1 .card *, .bg-individual-7 .card *, .icon-small.ver-2:before, .bg-individual-3, .bg-individual-3 *, .bg-individual-8, .bg-individual-8 *, .bg-individual-4 *, .bg-individual-4, .bg-individual-10, .bg-individual-10 * {color: #433044}
+
+    /* Цвет текста */
+.text-individual-1, .list-style-1 li:before {color: #f9c665}
+.list-style-1 li:before, .two-price-line .item {border: 2px solid #f9c665}
+.remove {color: #9e9e9e}
+.card-version-8 .num * {color: #6b5905}
+.text-individual-2 {color: #f56565!important;}
+.text-individual-3 {color: #959595!important;}
+.text-individual-4 {color: #009c98!important;}
+.text-individual-5 {color: #6b5905!important;}
+
+/* Цвет границ */
+.border-version-1 {border: 2px solid #f56565}
+.border-version-2 td {border: 2px solid #f9c665}
+.border-version-3 {border: 2px solid #c2cacf}
+.border-version-4 {border: 2px solid #282426}
+.border-version-5, .btn-conf:hover {border: 2px solid #91a5b0}
+
+/* Цвет подчеркивания */
+.tabs-search a.active, .tabs-search a:hover {border-bottom: 2px solid #f56565}
+
+/* Стили в блоке "Контакты" */
+.block-contacts .icon-small:before {background: #6f4e69}
+.info-contacts .info-left b {font-size: 24px}
+
+/* Стили в блоке "Результаты поиска" */
+.title-search {font-size: 32px; line-height: 36px; font-family: 'tenorsans'; margin-bottom: 25px}
+.title-search b {font-size: 32px}
+.tabs-search a {border-bottom: 2px solid #a4a198}
+.tabs-search a span {color: #a4a198}
+
+/* Цвет для элементов в слайдере */
+.slick-dots li.slick-active, .slick-dots li:hover, .mobile-select-title:after  {background: #ff6868}
+.slider .slick-arrow:after {color: #ff9d99}
+.slider .slick-arrow:hover:after, .slider-with-arrow2.slider .slick-arrow:after {color: #ff6868}
+.slick-dots li {background: #d7cdb7}
+
+.slider-faculty.slider .slick-arrow:after {color: #433044}
+.slider-faculty.slider .slick-arrow {background: #f9c665; border: 2px solid white}
+.slider-faculty .item:after {border: 3px solid #f56565}
+.slider-faculty .item:hover:after {display: block}
+
+/* Шрифты */
+.font-version-1, .font-version-2, .font-version-3 {font-family: 'OpenSans-Regular'!important;}
+.font-version-4 {font-family: 'OpenSans-Bold'!important;}
+.list-line > div.active {font-family: 'OpenSans-Bold'; color: #282426;}
+
+/* Календарь */
+.calendar td {border: 1px solid #f56565}
+.calendar .active, .bg-individual-3 .return-to-site:before, .bg-individual-3 ul li:before, .bg-individual-4 ul li:before, .list-style-2 li:before {background: #f56565}
+.calendar .active * {color: white!important;}
+.card-version-12 .show:before, .return-to-site:before {color: #f56565}
+.bg-individual-3 .return-to-site:before {color: #282426}
+ul li:before {background: #433044}
+
+/* Конструктор */
+.discounts-block .item:first-child {background: #f9c665; border: 2px solid #f9c665}
+.discounts-block .item:last-child {border: 2px solid #282426}
+
+
+@media only screen and (max-width: 1366px) {
+    .footer-menu {width: 32%}
+    .footer-bottom .footer-menu {width: 58%}
+}
+
+@media only screen and (max-width: 1012px) {
+    .choose-city .hidden {background: none}
+    .choose-city .hidden .city {color: white}
+    .choose-city {background: #695969}
+    header .phone-with-icon {color: #f56565}
+    .header-search .btn {background: #e14f55 url("../images/search1.svg") center no-repeat; background-size: 21px}
+    h1, .text-1 {font-size: 31px; line-height: 37px}
+    h2, .text-4 {font-size: 28px}
+    .text-42 {font-size: 38px}
+    .mobile-bg-individual-3 {background: #eeeae0}
+    .border-version-2 td {border: 1px solid #f9c665}
+    .footer-bottom .footer-menu {width: 0}
+}
+
+@media only screen and (max-width: 900px) {
+    .btn.btn-more:hover, .btn2:hover {background: none;  border: 2px solid; color: #f56565!important}
+    .btn-with-bg .show {color: #282426!important;}
+    .banner-with-search .central-content {padding-top: 60px}
+}
+
+@media only screen and (max-width: 600px) {
+    h1, .text-1, h1 .text-1 {font-size: 33px; line-height: 38px}
+    .img-translucent-backing2 .info {padding-top: 25px}
+}
+
+@media only screen and (max-width: 500px) {
+    .btn {min-width: inherit}
+}
+@media only screen and (max-width: 370px) {
+    .text-13 {font-size: 33px; line-height: 42px}
+    .text-with-sup sup {font-size: 24px}
+}

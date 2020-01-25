@@ -1,0 +1,671 @@
+/* Баннер с поиском (главная) */
+.banner-with-search {text-align: center; position: relative}
+.banner-with-search .img-container-v {position: absolute; top: 0; left: 0; background: #000; height: 100%}
+.banner-with-search:after {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8)}
+.banner-with-search .central-content {position: relative; width: 100%; height: 100%; max-width: 960px; padding-top: 66px; z-index: 5}
+.banner-with-search * {color: white}
+.form-search {position: relative}
+.form-search .btn-search {background-size: 26px; border-radius: 0 2px 2px 0; width: 62px; height: 62px; position: absolute; right: 0; top: 0}
+.form-search input[type="text"] {height: 62px; font-size: 18px; padding: 0 78px 0 15px}
+
+/* Различные версии карточек */
+.card .item .item-content {line-height: 0}
+.card .item .title.text-9 {font-weight: bold}
+.card .item .title {box-shadow: inset 0 0 0 white, inset 0 -1px 0 black; display: inline}
+.card .item .title:hover {box-shadow: none}
+
+.card-version-1 {text-align: center}
+.card-version-1 .item-content, .card-version-18 .item-content {box-shadow: 0 1px 5px rgba(0,0,0,0.15); border-radius: 3px; overflow: hidden}
+.card-version-1 .img-container-v {height: 160px}
+.card-version-1 .text-container {background: white; padding: 10px 15px; height: 80px; overflow: hidden}
+
+.card-version-2 {text-align: center}
+.card-version-2 .item-content {box-shadow: 0 3px 5px rgba(0,0,0,0.15); border-radius: 3px; overflow: hidden; text-align: left; padding: 10px; background: white}
+.card-version-2 .img-container-v {height: 157px}
+.card-version-2 .text-container {background: white; padding: 5px 0; height: 63px; overflow: hidden; line-height: 18px}
+.card-version-2 .hidden-container {max-height: 528px}
+.card-version-2.active .hidden-container {max-height: inherit}
+
+.card-version-3 .item-content {background: white; border-radius: 5px; border: 2px solid #d3d3d3; padding: 25px 20px; margin: 0 10px}
+.card-version-3 .text-container {height: 200px; overflow: hidden}
+.card-version-3 .img-container-v {height: 70px; margin-bottom: 23px}
+.card-version-3 .item .title {box-shadow: none; display: block; margin-bottom: 2px}
+
+.card-version-4 .img-container {height: 90px; padding: 0 10px}
+.card-version-4.slider .slick-list {padding: 20px 0 15px 0}
+
+.card-version-5 > .item {font-size: 0; height: 200px; margin-bottom: 10px}
+.card-version-5 .item-start {width: 300px}
+.card-version-5 .item-end {width: 240px; padding: 25px 18px}
+.card-version-5 .item-middle {width: calc(100% - 540px)}
+.card-version-5 .img-container-h {height: 200px; border-radius: 3px 0 0 3px}
+.card-version-5 .btn {min-width: inherit}
+.card-version-5 .text-container {height: 165px; overflow: hidden}
+.card-version-5.card .item .item-middle .title {line-height: 23px}
+.card-version-5 span {display: inline-table}
+.item-start, .item-middle, .item-end {display: inline-block; vertical-align: top; font-size: 16px; height: 100%; position: relative}
+.info-on-img {position: absolute; bottom: 10px; left: 10px; right: 35px; background: rgba(255,255,255,0.8); padding: 4px}
+.info-on-img > div {display: inline-block; vertical-align: top; width: 49%; margin-bottom: 5px}
+.item-middle {background: white; padding: 17px; overflow: hidden}
+.card .item .item-middle .title {display: block; box-shadow: none; margin-bottom: 8px}
+.item-end {display: inline-flex; flex-wrap: wrap; align-content: space-evenly; justify-content: center; text-align: center; border-radius: 0 3px 3px 0}
+.item-end b {display: block; width: 100%}
+.item-end .line-through {font-size: 20px}
+.item-end .text-30 {font-size: 28px}
+.stock-label {position: absolute; left: -7px; top: 10px; background: #da2329; height: 20px; line-height: 20px}
+.stock-label:before {content: ""; border: 4px solid transparent; border-top: 4px solid #aa151a; border-right: 4px solid #aa151a; position: absolute; top: 100%; left: 0}
+.stock-label span {position: relative; top: -1px; display: inline-block; padding: 0 10px; color: #e4ebef!important; font-size: 14px; line-height: 20px}
+.stock-label span:before {content: ""; border: 5px solid transparent; border-top: 5px solid #da2329; border-left: 5px solid #da2329; position: absolute; top: 0; left: 100%}
+.stock-label span:after {content: ""; border: 5px solid transparent; border-bottom: 5px solid #da2329; border-left: 5px solid #da2329; position: absolute; bottom: 0; left: 100%}
+
+.card-version-6 .item-content {border-radius: 5px; margin: 0 10px}
+.card-version-6 .img-translucent-backing .img-container-v {height: 192px}
+.card-version-6 .img-translucent-backing .img-container-v img {height: auto; width: auto; min-width: 100%; min-height: 100%}
+.card-version-6 .img-translucent-backing .info * {text-align: left}
+.card-version-6 .img-translucent-backing .info .title {margin: 17px 0 10px 0; display: block; box-shadow: none; height: 70px; overflow: hidden}
+.card-version-6 .img-translucent-backing .icon-small {padding-left: 22px; margin-bottom: 5px}
+.card-version-6 .img-translucent-backing .icon-small:before {left: -6px}
+.card-version-6 .info2 {padding: 25px 20px; text-align: left; height: 298px; overflow: hidden}
+.card-version-6 .info2 b {margin: 0}
+.card-version-6 .info2 .btn {margin: 35px 0 25px 0; min-width: inherit; width: 100%}
+.card-version-6 .info2 .additional-text {max-height: 108px; overflow: hidden}
+
+.card-version-7 > .item {margin-bottom: 10px}
+.card-version-7 > .item:last-child {margin-bottom: 0}
+.card-version-7 {border-radius: 3px; overflow: hidden; font-size: 0; text-align: left}
+.card-version-7 .item-start, .card-version-7 .item-end {padding: 30px; display: inline-block; vertical-align: top; height: auto}
+.card-version-7 .item-start {width: calc(100% - 300px)}
+.card-version-7 .item-end {width: 300px}
+.card-version-7 .item-end .flex-center-vertical > * {margin-bottom: 10px}
+.card-version-7 .item-end .flex-center-vertical > *:last-child {margin-bottom: 0}
+
+.card-version-8 {margin-bottom: 50px}
+.card-version-8 .item {font-size: 0; margin-bottom: 10px; border-radius: 3px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.15);}
+.card-version-8 .num, .card-version-8 .item-content {display: inline-block; vertical-align: top}
+.card-version-8 .num {width: 100px}
+.card-version-8 .flex-center-vertical {display: block}
+.card-version-8 .flex-center-vertical > div {position: relative; top: 50%; transform: translate(0,-50%)}
+.card-version-8 .item-content {width: calc(100% - 100px); padding: 28px 40px}
+.card-version-8 .img-container-v {width: 90px; height: 90px; display: inline-block; vertical-align: top}
+.card-version-8 .text-container {width: calc(100% - 100px); display: inline-block; vertical-align: top; padding-left: 35px; overflow: hidden}
+.card-version-8 .hidden-container {margin-bottom: 0}
+.hidden-container {overflow: hidden; margin-bottom: 25px}
+
+.card-version-9 {margin-top: 30px}
+.card-version-9 .img-container-v {height: 90px; margin-bottom: 20px}
+
+.card-version-10 .item-content {border-radius: 3px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.15);}
+.card-version-10 .text-container {padding: 12px 18px}
+.card-version-10 .img-container-v {height: 226px}
+.card-version-10.card .item .title {box-shadow: none; margin-bottom: 10px; display: block}
+.card-version-10 .subscribers {margin-bottom: 20px}
+.card-version-10 .text {line-height: 20px; margin-bottom: 18px; height: 120px; overflow: hidden}
+.card-version-10 .icon-insta:before {font-size: 20px}
+.card-version-10 .hidden-container {max-height: 498px}
+.card-version-10.active .hidden-container {max-height: inherit}
+
+.card-version-11 {border-radius: 3px; padding: 22px 0; position: relative; z-index: 1; text-align: center}
+.card-version-11 .item {border-right: 2px solid #e9e9e9; width: 100%; padding: 15px 0}
+.card-version-11 .item:last-child {border: 0}
+.card-version-11 .text-2 {margin-bottom: 8px}
+
+.card-version-12 > .item {margin-bottom: 10px}
+.card-version-12 .item * {text-align: left}
+.card-version-12 .show, .card-version-12 .hidden {padding-left: 45px}
+.card-version-12 .show {margin-bottom: 0; position: relative}
+.card-version-12 .show:before {content: "\f067"; font-family:'FontAwesome'; position: absolute; left: 0; top: 0; font-size: 30px}
+.card-version-12 .hidden {margin-top: 18px}
+.card-version-12 .active .show:before {content: "\f068"}
+.card-version-12 ul {margin-bottom: 35px}
+.card-version-12 ul li {margin-bottom: 6px}
+.show {cursor: pointer}
+
+.card-version-13 {position: relative; margin-bottom: 70px}
+.card-version-13 > .item {width: 430px; border-radius: 3px; box-shadow: 0 1px 4px rgba(0,0,0,0.15); text-align: center}
+.card-version-13 > .item:nth-child(2) {position: absolute; top: -23px; left: 0; right: 0; margin: 0 auto; z-index: 2!important; display: block!important;}
+.card-version-13 > .item:nth-child(3) {position: absolute; top: 0; right: 0}
+.card-version-13 .item-start {padding: 20px 50px; display: block}
+.card-version-13.card .item .title {box-shadow: none; font-size: 20px; display: block; height: 90px; overflow: hidden; margin-bottom: 7px}
+.card-version-13 .list-icon {margin-bottom: 0}
+.card-version-13 .item-middle {display: block; padding: 0}
+.card-version-13 .item-end {display: block; padding: 25px 20px}
+.card-version-13 .item-end .item {margin-bottom: 18px; display: block}
+.card-version-13 .item-end .item:last-child {margin-bottom: 0}
+.list-line > div {font-size: 15px; padding: 9px; color: #bdbdbd}
+.list-line > div:nth-child(odd) {background: white}
+
+.card-version-14 .hidden .item {margin-bottom: 10px}
+.card-version-14 .hidden * {font-size: 14px!important;}
+.card-version-14 .column-main {font-size: 0!important;}
+
+.card-version-15 img {height: 50px; margin-bottom: 28px}
+.card-version-15.card .item .title {display: block; box-shadow: none; margin-bottom: 15px}
+.card-version-15 .text {height: 45px; overflow: hidden}
+.card-version-15 .num {position: absolute; right: 45px; top: 25px; width: 60px; height: 60px; border-radius: 50%; text-align: center; font-size: 15px; line-height: 10px}
+.card-version-15 .num span {display: block; font-size: 28px; margin-top: 5px}
+
+.card-version-16 {margin-bottom: 50px}
+.card-version-16 .item {height: 240px; font-size: 0; border-radius: 3px; overflow: hidden; margin-bottom: 10px}
+.card-version-16 .item .item-text, .card-version-16 .item .item-img {display: inline-block; vertical-align: middle; width: 50%}
+.card-version-16 .item .img-container-v {height: 100%}
+.card-version-16 .item .item-text {padding: 25px}
+.card-version-16 .item .item-text b {display: block; margin-bottom: 5px}
+.card-version-16 .item .text-container {max-height: 200px; overflow: hidden}
+.card-version-16 .item .item-img {position: relative}
+.card-version-16 .item .item-img .time {position: absolute; left: 10px; bottom: 20px; padding: 4px 10px; background: rgba(255,255,255,0.8)}
+.card-version-16 .item:nth-child(3n + 1) .item-text {background: #ffc75d}
+.card-version-16 .item:nth-child(3n + 2) .item-text {background: #66c7cc}
+.card-version-16 .item:nth-child(3n + 3) .item-text {background: #f76868}
+.card-version-16 .item:nth-child(even) {display: flex; flex-direction: row-reverse}
+
+.card-version-17 .img-container-v {height: 170px; margin-bottom: 30px}
+.card-version-17 .item-content {max-width: 400px; margin: 0 auto 35px auto}
+.card-version-17.card .item .title {padding: 0 5px; box-shadow: none}
+.card-version-17 .title-container {margin-bottom: 15px}
+
+.card-version-18 .text-container {padding: 15px 25px 20px 25px}
+.card-version-18 .title {margin-bottom: 5px; text-align: left}
+.card-version-18 .profession {margin-bottom: 15px}
+.card-version-18 .height-limit {height: 180px; overflow: hidden; margin-bottom: 15px}
+.card-version-18 .img-with-bg {height: 380px}
+.img-with-bg {display: block; background-size: cover!important; position: relative}
+.img-with-bg img {position: absolute; left: 0; right: 0; bottom: 0; margin: 0 auto; max-height: calc(100% - 50px)}
+.mobile-select-title {display: none; position: relative; cursor: pointer; height: 44px; overflow: hidden; padding: 9px 52px 9px 9px; margin-bottom: 40px; border-radius: 3px; background: white; border: 1px solid #cad2d7}
+.mobile-select-title:after {content: "\f107"; font-family: 'FontAwesome'; position: absolute; right: 0; top: 0; color:#872f33; font-size: 22px; text-align: center; width: 42px; height: 42px; line-height: 42px}
+.mobile-select-title span {color: #aaaaaa}
+.mobile-select.active .mobile-select-title:after {transform: rotate(180deg)}
+.mobile-select.active .mobile-select-list {display: block}
+
+
+    /* Чередование обтекания картинок (слева, справа) */
+.blocks-left-right {margin-bottom: 44px}
+.blocks-left-right .item {clear: both}
+.blocks-left-right .item .item-img {max-width: 225px; overflow: hidden}
+.blocks-left-right .item .item-img img {width: 100%}
+.blocks-left-right .item:nth-child(odd) .item-img {float: left; margin: 0 45px 0 0}
+.blocks-left-right .item:nth-child(even) {text-align: right}
+.blocks-left-right .item:nth-child(even) .item-img {float: right; margin: 0 0 0 45px}
+.blocks-left-right .item .item-text {padding-top: 38px}
+.blocks-left-right .item:nth-child(odd) .item-text {padding-right: 300px; margin-left: 270px}
+.blocks-left-right .item:nth-child(even) .item-text {padding-left: 300px; margin-right: 270px}
+
+/* Карта */
+#map {height: 360px; width: 100%; position: relative}
+#map:before {content: ""; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1}
+#map.active:before {display: none}
+.block-map .central-content {position: relative}
+.info-on-map {position: absolute; left: 0; top: 40px; width: 420px; min-height: 280px; background: white; z-index: 1; box-shadow: 0 1px 5px rgba(0,0,0,0.15); border-radius: 5px; padding: 28px 40px}
+.info-on-map .title {text-align: left; margin-bottom: 28px}
+.info-on-map b {display: block; margin-top: 23px}
+.info-on-map .close-map {display: none}
+.ymaps-2-1-74-controls__toolbar_left, .ymaps-2-1-74-map-copyrights-promo, .ymaps-2-1-74-copyright {display: none!important;}
+.icon-location {position: relative; margin-left: 20px}
+.icon-location:after {content: ""; display: block; width: 12px; height: 16px; position: absolute; top: 1px; left: -20px; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjgzNjkzNDQ4OUMyOTExRTk4MDhEOEY5ODYzM0JBRDBGIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjgzNjkzNDQ5OUMyOTExRTk4MDhEOEY5ODYzM0JBRDBGIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ODM2OTM0NDY5QzI5MTFFOTgwOEQ4Rjk4NjMzQkFEMEYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6ODM2OTM0NDc5QzI5MTFFOTgwOEQ4Rjk4NjMzQkFEMEYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6nf02wAAABRElEQVR42mzSvyuFcRTH8e99eiiZDRLdhAwGsSBhUBYZlIQySCaDsNFN8h/IwGTAcIsMV9j8GtmU3ElKSTZdhceP96mPOm5OvbrP93vPOc/3x5N67BoMinJMYQDt+MQNslhDwZJiJTfgAHXhb7TKJPqRj9U5p+RvdTzCB/owinoco9kKZjRhMY4t94Zt7GEXacxH6mBx6JLb0Knnfb3VYtgKajU4028VLnCqrkFji7Qt6Q6NqNDkM05QgifXxOIh0hotRlCKN/SiG686yTHl5KxgHe+o1KaLYwg1+MKqFdyryCKDMpdsy1rW847dQ6TBCl5QjSVXMKf7saUt2MRvgW1uUc+zaNFBZFxDW0lIuW/Jis/RgWskdrO41LeV+G8paFMTuEKT5go6ocR39XGLaTe25eV9QvzPMW6iR6e1UfznjwADAD1FQ9FZCxpGAAAAAElFTkSuQmCC);}
+
+/* Стилизованные списки */
+.list-style-1{counter-reset: myCounter; padding: 0}
+.list-style-1 li {list-style: none}
+.list-style-1 li:before {counter-increment: myCounter; content:counter(myCounter); display: inline-block; color: white; text-align: center; margin-bottom: 17px; line-height: 70px; width: 70px; height: 70px; font-size: 46px; border-radius: 50%}
+
+/* Видео-блок */
+.video-block {max-width: 900px; width: 100%; margin: 0 auto 30px auto; display: block; position: relative; text-align: center}
+.video-block img {width: 100%}
+.icon-play {position: absolute; top: 50%; left: 50%; margin: -35px 0 0 -35px; width: 70px; height: 70px; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkExNUI3QzA0OUNCNjExRTk5OURDOTA4OUIwRTg3OEZBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkExNUI3QzA1OUNCNjExRTk5OURDOTA4OUIwRTg3OEZBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QTE1QjdDMDI5Q0I2MTFFOTk5REM5MDg5QjBFODc4RkEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QTE1QjdDMDM5Q0I2MTFFOTk5REM5MDg5QjBFODc4RkEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7GST8YAAAGz0lEQVR42txc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);}
+
+/* Блок, с заголовком на подложке */
+.block-underlined-title {position: relative}
+.block-underlined-title .title-container {position: absolute; top: -28px; left: 0; right: 0; z-index: 5; text-align: center}
+.block-underlined-title .title {background: white; box-shadow: 0 3px 5px rgba(0,0,0,0.15); font-size: 28px; display: inline-block; padding: 10px 40px; min-width: 320px}
+
+/* Блок - контакы */
+.block-contacts {position: relative}
+.block-contacts .person {position: absolute; bottom: -50px; left: 0; width: 250px}
+.info-contacts {padding: 30px; margin-left: 130px}
+.info-contacts .info-left {margin-left: 115px; margin-top: 30px; width: 30%}
+.info-contacts .info-left b {font-size: 28px; line-height: 27px; display: block; margin-bottom: 10px}
+.info-contacts .info-right {width: 41%}
+.block-contacts .icon-small {font-size: 16px; padding-left: 40px; margin-bottom: 18px;}
+.block-contacts .icon-small:before {color: white; font-size: 15px}
+.icon-small {position: relative; font-size: 14px; padding-left: 28px; display: block; word-wrap: break-word}
+.icon-small:last-child {margin-bottom: 0}
+.icon-small:before {content: ""; position: absolute; left: 0; top: -2px; display: block; text-align: center; line-height: 26px; width: 26px; height: 26px; border-radius: 50%; font-size: 14px; font-family:'FontAwesome';}
+.icon-small.icon-location2:before {content: "\f041"}
+.icon-small.icon-clock:before {content: "\f017"}
+.icon-small.icon-phone:before {content: "\f095"}
+.icon-small.icon-mail:before {content: "\f0e0"; font-size: 12px}
+.icon-small.icon-vk:before {content: "\f189"; font-size: 13px}
+.icon-small.icon-insta:before {content: "\f16d"}
+.icon-small.icon-online:before {content: "\f01d"}
+.icon-small.icon-puzzle:before {content: "\f12e"}
+
+/* Результаты поиска */
+.tabs-search a {display: inline-block; font-weight: bold; padding-bottom: 5px; margin: 0 35px 20px 0}
+.tabs-search a span {font-weight: bold;}
+.title-result-search {position: relative; top: -23px; font-size: 19px; font-weight: bold;}
+.form-search.form-search-version-2 input[type="text"], .form-search.form-search-version-2 .btn-search {height: 42px}
+.form-search.form-search-version-2 .btn-search {color: #872f33!important; font-size: 18px; font-weight: bold; background-size: 20px; background-position: 20px center; width: auto; padding: 0 21px 0 57px}
+
+.list-icon {margin-bottom: 24px}
+.list-icon .icon-small {display: inline-block; vertical-align: top; margin-right: 24px}
+.list-icon .icon-small:last-child {margin-right: 0}
+
+.icon-fire {position: relative; padding-left: 35px; display: inline-block}
+.icon-fire:before {content: ""; position: absolute; left: 0; top: 0; width: 24px; height: 26px; background: url("../images/fire.png") no-repeat}
+
+/* Оновые подложки */
+.substrate-version-1 {padding: 20px 130px}
+.substrate-version-1 ul {text-align: left; max-width: 300px; margin: 15px auto; display: block}
+.substrate-version-1 ul li {margin-bottom: 17px}
+.substrate-version-1 hr {margin: 23px 0}
+
+.img-translucent-backing {position: relative}
+.img-translucent-backing .img-container-v {position: relative; display: block}
+.img-translucent-backing .img-container-v:after {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7)}
+.img-translucent-backing .info * {color: white}
+.img-translucent-backing .info {position: absolute; left: 0; top: 0; width: 100%; height: 100%; padding: 15px 20px}
+
+.img-translucent-backing2 {position: relative; min-height: 485px; height: 100%}
+.img-translucent-backing2.ver-2 {min-height: 615px}
+.img-translucent-backing2.ver-2 .img-container-v  {height: 615px}
+.img-translucent-backing2 .img-container-v {position: absolute; left: 0; top: 0; width: 100%; display: block; height: 485px}
+.img-translucent-backing2 .img-container-v:after {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7)}
+.img-translucent-backing2 .img-container-v img {width: auto; height: auto; min-height: 100%; min-width: 100%}
+.img-translucent-backing2 .info {position: relative; z-index: 1; padding-top: 120px; text-align: center}
+.img-translucent-backing2.ver-2 .info {padding-top: 150px}
+.img-translucent-backing2 .info .add-in-constructor {margin-bottom: 60px}
+.img-translucent-backing2 .info *, .img-translucent-backing2 .breadcrumb span, .img-translucent-backing2 .breadcrumb a:after {color: white!important;}
+.info-bottom-line {padding-bottom: 60px; box-sizing: content-box}
+.info-bottom-line .info-bottom {position: absolute; bottom: 0; left: 0; right: 0; margin: 0 auto; transform: translate(0, calc(50% - 60px)); width: 100%; max-width: 800px}
+
+.btn-big {min-width: 280px; padding: 18px 42px}
+
+
+.bg-img-ver-1 {position: relative; width: 100%; min-height: 825px}
+.bg-img-ver-1 > .img-container-v {position: absolute; left: 0; top: 0; width: 100%; height: 100%}
+.bg-img-ver-1 .info * {color: white}
+.bg-img-ver-1 .info {position: relative}
+.img-bottom {position: absolute; bottom: 0; left: 0; right: 0; overflow: hidden}
+.img-bottom img {position: relative; left: 50%; transform: translate(-50%,0)}
+
+.border-version-1 {border-radius: 3px; padding: 20px}
+
+/* Прогресс-бар */
+.progress-bar .item {position: relative; margin-bottom: 35px}
+.progress-bar .item .num {font-size: 22px; font-weight: bold; position: absolute; top: -30px; left: 0}
+.progress-bar .item .num:after {content: ""; border: 3px solid transparent; border-top: 3px solid; position: absolute; bottom: -10px; left: 50%; margin-left: -1.5px}
+.progress-bar .item .line {position: relative; height: 18px; background: #f2f2f2; border-radius: 20px; width: calc(100% - 30px); margin: 0 0 6px 15px; overflow: hidden}
+.progress-bar .item .line span {position: absolute; left: 0; top: 0; height: 100%}
+.progress-bar .item .from, .progress-bar .item .to {font-size: 12px; width: 15px; position: absolute; top: 0}
+.progress-bar .item .from {left: 0}
+.progress-bar .item .to {right: 0; text-align: right}
+.progress-bar .item .label {padding-left: 14px}
+
+/* Отзывы */
+.column-main.indent-17.reviews-video {padding: 4px}
+.reviews-video {height: 300px}
+.reviews-video > * {height: 100%}
+.reviews-video .video-block {height: 100%; overflow: hidden}
+.reviews-video .video-block img {height: 100%; width: auto}
+.reviews-block {background: white; border-radius: 3px; box-shadow: 0 1px 4px rgba(0,0,0,0.15); padding: 30px; height: 100%}
+.reviews-block:after {content: ""; border: 20px solid transparent; border-left: 20px solid white; position: absolute; top: 50%; right: -22px; margin-top: -20px}
+.reviews-block i {display: block; max-height: 115px; overflow: hidden}
+.reviews-top {margin-bottom: 20px}
+.img-reviews {width: 100px; height: 100px; border-radius: 50%; overflow: hidden; display: inline-block; vertical-align: middle}
+.title-reviews {width: calc(100% - 130px); margin-left: 23px; display: inline-block; vertical-align: middle}
+
+/* Рекламный баннер */
+.item-banner {position: relative; display: block}
+.item-banner img {width: 100%; border-radius: 3px; display: block}
+.item-banner .btn {position: absolute; right: 20px; bottom: 30px}
+
+/* Список с иконками */
+.list-with-icon .item {padding: 0 50px}
+.list-with-icon .img-container-v {height: 50px}
+.list-with-icon.ver-2 {text-align: left}
+.list-with-icon.ver-2 .item {text-align: left; position: relative; padding: 0 50px 0 80px; margin-bottom: 35px}
+.list-with-icon.ver-2 .img-container-v {position: absolute; left: 0; width: 50px}
+
+/* Виджеты */
+.widgets-list {float: right}
+.widgets-list > div {display: inline-block; vertical-align: middle; width: 120px!important; overflow: hidden; text-align: right}
+
+/* Комплексный заголовок */
+.complex-title {text-align: center; max-width: 960px; margin: 0 auto 57px auto}
+.complex-title > * {margin-bottom: 15px!important;}
+.complex-title2 {text-align: center; max-width: 960px; margin: 0 auto 25px auto}
+.complex-title2 > * {margin-bottom: 15px!important;}
+h1.complex-title > *, h1.complex-title2 > * {display: block}
+
+/* Фон под "Показать еще" */
+.bg-under-show-more {position: absolute; width: 100%; left: 0; top: 0; z-index: 0}
+.bg-under-show-more .item {background: white; border-radius: 0 0 3px 3px; width: calc(100% - 80px); margin: 0 auto; position: relative; z-index: 1}
+.bg-under-show-more .item:after {content: ""; position: absolute; width: 100%; height: 100%; left: 0; top: 0; background: rgba(0,0,0,0.2)}
+.bg-under-show-more .item:nth-child(2) {width: calc(100% - 160px); z-index: 0; top: -50px}
+.bg-under-show-more .item:nth-child(2):after {background: rgba(0,0,0,0.3)}
+.bg-under-show-more .item span {width: 60px; height: 60px; display: block}
+.btn-with-bg .show {margin-top: 15px}
+.btn-with-bg {position: relative; height: 70px; display: none; top: -10px}
+.show-more.active .bg-under-show-more {display: none}
+.show-more[data-visual-blocks].active .hidden > .item {display: block!important;}
+.show-more[data-visual-blocks].card-version-8.active .hidden > .item {display: flex!important;}
+
+/* Чек-лист */
+.check-list {margin-bottom: 50px}
+.check-list .item {display: inline-block; vertical-align: top; margin-right: 28px; font-size: 18px}
+.check-list .item:last-child {margin-right: 0}
+.item-check {padding-left: 23px; position: relative}
+.item-check:before {content: ""; display: inline-block; width: 17px; height: 12px; background: url("../images/check2.png") no-repeat; background-size: 100%; position: absolute; left: 0; top: 5px}
+.item-check.big {padding-left: 40px}
+.item-check.big:before {width: 22px; height: 16px; top: 0}
+.item-check.big.ver2 {padding: 30px 0 0 0; max-width: 170px; text-align: center}
+.item-check.big.ver2:before {right: 0; margin: 0 auto}
+
+.list-href {margin-top: 18px}
+.list-href a {text-decoration: underline; display: inline-block; vertical-align: top; width: 49%; margin-bottom: 21px; page-break-inside: avoid}
+.list-href a:nth-child(odd) {padding-right: 20px}
+.list-href a:hover {text-decoration: none}
+
+
+/* Диплом */
+.diploma {position: relative; text-align: right}
+.img-diploma {position: absolute; left: 0; top: 50%; transform: translate(0,-50%); z-index: -1}
+.img-diploma img {width: 100%}
+.content-diploma {display: inline-block; text-align: left; max-width: 520px; min-height: 500px; width: 100%}
+.content-diploma img {margin-right: 23px; margin-bottom: 20px}
+.content-diploma ul {margin-top: 13px}
+.content-diploma ul li {margin-bottom: 16px}
+
+/* Преподаватели */
+.teacher-block {font-size: 0; height: 430px; margin: 4px auto; box-shadow: 0 1px 4px rgba(0,0,0,0.15); border-radius: 3px; overflow: hidden}
+.teacher-block .title {margin-bottom: 5px}
+.teacher-block .profession {margin-bottom: 15px}
+.img-teacher {height: 100%; width: 410px; display: inline-block; vertical-align: top; background-size: cover!important; position: relative}
+.img-teacher img {height: auto; max-height: calc(100% - 10px); position: absolute; bottom: 0; left: 0; right: 0; margin: 0 auto}
+.info-teacher {height: 100%; width: calc(100% - 410px); display: inline-block; vertical-align: top; border-radius: 0}
+
+.quote {position: relative; margin-bottom: 20px}
+.quote i {display: block; overflow: hidden}
+.quote:before, .quote:after {content: ""; position: absolute; width: 97px; height: 70px; background: url("../images/icon-6.png") no-repeat}
+.quote:before {left: -15px; top: -10px}
+.quote:after {right: -15px; bottom: -20px; transform: rotate(180deg)}
+.why-slider img {max-height: 72px; margin-bottom: 40px}
+.why-slider .item {margin-bottom: 25px}
+.teacher-block .quote i {max-height: 345px;}
+
+/* Блок с вкладками */
+.tabs-block {position: relative; top: -50px; width: 100%; font-size: 0}
+.tabs-block .item {width: 50%; padding: 14px 0; display: inline-block; vertical-align: top; cursor: pointer; font-size: 16px; font-family: inherit; margin: 0}
+.tabs-block .item.active {background: inherit!important;}
+.tabs-block .item:first-child {text-align: right; padding-right: 55px}
+.tabs-block .item:last-child {text-align: left; padding-left: 55px}
+.item-tab {display: none}
+
+/*Запись на обучение*/
+.two-price-line {font-size: 0; margin-bottom: 10px}
+.two-price-line .item {display: inline-block; vertical-align: top; width: 50%; padding: 8px 30px}
+.two-price-line .item * {margin: 0}
+.bg-arrow {position: relative}
+.bg-arrow:before {content: ""; border: 32px solid transparent; border-left: 0; border-right-color: white; position: absolute; top: 50%; transform: translate(0,-50%); left: -32px}
+
+.options-form {padding: 15px 20px; margin-bottom: 20px}
+.options-form hr {background: #282426; margin: 4px 0 20px 0; height: 1px; border: none}
+.options-form * {font-size: 14px}
+.options-form .title {margin-bottom: 7px}
+.list-checkbox {margin: 0 -20px; padding: 11px 20px}
+.list-checkbox label {font-weight: bold}
+.list-checkbox .show {margin-left: 30px; width: 70px}
+.list-checkbox .hidden {line-height: 18px; padding: 10px 0 10px 28px}
+.total-price span {padding-left: 15px}
+.item-price {min-width: 150px; margin-left: 15px}
+
+/* Добавить в конструктор */
+.add-in-constructor {padding-left: 25px; display: inline-block; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkY2NDhGQUJDQTBGMDExRTlCRUE4QUVDMTI5QjMwQUIwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkY2NDhGQUJEQTBGMDExRTlCRUE4QUVDMTI5QjMwQUIwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjY0OEZBQkFBMEYwMTFFOUJFQThBRUMxMjlCMzBBQjAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjY0OEZBQkJBMEYwMTFFOUJFQThBRUMxMjlCMzBBQjAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4If37UAAABUElEQVR42pzUPUsDQRCA4c0ZG0UTsLIQ0lqLjUK4xijWCoJFWkv/giliFVCw9z8o4gdGotjYWFjaGBtLEwW1iGZ9R+ZgXfcSzMBzx35wmZnbi7HW7qNrB4sPVDJcvowxM3g0f2McTRTwGlifwm2WS4QHvAQ2dfVexiluAutDkekdb7jGtD5kIbRJyrHc8ymZuLGHT2w6czm0s97GIhZxgbqkimPt1yrWg4/XLucwj2fsoIWizkvUsCRJe37Wk0yknBKONF1Jc9l5YxWvXOnlsJ9JEg39hbOUc1HX9RN3MnIyySDWcUnHeR0XNJsnHcu9qvO/euLXKz2pOusybmNXexYnPUk7J5LJASZwjndcYQUdrKHR75zUMIqNPmcneE6SkCwOMaZ1x5pBMNLKudRXfI85jPRKR8qRozyrX+t/v+JJ3Mlb2JYHDfh/0sHWtwADANvceFv8aKPoAAAAAElFTkSuQmCC) left center no-repeat;}
+
+/* Календарь обучения */
+.calendar {margin-bottom: 60px; display: table; border-collapse: collapse; width: 100%}
+.calendar .tr {display: table-row}
+.calendar .td {text-align: center; padding: 32px 10px; background: white; display: table-cell}
+
+/* Звёзды */
+.stars {display: inline-block; vertical-align: middle; width: 77px; height: 12px; background: url("../images/stars.png") 0 -60px no-repeat}
+.stars.stars-5 {background-position: 0 0}
+.stars.stars-4 {background-position: 0 -12px}
+.stars.stars-3 {background-position: 0 -24px}
+.stars.stars-2 {background-position: 0 -36px}
+.stars.stars-1 {background-position: 0 -48px}
+.stars-list span {display: inline-block; vertical-align: middle}
+.stars-list .stars {margin-left: 5px}
+.stars-list {margin-bottom: 10px}
+.stars-list .item {display: inline-block; vertical-align: top; margin-right: 25px}
+
+.return-to-site {position: relative; margin-left: 30px; line-height: 22px}
+.return-to-site:before {content: "\f107"; font-family: 'FontAwesome'; position: absolute; left: -30px; top: 1px; display: block; width: 18px; height: 18px; line-height: 18px; text-align: center; transform: rotate(90deg); border-radius: 50%; background: white}
+
+/* Конструктор */
+.table-constructor1 {border-collapse: collapse; margin-bottom: 30px; border-radius: 3px; overflow: hidden}
+.table-constructor1 td {padding: 10px; font-size: 18px; font-weight: bold; text-align: center}
+.table-constructor1 tr td:first-child {font-weight: normal; text-align: left}
+.table-constructor1.ver-1 {margin-bottom: 0}
+.table-constructor1.ver-1 td {font-size: 14px; padding: 10px 5px}
+.form-standard-2 > .item {display: flex; align-items: center}
+.form-standard-2 .label {width: 160px; padding-right: 10px; margin-bottom: 10px}
+.form-standard-2 select {max-width: 745px}
+.form-standard-2 .btn {min-width: 200px; margin-left: 20px; margin-bottom: 10px}
+.success {position: relative; border: 1px solid #c6c6c6; border-radius: 3px; background: white; padding: 10px 10px 10px 48px; margin-bottom: 30px}
+.success:before {content: ""; position: absolute; top: 7px; left: 10px; display: block; width: 27px; height: 27px; background: url("../images/check3.png") no-repeat}
+.discounts-block {margin-bottom: 45px}
+.discounts-block .item {width: 49%; padding: 10px; border-radius: 3px}
+.discounts-block .item b {padding-right: 10px; line-height: 16px}
+.table-td-near {margin-bottom: 15px}
+.table-td-near tr td * {margin: 0; text-align: left}
+.table-td-near tr td {display: table-cell; vertical-align: middle; padding: 5px 20px; width: 50%}
+.table-td-near tr td:first-child, .table-td-near tr td:first-child * {text-align: right}
+.table-td-near tr td:last-child, .table-td-near tr td:last-child * {text-align: left}
+.basket-list .item {padding: 12px 0; border-top: 1px solid #c6c6c6; position: relative}
+.basket-list .item:last-child {border-bottom: 1px solid #c6c6c6}
+.basket-list .item-content {display: flex; width: calc(100% - 150px)}
+.basket-list .item-text {width: calc(100% - 140px)}
+.basket-list .img-container-v {width: 140px; height: 140px; border-radius: 3px; margin-right: 23px}
+.basket-list .title {margin-bottom: 17px; display: block}
+.basket-list a.title:hover {text-decoration: underline}
+.basket-list .item-right {position: relative}
+.basket-list .item-right .remove {position: absolute; right: 0; bottom: 5px; background: url("../images/remove.png") left center no-repeat; padding-left: 20px; cursor: pointer; border-bottom: 1px dashed}
+.basket-list .item-right .remove:hover {border-bottom: 1px dashed transparent}
+.basket-list .list-icon {margin-bottom: 0}
+
+.confirmation-remove {display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.8); text-align: center}
+.confirmation-remove .title {display: block; margin-bottom: 25px}
+.btn-conf {display: inline-block; vertical-align: middle; background: white; padding: 7px; min-width: 76px; cursor: pointer; margin: 0 8px}
+.active-conf .confirmation-remove {display: flex}
+
+.thanks-block {min-height: inherit; padding: 0!important; display: flex; display: -ms-flexbox; align-items: center; text-align: center}
+.thanks-block:after{content:''; min-height:inherit; font-size:0} /* для IE */
+.thanks-block .standard-block {padding: 50px 10px; max-width: 660px; margin: 50px auto}
+.thanks-block .standard-block > * {margin-bottom: 10px}
+.thanks-block .standard-block img {max-height: 67px; margin-bottom: 20px}
+.btn-mobile {display: none}
+
+/* Купон */
+.fix-discount {top: 0; left: 0; width: 100%; z-index: 10; text-align: center; padding: 10px 0}
+.fix-discount .icon-small {display: inline-block; margin-top: 8px}
+.fix-discount .icon-small:before {top: 2px}
+.fix-discount .hidden {position: relative}
+.fix-discount .icon-close {position: absolute; right: -40px; top: -6px; height: 35px; width: 50px; background-position: center; z-index: 9}
+.fix-discount.active .show.icon-arrow, .menu-active .fix-discount, .search-active .fix-discount {display: none}
+.body-fix-discount .fix-discount + header {margin-top: 42px}
+.body-fix-discount .fix-discount {position: fixed}
+
+.timer, .timer * {display: inline-block; vertical-align: middle; font-weight: bold}
+.icon-arrow {position: relative; padding-right: 20px}
+.icon-arrow:after {content: "\f107"; font-family: 'FontAwesome'; position: absolute; right: 0; top: 0; font-style: normal}
+.icon-close {width: 16px; height: 16px; background: url("../images/close.png") no-repeat; cursor: pointer}
+.bg-under-text {padding: 0 5px 1px 5px; font-weight: bold}
+
+/* Фиксированный конструктор (мобильная версия) */
+.mobile-constructor {display: none; padding: 7px 0}
+.mobile-constructor .icon-arrow {display: inline-block; vertical-align: middle; float: right; width: 10px; height: 22px; font-weight: bold}
+.mobile-constructor .num {display: inline-block; vertical-align: middle; border-radius: 50%; width: 16px; height: 16px; line-height: 16px; font-size: 10px; margin: -4px 10px 0 0; text-align: center}
+.mobile-constructor .hidden {position: relative}
+.mobile-constructor .hidden-content {max-width: 215px}
+.mobile-constructor .hidden .icon-close {position: absolute; right: 0; top: 17px}
+.mobile-constructor .btn-constructor {background-position: 0 center; width: calc(100% - 25px); padding: 0 20px 0 40px}
+.mobile-constructor .btn-constructor .num-product {left: -3px}
+.js-show-hidden2.active .show-content {display: none}
+
+/* Слайдер для факультетов */
+.slider-faculty .item {width: 340px; height: 530px!important; text-align: center}
+.slider-faculty .item:nth-child(odd) .item-top {background: #e6e6e6}
+.slider-faculty .item:nth-child(odd) .item-top:after {border-top-color: #e6e6e6}
+.slider-faculty .item:nth-child(even) .item-top {background: white}
+.slider-faculty .item:nth-child(even) .item-top:after {border-top-color: white}
+.slider-faculty .item-top {padding: 20px; position: relative}
+.slider-faculty .item-top .title {display: block; margin-bottom: 5px}
+.slider-faculty .item-top .text {height: 90px; overflow: hidden}
+.slider-faculty .item-top:after {content: "";  border: 21px solid transparent; position: absolute; bottom: -42px; left: 50%; margin-left: -21px; z-index: 1}
+.slider-faculty .item-bottom {position: relative}
+.slider-faculty .item-bottom .align-center {position: absolute; bottom: 65px; right: 0; left: 0}
+.slider-faculty .img-container-v {height: 370px}
+.slider-faculty .item:after {content: ""; display: none; position: absolute; left: 0; top: 0; width: calc(100% - 6px); height: calc(100% - 6px)}
+
+/* Примечание */
+.note {border: 1px solid; border-radius: 3px; padding: 15px 30px 15px 85px; position: relative; margin-bottom: 30px}
+.note img {max-width: 45px; position: absolute; left: 20px; top: 20px;}
+.note-2 {max-width: 330px; margin: 30px 0}
+
+/* О щколе */
+.content-on-img {position: relative}
+.content-on-img .img-container-v {position: absolute; left: 0; top: 0; width: 100%; height: 100%}
+.content-on-img .content {position: relative; text-align: center; max-width: 700px; margin: 0 auto}
+.content-on-img .content * {color: white}
+.content-on-img .content > * {display: inline-block; width: 100%; margin-bottom: 20px}
+.content-on-img .content h2 {margin-bottom: 50px}
+.text-with-sup sup {font-size: 30px; padding-left: 10px}
+
+/* Картинка + инфо (слева/справа) */
+.photo-with-text {display: flex; align-items: flex-end; justify-content: center}
+.photo-with-text .text-container {padding: 0 0 60px 60px; max-width: 630px}
+.photo-with-text .title {margin-bottom: 15px}
+.photo-with-text .text {margin-bottom: 35px}
+
+.photo-with-text2 {max-width: 960px; margin: 0 auto}
+.photo-with-text2 .item-img {float: right; padding: 0 0 55px 100px}
+
+/* Как это работает? */
+.how-this-work {padding: 0 0 140px 480px; background: url("../images/bg-message.png") left bottom no-repeat; min-height: 562px}
+.how-this-work .item {margin-bottom: 35px}
+.how-this-work .item:last-child {margin-bottom: 0}
+.how-this-work .text {padding-left: 16px}
+.border-dotted { border-radius: 50px; display: inline-block; padding: 3px 14px}
+
+/* Разнообразные формы обучения */
+.various-forms {font-size: 37px; max-width: 960px; margin: 0 auto}
+.various-forms > .item {display: inline-flex}
+.various-forms > .item:nth-child(even) {flex-direction: row-reverse}
+.various-forms > .item:nth-child(even) .item-left {position: relative; top: -100px}
+.various-forms > .item:nth-child(odd) .item-right {position: relative; top: -100px}
+.various-forms > .item:nth-child(1) .item-right {padding: 30px 0 130px 0; top: 0}
+.various-forms .item-left, .various-forms .item-right {min-height: 320px; width: 50%}
+.various-forms .item-right {padding: 24px 30px}
+.various-forms .item-right img {display: block; max-height: 98px; max-width: 100%; margin-bottom: 20px}
+.various-forms .item-right b {font-size: 16px; display: block; margin-bottom: 10px}
+.various-forms .item-right .text {font-size: 14px; line-height: 21px; max-height: 125px; overflow: hidden}
+.various-forms .video-block, .slider-1 .video-block {margin-bottom: 0}
+.various-forms .video-block img {display: block}
+.various-forms .slider {display: table-caption; width: 480px; height: 320px; overflow: hidden}
+.various-forms .slider .slick-arrow.slick-prev {left: 10px; margin-top: -25px!important;}
+.various-forms .slider .slick-arrow.slick-next {right: 10px; margin-top: -25px!important;}
+
+/* Достигни резальтата */
+.achieve-results {display: flex; flex-wrap: wrap; align-items: flex-end; max-width: 960px; margin: 55px auto 0 auto; padding-top: 125px}
+.achieve-results .item {position: relative; width: 150px; margin-right: 12px; text-align: center}
+.achieve-results .item:last-child {margin-right: 0}
+.achieve-results .column-level {position: relative; border-radius: 3px; line-height: 16px; margin: 13px 0}
+.achieve-results .column-level span {font-size: 11px; line-height: 18px; margin: 12px 9px 60px 9px; display: block; height: calc(100% - 72px); overflow: hidden}
+.achieve-results .level-letter {position: absolute; left: 0; right: 0; bottom: 17px;  font-size: 44px}
+.achieve-results .item:nth-child(1) .column-level {background: #eda2b4; height: 207px; overflow: hidden}
+.achieve-results .item:nth-child(1) .column-level span {margin: 12px 9px; display: block; height: calc(100% - 24px)}
+.achieve-results .item:nth-child(1) .month {color: #eda2b4}
+.achieve-results .item:nth-child(1) .level-letter {display: none}
+.achieve-results .item:nth-child(2) .column-level {background: #ffd0bd; height: 267px; overflow: hidden}
+.achieve-results .item:nth-child(2) .month {color: #e99898}
+.achieve-results .item:nth-child(2) .level-letter {color: #e99898}
+.achieve-results .item:nth-child(3) .column-level {background: #fac5a6; height: 327px; overflow: hidden}
+.achieve-results .item:nth-child(3) .month {color: #e4a884}
+.achieve-results .item:nth-child(3) .level-letter {color: #e4a884}
+.achieve-results .item:nth-child(4) .column-level {background: #ffe5bd; height: 387px; overflow: hidden}
+.achieve-results .item:nth-child(4) .month {color: #d3b27e}
+.achieve-results .item:nth-child(4) .level-letter {color: #d4b37f}
+.achieve-results .item:nth-child(5) .column-level {background: #eef4a6; height: 447px; overflow: hidden}
+.achieve-results .item:nth-child(5) .month {color: #c9cf7b}
+.achieve-results .item:nth-child(5) .level-letter {color: #c9cf7b}
+.achieve-results .item:nth-child(6) .column-level {background: #c7f8af; height: 507px; overflow: hidden}
+.achieve-results .item:nth-child(6) .month {color: #ade192}
+.achieve-results .item:nth-child(6) .level-letter {color: #ace191}
+
+/* Расписание */
+.schedule-container {overflow: hidden; -webkit-overflow-scrolling: touch!important; overflow-x: auto}
+.schedule-container iframe {min-width: 600px}
+.schedule-lest {margin-bottom: 30px}
+.schedule-lest .item {display: inline-block; vertical-align: top; margin-right: 35px}
+.icon-orientation {display: none; font-size: 13px; line-height: 15px; background: white url("../images/icon-orient.png") 15px center no-repeat; padding: 15px 15px 15px 67px; margin-bottom: 25px}
+.min-height-window {min-height: inherit}
+
+/* История событий + коллаж */
+.history-events {border-radius: 3px}
+.history-events .hidden-container {margin-bottom: 0}
+.history-events .btn-more {margin-bottom: 20px}
+.history-events .hidden > .item {border-bottom: 1px solid #b9c7cf; margin-bottom: 20px}
+.history-events .hidden > .item:first-child .item-content {padding-top: 20px}
+.history-events .hidden .item-content {padding: 0 20px 20px 20px}
+.collage-photo .img-container2 {height: 400px; display: block}
+.collage-photo .item-photo {display: none; width: 100%}
+.collage-photo .item-photo:nth-child(1), .collage-photo .item-photo:nth-child(2), .collage-photo .item-photo:nth-child(3) {display: inline-block}
+.collage-2, .collage-3 {font-size: 0; position: relative}
+.collage-2 .item-photo {vertical-align: top; width: calc(50% - 3px)}
+.collage-2 .item-photo:first-child {margin-right: 5px}
+.collage-3 .item-photo {vertical-align: top}
+.collage-3 .item-photo:first-child {width: calc(75% - 5px); margin-right: 5px}
+.collage-3 .item-photo:nth-child(2), .collage-3 .item-photo:nth-child(3) {width: 25%}
+.collage-3 .item-photo:nth-child(2) .img-container2, .collage-3 .item-photo:nth-child(3) .img-container2 {height: 198px}
+.collage-3 .item-photo:nth-child(3) {position: absolute; right: 0; bottom: 0}
+.collage-photo .more-photo {position: absolute; top: 0; left: 0; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; color: white; text-align: center; background: rgba(0,0,0,.6)}
+
+/* Поля в формах */
+.prompt-input {position: relative}
+.prompt-input span {display: none; position: absolute; left: 10px; top: 6px; z-index: 1; font-size: 14px; line-height: 16px; color: rgba(0,0,0,0.6)}
+.prompt-input.filed span {display: block}
+.prompt-input.filed input {padding-top: 25px; font-size: 20px}
+
+/* Иконки, сделанные из svg */
+@font-face {font-family: 'icomoon'; src: url('../fontlocation/icomoon.ttf?7q5rwr') format('truetype'); font-weight: normal; font-style: normal; font-display: swap}
+.icon-sertificate:before {font-family: 'icomoon' !important; content: "\e900"; font-size: 10px; line-height: 29px}
+.icon-diploma:before {font-family: 'icomoon' !important; content: "\e901"; line-height: 30px}
+
+.list-item-white {margin-bottom: 40px}
+.list-item-white .item {background: white; border: 1px solid transparent; padding: 0 8px 2px 8px; line-height: normal; display: inline-block; vertical-align: top; margin: 0 5px 10px 0; border-radius: 20px}
+
+
+
+/* Для IE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .form-search.form-search-version-2 .btn-search {background-position: 0 center; background-size: 60px}
+    .header-logo .part2 {width: 170px}
+    .slider .slick-arrow::after {margin-top: auto}
+    .info-bottom-line .info-bottom {transform: translate(0,0)}
+
+}
+
+img {border: none}
+select::-ms-expand {display: none;}
+textarea {overflow: hidden; resize: none; overflow-y: auto}
+
+/* Для Mozilla */
+select {-moz-appearance: none; -webkit-appearance: none}
+@-moz-document url-prefix() {}
+
+/* Для Safari */
+@media all and (-webkit-min-device-pixel-ratio:0){}
+
+
+
+

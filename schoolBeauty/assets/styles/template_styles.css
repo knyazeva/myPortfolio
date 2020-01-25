@@ -1,0 +1,257 @@
+* {padding: 0; margin: 0; font-weight: normal; text-decoration: none; box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box}
+html * { max-height: 1000000px;}
+body {-webkit-text-size-adjust: 100%}
+
+/* Шапка */
+header .header-top * {font-size: 14px}
+header .menu a {margin-right: 38px; text-decoration: underline}
+header .menu a:hover {text-decoration: none}
+header .header-top .choose-city .hidden {right: 0; min-width: 430px}
+header .header-call, header .header-search {margin-left: 60px}
+header .header-middle .central-content {position: relative; height: 68px}
+
+
+.choose-city {margin-right: 24px; padding: 5px 15px; z-index: 6; position: relative}
+.choose-city .title:after {content: "\f107"; font-family:'FontAwesome'; font-weight: bold; display: inline-block; margin-left: 9px}
+.choose-city:hover .title:before, .choose-city.active .title:before {border: none}
+.choose-city.active .title:after {transform: rotate(180deg)}
+.choose-city .hidden {position: absolute; top: 32px; padding: 13px 20px; column-count: 2; -moz-column-count: 2; -webkit-column-count: 2; z-index: 1}
+.choose-city .hidden .item {page-break-inside: avoid; margin: 0 40px; position: relative; z-index: 1}
+.choose-city .hidden .city {margin-bottom: 10px; cursor: pointer; display: block}
+.choose-city .hidden .letter {position: absolute; left: -25px; top: 0; font-size: 15px}
+
+.header-logo .part1, .header-logo .part2 {display: inline-block; vertical-align: top}
+.header-logo .part1 {height: 49px}
+.header-logo .part2 {height: 43px}
+.btn-constructor {display: flex; align-content: center; flex-wrap: wrap; position: relative; padding: 10px 10px 10px 50px; width: 200px; height: 68px}
+.btn-constructor b {font-size: 12px; line-height: 15px; width: 100%; margin: -2px 0 2px 0; max-width: 150px}
+.btn-constructor b span {font-size: 12px; line-height: 15px}
+.btn-constructor span {float: right; width: 55px}
+.btn-constructor div {width: 100%; max-width: 155px}
+.btn-constructor div, .btn-constructor div * {font-size: 11px; line-height: 13px}
+.btn-constructor .num-product {position: absolute; left: 6px; top: 16px; border-radius: 50%; width: 16px; height: 16px; text-align: center; font-size: 10px; line-height: 16px; color: white}
+
+.header-call {text-align: right}
+.phone-with-icon {font-size: 18px; display: block}
+.phone-with-icon:before {content: "\f095"; font-family:'FontAwesome'; font-weight: bold; display: inline-block; margin-right: 9px}
+
+.order-call-form > * {display: inline-block; vertical-align: top; margin-right: 20px}
+.order-call-form .text-3 {margin-top: 14px}
+.order-call-form .input-phone {width: 420px; text-align: left}
+.order-call-form .btn {min-width: inherit}
+.hidden-order-call {width: 100%; padding: 16px 0}
+.hidden-order-call .close {margin-top: 13px}
+
+.header-search {overflow: hidden}
+.header-search form {position: absolute; right: 64px; top: 0; z-index: 6; padding: 12px 0; background: white; width: 0; overflow: hidden; transition: width 0.4s linear; -webkit-transition: width 0.4s linear}
+.header-search input[type='text'] {height: 44px; padding: 0 140px 0 20px; margin-bottom: 0}
+.header-search .btn {padding: 0 36px; height: 44px; position: absolute; right: 0; top: 12px; border-radius: 3px; min-width: inherit}
+.btn-search {border-radius: 50%; width: 44px; height: 44px; cursor: pointer; text-align: center; color: transparent!important; border: none}
+.search-active .header-search form {width: calc(100% - 140px); overflow: visible}
+.search-active .header-call, .search-active .btn-constructor, .search-active .header-logo .part2 {display: none}
+.search-active .btn-search:before {display: none}
+
+.menu-faculties {text-align: center}
+.menu-faculties .item {position: relative; display: flex; align-items: center; height: 100%}
+
+/* Шапка (версия 2) */
+header.version-2 .header-logo {padding-right: 60px}
+header.version-2 .choose-city {margin: -9px 0 0 -15px; display: inline-block}
+header.version-2 .menu-faculties-parent .border-left, header.version-2 .menu-faculties-parent .border-right {bottom: inherit; top: 0}
+header.version-2 .menu-faculties .item {border-bottom: 0; border-top: 4px solid}
+header.version-2 .menu-faculties .item .border-top {top: inherit; bottom: 0}
+header.version-2 .choose-city {position: relative}
+header.version-2 .choose-city .hidden {top: 32px; left: 0}
+
+/* Основная разметка блоков */
+.column-main {margin: 0 -12px; font-size: 0; position: relative}
+.column-main > .item {padding: 0 12px; margin-bottom: 24px; display: inline-block; vertical-align: top; font-size: 16px; position: relative}
+.column-main.indent-17 {margin: 0 -17px}
+.column-main.indent-17 > .item {padding: 0 17px}
+.column-80 {width: 80%}
+.column-75 {width: 75%}
+.column-70 {width: 70%}
+.column-60 {width: 60%}
+.column-55 {width: 55%}
+.column-50 {width: 50%}
+.column-45 {width: 45%}
+.column-40 {width: 40%}
+.column-33 {width: 33.3%}
+.column-30 {width: 30%}
+.column-25 {width: 25%}
+.column-20 {width: 20%}
+.column-16 {width: 16.6%}
+
+/* Слайдеры */
+.slider {position: relative; opacity: 0}
+.slider .slick-list {overflow: hidden}
+.slider .item {display: inline-block; vertical-align: top; position: relative; z-index: 1!important; outline: none}
+.slider .item.slick-active { z-index: 2!important;}
+.slider .slick-arrow {cursor: pointer; outline: none; color: transparent; z-index: 3; width: 40px; height: 40px; border: none; font-size: 0; background: none; top: 50%; margin-top: -20px; position: absolute}
+.slider .slick-arrow:after {content: "\f107"; font-family: 'FontAwesome'; font-weight: bold; display: block; font-size: 60px; margin-top: -20px}
+.slider .slick-arrow.slick-prev {left: -10px; transform: rotate(90deg)}
+.slider .slick-arrow.slick-next {right: -10px; transform: rotate(-90deg)}
+.slick-dots {z-index: 3; text-align: center; padding: 0; overflow: hidden; margin-top: 30px}
+.slick-dots li {display: inline-block; vertical-align: top; margin: 0; padding: 0}
+.slick-dots li:before {display: none}
+.slick-dots li {width: 16px; height: 16px; border-radius: 50%; margin: 0 10px 10px 10px}
+.slick-dots li button {width: 16px; height: 16px; position: relative; color: transparent; border: none; background: none; outline: none; cursor: pointer}
+
+.slider.slider-with-arrow .slick-list {width: calc(100% - 110px); margin: 0 auto}
+.slider.slider-with-arrow .slick-track {margin: 0 auto}
+
+.slider-variable-width .item {height: 260px}
+.slider-variable-width .item img {height: 100%}
+.slider-with-arrow2.slider .slick-arrow {width: 50px; height: 50px; background: rgba(255,255,255,0.8); border-radius: 50%; box-shadow: 0 3px 5px rgba(0,0,0,0.15) }
+.slider-with-arrow2.slider .slick-arrow:hover {background: white}
+.slider-with-arrow2.slider .slick-arrow:after {font-size: 33px}
+.slider-with-arrow2.slider .slick-arrow.slick-prev {left: calc((100% - 1224px)/2)}
+.slider-with-arrow2.slider .slick-arrow.slick-next {right: calc((100% - 1224px)/2)}
+
+.no-arrows.slider .slick-arrow {display: none!important;}
+.no-dots.slider .slick-dots {display: none!important;}
+
+/* Контейнеры для картинок (в полную высоту, в полную ширину, auto) */
+.img-container, .img-container2, .img-container-h, .img-container-v {position: relative; overflow: hidden; display: inline-block; width: 100%}
+.img-container img, .img-container2 img, .img-container-h img, .img-container-v img {display: block; position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%)}
+.img-container img {width: auto; height: auto; max-height: 100%; max-width: 100%}
+.img-container2 img {width: auto; height: auto; min-height: 100%; min-width: 100%}
+.img-container-h img {width: 100%; height: auto}
+.img-container-v img {width: auto; height: 100%}
+
+
+/* Подвал */
+footer {background: #373232; padding: 15px 0; clear: both}
+footer * {color: #cdcdcd}
+.footer-menu {width: 47%}
+.footer-menu .flex-between-top {margin-bottom: 6px}
+.footer-menu .flex-between-top a {text-decoration: underline}
+.footer-menu .flex-between-top a:hover {text-decoration: none}
+.copyright {margin: 25px 0 22px 0; overflow: hidden}
+.copyright:after {content: ''; display: inline-block; vertical-align: middle; width: 100%; height: 1px; background: #cdcdcd; margin: 0 -100% 0 20px}
+.payment-method img {display: inline-block; vertical-align: middle; margin: 0 20px 7px 0; max-height: 30px}
+.footer-bottom * {font-size: 14px}
+.footer-bottom .footer-menu .flex-between-top {margin-bottom: 0}
+.footer-contacts {text-align: right}
+.footer-contacts .footer-phone {font-size: 24px; display: block; margin-bottom: 15px}
+
+/* Бургер-меню */
+.burger {display: none; position: relative; width: 26px; height: 26px; z-index: 2; cursor: pointer; margin-left: 10px}
+.burger span {display: block; float: right; position: absolute; top: 12px; left: 0; right: 0; height: 4px; background: #3b3f43; border-radius: 5px}
+.burger span:before, .burger span:after {position: absolute; display: block; left: 0; width: 100%; height: 4px; content: ""; background: #3b3f43; border-radius: 5px; transition-duration: 0.3s, 0.3s; transition-delay: 0.3s, 0s;}
+.burger span:before {top: -11px; transition-property: top, transform;}
+.burger span:after {bottom: -11px; transition-property: bottom, transform;}
+.menu-mobile {display: none}
+
+/* Хлебные крошки */
+.main-content > .breadcrumb {display: none}
+.breadcrumb {position: absolute; left: 0; right: 0; top: 9px; line-height: 14px; max-height: 37px; overflow: hidden; z-index: 2}
+.breadcrumb * {line-height: 14px}
+.breadcrumb .item {display: inline; vertical-align: middle}
+.breadcrumb .item span {font-size: 14px; text-decoration: underline}
+.breadcrumb .item a:after {content: "/"; padding: 0 2px}
+.breadcrumb .item:last-child span {text-decoration: none}
+.breadcrumb .item:last-child a {pointer-events: none}
+.breadcrumb .item:last-child a:after {display: none}
+
+/* Общие мелкие стили */
+.main-content {position: relative; min-height: calc(100vh - 376px)}
+header.version-2 + .mobile-constructor + .main-content {min-height: calc(100vh - 340px)}
+.central-content {max-width: 1224px; width: 100%; margin: 0 auto}
+.flex-between-center {display: flex; justify-content: space-between; align-items: center}
+.flex-between-top {display: flex; justify-content: space-between; align-items: flex-start}
+.flex-between-bottom {display: flex; justify-content: space-between; align-items: flex-end}
+.flex-inline {display: flex; align-items: center}
+.flex-around-top {display: flex; justify-content: space-around; align-items: flex-start}
+.flex-around-center {display: flex; justify-content: space-around; align-items: center}
+.flex-center-vertical {display: inline-flex; flex-wrap: wrap; align-content: space-evenly; align-items: center; justify-content: center; text-align: center; height: 100%; width: 100%}
+.flex-center-vertical > * {width: 100%}
+.flex-height-100 {display: flex; flex-wrap: wrap; height: 100%; align-items: inherit}
+.flex-height-100 .height-100 {height: 100%}
+.js-show-hidden.active .hidden {display: block}
+.border-dashed {position: relative; display: inline-block; cursor: pointer}
+.border-dashed:before {content: ""; display: block; width: 100%; height: 1px; border-bottom: 1px dashed; position: absolute; bottom: 2px; left: 0}
+.border-dashed:hover:before {border-bottom: none}
+.hidden {display: none}
+.show-more .hidden {display: block}
+.show-more .show {display: none}
+.show-more.active .btn.btn-more:after {transform: rotate(180deg)}
+.all-show .hidden-container {max-height: inherit!important;}
+.all-show .btn-with-bg {display: none!important;}
+
+.btn {display: inline-block; padding: 14px 42px; border-radius: 3px; outline: none; -webkit-appearance: none; cursor: pointer; border: none; font-size: 18px; color: white!important;}
+.btn.btn-more, .btn2 {border-radius: 50px; padding: 14px 25px}
+.btn.btn-more:after {content: "\f107"; font-family:'FontAwesome'; font-weight: bold; display: inline-block; margin-left: 15px}
+.btn.small {min-width: inherit}
+.underline {text-decoration: underline; cursor: pointer}
+.underline:hover {text-decoration: none}
+
+.section {padding-top: 50px!important; padding-bottom: 50px!important; clear: both}
+.section.version2 {padding-top: 65px!important; padding-bottom: 20px!important;}
+.bg-individual-1 .title {margin-bottom: 50px}
+.max-100-percent {max-width: 100%; display: block; margin: 0 auto}
+.mobile-block {display: none!important;}
+.margin-bot-60 {margin-bottom: 60px!important;}
+.margin-bot-40 {margin-bottom: 40px!important;}
+.margin-bot-25 {margin-bottom: 25px!important;}
+.margin-bot-10 {margin-bottom: 10px!important;}
+.margin-0 {margin: 0!important;}
+.margin-last > *:last-child {margin-bottom: 80px}
+.without-indent-bot {padding-bottom: 0!important;}
+.max-240px {max-width: 240px}
+.max-370px {max-width: 370px; margin: 0 auto}
+.max-400px {max-width: 400px}
+.max-500px {max-width: 500px; margin: 0 auto}
+.max-600px {max-width: 600px}
+.max-700px {max-width: 700px; margin: 0 auto}
+.max-800px {max-width: 800px; margin: 0 auto}
+.max-960px {max-width: 960px; margin: 0 auto}
+.align-center {text-align: center; margin: 0 auto}
+.align-left {text-align: left!important;}
+.align-right {text-align: right}
+.line-through {text-decoration: line-through}
+.standard-block {padding: 25px; border-radius: 3px; box-shadow: 0 1px 4px rgba(0,0,0,0.15)}
+.standard-block-2 {padding: 25px; border-radius: 3px}
+.standard-block-3 {padding: 20px 10px; border-radius: 3px}
+.standard-block-4 {padding: 5px; border-radius: 3px}
+table {width: 100%}
+table td {vertical-align: top}
+p {margin-bottom: 20px}
+ul {padding: 0}
+ul li {list-style-type: none; padding-left: 20px; position: relative; margin-bottom: 20px}
+ul li:before {content: ""; position: absolute; top: 8px; left: 0; display: block; width: 7px; height: 7px; border-radius: 50%}
+ol {padding-left: 40px}
+hr {margin: 50px 0}
+img[align='left'], .img-fl-left {margin: 0 50px 50px 0; max-width: 100%; float: left;}
+img[align='right'], .img-fl-right {margin: 0 0 50px 50px; max-width: 100%; float: right}
+a {text-decoration-skip-ink: none; outline: none}
+input[type='text'], input[type='email'], input[type='number'], select {width: 100%; margin-bottom: 10px; height: 52px; outline: none; padding: 10px; border: 1px solid #b5b8ab; font-size: 17px; border-radius: 3px; color: rgba(0,0,0,0.6)!important;}
+input[type='text']:focus, input[type='email']:focus, input[type='number']:focus {border: 1px solid #7b7e71}
+select {background: white url("../images/icon-arrow1.png") right center no-repeat; padding-right: 35px}
+select * {color: rgba(0,0,0,0.6)!important; font-size: 20px}
+.form-standard {width: 100%; padding: 30px 40px; border-radius: 3px}
+.input-2-per-line .item {width: 49%}
+.input-btn-line .item:first-child {width: 100%; margin-right: 10px}
+.input-btn-line input {margin-bottom: 10px; min-width: inherit}
+
+.filter-checkbox .item {display: inline-block; vertical-align: top; margin: 0 30px 15px 30px}
+.radio-block .item, .checkbox-block .item {display: block; margin-bottom: 15px}
+.radio + label, .checkbox + label {cursor: pointer;}
+.radio:not(checked), .checkbox:not(checked) {position: absolute; opacity: 0;}
+.radio:not(checked) + label, .checkbox:not(checked) + label {position: relative; padding: 0 0 0 30px; display: inline-block}
+.radio:not(checked) + label:before {content: ''; position: absolute; top: 0; left: 0; width: 20px; height: 20px}
+.pressed + label:after {content: ''; position: absolute; top: 5px; left: 5px; width: 10px; height: 10px; border-radius: 50%; background: #00A2E8; opacity: 0;}
+.pressed + label:before, .pressed-checkbox + label:before {background: white}
+.pressed + label:after {opacity: 1;}
+
+.checkbox:not(checked) + label:before {content: ''; position: absolute; top: 0; left: 0; width: 20px; height: 20px; background: white}
+.pressed-checkbox + label:after {content: ''; position: absolute; top: 5px; left: 4px; width: 12px; height: 10px; background: url("../images/check.png") no-repeat; background-size: 100% 100%; opacity: 0;}
+.pressed-checkbox + label:after {opacity: 1;}
+
+.table-1 {border-collapse: collapse; border-radius: 3px; overflow: hidden}
+.table-1 td {border: 2px solid #b9c7cf; padding: 18px 28px; text-align: left}
+.table-1 td b {display: none}
+
+.fancybox-infobar__body * {color: white}
+img.lazy {opacity: 0; transition: opacity 0.4s linear; -webkit-transition: opacity 0.4s linear}
+img.lazy.load-ok {opacity: 1}
