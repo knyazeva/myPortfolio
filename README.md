@@ -1,5 +1,4 @@
-- Школа Красоты - http://cx29037.tmweb.ru/school_Beauty/
-- Школа Сомелье - http://cx29037.tmweb.ru/millezim/
-- Ортопедический центр - http://cx29037.tmweb.ru/orto_s/
+- [School Beauty](http://cx29037.tmweb.ru/school_Beauty/)
+- [Sommelier School](http://cx29037.tmweb.ru/millezim/)
+- [Orthopedic Center](http://cx29037.tmweb.ru/orto_s/)
 
-- [Школа Красоты](http://cx29037.tmweb.ru/school_Beauty/).
