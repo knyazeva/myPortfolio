@@ -1,4 +1,5 @@
-### Links to my works:
+# Links to my works:
+### Sites with jquery:
 - [Beauty school](http://cx29037.tmweb.ru/schoolBeauty/)
 - [Showroom collection of natural stones](http://cx29037.tmweb.ru/charmeStone/)
 - [Sommelier school](http://cx29037.tmweb.ru/millezim/)
