@@ -1,14 +1,16 @@
 # Links to my works:
-### Sites (jQuery):
-- [Beauty school](http://cx29037.tmweb.ru/schoolBeauty/)
-- [Showroom collection of natural stones](http://cx29037.tmweb.ru/charmeStone/)
-- [Sommelier school](http://cx29037.tmweb.ru/millezim/)
-- [Orthopedic center](http://cx29037.tmweb.ru/orto_s/)
-- [Wine boutique](http://cx29037.tmweb.ru/vinissimo/)
-- [Health culture](http://cx29037.tmweb.ru/healthCulture/)
-- [Sport club](http://cx29037.tmweb.ru/clubGoodwin/)
-- [Running marathon](http://cx29037.tmweb.ru/elton/)
-- [ZSD festival](http://cx29037.tmweb.ru/veloProject/)
 
 ### SPA (React + Redux):
-- [My social network](http://cx29037.tmweb.ru/socialNetwork)
+- [Your social network](http://195.123.215.35/socialNetwork)
+
+### Sites (jQuery):
+- [Showroom collection of natural stones](http://195.123.215.35/Charmestone/)
+- [Beauty school](http://195.123.215.35/SchoolBeauty/)
+- [Sommelier school](http://195.123.215.35/Millezim/)
+- [Orthopedic center](http://195.123.215.35/orto_s/)
+- [Sport club](http://195.123.215.35/ClubGoodwin/)
+- [Health culture](http://195.123.215.35/HealthCulture/)
+- [Brodsky's site](http://195.123.215.35/BrodskyOnline/)
+- [Wine boutique](http://195.123.215.35/Vinissimo/)
+- [Running marathon](http://195.123.215.35/Elton/)
+- [ZSD festival](http://195.123.215.35/Velo_Project/)
