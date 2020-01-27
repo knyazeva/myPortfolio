@@ -1,14 +1,11 @@
 {
-  "name": "Webpack",
+  "name": "Social Network with webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "http://cx29037.tmweb.ru/socialNetwork/",
   "scripts": {
     "dev": "concurrently --kill-others \"json-server --watch db.json --port 3001\" \"webpack-dev-server --open --config ./webpackConfigs/webpack.dev.config.js\"",
-    "build": "webpack --config ./webpackConfigs/webpack.build.config.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "webpack --config ./webpackConfigs/webpack.build.config.js"
   },
   "keywords": [],
   "author": "",
@@ -55,7 +52,6 @@
     "redux": "^4.0.5",
     "redux-form": "^8.2.6",
     "redux-thunk": "^2.3.0",
-    "reselect": "^4.0.0",
-    "serialize-javascript": "^2.1.2"
+    "reselect": "^4.0.0"
   }
 }

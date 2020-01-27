@@ -1,8 +1,8 @@
 import * as axios from "axios";
 
-const instance  = axios.create({
-    baseURL: "http://localhost:3001/"
-});
+const instance  = axios.create({});
+
+instance.defaults.baseURL = location.protocol + '//' + location.hostname + ':3001/';
 
 export const usersAPI = {
     getCurrentPage(numberPage, limitPage) {
