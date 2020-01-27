@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import {connect} from "react-redux";
 import Users from "./Users";
-import {followTC, getUsersTC, setCurrentPageTC, unFollowTC} from "../../redux/usersReducer";
+import {getUsersTC, setCurrentPageTC} from "../../redux/usersReducer";
 import {compose} from "redux";
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
-import {getCurrentPage, getIsDisableFollow, getIsLoading, getUsersLimitPage, getUsersSelector, getUsersTotalCount} from "../../redux/usersSelectors";
+import {getCurrentPage, getIsLoading, getUsersLimitPage, getUsersSelector, getUsersTotalCount} from "../../redux/usersSelectors";
 
 
 const UsersContainer = (props) => {
@@ -23,10 +23,7 @@ const UsersContainer = (props) => {
         usersLimitPage={props.usersLimitPage}
         currentPage={props.currentPage}
         isLoading={props.isLoading}
-        isDisableFollow={props.isDisableFollow}
         setCurrentPage={setCurrentPage}
-        unFollowTC={props.unFollowTC}
-        followTC={props.followTC}
     />
 };
 
@@ -37,11 +34,10 @@ const MapStateToProps = (state) => {
         usersLimitPage: getUsersLimitPage(state),
         currentPage: getCurrentPage(state),
         isLoading: getIsLoading(state),
-        isDisableFollow: getIsDisableFollow(state)
     }
 };
 
 export default compose(
     withAuthRedirect,
-    connect(MapStateToProps, {getUsersTC, setCurrentPageTC, unFollowTC, followTC})
+    connect(MapStateToProps, {getUsersTC, setCurrentPageTC})
 )(UsersContainer)

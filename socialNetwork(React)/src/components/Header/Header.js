@@ -6,7 +6,7 @@ const Header = (props) => {
     return (
         <header>
             <div className="central-content flex-center-between">
-                <a className="logo" title="Your social network">Your social network</a>
+                <div className="logo">Your social network</div>
                 {
                     props.isAuth
                         ? <div onClick={() => {props.logout()}} className="logout" title="logout">{props.authName}</div>

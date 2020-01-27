@@ -31,5 +31,8 @@ export const profileAPI = {
     },
     saveMyProfile(data) {
         return instance.put('myProfile/1', {...data})
+    },
+    saveProfile(userId, data) {
+        return instance.put(`users/${userId}`, {...data})
     }
 };

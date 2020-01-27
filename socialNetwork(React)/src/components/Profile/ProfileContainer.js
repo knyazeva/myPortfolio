@@ -5,12 +5,15 @@ import {getMyProfileTC, getProfileTC, saveMyPhotoTC, saveMyProfileTC} from "../.
 import {withRouter} from "react-router-dom";
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 import {compose} from "redux";
+import Preloader from "../Common/Preloader";
 
 const ProfileContainer = (props) => {
     useEffect(() => {
         let userId = props.match.params.userId;  // вытаскиваем userID из URL
         !userId ? props.getMyProfileTC() : props.getProfileTC(userId);
     }, [props.match.params.userId]);
+
+    if(!props.userProfile){return <Preloader />}
 
     return (
         <Profile {...props} />

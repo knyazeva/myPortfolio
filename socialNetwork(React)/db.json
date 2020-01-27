@@ -13,7 +13,29 @@
       "location": {
         "country": "Russia",
         "city": "Moscow"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "Hello, It`s my first post =)",
+          "likes": 4
+        },
+        {
+          "id": 2,
+          "textPost": "Choose a job you love, and you will never have to work a day in your life.",
+          "likes": 12
+        },
+        {
+          "id": 3,
+          "textPost": "In the middle of difficulty lies opportunity.",
+          "likes": 9
+        },
+        {
+          "textPost": "I love React so much...",
+          "likes": 0,
+          "id": 4
+        }
+      ]
     }
   ],
   "users": [
@@ -29,7 +51,27 @@
       "location": {
         "country": "USA",
         "city": "NY"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "Wise men speak because they have something to say; fools because they have to say something.",
+          "likes": 4
+        },
+        {
+          "id": 2,
+          "textPost": "Chop your own wood and it will warm you twice.",
+          "likes": 1
+        },
+        {
+          "id": 3,
+          "textPost": "I don’t care what you think about me. I don’t think about you at all.",
+          "likes": 3
+        }
+      ],
+      "likes": [
+        1
+      ]
     },
     {
       "id": 2,
@@ -43,7 +85,27 @@
       "location": {
         "country": "Canada",
         "city": "Toronto"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "Work hard to get what you like, otherwise you'll be forced to just like what you get.",
+          "likes": 2
+        },
+        {
+          "id": 2,
+          "textPost": "In the End, we will remember not the words of our enemies, but the silence of our friends.",
+          "likes": 3
+        },
+        {
+          "id": 3,
+          "textPost": "When you do something noble and beautiful and nobody noticed, do not be sad. For the sun every morning is a beautiful spectacle and yet most of the audience still sleeps.",
+          "likes": 0
+        }
+      ],
+      "likes": [
+        1
+      ]
     },
     {
       "id": 3,
@@ -57,13 +119,30 @@
       "location": {
         "country": "Russia",
         "city": "St. Petersburg"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "Success is the ability to go from failure to failure without losing your enthusiasm.",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "There is no such thing as an accident. What we call by that name is the effect of some cause which we do not see.",
+          "likes": 0
+        },
+        {
+          "id": 3,
+          "textPost": "The biggest risk is not taking any risk. In a world that's changing really quickly, the only strategy that is guaranteed to fail is not taking risks. ",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 4,
-      "followed": true,
+      "followed": false,
       "photo": "http://localhost:3000/assets/img/img8.jpg",
-      "fullName": "Irina Mironova",
+      "fullName": "Maxim Ellington",
       "status": "Nice to meet you =)",
       "dateOfBirth": "June 1, 1981",
       "education": "Yale University",
@@ -71,11 +150,28 @@
       "location": {
         "country": "Russia",
         "city": "St. Petersburg"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "Life is far too important a thing ever to talk seriously about.",
+          "likes": 10
+        },
+        {
+          "id": 2,
+          "textPost": "Our life is what our thoughts make it. ",
+          "likes": 1
+        },
+        {
+          "id": 3,
+          "textPost": "Keep smiling, because life is a beautiful thing and there's so much to smile about. ",
+          "likes": 1
+        }
+      ]
     },
     {
       "id": 5,
-      "followed": false,
+      "followed": true,
       "photo": "http://localhost:3000/assets/img/img9.jpg",
       "fullName": "Mia Bootman",
       "status": "I love my city!",
@@ -85,7 +181,24 @@
       "location": {
         "country": "France",
         "city": "Paris"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "As long as man continues to be the ruthless destroyer of lower living beings he will never know health or peace. For as long as men massacre animals, they will kill each other.",
+          "likes": 7
+        },
+        {
+          "id": 2,
+          "textPost": "Life is a series of choices.",
+          "likes": 0
+        },
+        {
+          "id": 3,
+          "textPost": "The purpose of life is to live correctly, think correctly, and act correctly. ",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 6,
@@ -99,7 +212,19 @@
       "location": {
         "country": "USA",
         "city": "NY"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "Choose a job you love, and you will never have to work a day in your life.",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "As long as man continues to be the ruthless destroyer of lower living beings he will never know health or peace. For as long as men massacre animals, they will kill each other. ",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 7,
@@ -113,7 +238,14 @@
       "location": {
         "country": "Russia",
         "city": "St. Petersburg"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "In the middle of difficulty lies opportunity.",
+          "likes": 4
+        }
+      ]
     },
     {
       "id": 8,
@@ -127,7 +259,19 @@
       "location": {
         "country": "Russia",
         "city": "Moscow"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "I want ice-cream!",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "Hello, my friends =)",
+          "likes": 2
+        }
+      ]
     },
     {
       "id": 9,
@@ -141,7 +285,19 @@
       "location": {
         "country": "Georgia",
         "city": "Tbilisi"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "The first thing you learn in life is you're a fool. The last thing you learn in life is you're the same fool.",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "Love suffers long and is kind; love does not envy; love does not parade itself, is not puffed up; Does not behave rudely, does not seek its own, is not provoked, thinks no evil; Does not rejoice in iniquity, but rejoices in the truth.",
+          "likes": 2
+        }
+      ]
     },
     {
       "id": 10,
@@ -155,7 +311,19 @@
       "location": {
         "country": "Canada",
         "city": "Ontario"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "If you love something set it free; if it comes back, it's yours. If it doesn't it never was.",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "For true love is inexhaustible; the more you give, the more you have. And if you go to draw at the true fountainhead, the more water you draw, the more abundant is its flow.",
+          "likes": 2
+        }
+      ]
     },
     {
       "id": 11,
@@ -169,7 +337,19 @@
       "location": {
         "country": "USA",
         "city": "NY"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "Love is a friendship set to music. ",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "Choose a job you love, and you will never have to work a day in your life.",
+          "likes": 2
+        }
+      ]
     },
     {
       "id": 12,
@@ -183,7 +363,19 @@
       "location": {
         "country": "USA",
         "city": "NY"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "In the middle of difficulty lies opportunity.",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "Great spirits have always encountered violent opposition from mediocre minds.",
+          "likes": 2
+        }
+      ]
     },
     {
       "id": 13,
@@ -197,7 +389,19 @@
       "location": {
         "country": "USA",
         "city": "NY"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "And if you gaze long into an abyss, the abyss also gazes into you.",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "Only two things we'll regret on deathbed – that we are a little loved and little traveled.",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 14,
@@ -211,7 +415,19 @@
       "location": {
         "country": "Canada",
         "city": "Toronto"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "Beauty is in the eye of the beholder.",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "My mom always said life was like a box of chocolates. You never know what you're gonna get.",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 15,
@@ -225,7 +441,19 @@
       "location": {
         "country": "Russia",
         "city": "St. Petersburg"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "We buy things we don't need, to impress people we don't like.",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "And now here is my secret, a very simple secret: it is only with the heart that one can see rightly, what is essential is invisible to the eye. ",
+          "likes": 1
+        }
+      ]
     },
     {
       "id": 16,
@@ -239,7 +467,19 @@
       "location": {
         "country": "Russia",
         "city": "St. Petersburg"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "You need to take your enemy's side if you're going to see things the way they do.",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "To be, or not to be: that is the question.",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 17,
@@ -253,7 +493,19 @@
       "location": {
         "country": "France",
         "city": "Paris"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "Democracy cannot succeed unless those who express their choice are prepared to choose wisely. The real safeguard of democracy, therefore, is education. Franklin D. Roosevelt",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "All that is necessary for the triumph of evil is for good men to do nothing. Edmund Burke",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 18,
@@ -267,7 +519,19 @@
       "location": {
         "country": "USA",
         "city": "NY"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "Applause is the spur of noble minds, the end and aim of weak ones. Edmund Burke",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "Bad laws are the worst sort of tyranny. Edmund Burke",
+          "likes": 2
+        }
+      ]
     },
     {
       "id": 19,
@@ -281,7 +545,19 @@
       "location": {
         "country": "Russia",
         "city": "Moscow"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "Politics, it seems to me, for years, or all too long, has been concerned with right or left instead of right or wrong.",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "It is not always the same thing to be a good man and a good citizen.",
+          "likes": 2
+        }
+      ]
     },
     {
       "id": 20,
@@ -295,7 +571,19 @@
       "location": {
         "country": "Georgia",
         "city": "Tbilisi"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "It is not always the same thing to be a good man and a good citizen.",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "I've heard the call. I believe God wants me to run for President.",
+          "likes": 8
+        }
+      ]
     },
     {
       "id": 21,
@@ -309,7 +597,19 @@
       "location": {
         "country": "Canada",
         "city": "Ontario"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "This agglomeration which was called and which still calls itself the Holy Roman Empire was neither holy, nor Roman, nor an empire.",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "And so, my fellow americans: ask not what your country can do for you - ask what you can do for your country. My fellow citizens of the world: ask not what America will do for you, but what together we can do for the freedom of man. ",
+          "likes": 4
+        }
+      ]
     },
     {
       "id": 22,
@@ -323,7 +623,19 @@
       "location": {
         "country": "USA",
         "city": "NY"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "Individuals may form communities, but it is institutions alone that can create a nation. ",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "I repeat...that all power is a trust; that we are accountable for its exercise; that from the people, and for the people all springs, and all must exist.",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 23,
@@ -337,7 +649,19 @@
       "location": {
         "country": "USA",
         "city": "NY"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "No act of kindness, no matter how small, is ever wasted. ",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "Man is least himself when he talks in his own person. Give him a mask, and he will tell you the truth.",
+          "likes": 2
+        }
+      ]
     },
     {
       "id": 24,
@@ -351,7 +675,19 @@
       "location": {
         "country": "Canada",
         "city": "Toronto"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "Supreme happiness will be the greatest cause of misery, and the perfection of wisdom the occasion of folly.",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "So it is that the gods do not give all men gifts of grace - neither good looks nor intelligence nor eloquence.",
+          "likes": 2
+        }
+      ]
     },
     {
       "id": 25,
@@ -365,7 +701,19 @@
       "location": {
         "country": "USA",
         "city": "NY"
-      }
+      },
+      "posts": [
+        {
+          "id": 1,
+          "textPost": "The optimist sees the rose and not its thorns; the pessimist stares at the thorns, oblivious of the rose.",
+          "likes": 0
+        },
+        {
+          "id": 2,
+          "textPost": "When we remember we are all mad, the mysteries disappear and life stands explained. ",
+          "likes": 2
+        }
+      ]
     }
   ]
 }

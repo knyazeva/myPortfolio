@@ -109,10 +109,18 @@ textarea {
 
 .like {
   background: url("../img/heart.png") no-repeat;
-  background-size: 20px auto;
-  padding-left: 25px;
-  cursor: pointer
+  background-size: 22px auto;
+  padding-left: 30px;
+  cursor: pointer;
+  &.active, &.my-post {
+    background-position: 0 -18px;
+  }
 }
+
+.my-post {
+  cursor: auto;
+}
+
 #__lpform_login, #__lpform_password, #__lpform_email {display: none}
 
 

@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import "./ProfileInfo.scss";
-import Preloader from "../../Common/Preloader";
 import ProfileStatic from "./ProfileStatic";
 import ProfileEdit from "./ProfileEdit";
 import ProfileBannerIMG from 'assets/img/img1.jpg';
 import UnknownIMG from 'assets/img/unknown.jpg';
+import ButtonFollow from "../../Common/ButtonFollow";
 
 const ProfileInfo = (props) => {
 
@@ -21,8 +21,6 @@ const ProfileInfo = (props) => {
         };
         fileReader.readAsDataURL(fileToLoad);
     };
-
-    if(!props.userProfile){return <Preloader />}
 
     return (
         <>
@@ -43,6 +41,9 @@ const ProfileInfo = (props) => {
                     <input id="file-load1" type="file" onChange={savePhoto}/>
                     <label htmlFor="file-load1" title="Download photo"> </label>
                 </div>
+                }
+                {!props.isMyProfile &&
+                <ButtonFollow user={props.userProfile} />
                 }
             </div>
 

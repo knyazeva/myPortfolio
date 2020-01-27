@@ -1,8 +1,9 @@
 import React from 'react';
 import './UserItem.css'
 import {NavLink} from "react-router-dom";
+import ButtonFollow from "../../Common/ButtonFollow";
 
-const UserItem = ({user, ...props}) => {
+const UserItem = ({user}) => {
 
     return (
         <div className="item">
@@ -15,17 +16,7 @@ const UserItem = ({user, ...props}) => {
                 </div>
             </NavLink>
 
-            {user.followed
-                ? <div
-                    className="follow btn"
-                    disabled={props.isDisableFollow.some(id => id === user.id) ? "disabled" : ""}
-                    onClick={() => {props.unFollowTC(user.id, {...user});}}>unFollow</div>
-
-                : <div
-                    className="follow btn"
-                    disabled={props.isDisableFollow.some(id => id === user.id) ? "disabled" : ""}
-                    onClick={() => {props.followTC(user.id, {...user})}}>Follow</div>
-            }
+            <ButtonFollow user={user} />
 
             <NavLink to={"/profile/" + user.id} title={user.fullName} className="name">{user.fullName}</NavLink>
             <div className="location">{user.location.country}, {user.location.city}</div>

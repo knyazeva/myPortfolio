@@ -1,7 +1,7 @@
 import {profileAPI} from "../api/api";
 import {cookie} from "../cookie/cookie";
 import {stopSubmit} from "redux-form";
-const SET_AUTH = 'auth/SET_AUTH';
+const SET_AUTH = "auth/SET_AUTH";
 
 let initialState = {
     isAuth: false,
@@ -22,7 +22,7 @@ const authReducer = (state = initialState, action) => {
 };
 
 
-export const setAuthAC = (isAuth, name) => ({type: SET_AUTH, isAuth, name});
+export const setAuthAC = (isAuth, name, likes) => ({type: SET_AUTH, isAuth, name, likes});
 
 
 export const loginTC = (dataForm) => async (dispatch) => {  // логин -> при успехе создаем cookie, иначе выводим ошибку
@@ -38,12 +38,11 @@ export const logoutTC = () => (dispatch) => {  // логаут -> удаляем
     cookie.delete("loginName");
     dispatch(setAuthAC(false, "Login"))
 };
-export const checkCookieAuthTC = () => (dispatch) => {  // проверка cookie -> если cookie есть, то меняем статус приложения на "авторизован"
+export const checkCookieAuthTC = () => async (dispatch) => {  // проверка cookie -> если cookie есть, то меняем статус приложения на "авторизован"
     let name = cookie.get("loginName");
-    if(name) {
-        return dispatch(setAuthAC(true, name));
-    }
+    if(name) {return dispatch(setAuthAC(true, name))}
 };
+
 
 
 export default authReducer;

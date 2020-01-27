@@ -15,13 +15,7 @@ const Users = (props) => {
         <div className="friends-list">
             {
                 props.users.map(
-                    user => <UserItem
-                        key={user.id}
-                        user={user}
-                        isDisableFollow={props.isDisableFollow}
-                        unFollowTC={props.unFollowTC}
-                        followTC={props.followTC}
-                    />
+                    user => <UserItem key={user.id} user={user}/>
                 )
             }
         </div>

@@ -4,11 +4,12 @@ import {BrowserRouter as Router, HashRouter, Route, Switch} from "react-router-d
 import HeaderContainer from "./components/Header/HeaderContainer";
 import LoginContainer from "./components/Login/LoginContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
+import Preloader from "./components/Common/Preloader";
+import Error404 from "./components/Error404/Error404";
 import {connect} from "react-redux";
 import {initializeTC} from "./redux/appReducer";
-import Preloader from "./components/Common/Preloader";
 import withSuspense from "./hoc/withSuspense";
-import Error404 from "./components/Error404/Error404";
+
 
 const MessagesContainer = React.lazy(() => import("./components/Messages/MessagesContainer"));
 const UsersContainer = React.lazy(() => import("./components/Users/UsersContainer"));

@@ -1,4 +1,5 @@
 import {usersAPI} from "../api/api";
+import {getProfileTC} from "./profileReducer";
 const FOLLOW = 'users/FOLLOW';
 const UNFOLLOW = 'users/UNFOLLOW';
 const UPLOAD_USERS = 'users/UPLOAD_USERS';
@@ -90,17 +91,20 @@ export const setCurrentPageTC = (page, usersLimitPage) => async (dispatch) => { 
     dispatch(setCurrentPageAC(page));
     dispatch(toggleLoadingAC(false));
 };
-export const unFollowTC = (userId, allInfoUser) => async (dispatch) => {  // отписаться от пользователя
-    dispatch(setDisableFollowAC(true, userId));
-    await usersAPI.putUnFollow(userId, allInfoUser);
-    dispatch(setDisableFollowAC(false, userId));
-    dispatch(unFollowAC(userId))
+export const unFollowTC = (userId, allInfoUser) => (dispatch) => {  // отписаться от пользователя
+    followUnfollow(dispatch, usersAPI.putUnFollow.bind(usersAPI), unFollowAC, userId, allInfoUser);
 };
 export const followTC = (userId, allInfoUser) => async (dispatch) => {  // подписаться на пользователя
+    followUnfollow(dispatch, usersAPI.putFollow.bind(usersAPI), followAC, userId, allInfoUser);
+};
+
+
+const followUnfollow = async (dispatch, apiMethod, actionCreator, userId, allInfoUser) => {  // общая функция для подписки и отписки
     dispatch(setDisableFollowAC(true, userId));
-    await usersAPI.putFollow(userId, allInfoUser);
+    await apiMethod(userId, allInfoUser);
     dispatch(setDisableFollowAC(false, userId));
-    dispatch(followAC(userId))
+    dispatch(actionCreator(userId));
+    dispatch(getProfileTC(userId))
 };
 
 

@@ -17,8 +17,9 @@ const reducers = combineReducers({
 
 });
 
-
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;  // настройка для расширения chrome 'Redux DevTools'
 const store = createStore(reducers, composeEnhancers(applyMiddleware(thunk)));
+
+window.store = store;
 
 export default store;
