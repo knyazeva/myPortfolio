@@ -84,25 +84,28 @@ export const addPostTC = (dataForm, oldDataPosts, userProfile) => (dispatch) => 
     let newData = {...userProfile, posts: store.getState().profilePage.postsData};
     profileAPI.saveMyProfile(newData)
 };
-export const addLikeTC = (postId, numLike, userData) => (dispatch) => {
-    setLike(dispatch, addLikeAC, postId, numLike, userData);
+export const addLikeTC = (postId, numLike, userData) => (dispatch, getState) => {  // Добавить лайк
+    setLike(dispatch, getState, addLikeAC, postId, numLike, userData);
 };
-export const deleteLikeTC = (postId, numLike, userData) => (dispatch) => {
-    setLike(dispatch, deleteLikeAC, postId, numLike, userData);
+export const deleteLikeTC = (postId, numLike, userData) => (dispatch, getState) => {  // Удалить лайк
+    setLike(dispatch, getState, deleteLikeAC, postId, numLike, userData);
 
 };
 
 
-const setLike = (dispatch, actionCreator, postId, numLike, userData) => {
+const setLike = (dispatch, getState, actionCreator, postId, numLike, userData) => {
     dispatch(actionCreator(postId));
-    let newPosts = userData.posts.map((item) => {
+    let newPosts = getState().profilePage.postsData.map((item) => {
         return (
             item.id === postId ? {id: item.id, textPost: item.textPost, likes: numLike} : item
         )
     });
 
-    let newData = {...userData, posts: newPosts, likes: store.getState().profilePage.myLikes };
-    profileAPI.saveProfile(userData.id, newData);
+
+    let newData = {...userData, posts: newPosts, likes: getState().profilePage.myLikes };
+    profileAPI.saveProfile(userData.id, newData).then((response) => {
+        dispatch(setPostsAC(response.data.posts));
+    });
 };
 
 

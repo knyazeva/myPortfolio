@@ -1,37 +1,28 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import "./Post.scss"
+import Likes from "../../../Common/Likes";
+import MyLikes from "../../../Common/MyLikes";
+import withPrompt from "../../../../hoc/withPrompt";
+
+
 
 const Post = (props) => {
 
-    let [likes, setLikes] = useState(0);
-
-    useEffect(() => {
-        setLikes(props.likes)
-    }, [props.likes]);
-
-    const addLike = () => {
-        setLikes(likes + 1);
-        props.addLikeTC(props.id, likes + 1, props.userProfile)
-    };
-
-    const deleteLike = () => {
-        if(likes === 0) {return false}
-        setLikes(likes - 1);
-        props.deleteLikeTC(props.id, likes - 1, props.userProfile)
-    };
+    const NewMyLikes = withPrompt(MyLikes);  // Оборачиваем HOC "Подсказка"
 
     return (
         <div className="item-post">
-            <img src={props.img} alt="img" />
+            <img src={props.img} alt={props.userProfile.fullName} title={props.userProfile.fullName} />
 
-            {props.isMyProfile &&  <div className="like my-post" title="You can`t like your posts.">{props.likes}</div>}
+            {/* Если свой профиль */}
+            {props.isMyProfile && <NewMyLikes textPrompt="You can`t like your posts." likes={props.likes} />}
 
-            {!props.isMyProfile &&
-            <div
-                onClick={props.myLikes.some(id => id === props.id) ? deleteLike : addLike}
-                className={props.myLikes.some(id => id === props.id) ? "like active" : "like"}>
-                {likes}
-            </div>
+            {/* Если чужой профиль */}
+            {!props.isMyProfile && <Likes
+                id={props.id}
+                likes={props.likes}
+                myLikes={props.myLikes}
+                userProfile={props.userProfile}  />
             }
 
             <div className="text">{props.message}</div>

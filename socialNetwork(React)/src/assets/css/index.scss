@@ -279,3 +279,25 @@ input[type="checkbox"] {
   background: #a7e9d8 url("../../assets/img/pencil.png") center no-repeat;
   background-size: 17px
 }
+
+.prompt {
+  position: relative;
+  span {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: -45px;
+    background: white;
+    padding: 5px 10px;
+    &:after {
+      content: '';
+      position: absolute; /* Абсолютное позиционирование */
+      right: 20px; bottom: -20px; /* Положение треугольника */
+      border: 10px solid transparent; /* Прозрачные границы */
+      border-top: 10px solid white; /* Добавляем треугольник */
+    }
+    &.active {
+      display: block;
+    }
+  }
+}
