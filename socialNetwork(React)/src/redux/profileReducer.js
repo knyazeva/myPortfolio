@@ -1,7 +1,7 @@
 import {profileAPI} from "../api/api";
+const SET_USER_PROFILE = "profile/SET_USER_PROFILE";
 const SET_POSTS = "profile/SET_POST";
 const ADD_POST = "profile/ADD_POST";
-const SET_USER_PROFILE = "profile/SET_USER_PROFILE";
 const ADD_LIKE = "profile/ADD_LIKE";
 const DELETE_LIKE = "profile/DELETE_LIKE";
 

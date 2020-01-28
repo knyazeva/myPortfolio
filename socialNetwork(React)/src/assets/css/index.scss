@@ -31,22 +31,16 @@ h1, .title {
 
 /* Меню + основной контент */
 .main-content-grid {
-  display: grid;
-  grid-template-areas: "nav center";
-  grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
-  > * {
-    overflow: hidden;
-    border-radius: 5px
-  }
+  display: flex;
+  justify-content: space-between;
 }
 .menu {
-  grid-area: nav
+  width: 220px;
 }
 .content {
-  grid-area: center;
-  padding: 15px 20px;
-  background: gainsboro
+  width: calc(100% - 250px);
+  padding: 25px;
+  background: #f3f4ee;
 }
 
 
@@ -65,13 +59,12 @@ input[type="text"], input[type="email"], input[type="password"], button, textare
 }
 button {
   min-width: 150px;
-  background: cornflowerblue;
-  color: white;
+  background: #A7E9D8;
   cursor: pointer;
   width: auto;
 }
 button:hover, .pagination button.active {
-  background: steelblue
+  background: #dadece
 }
 textarea {
   resize: none;
@@ -167,7 +160,7 @@ textarea {
 }
 .btn {
   display: inline-block;
-  background: gold;
+  background: #a7e9d8;
   border-radius: 5px;
   padding: 3px 10px;
   cursor: pointer;
@@ -175,8 +168,8 @@ textarea {
   border: 1px solid rgba(0,0,0,0.6);
   min-width: 85px;
   text-align: center;
-  :hover {
-    background: yellow
+  &:hover {
+    background: #56b59d
   }
 }
 
@@ -196,7 +189,8 @@ textarea {
     padding: 5px 0;
     width: 30px;
     height: 30px;
-    text-align: center
+    text-align: center;
+    background: none;
   }
 }
 
@@ -208,7 +202,7 @@ textarea {
   height: 30px;
   cursor: pointer;
   background: url("../img/arrow.png") center no-repeat;
-  background-size: 100%;
+  background-size: auto 100%;
   &.right {
     transform: rotate(180deg)
   }
@@ -260,7 +254,28 @@ input[type="checkbox"] {
   }
 }
 
-.input-file input {display: none}
-.input-file label, .edit-btn {cursor: pointer; display: block; width: 30px; height: 30px; border-radius: 50%; border: 1px solid black; background: white url("https://knyazeva.github.io/mySocialNetwork/images/pencil.png") center no-repeat; }
+.input-file {
+  input {
+    display: none;
+  }
+  label {
+    @extend .edit-btn
+  }
+}
 
-.error404 img {display: block; margin: 20px auto}
+.error404 img {
+  display: block;
+  margin: 20px auto
+}
+
+
+.edit-btn {
+  cursor: pointer;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: #a7e9d8 url("../../assets/img/pencil.png") center no-repeat;
+  background-size: 17px
+}

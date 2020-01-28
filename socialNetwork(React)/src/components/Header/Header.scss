@@ -1,16 +1,38 @@
 header {
-  padding: 10px; background: cornflowerblue; margin-bottom: 10px;
-  .central-content {padding: 0 15px}
-  .central-content * {color: white; text-decoration: none}
-  .login:hover {text-decoration: underline}
-  .flex-center-between {height: 40px}
-  .logo {font-size: 30px}
+  background: linear-gradient(to right, #ffffff 20%, #f3f4ee 30%);
+  margin-bottom: 25px;
+  .central-content {
+    padding: 10px 15px;
+    background: url("../../assets/img/bg-header.jpg") no-repeat;
+    background-size: 100% 100%;
+    min-height: 70px;
+  }
+  .central-content * {
+    color: #464646;
+    font-size: 20px;
+    text-decoration: none
+  }
+  .login:hover {
+    text-decoration: underline
+  }
+  .flex-center-between {
+    height: 40px
+  }
+  .logo {
+    font-size: 31px;
+    padding-left: 65px;
+
+    background: url("../../assets/img/logo.png") left center no-repeat;
+    background-size: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
 }
 
 .logout {
   cursor: pointer;
   background: url("../../assets/img/exit.png") center right no-repeat;
   background-size: auto 100%;
-  padding: 2px 33px 2px 0
+  padding: 1px 40px 1px 0
 }
 

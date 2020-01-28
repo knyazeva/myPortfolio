@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "./components/Navigation/Navigation";
-import {BrowserRouter as Router, HashRouter, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, HashRouter, Redirect, Route, Switch} from "react-router-dom";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import LoginContainer from "./components/Login/LoginContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
@@ -13,6 +13,7 @@ import withSuspense from "./hoc/withSuspense";
 
 const MessagesContainer = React.lazy(() => import("./components/Messages/MessagesContainer"));
 const UsersContainer = React.lazy(() => import("./components/Users/UsersContainer"));
+const News = React.lazy(() => import("./components/News/News"));
 
 
 class App extends React.Component{
@@ -31,8 +32,9 @@ class App extends React.Component{
                         <Navigation />
                         <div className="content">
                             <Switch>
-                                <Route exact path="/" render={ () => <ProfileContainer /> } />
+                                <Route exact path="/" render={ () => <Redirect from={"/"} to={"/profile"} /> } />
                                 <Route path="/profile/:userId?" render={ () => <ProfileContainer /> } />
+                                <Route path="/news" render={ withSuspense(News) } />
                                 <Route path="/messages" render={ withSuspense(MessagesContainer) } />
                                 <Route path="/users" render={ withSuspense(UsersContainer) } />
                                 <Route path="/auth" render={ () => <LoginContainer /> } />

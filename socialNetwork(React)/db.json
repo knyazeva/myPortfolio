@@ -100,16 +100,17 @@
         {
           "id": 3,
           "textPost": "When you do something noble and beautiful and nobody noticed, do not be sad. For the sun every morning is a beautiful spectacle and yet most of the audience still sleeps.",
-          "likes": 0
+          "likes": 1
         }
       ],
       "likes": [
-        1
+        1,
+        3
       ]
     },
     {
       "id": 3,
-      "followed": false,
+      "followed": true,
       "photo": "http://localhost:3000/assets/img/img7.jpg",
       "fullName": "Irina Mironova",
       "status": "Nice to meet you =)",

@@ -24,9 +24,6 @@ const ProfileInfo = (props) => {
 
     return (
         <>
-        <div className="banner">
-            <div className="img-container"><img src={ProfileBannerIMG} title="banner" alt="banner"/></div>
-        </div>
         <div className="info-profile">
 
             <div className="img-change">

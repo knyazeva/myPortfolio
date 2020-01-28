@@ -3,12 +3,8 @@
     padding: 15px;
     font-size: 18px;
     text-decoration: none;
-    background: gainsboro;
-    &:last-child {
-        border-radius: 0 0 5px 5px
-    }
+    background: #f3f4ee;
     &.active, &:hover {
-        background: cornflowerblue;
-        color: white
+        background: #dadece
     }
 }
