@@ -10,7 +10,7 @@
 }
 a:hover {
   text-decoration: none;
-  cursor: pointer;
+  cursor: pointer
 }
 h1, .title {
   font-size: 23px;
@@ -27,51 +27,46 @@ h1, .title {
   align-items: center;
   justify-content: space-between
 }
-
-
-/* Меню + основной контент */
 .main-content .central-content {
-  position: relative;
+  position: relative
 }
-.content {
+.main-content .content {
   float: right;
   width: calc(100% - 250px);
   padding: 25px;
-  background: #f3f4ee;
+  background: #f3f4ee
 }
 
+form {margin-bottom: 30px}
 
-/* Формы */
-form {
-  margin-bottom: 30px
-}
-input[type="text"], input[type="email"], input[type="password"], form button, form textarea {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+form button,
+form textarea {
   width: 100%;
   border-radius: 5px;
   border: 1px solid rgba(0,0,0,0.6);
   padding: 10px;
   outline: none;
-  margin-bottom: 15px;
-}
+  margin-bottom: 15px}
 form button {
   min-width: 150px;
   background: #A7E9D8;
   cursor: pointer;
-  width: auto;
+  width: auto
 }
 form button:hover, .pagination button.active {
-  background: #dadece;
+  background: #dadece
 }
+
 textarea {
   resize: none;
   width: 100%;
-  height: 130px
-}
+  height: 130px}
 .form-small {
   max-width: 500px;
-  button {
-    margin-top: 20px
-  }
+  button {margin-top: 20px}
 }
 .error-block {
   position: relative;
@@ -112,8 +107,6 @@ textarea {
 
 #__lpform_login, #__lpform_password, #__lpform_email {display: none}
 
-
-/* Основная разметка блоков */
 .column-main {
   margin: 0 -12px;
   font-size: 0;
@@ -267,7 +260,6 @@ input[type="checkbox"] {
   margin: 20px auto
 }
 
-
 .edit-btn {
   cursor: pointer;
   display: block;
@@ -300,7 +292,6 @@ input[type="checkbox"] {
     }
   }
 }
-
 
 /* слайдер */
 .slick-slider {
@@ -388,6 +379,14 @@ input[type="checkbox"] {
     opacity: 1;
   }
 }
+
+
+@media only screen and (max-width: 920px) {
+  .main-content .content {width: 100%; margin-top: 65px}
+  .arrow-up {margin-left: 0}
+  .slick-slider {height: 380px; width: 100%}
+}
+
 
 
 

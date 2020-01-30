@@ -12,11 +12,14 @@ header {
     font-size: 20px;
     text-decoration: none
   }
-  .login:hover {
-    text-decoration: underline
-  }
-  .flex-center-between {
-    height: 40px
+  .login {
+    width: 35px;
+    height: 35px;
+    background: url("../../assets/img/login.png") right center no-repeat;
+    background-size: auto 100%;
+    &:hover {
+      text-decoration: underline
+    }
   }
   .logo {
     font-size: 31px;
@@ -27,12 +30,41 @@ header {
     height: 50px;
     line-height: 50px;
   }
+  .logout {
+    cursor: pointer;
+    background: url("../../assets/img/exit.png") center right no-repeat;
+    background-size: auto 100%;
+    padding: 1px 40px 1px 0
+  }
+  .menu-mobile {
+    display: none;
+  }
 }
 
-.logout {
-  cursor: pointer;
-  background: url("../../assets/img/exit.png") center right no-repeat;
-  background-size: auto 100%;
-  padding: 1px 40px 1px 0
+/* Бургер-меню */
+.burger {display: none; position: relative; width: 26px; height: 26px; z-index: 2; cursor: pointer}
+.burger span {display: block; float: right; position: absolute; top: 12px; left: 0; right: 0; height: 2px; background: #3b3f43; border-radius: 5px}
+.burger span:before, .burger span:after {position: absolute; display: block; left: 0; width: 100%; height: 2px; content: ""; background: #3b3f43; border-radius: 5px; transition-duration: 0.3s, 0.3s; transition-delay: 0.3s, 0s;}
+.burger span:before {top: -11px; transition-property: top, transform;}
+.burger span:after {bottom: -11px; transition-property: bottom, transform;}
+
+@media only screen and (max-width: 920px) {
+  .burger {display: block}
+  .menu-active .burger span {background: none}
+  .menu-active .burger span:before {top: 0; transform: rotate(45deg); -webkit-transform: rotate(45deg); transition-property: top, transform; -webkit-transition-property: top, -webkit-transform; transition-delay: 0s, 0.3s;}
+  .menu-active .burger span:after {bottom: 0; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transition-property: bottom, transform; -webkit-transition-property: bottom, -webkit-transform; transition-delay: 0s, 0.3s;}
+  .menu-active .menu {left: 0}
+  header {position: fixed; left: 0; top: 0; width: 100%; z-index: 10}
+  header .central-content {min-height: 40px}
+  header .logout {padding: 1px 0; width: 32px; color: transparent; overflow: hidden}
+  header .logo {padding-left: 35px; background-size: 28px; font-size: 18px; height: 35px; line-height: 35px}
+  .menu {position: fixed; left: -150vw; top: 55px; width: 100%; height: calc(100vh - 55px); background: white; z-index: 10; transition: left 0.7s ease-out}
+  .menu a {background: white}
+  .menu a.active {background: #E9ECE1}
+  header .central-content {padding: 10px}
+
 }
+
+
+
 

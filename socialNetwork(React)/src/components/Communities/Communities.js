@@ -1,15 +1,14 @@
 import React from "react";
 import "../Common/ListProfiles/ListProfiles.css"
 import ListProfiles from "../Common/ListProfiles/ListProfiles";
+import withSearch from "../../hoc/withSearch";
 
-const Communities = (props) => {
+
+const ListForSearch = (props) => {  // Список, к которому будем применять поиск
     return (
-        <>
-        <div className="title">Communities</div>
-
         <div className="list-profile">
             {
-                props.communities.map(
+                props.listForSearch.map(
                     com => <ListProfiles
                         key={com.id}
                         item={com}
@@ -20,7 +19,18 @@ const Communities = (props) => {
                 )
             }
         </div>
+    )
+};
 
+
+const ListProfileWithSearch = withSearch(ListForSearch);  // HOC Search
+
+
+const Communities = (props) => {
+    return (
+        <>
+        <div className="title">Communities</div>
+        <ListProfileWithSearch {...props} listForSearch={props.communities} />
         </>
     )
 };

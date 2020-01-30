@@ -5,6 +5,7 @@ import Communities from "./Communities";
 import {clearAC, followTC, getCommunitiesTC, getCommunityProfileTC, unFollowTC} from "../../redux/communitiesReducer";
 import Profile from "../Profile/Profile";
 import {withRouter} from "react-router-dom";
+import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 
 
 const CommunitiesContainer = (props) => {
@@ -44,5 +45,6 @@ const MapStateToProps = (state) => {
 
 export default compose(
     withRouter,
-    connect(MapStateToProps, {getCommunitiesTC, getCommunityProfileTC, unFollowTC, followTC, clearAC})
+    connect(MapStateToProps, {getCommunitiesTC, getCommunityProfileTC, unFollowTC, followTC, clearAC}),
+    withAuthRedirect
 )(CommunitiesContainer)

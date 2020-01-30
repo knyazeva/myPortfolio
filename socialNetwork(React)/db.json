@@ -2,14 +2,14 @@
   "communities": [
     {
       "id": 1,
-      "followed": true,
+      "followed": false,
       "photo": "http://195.123.215.35/socialNetwork/assets/img/img15.jpg",
       "fullName": "loicLagarde",
       "description": "French Photographer and Traveler and based in Paris. You will see here my work as photographer, my travels all around the world from the past 15 years and also the info you would need to know about me. All photos are mine - all rights reserved - no business use allowed."
     },
     {
       "id": 2,
-      "followed": true,
+      "followed": false,
       "photo": "http://195.123.215.35/socialNetwork/assets/img/img16.jpg",
       "fullName": "Earthpix",
       "description": "The Largest Travel Community On Social Media. Inspiring people to travel by sharing the most beautiful destinations around the world."
@@ -20,6 +20,20 @@
       "photo": "http://195.123.215.35/socialNetwork/assets/img/img17.jpg",
       "fullName": "Doyoutravel",
       "description": "Currently Australia. Livin' on the road. I’m 27 years old – born in a small village just outside of Manchester, England."
+    },
+    {
+      "id": 4,
+      "followed": true,
+      "photo": "http://195.123.215.35/socialNetwork/assets/img/img18.jpg",
+      "fullName": "travellingthroughtheworld",
+      "description": "TRAVELLING THROUGH THE WORLD © TRAVEL AND PHOTOGRAPHY TIPS"
+    },
+    {
+      "id": 5,
+      "followed": true,
+      "photo": "http://195.123.215.35/socialNetwork/assets/img/img19.jpg",
+      "fullName": "youngadventuress",
+      "description": "American in New Zealand. Cynical but kind. Nature frother & #birdnerd. Friend of kākāpō and the girl with the whales 🐳 it’s all on my blog "
     }
   ],
   "news": [
@@ -177,6 +191,82 @@
       ],
       "date": "05.03.2019",
       "likes": 3,
+      "myLikes": true
+    },
+    {
+      "id": 9,
+      "title": "youngadventuress",
+      "idProfile": 5,
+      "img": "http://195.123.215.35/socialNetwork/assets/img/img19.jpg",
+      "text": "I began blogging full-time back in 2013, long before getting paid to travel was really a thing. While it seems like a lifetime ago now, it took many years of hard lessons, setbacks and failures for me to grow and step into my current role. For years my time and my work didn't seem valuable to me, and I happily accepted cheaply paid writing gigs and free trips, stoked that I was living on my own terms with creative freedom. I nodded when people told me I was lucky and didn't think twice about working towards a real income; I was just so grateful for what I had 🙏🏻 But instead of living like a queen in Bali, I chose to settle in New Zealand, the land of $7 avocados and $100 tanks of fuel; free trips didn't pay the bills and the time it took from me kept me from pursuing other paid work 🙈 I scraped by making ends meet, living on 2 minute spicy thai noodles and juggling bills week to week, believing myself fortunate, and often doing so much more work than I needed to without earning a dollar. I convinced myself that it was good for my brand long-term, and I was building my reputation, changing an industry took time, right? It took getting massively taken advantage of and fucked over by a business I was close to for me to finally wake up and find some goddamn self respect ✌🏻 Dear baby Liz, just because the work you do is on the internet and totally new, doesn't mean it's not worth anything. Once the pain and hurt from that mistake began to ease, I completely changed my business. I set rates and fees and began looking at work opportunities through a new lens. No longer were they free gigs I should be grateful for, instead my time was worth something. It was terrifying to set these boundaries but once I did, my life and my income changed forever. Learn how to value yourself, and what I charge these days, and how to set prices for unique work with me in Queenstown at my next @thetravelbootcamp in October. Only two days left of early prices - get em while they’re hot 🔥",
+      "imgNews": [
+        {
+          "id": 1,
+          "src": "http://195.123.215.35/socialNetwork/assets/img/new21.jpg"
+        }
+      ],
+      "date": "17.03.2019",
+      "likes": 8,
+      "myLikes": true
+    },
+    {
+      "id": 10,
+      "title": "travellingthroughtheworld",
+      "idProfile": 4,
+      "img": "http://195.123.215.35/socialNetwork/assets/img/img18.jpg",
+      "text": "Incredible Lush Green 🍃🍀🌳",
+      "imgNews": [
+        {
+          "id": 1,
+          "src": "http://195.123.215.35/socialNetwork/assets/img/new15.jpg"
+        },
+        {
+          "id": 2,
+          "src": "http://195.123.215.35/socialNetwork/assets/img/new16.jpg"
+        },
+        {
+          "id": 3,
+          "src": "http://195.123.215.35/socialNetwork/assets/img/new17.jpg"
+        }
+      ],
+      "date": "08.03.2019",
+      "likes": 3,
+      "myLikes": false
+    },
+    {
+      "id": 11,
+      "title": "travellingthroughtheworld",
+      "idProfile": 4,
+      "img": "http://195.123.215.35/socialNetwork/assets/img/img18.jpg",
+      "text": "Tag who you’d take to Iceland 😍 1. Studlagil Canyon 2. Landmannagaur Region",
+      "imgNews": [
+        {
+          "id": 1,
+          "src": "http://195.123.215.35/socialNetwork/assets/img/new18.jpg"
+        },
+        {
+          "id": 2,
+          "src": "http://195.123.215.35/socialNetwork/assets/img/new19.jpg"
+        }
+      ],
+      "date": "11.03.2019",
+      "likes": 21,
+      "myLikes": true
+    },
+    {
+      "id": 12,
+      "title": "youngadventuress",
+      "idProfile": 5,
+      "img": "http://195.123.215.35/socialNetwork/assets/img/img19.jpg",
+      "text": "My favorite thing about my trip to Botswana is something you might not expect - meeting so many powerhouse women running their own businesses. You gotta love a savvy lady boss! It was SO COOL to connect with women in Botswana and hear their stories of hustling their dreams into reality. For example, I met Botlalo Keipeite in Gaborone, and she runs Thamaga Pottery, a female-led cooperative making handcrafted ceramic products. Over the years it has grown into a very cool non-profit that both preserve the traditional arts of Botswana and inspires creative women to come and train there. It’s also helping boost their economies through tourism too, establishing a standard of women in business in Botswana. Botlalo is proud of her designs and sharing her culture through art with others like me. It certainly galvanized me to get cracking on with some deeper personal projects that have been sitting on the back-burner. Supports many women entrepreneurs around Botswana, investing millions in partnership with the United Nations to aid with pushing for gender equality in the communities where they work and in their own business. By aiding women like Botlalo in honing and growing their businesses, not only is De Beers Group helping to advance women in Botswana, it's also establishing a future that is female. I love it!",
+      "imgNews": [
+        {
+          "id": 1,
+          "src": "http://195.123.215.35/socialNetwork/assets/img/new20.jpg"
+        }
+      ],
+      "date": "16.03.2019",
+      "likes": 8,
       "myLikes": true
     }
   ],

@@ -74,7 +74,7 @@ export const setPortionNewsTC = (startPortion, endPortion, profileName) => async
     dispatch(setNewsAC(responsePortionNews.data));
 
     window.addEventListener('scroll', function() {  // при прокрутке до конца страницы - позгружаем еще новости, если они есть.
-        let documentHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let documentHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight - 100;
         if(pageYOffset >= documentHeight && getState().newsPage.numberAllNews > getState().newsPage.endPortionNews) {
             dispatch(setRangeNewsAC());
             dispatch(setPortionNewsTC(getState().newsPage.startPortionNews, getState().newsPage.endPortionNews));

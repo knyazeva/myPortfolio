@@ -13,3 +13,9 @@
 .text-profile .item > div {width: calc(100% - 130px); display: inline-block; vertical-align: top}
 .text-profile .form-small .item > div {display: block; width: 100%}
 .text-profile .edit-btn {position: absolute; right: 0; top: -3px}
+
+
+@media only screen and (max-width: 600px) {
+  .info-profile .img-change {display: block; margin: 0 auto 40px auto}
+  .text-profile {width: 100%; padding: 0 0 40px 0}
+}
