@@ -22,9 +22,10 @@ const authReducer = (state = initialState, action) => {
 };
 
 
+// Action Creators
 export const setAuthAC = (isAuth, name, likes) => ({type: SET_AUTH, isAuth, name, likes});
 
-
+// Thunk Creators
 export const loginTC = (dataForm) => async (dispatch) => {  // логин -> при успехе создаем cookie, иначе выводим ошибку
     const response = await profileAPI.getMyProfile();
     if(response.data.login === dataForm.login && response.data.password === dataForm.password) {

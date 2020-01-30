@@ -1,0 +1,8 @@
+.list-profile .item {display: block; background: white; position: relative; min-height: 50px; border-radius: 5px; margin: 0 0 15px 65px; width: calc(100% - 65px); padding: 14px 10px; border: 1px solid transparent; box-shadow: 1px 1px 20px rgba(0,0,0,.15)}
+.list-profile .item:hover {border: 1px solid black}
+.list-profile .img-container {position: absolute; left: -65px; top: 2px; height: 50px; width: 50px; border-radius: 50%; border: 1px solid black; box-shadow: 1px 1px 20px rgba(0,0,0,.15)}
+.list-profile .name {display: inline-block; font-weight: bold; font-size: 17px; margin-bottom: 3px; text-decoration: none}
+.list-profile .name span {font-size: 14px; color: grey; padding-left: 15px}
+.list-profile .follow {position: absolute; right: 10px; top: 12px}
+.list-profile .location {color: grey; font-size: 14px}
+

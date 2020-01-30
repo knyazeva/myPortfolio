@@ -1,6 +1,5 @@
 import React from "react";
 import {connect} from "react-redux";
-import {followTC, unFollowTC} from "../../redux/usersReducer";
 
 const ButtonFollow = ({user, ...props}) => {
 
@@ -31,4 +30,4 @@ const mapStateToProps = (state) => {
     }
 };
 
-export default connect(mapStateToProps, {unFollowTC, followTC})(ButtonFollow);
+export default connect(mapStateToProps, {})(ButtonFollow);

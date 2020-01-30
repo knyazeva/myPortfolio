@@ -18,9 +18,10 @@ const appReducer = (state = initialState, action) => {
 };
 
 
+// Action Creators
 export const initializeSuccessfulAC = () => ({type: INITIALIZE_SUCCESSFUL});
 
-
+// Thunk Creators
 export const initializeTC = () => async (dispatch) => {  // инициализация приложения (подгружаем страницы только после проверки cookie)
     await dispatch(checkCookieAuthTC());
     dispatch(initializeSuccessfulAC())

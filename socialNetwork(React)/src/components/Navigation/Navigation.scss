@@ -1,10 +1,19 @@
-.menu a {
+.menu {
+  position: absolute;
+  top: 0;
+  width: 220px;
+  a {
     display: block;
     padding: 15px;
     font-size: 18px;
     text-decoration: none;
     background: #f3f4ee;
     &.active, &:hover {
-        background: #dadece
+      background: #dadece
     }
+  }
+  &.fix {
+    position: fixed;
+    top: 25px;
+  }
 }

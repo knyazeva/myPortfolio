@@ -17,7 +17,7 @@ const ProfileInfo = (props) => {
         let fileToLoad = e.target.files[0];
         let fileReader = new FileReader();
         fileReader.onload = (fileLoadedEvent) => {
-            props.saveMyPhotoTC({...props.userProfile, photo: fileLoadedEvent.target.result});
+            props.saveMyPhotoTC({...props.infoProfile, photo: fileLoadedEvent.target.result});
         };
         fileReader.readAsDataURL(fileToLoad);
     };
@@ -29,9 +29,9 @@ const ProfileInfo = (props) => {
             <div className="img-change">
                 <div className="img-container">
                     <img
-                        src={props.userProfile.photo ? props.userProfile.photo : UnknownIMG}
-                        title={props.userProfile.fullName}
-                        alt={props.userProfile.fullName}/>
+                        src={props.infoProfile.photo ? props.infoProfile.photo : UnknownIMG}
+                        title={props.infoProfile.fullName}
+                        alt={props.infoProfile.fullName}/>
                 </div>
                 {props.isMyProfile &&
                 <div className="input-file">
@@ -40,13 +40,13 @@ const ProfileInfo = (props) => {
                 </div>
                 }
                 {!props.isMyProfile &&
-                <ButtonFollow user={props.userProfile} />
+                <ButtonFollow user={props.infoProfile} unFollowTC={props.unFollowTC} followTC={props.followTC}/>
                 }
             </div>
 
             <div className="text-profile">
-                {editMode && <ProfileEdit userProfile={props.userProfile} deactivationEditMode={deactivationEditMode} saveMyProfileTC={props.saveMyProfileTC} />}
-                {!editMode && <ProfileStatic userProfile={props.userProfile} isMyProfile={props.isMyProfile} activationEditMode={activationEditMode} />}
+                {editMode && <ProfileEdit infoProfile={props.infoProfile} deactivationEditMode={deactivationEditMode} saveMyProfileTC={props.saveMyProfileTC} />}
+                {!editMode && <ProfileStatic infoProfile={props.infoProfile} isMyProfile={props.isMyProfile} activationEditMode={activationEditMode} />}
             </div>
 
         </div>

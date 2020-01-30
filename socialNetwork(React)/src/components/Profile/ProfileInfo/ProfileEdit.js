@@ -47,7 +47,7 @@ const ProfileEdit = (props) => {
     };
 
     return (
-        <ProfileFormRedux initialValues={props.userProfile} userProfile={props.userProfile} onSubmit={onSubmit} />
+        <ProfileFormRedux initialValues={props.infoProfile} infoProfile={props.infoProfile} onSubmit={onSubmit} />
     )
 };
 

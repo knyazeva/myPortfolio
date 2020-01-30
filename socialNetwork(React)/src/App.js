@@ -9,26 +9,28 @@ import Error404 from "./components/Error404/Error404";
 import {connect} from "react-redux";
 import {initializeTC} from "./redux/appReducer";
 import withSuspense from "./hoc/withSuspense";
+import ArrowUp from "./components/Common/ArrowUp";
 
 
 const MessagesContainer = React.lazy(() => import("./components/Messages/MessagesContainer"));
 const UsersContainer = React.lazy(() => import("./components/Users/UsersContainer"));
-const News = React.lazy(() => import("./components/News/News"));
+const News = React.lazy(() => import("./components/News/NewsContainer"));
+const CommunitiesContainer = React.lazy(() => import("./components/Communities/CommunitiesContainer"));
 
 
 class App extends React.Component{
 
     componentDidMount() {
-        this.props.initializeTC()
+        this.props.initializeTC();
     }
 
     render() {
         if(!this.props.isInitialize) {return <Preloader />}
         return (
-            <HashRouter> {/* basename={'/socialNetwork'} */}
+            <HashRouter>
                 <HeaderContainer />
                 <div className="main-content">
-                    <div className="central-content main-content-grid">
+                    <div className="central-content">
                         <Navigation />
                         <div className="content">
                             <Switch>
@@ -37,10 +39,12 @@ class App extends React.Component{
                                 <Route path="/news" render={ withSuspense(News) } />
                                 <Route path="/messages" render={ withSuspense(MessagesContainer) } />
                                 <Route path="/users" render={ withSuspense(UsersContainer) } />
+                                <Route path="/communities/:comId?" render={ withSuspense(CommunitiesContainer) } />
                                 <Route path="/auth" render={ () => <LoginContainer /> } />
                                 <Route path="/*" render={ () => <Error404 />} />
                             </Switch>
                         </div>
+                        <ArrowUp />
                     </div>
                 </div>
             </HashRouter>

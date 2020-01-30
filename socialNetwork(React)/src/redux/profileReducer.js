@@ -8,8 +8,7 @@ const DELETE_LIKE = "profile/DELETE_LIKE";
 let initialState = {
     userProfile: null,
     isMyProfile: false,
-    postsData: [],
-    myLikes: []
+    postsData: []
 };
 
 const profileReducer = (state = initialState, action) => {
@@ -17,12 +16,12 @@ const profileReducer = (state = initialState, action) => {
         case ADD_LIKE:
             return {
                 ...state,
-                myLikes: [...state.myLikes, action.postId]
+                postsData: state.postsData.map((post) => {return post.id === action.postId ? {...post, myLikes: true} : post})
             };
         case DELETE_LIKE:
             return {
                 ...state,
-                myLikes: state.myLikes.filter(id => id !== action.postId)
+                postsData: state.postsData.map((post) => {return post.id === action.postId ? {...post, myLikes: false} : post})
             };
         case SET_POSTS:
             return {
@@ -38,22 +37,21 @@ const profileReducer = (state = initialState, action) => {
             return {
                 ...state,
                 userProfile: action.profile,
-                isMyProfile: action.isMyProfile,
-                myLikes: action.likes
+                isMyProfile: action.isMyProfile
             };
         default:
             return state;
     }
 };
 
-
+// Action Creators
 export const addPostAC = (dataForm) => ({type: ADD_POST, dataForm});
 export const setPostsAC = (data) => ({type: SET_POSTS, data});
-export const setUserProfileAC = (profile, isMyProfile, likes = []) => ({type: SET_USER_PROFILE, profile, isMyProfile, likes});
+export const setUserProfileAC = (profile, isMyProfile) => ({type: SET_USER_PROFILE, profile, isMyProfile});
 export const addLikeAC = (postId) => ({type: ADD_LIKE, postId});
 export const deleteLikeAC = (postId) => ({type: DELETE_LIKE, postId});
 
-
+// Thunk Creators
 export const getMyProfileTC = () => async (dispatch) => {  // получить профиль авторизованного пользователя
     const response = await profileAPI.getMyProfile();
     dispatch(setUserProfileAC(response.data, true));
@@ -61,7 +59,7 @@ export const getMyProfileTC = () => async (dispatch) => {  // получить �
 };
 export const getProfileTC = (userId) => async (dispatch) => {  // получить профиль любого человека по ID
     const response = await profileAPI.getProfile(userId);
-    dispatch(setUserProfileAC(response.data, false, response.data.likes));
+    dispatch(setUserProfileAC(response.data, false));
     dispatch(setPostsAC(response.data.posts));
 };
 export const saveMyProfileTC = (data) => (dispatch) => {  // сохранение изменений в профиле
@@ -84,29 +82,28 @@ export const addPostTC = (dataForm, oldDataPosts, userProfile) => (dispatch) => 
     let newData = {...userProfile, posts: store.getState().profilePage.postsData};
     profileAPI.saveMyProfile(newData)
 };
-export const addLikeTC = (postId, numLike, userData) => (dispatch, getState) => {  // Добавить лайк
-    setLike(dispatch, getState, addLikeAC, postId, numLike, userData);
+export const addLikeTC = (allDataAboutItem, numLike, userData) => (dispatch, getState) => {  // Добавить лайк
+    setLike(dispatch, getState, addLikeAC, allDataAboutItem, numLike, userData);
 };
-export const deleteLikeTC = (postId, numLike, userData) => (dispatch, getState) => {  // Удалить лайк
-    setLike(dispatch, getState, deleteLikeAC, postId, numLike, userData);
+export const deleteLikeTC = (allDataAboutItem, numLike, userData) => (dispatch, getState) => {  // Удалить лайк
+    setLike(dispatch, getState, deleteLikeAC, allDataAboutItem, numLike, userData);
 
 };
 
-
-const setLike = (dispatch, getState, actionCreator, postId, numLike, userData) => {
-    dispatch(actionCreator(postId));
-    let newPosts = getState().profilePage.postsData.map((item) => {
+// Common Functions
+const setLike = (dispatch, getState, actionCreator, allDataAboutItem, numLike, userData) => {  // общая функция для добавления/удаления лайков
+    dispatch(actionCreator(allDataAboutItem.id));
+    let newPosts = store.getState().profilePage.postsData.map((item) => {
         return (
-            item.id === postId ? {id: item.id, textPost: item.textPost, likes: numLike} : item
+            item.id === allDataAboutItem.id ? {id: item.id, textPost: item.textPost, likes: numLike, myLikes: item.myLikes} : item
         )
     });
 
-
-    let newData = {...userData, posts: newPosts, likes: getState().profilePage.myLikes };
-    profileAPI.saveProfile(userData.id, newData).then((response) => {
+    profileAPI.saveProfile(userData.id, {...userData, posts: newPosts}).then((response) => {
         dispatch(setPostsAC(response.data.posts));
     });
 };
+
 
 
 export default profileReducer;

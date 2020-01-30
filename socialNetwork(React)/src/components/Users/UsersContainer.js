@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {connect} from "react-redux";
 import Users from "./Users";
-import {getUsersTC, setCurrentPageTC} from "../../redux/usersReducer";
+import {followTC, getUsersTC, setCurrentPageTC, unFollowTC} from "../../redux/usersReducer";
 import {compose} from "redux";
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 import {getCurrentPage, getIsLoading, getUsersLimitPage, getUsersSelector, getUsersTotalCount} from "../../redux/usersSelectors";
@@ -24,6 +24,8 @@ const UsersContainer = (props) => {
         currentPage={props.currentPage}
         isLoading={props.isLoading}
         setCurrentPage={setCurrentPage}
+        unFollowTC={props.unFollowTC}
+        followTC={props.followTC}
     />
 };
 
@@ -39,5 +41,5 @@ const MapStateToProps = (state) => {
 
 export default compose(
     withAuthRedirect,
-    connect(MapStateToProps, {getUsersTC, setCurrentPageTC})
+    connect(MapStateToProps, {getUsersTC, setCurrentPageTC, unFollowTC, followTC})
 )(UsersContainer)

@@ -6,11 +6,15 @@ import messagesReducer from "./messagesReducer";
 import usersReducer from "./usersReducer";
 import authReducer from "./authReducer";
 import appReducer from "./appReducer";
+import newsReducer from "./newsReducer";
+import communitiesReducer from "./communitiesReducer";
 
 const reducers = combineReducers({
     profilePage: profileReducer,
     messagePage: messagesReducer,
     usersPage: usersReducer,
+    newsPage: newsReducer,
+    communitiesPage: communitiesReducer,
     auth: authReducer,
     form: formReducer,
     app: appReducer

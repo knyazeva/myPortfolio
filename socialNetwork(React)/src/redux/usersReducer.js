@@ -19,37 +19,37 @@ let initialState = {
 
 const usersReducer = (state = initialState, action) => {
     switch (action.type) {
-        case FOLLOW:
+        case FOLLOW:  // подписаться на пользователя
             return {
                 ...state,
                 users: state.users.map(user => { return user.id === action.userId ? {...user, followed: true} : user })
             };
-        case UNFOLLOW:
+        case UNFOLLOW:  // отписаться от пользователя
             return {
                 ...state,
                 users: state.users.map(user => { return user.id === action.userId ? {...user, followed: false} : user })
             };
-        case UPLOAD_USERS:
+        case UPLOAD_USERS:  // загрузить пользователей
             return {
                 ...state,
                 users: action.users
             };
-        case SET_USERS_TOTAL_COUNT:
+        case SET_USERS_TOTAL_COUNT:  // задать общее количество пользователей
             return {
                 ...state,
                 usersTotalCount: action.number
             };
-        case SET_CURRENT_PAGE:
+        case SET_CURRENT_PAGE:  // задать номер текущей страницы
             return {
                 ...state,
                 currentPage: action.number
             };
-        case TOGGLE_LOADING:
+        case TOGGLE_LOADING:  // активность/неактивность лоадинга
             return {
                 ...state,
                 isLoading: action.isLoading
             };
-        case SET_DISABLE_FOLLOW:
+        case SET_DISABLE_FOLLOW:  // установить кнопку неактивной, пока идет запрос/ответ от сервера
             return {
                 ...state,
                 isDisableFollow: action.isDisable
@@ -62,7 +62,7 @@ const usersReducer = (state = initialState, action) => {
 };
 
 
-
+// Action Creators
 export const followAC = (userId) => ({type: FOLLOW, userId});
 export const unFollowAC = (userId) => ({type: UNFOLLOW, userId});
 export const uploadUsersAC = (users) => ({type: UPLOAD_USERS, users});

@@ -29,12 +29,10 @@ const MyPosts = (props) => {
                     <Post
                         key={item.id}
                         id={item.id}
+                        post={item}
                         img={props.userProfile.photo}
-                        message={item.textPost}
-                        likes={item.likes}
                         isMyProfile={props.isMyProfile}
                         userProfile={props.userProfile}
-                        myLikes={props.myLikes}
                         addLikeTC={props.addLikeTC}
                         deleteLikeTC={props.deleteLikeTC}
                     />
