@@ -9,7 +9,7 @@ const withSearch = (Component) => {
             setValueSearch(e.target.value)
         };
 
-        const resultSearch = props.listForSearch.filter(item => item.fullName.toLowerCase().indexOf(valueSearch) >= 0);
+        const resultSearch = props.listForSearch.filter(item => item.fullName.toLowerCase().indexOf(valueSearch.toLowerCase()) >= 0);
 
         return (
             <div>

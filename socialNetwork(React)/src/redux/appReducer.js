@@ -1,8 +1,15 @@
 import {checkCookieAuthTC} from "./authReducer";
 const INITIALIZE_SUCCESSFUL = 'app/INITIALIZE_SUCCESSFUL';
+const SET_DATA_POPUP = 'app/SET_DATA_POPUP';
 
 let initialState = {
-    isInitialize: false
+    isInitialize: false,
+    dataPopUp: {
+        isActive: false,
+        title: "",
+        body: "",
+        isSuccessSend: false
+    }
 };
 
 const appReducer = (state = initialState, action) => {
@@ -12,6 +19,11 @@ const appReducer = (state = initialState, action) => {
                 ...state,
                 isInitialize: true
             };
+        case SET_DATA_POPUP:
+            return {
+                ...state,
+                dataPopUp: action.data,
+            };
         default:
             return state
     }
@@ -20,6 +32,7 @@ const appReducer = (state = initialState, action) => {
 
 // Action Creators
 export const initializeSuccessfulAC = () => ({type: INITIALIZE_SUCCESSFUL});
+export const setDataPopupAC = (data) => ({type: SET_DATA_POPUP, data});
 
 // Thunk Creators
 export const initializeTC = () => async (dispatch) => {  // инициализация приложения (подгружаем страницы только после проверки cookie)

@@ -66,7 +66,7 @@ textarea {
   height: 130px}
 .form-small {
   max-width: 500px;
-  button {margin-top: 20px}
+  //button {margin-top: 20px}
 }
 .error-block {
   position: relative;
@@ -297,7 +297,8 @@ input[type="checkbox"] {
 .slick-slider {
   position: relative;
   .slick-list {
-    overflow: hidden
+    overflow: hidden;
+    height: 100%;
   }
   .slick-track > div {
     display: inline-block;
@@ -380,11 +381,28 @@ input[type="checkbox"] {
   }
 }
 
+.cancel {
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
+  background: url("../img/cancel.png") center no-repeat;
+  background-size: 100% auto;
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease-out;
+  &:hover {
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  }
+}
+
+
 
 @media only screen and (max-width: 920px) {
   .main-content .content {width: 100%; margin-top: 65px}
   .arrow-up {margin-left: 0}
   .slick-slider {height: 380px; width: 100%}
+}
+@media only screen and (max-width: 600px) {
+  .main-content .content {padding: 25px 15px}
 }
 
 

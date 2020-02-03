@@ -3,6 +3,7 @@ import "./Post.scss"
 import MyLikes from "../../../Common/MyLikes";
 import withPrompt from "../../../../hoc/withPrompt";
 import Likes from "../../../Common/Likes";
+import UNKNOWN_IMG from "assets/img/unknown.jpg"
 
 const Post = (props) => {
 
@@ -10,7 +11,10 @@ const Post = (props) => {
 
     return (
         <div className="item-post">
-            <img src={props.img} alt={props.userProfile.fullName} title={props.userProfile.fullName} />
+            <img
+                src={props.img ? props.img : UNKNOWN_IMG}
+                alt={props.userProfile.fullName}
+                title={props.userProfile.fullName} />
 
             {/* Если свой профиль */}
             {props.isMyProfile && <NewMyLikes textPrompt="You can`t like your posts." likes={props.post.likes} />}

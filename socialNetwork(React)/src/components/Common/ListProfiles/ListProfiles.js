@@ -1,6 +1,7 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 import ButtonFollow from "../../Common/ButtonFollow";
+import UNKNOWN_IMG from "assets/img/unknown.jpg"
 
 const ListProfiles = ({item, ...props}) => {
 
@@ -9,7 +10,7 @@ const ListProfiles = ({item, ...props}) => {
             <NavLink to={props.url + item.id} title={item.fullName}>
                 <div className="img-container">
                     <img
-                        src={item.photo ? item.photo : "../../assets/img/unknown.jpg"}
+                        src={item.photo ? item.photo : UNKNOWN_IMG}
                         alt={item.fullName}
                         title={item.fullName} />
                 </div>

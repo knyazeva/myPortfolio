@@ -308,7 +308,7 @@
     {
       "id": 2,
       "followed": true,
-      "photo": "http://195.123.215.35/socialNetwork/assets/img/unknown.jpg",
+      "photo": null,
       "fullName": "Artem Jerome",
       "status": "Only in Russia you can answer the question: What are you doing? Hear the answer: Yes, nothing, I work.",
       "dateOfBirth": "March 26, 1978",
@@ -438,7 +438,7 @@
     {
       "id": 6,
       "followed": false,
-      "photo": "http://195.123.215.35/socialNetwork/assets/img/unknown.jpg",
+      "photo": null,
       "fullName": "Mike Ogden",
       "status": "It turns out that in order to get rich, you just need to like the photo with the money. And I, like a fool, go to work!",
       "dateOfBirth": "August 28, 1956",
@@ -600,7 +600,7 @@
     {
       "id": 12,
       "followed": false,
-      "photo": "http://195.123.215.35/socialNetwork/assets/img/unknown.jpg",
+      "photo": null,
       "fullName": "Gven Derrick",
       "status": "It turns out that in order to get rich, you just need to like the photo with the money. And I, like a fool, go to work!",
       "dateOfBirth": "August 28, 1987",
@@ -656,7 +656,7 @@
     {
       "id": 14,
       "followed": false,
-      "photo": "http://195.123.215.35/socialNetwork/assets/img/unknown.jpg",
+      "photo": null,
       "fullName": "Artem Jerome",
       "status": "Only in Russia you can answer the question: What are you doing? Hear the answer: Yes, nothing, I work.",
       "dateOfBirth": "March 26, 1978",
@@ -768,7 +768,7 @@
     {
       "id": 18,
       "followed": false,
-      "photo": "http://195.123.215.35/socialNetwork/assets/img/unknown.jpg",
+      "photo": null,
       "fullName": "Mike Ogden",
       "status": "It turns out that in order to get rich, you just need to like the photo with the money. And I, like a fool, go to work!",
       "dateOfBirth": "August 28, 1956",
@@ -964,7 +964,7 @@
     {
       "id": 25,
       "followed": false,
-      "photo": "http://195.123.215.35/socialNetwork/assets/img/unknown.jpg",
+      "photo": null,
       "fullName": "Gven Derrick",
       "status": "It turns out that in order to get rich, you just need to like the photo with the money. And I, like a fool, go to work!",
       "dateOfBirth": "August 28, 1987",

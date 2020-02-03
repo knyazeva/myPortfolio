@@ -10,6 +10,8 @@ import {connect} from "react-redux";
 import {initializeTC} from "./redux/appReducer";
 import withSuspense from "./hoc/withSuspense";
 import ArrowUp from "./components/Common/ArrowUp";
+import PopUp from "./components/Common/PopUp/PopUp";
+import Portal from "./components/Common/Portal";
 
 
 const MessagesContainer = React.lazy(() => import("./components/Messages/MessagesContainer"));
@@ -25,6 +27,7 @@ class App extends React.Component{
     }
 
     render() {
+        console.log("render");
         if(!this.props.isInitialize) {return <Preloader />}
         return (
             <HashRouter>
@@ -47,6 +50,7 @@ class App extends React.Component{
                         <ArrowUp />
                     </div>
                 </div>
+                <Portal><PopUp /></Portal>
             </HashRouter>
         )
     }
