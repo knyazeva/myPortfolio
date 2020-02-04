@@ -37,7 +37,8 @@ const newsReducer = (state = initialState, action) => {
                 ...state,
                 news: [],
                 startPortionNews: 0,
-                endPortionNews: 5
+                endPortionNews: 5,
+                numberAllNews: 0
             };
         case ADD_LIKE:  // добавить лайк
             return {

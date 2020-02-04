@@ -14,7 +14,6 @@ import PopUp from "./components/Common/PopUp/PopUp";
 import Portal from "./components/Common/Portal";
 
 
-const MessagesContainer = React.lazy(() => import("./components/Messages/MessagesContainer"));
 const UsersContainer = React.lazy(() => import("./components/Users/UsersContainer"));
 const News = React.lazy(() => import("./components/News/NewsContainer"));
 const CommunitiesContainer = React.lazy(() => import("./components/Communities/CommunitiesContainer"));
@@ -27,7 +26,6 @@ class App extends React.Component{
     }
 
     render() {
-        console.log("render");
         if(!this.props.isInitialize) {return <Preloader />}
         return (
             <HashRouter>
@@ -40,7 +38,6 @@ class App extends React.Component{
                                 <Route exact path="/" render={ () => <Redirect from={"/"} to={"/profile"} /> } />
                                 <Route path="/profile/:userId?" render={ () => <ProfileContainer /> } />
                                 <Route path="/news" render={ withSuspense(News) } />
-                                <Route path="/messages" render={ withSuspense(MessagesContainer) } />
                                 <Route path="/users" render={ withSuspense(UsersContainer) } />
                                 <Route path="/communities/:comId?" render={ withSuspense(CommunitiesContainer) } />
                                 <Route path="/auth" render={ () => <LoginContainer /> } />

@@ -1,11 +1,19 @@
-import React from "react";
+// @flow
+import * as React from 'react';
 import ReactDOM from "react-dom";
 
-const Portal = (props) => {
 
-    return (
-        ReactDOM.createPortal(props.children, document.getElementById("modalWindow"))
-    )
+// Types Flow
+type PropsPortal = {
+    children: React.Node,
+};
+
+
+const Portal = (props: PropsPortal) => {
+    const modalWindow = document.getElementById('modalWindow');
+    if (modalWindow !== null) {
+        return ReactDOM.createPortal(props.children, modalWindow)
+    }
 };
 
 export default Portal;

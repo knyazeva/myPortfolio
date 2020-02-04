@@ -1,14 +1,27 @@
+// @flow
 import {profileAPI} from "../api/api";
 import {cookie} from "../cookie/cookie";
 import {stopSubmit} from "redux-form";
+import {ExtractReturn} from "../utils/extractReturn";
 const SET_AUTH = "auth/SET_AUTH";
 
+
+// Types Flow
+type stateTypes = {
+    isAuth: boolean,
+    authName: string
+}
+type actionTypes =
+    ExtractReturn<typeof setAuthAC>;
+
+
+// InitialState and Reducer
 let initialState = {
     isAuth: false,
     authName: ""
 };
 
-const authReducer = (state = initialState, action) => {
+const authReducer = (state: stateTypes = initialState, action: actionTypes): stateTypes => {
     switch (action.type) {
         case SET_AUTH:
             return {
@@ -23,7 +36,8 @@ const authReducer = (state = initialState, action) => {
 
 
 // Action Creators
-export const setAuthAC = (isAuth, name, likes) => ({type: SET_AUTH, isAuth, name, likes});
+export const setAuthAC = (isAuth: boolean, name: string) => ({type: SET_AUTH, isAuth, name});
+
 
 // Thunk Creators
 export const loginTC = (dataForm) => async (dispatch) => {  // логин -> при успехе создаем cookie, иначе выводим ошибку
@@ -43,7 +57,6 @@ export const checkCookieAuthTC = () => async (dispatch) => {  // проверк�
     let name = cookie.get("loginName");
     if(name) {return dispatch(setAuthAC(true, name))}
 };
-
 
 
 export default authReducer;

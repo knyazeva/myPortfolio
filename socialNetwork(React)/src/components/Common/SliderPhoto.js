@@ -1,8 +1,18 @@
+// @flow
 import React from 'react';
 import Slider from "react-slick";
 
 
-const SliderPhoto = (props) => {
+// Types Flow
+type PropsSliderPhoto = {
+    images: [{
+        id: number,
+        src: string
+    }]
+}
+
+
+const SliderPhoto = (props: PropsSliderPhoto) => {
 
     let settings = {
         dots: false,

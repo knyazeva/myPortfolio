@@ -1,10 +1,25 @@
+// @flow
 import React, {useEffect} from "react";
 import News from "./News";
 import {connect} from "react-redux";
 import {addLikeTC, clearNewsAC, deleteLikeTC, setPortionNewsTC} from "../../redux/newsReducer";
 import {compose} from "redux";
 
-const NewsContainer = (props) => {
+
+// Types Flow
+type PropsNewsContainer = {
+    profileName: void | string,
+    setPortionNewsTC: (number, number, ?string) => {},
+    startPortionNews: number,
+    endPortionNews: number,
+    clearNewsAC: () => {},
+    addLikeTC: () => {},
+    deleteLikeTC: () => {},
+    news: Array<mixed>
+}
+
+
+const NewsContainer = (props: PropsNewsContainer) => {
 
     useEffect(() => {
         props.profileName

@@ -73,7 +73,6 @@ export const getCommunityProfileTC = (comId) => async (dispatch) => {  // пол
     const response = await communitiesAPI.getCommunityProfile(comId);
     dispatch(setCommunityProfileAC(response.data));
 };
-
 export const unFollowTC = (comId, allInfoUser) => (dispatch) => {  // отписаться от сообщества
     followUnfollow(dispatch, communitiesAPI.putUnFollow.bind(communitiesAPI), unFollowAC, comId, allInfoUser);
 };

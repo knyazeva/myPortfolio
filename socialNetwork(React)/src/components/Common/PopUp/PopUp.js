@@ -1,21 +1,30 @@
+// @flow
 import React from "react";
 import "./PopUp.css";
 import {connect} from "react-redux";
 import {setDataPopupAC} from "../../../redux/appReducer";
 
 
-const PopUp = (props) => {
+// Types Flow
+type PropsPopUp = {
+    dataPopUp: {
+        isActive: boolean,
+        title: string,
+        body: string,
+        isSuccessSend: boolean
+    },
+    setDataPopupAC: (boolean, string, string, ?boolean) => {}
+}
+
+
+const PopUp = (props: PropsPopUp) => {
 
     const closePopUp = () => {
-        props.setDataPopupAC({
-            isActive: false,
-            title: "",
-            body: ""
-        });
+        props.setDataPopupAC(false, "", "")
     };
 
     return (
-        <div className={`popUp-overlay ${props.dataPopUp.isActive && "active"}`}>
+        <div className={`popUp-overlay ${props.dataPopUp.isActive ? "active" : ""}`}>
             <div className="popUp-window">
                 <div className="popUp-title">
                     {props.dataPopUp.title}

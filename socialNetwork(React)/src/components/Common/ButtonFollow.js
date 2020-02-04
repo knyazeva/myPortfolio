@@ -1,22 +1,36 @@
-import React from "react";
+// @flow
+import React from 'react';
 import {connect} from "react-redux";
 
-const ButtonFollow = ({user, ...props}) => {
 
-    const followUnfollow = (thunkCreator, text) => {
+// Types Flow
+type PropsButtonFollow = {
+    user: {
+        id: number,
+        followed: boolean
+    },
+    isDisableFollow: Array<number>,
+    unFollowTC: () => void,
+    followTC: () => void
+}
+
+
+const ButtonFollow = (props: PropsButtonFollow) => {
+
+    const followUnfollow = (thunkCreator: (number, {}) => void, text: string) => {
         return (
             <div
                 className="follow btn"
-                disabled={props.isDisableFollow.some(id => id === user.id) ? "disabled" : ""}
+                disabled={props.isDisableFollow.some(id => id === props.user.id) ? "disabled" : ""}
                 onClick={() => {
-                    thunkCreator(user.id, {...user})
+                    thunkCreator(props.user.id, {...props.user})
                 }}>{text}</div>
         )
     };
 
     return (
         <>
-        {user.followed
+        {props.user.followed
             ? followUnfollow(props.unFollowTC, "unFollow")
             : followUnfollow(props.followTC, "Follow")
         }

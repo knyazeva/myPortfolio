@@ -704,8 +704,8 @@
         {
           "id": 2,
           "textPost": "And now here is my secret, a very simple secret: it is only with the heart that one can see rightly, what is essential is invisible to the eye. ",
-          "likes": 1,
-          "myLikes": false
+          "likes": 2,
+          "myLikes": true
         }
       ]
     },

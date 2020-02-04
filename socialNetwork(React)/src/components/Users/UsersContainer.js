@@ -1,3 +1,4 @@
+// @flow
 import React, {useEffect} from 'react';
 import {connect} from "react-redux";
 import Users from "./Users";
@@ -7,7 +8,21 @@ import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 import {getCurrentPage, getIsLoading, getUsersLimitPage, getUsersSelector, getUsersTotalCount} from "../../redux/usersSelectors";
 
 
-const UsersContainer = (props) => {
+// Types Flow
+type PropsUsersContainer = {
+    getUsersTC: (number, number) => {},
+    setCurrentPageTC: (number, number) => {},
+    usersTotalCount: number,
+    usersLimitPage: number,
+    currentPage: number,
+    isLoading: boolean,
+    unFollowTC: () => void,
+    followTC: () => void,
+    users: Array<mixed>
+}
+
+
+const UsersContainer = (props: PropsUsersContainer) => {
 
     useEffect(() => {
         props.getUsersTC(props.currentPage, props.usersLimitPage);
