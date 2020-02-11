@@ -1,7 +1,9 @@
 # Links to my works:
 
 ### SPA (React + Redux):
-- [Your social network](http://195.123.215.35/socialNetwork)
+- [Your social network](http://195.123.215.35/socialNetwork) - 
+Login: knyazeva_test 
+Password: 4200765test
 
 ### Sites (jQuery):
 - [Showroom collection of natural stones](http://195.123.215.35/Charmestone/)
