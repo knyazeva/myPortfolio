@@ -2,6 +2,7 @@
 
 ### SPA (React + Redux):
 - [Your social network](http://195.123.215.35/socialNetwork) - 
+
 Login: knyazeva_test 
 Password: 4200765test
 
