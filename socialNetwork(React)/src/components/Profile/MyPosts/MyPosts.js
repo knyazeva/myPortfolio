@@ -16,7 +16,7 @@ const MyPostFormRedux = reduxForm({form: "myPost"})(MyPostForm);
 const MyPosts = (props) => {
 
     const onSubmit = (dataForm) => {
-        props.addPostTC(dataForm, props.postsData, props.userProfile);
+        props.addPostTC(dataForm.posts, props.postsData, props.userProfile);
         props.reset("myPost")  // зануляем форму
     };
 

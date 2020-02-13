@@ -1,28 +1,23 @@
-// @flow
-import * as React from "react";
+import React from "react";
 import "./Navigation.scss";
 import {NavLink} from "react-router-dom";
 import {setDataPopupAC} from "../../redux/appReducer";
 import {connect} from "react-redux";
 import ServiceSupport from "../Common/PopUp/PopUpContent/ServiceSupportForm";
 
-
-// Types Flow
-type PropsNavigation = {
-    setDataPopupAC: (boolean, string, string | React.Node, ?boolean) => {}
-}
-
-
-const Navigation = (props: PropsNavigation) => {
+const Navigation = (props) => {
 
     const disActiveMobileMenu = () => {  // закрыть мобильное меню при любом клике по нему
-        document.body &&
         document.body.classList.remove("menu-active")
     };
 
     const showPopUp = (e) => {  // показать pop-up с необходимым содержимым
         e.preventDefault();
-        props.setDataPopupAC(true, "Service Support", <ServiceSupport />)
+        props.setDataPopupAC({
+            isActive: true,
+            title: "Service Support",
+            body: <ServiceSupport />
+        })
     };
 
     return (

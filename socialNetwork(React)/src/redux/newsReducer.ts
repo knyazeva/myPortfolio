@@ -5,21 +5,25 @@ const SET_RANGE_NEWS = "news/SET_RANGE_NEWS";
 const ADD_LIKE = "news/ADD_LIKE";
 const DELETE_LIKE = "news/DELETE_LIKE";
 import {newsAPI} from "../api/api";
+import { newsType, communitiesType } from "../types/types";
+
 
 let initialState = {
-    news: [],
-    numberAllNews: 0,
-    startPortionNews: 0,
-    endPortionNews: 5,
-    stepPortionNews: 5
+    news: [] as Array<newsType>,
+    numberAllNews: 0 as number,
+    startPortionNews: 0 as number,
+    endPortionNews: 5 as number,
+    stepPortionNews: 5 as number
 };
 
-const newsReducer = (state = initialState, action) => {
+type initialStateType = typeof initialState;
+
+const newsReducer = (state = initialState, action): initialStateType => {
     switch (action.type) {
         case GET_NEWS:  // получить все новости
             return {
                 ...state,
-                numberAllNews: action.news
+                numberAllNews: action.numberAllNews
             };
         case SET_NEWS:  // установить новости
             return {
@@ -36,9 +40,9 @@ const newsReducer = (state = initialState, action) => {
             return {
                 ...state,
                 news: [],
+                numberAllNews: 0,
                 startPortionNews: 0,
-                endPortionNews: 5,
-                numberAllNews: 0
+                endPortionNews: 5
             };
         case ADD_LIKE:  // добавить лайк
             return {
@@ -57,15 +61,37 @@ const newsReducer = (state = initialState, action) => {
 
 
 // Action Creators
-export const getNewsAC = (news) => ({type: GET_NEWS, news});
-export const setNewsAC = (news) => ({type: SET_NEWS, news});
-export const clearNewsAC = () => ({type: CLEAR_NEWS});
-export const setRangeNewsAC = () => ({type: SET_RANGE_NEWS});
-export const addLikeAC = (newsId) => ({type: ADD_LIKE, newsId});
-export const deleteLikeAC = (newsId) => ({type: DELETE_LIKE, newsId});
+type getNewsACType = {
+    type: typeof GET_NEWS,
+    numberAllNews: number
+}
+type setNewsACType = {
+    type: typeof SET_NEWS,
+    news: Array<newsType>
+}
+type clearNewsACType = {
+    type: typeof CLEAR_NEWS
+}
+type setRangeNewsACType = {
+    type: typeof SET_RANGE_NEWS
+}
+type addLikeACType = {
+    type: typeof ADD_LIKE,
+    newsId: number
+}
+type deleteLikeACType = {
+    type: typeof DELETE_LIKE,
+    newsId: number
+}
+export const getNewsAC = (numberAllNews: number): getNewsACType => ({type: GET_NEWS, numberAllNews});
+export const setNewsAC = (news: Array<newsType>): setNewsACType => ({type: SET_NEWS, news});
+export const clearNewsAC = (): clearNewsACType => ({type: CLEAR_NEWS});
+export const setRangeNewsAC = (): setRangeNewsACType => ({type: SET_RANGE_NEWS});
+export const addLikeAC = (newsId: number): addLikeACType => ({type: ADD_LIKE, newsId});
+export const deleteLikeAC = (newsId: number): deleteLikeACType => ({type: DELETE_LIKE, newsId});
 
 // Thunk Creators
-export const setPortionNewsTC = (startPortion, endPortion, profileName) => async (dispatch, getState) => {  // установить необходимую порцию новостей
+export const setPortionNewsTC = (startPortion: number, endPortion: number, profileName: string) => async (dispatch, getState) => {  // установить необходимую порцию новостей
     profileName ? profileName = `title=${profileName}` : profileName = "";
 
     const responseAllNews = await newsAPI.getNews(profileName);
@@ -78,15 +104,15 @@ export const setPortionNewsTC = (startPortion, endPortion, profileName) => async
         let documentHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight - 100;
         if(pageYOffset >= documentHeight && getState().newsPage.numberAllNews > getState().newsPage.endPortionNews) {
             dispatch(setRangeNewsAC());
-            dispatch(setPortionNewsTC(getState().newsPage.startPortionNews, getState().newsPage.endPortionNews));
+            dispatch(setPortionNewsTC(getState().newsPage.startPortionNews, getState().newsPage.endPortionNews, null));
         }
     });
 };
-export const addLikeTC = (allDataAboutItem, numLike) => (dispatch) => {  // добавить лайк
+export const addLikeTC = (allDataAboutItem, numLike: number) => (dispatch) => {  // добавить лайк
     dispatch(addLikeAC(allDataAboutItem.id));
     newsAPI.putLike(allDataAboutItem.id, {...allDataAboutItem, likes: numLike, myLikes: true})
 };
-export const deleteLikeTC = (allDataAboutItem, numLike) => (dispatch) => {  // удалить лайк
+export const deleteLikeTC = (allDataAboutItem, numLike: number) => (dispatch) => {  // удалить лайк
     dispatch(deleteLikeAC(allDataAboutItem.id));
     newsAPI.putLike(allDataAboutItem.id, {...allDataAboutItem, likes: numLike, myLikes: false})
 };

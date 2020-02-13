@@ -1,27 +1,16 @@
-// @flow
 import {profileAPI} from "../api/api";
 import {cookie} from "../cookie/cookie";
 import {stopSubmit} from "redux-form";
-import {ExtractReturn} from "../utils/extractReturn";
 const SET_AUTH = "auth/SET_AUTH";
 
-
-// Types Flow
-type stateTypes = {
-    isAuth: boolean,
-    authName: string
-}
-type actionTypes =
-    ExtractReturn<typeof setAuthAC>;
-
-
-// InitialState and Reducer
 let initialState = {
-    isAuth: false,
-    authName: ""
+    isAuth: false as boolean,
+    authName: "" as string
 };
 
-const authReducer = (state: stateTypes = initialState, action: actionTypes): stateTypes => {
+type initialStateType = typeof initialState;
+
+const authReducer = (state = initialState, action): initialStateType => {
     switch (action.type) {
         case SET_AUTH:
             return {
@@ -36,13 +25,17 @@ const authReducer = (state: stateTypes = initialState, action: actionTypes): sta
 
 
 // Action Creators
-export const setAuthAC = (isAuth: boolean, name: string) => ({type: SET_AUTH, isAuth, name});
-
+type setAuthACType = {
+    type: typeof SET_AUTH,
+    isAuth: boolean,
+    name: string
+}
+export const setAuthAC = (isAuth: boolean, name: string): setAuthACType => ({type: SET_AUTH, isAuth, name});
 
 // Thunk Creators
-export const loginTC = (dataForm) => async (dispatch) => {  // логин -> при успехе создаем cookie, иначе выводим ошибку
+export const loginTC = (login: string, password: string) => async (dispatch) => {  // логин -> при успехе создаем cookie, иначе выводим ошибку
     const response = await profileAPI.getMyProfile();
-    if(response.data.login === dataForm.login && response.data.password === dataForm.password) {
+    if(response.data.login === login && response.data.password === password) {
         cookie.set("loginName", response.data.login, 365);
         dispatch(setAuthAC(true, response.data.login));
     } else {
@@ -57,6 +50,7 @@ export const checkCookieAuthTC = () => async (dispatch) => {  // проверк�
     let name = cookie.get("loginName");
     if(name) {return dispatch(setAuthAC(true, name))}
 };
+
 
 
 export default authReducer;

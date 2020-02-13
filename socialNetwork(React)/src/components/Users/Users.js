@@ -3,7 +3,6 @@ import Pagination from "../Common/Pagination";
 import "../Common/ListProfiles/ListProfiles.css"
 import ListProfiles from "../Common/ListProfiles/ListProfiles"
 
-
 const Users = (props) => {
 
     return (

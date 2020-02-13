@@ -21,7 +21,7 @@ module.exports = {
         paths: PATHS
     },
     entry: {   // точки входа
-        index: ['babel-polyfill', `${PATHS.src}/index.js`]
+        index: ['babel-polyfill', `${PATHS.src}/index.tsx`]
     },
     output: {   // точки выхода
         filename: `${PATHS.assets}/js/[name].[hash].js`,
@@ -30,6 +30,15 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.ts(x?)$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: "ts-loader"
+                    }
+                ]
+            },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -117,6 +126,7 @@ module.exports = {
     resolve: {
         alias: {
             assets: path.resolve(__dirname, '../src/assets/')  // для абсолютного обращения к пути Assets
-        }
+        },
+        extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
     }
 };

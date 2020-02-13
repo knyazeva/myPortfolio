@@ -1,17 +1,9 @@
-// @flow
 import React from "react";
 import {Field, reduxForm} from "redux-form";
 import {Input, Textarea} from "../../FieldType";
 import {required} from "../../../../validateFields/validateFields";
 import {connect} from "react-redux";
 import {setDataPopupAC} from "../../../../redux/appReducer";
-
-
-// Types Flow
-type PropsServiceSupport = {
-    setDataPopupAC: (boolean, string, string, ?boolean) => {}
-}
-
 
 const ServiceSupportForm = (props) => {
     return (
@@ -26,14 +18,14 @@ const ServiceSupportForm = (props) => {
 
 const ServiceSupportFormRedux = reduxForm({form: "serviceSupport"})(ServiceSupportForm);
 
-const ServiceSupport = (props: PropsServiceSupport) => {
-    const onSubmit = () => {
-        props.setDataPopupAC(
-            true,
-            "",
-            "Thanks! Your data has been sent successfully. Soon you will receive a reply to your email.",
-            true
-        )
+const ServiceSupport = (props) => {
+    const onSubmit = (dataForm) => {
+        props.setDataPopupAC({
+            isActive: true,
+            title: "",
+            body: "Thanks! Your data has been sent successfully. Soon you will receive a reply to your email.",
+            isSuccessSend: true
+        })
     };
 
     return (

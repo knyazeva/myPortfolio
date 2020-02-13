@@ -1,5 +1,6 @@
 import {usersAPI} from "../api/api";
 import {getProfileTC} from "./profileReducer";
+import { profileType } from "../types/types";
 const FOLLOW = 'users/FOLLOW';
 const UNFOLLOW = 'users/UNFOLLOW';
 const UPLOAD_USERS = 'users/UPLOAD_USERS';
@@ -9,15 +10,17 @@ const TOGGLE_LOADING = 'users/TOGGLE_LOADING';
 const SET_DISABLE_FOLLOW = 'users/SET_DISABLE_FOLLOW';
 
 let initialState = {
-    users: [],
-    usersTotalCount: 0,
-    usersLimitPage: 7,
-    currentPage: 1,
-    isLoading: false,
-    isDisableFollow: []
+    users: [] as Array<profileType>,
+    usersTotalCount: 0 as number,
+    usersLimitPage: 7 as number,
+    currentPage: 1 as number,
+    isLoading: false as boolean,
+    isDisableFollow: [] as Array<number>
 };
 
-const usersReducer = (state = initialState, action) => {
+type initialStateType = typeof initialState;
+
+const usersReducer = (state = initialState, action): initialStateType => {
     switch (action.type) {
         case FOLLOW:  // подписаться на пользователя
             return {
@@ -63,16 +66,45 @@ const usersReducer = (state = initialState, action) => {
 
 
 // Action Creators
-export const followAC = (userId) => ({type: FOLLOW, userId});
-export const unFollowAC = (userId) => ({type: UNFOLLOW, userId});
-export const uploadUsersAC = (users) => ({type: UPLOAD_USERS, users});
-export const setUsersTotalCountAC = (number) => ({type: SET_USERS_TOTAL_COUNT, number});
-export const setCurrentPageAC = (number) => ({type: SET_CURRENT_PAGE, number});
-export const toggleLoadingAC = (isLoading) => ({type: TOGGLE_LOADING, isLoading});
-export const setDisableFollowAC = (isDisable, userId) => ({type: SET_DISABLE_FOLLOW, isDisable, userId});
+type followACType = {
+    type: typeof FOLLOW,
+    userId: number
+}
+type unFollowACType = {
+    type: typeof UNFOLLOW,
+    userId: number
+}
+type uploadUsersACType = {
+    type: typeof UPLOAD_USERS
+    users: Array<profileType>
+}
+type setUsersTotalCountACType = {
+    type: typeof SET_USERS_TOTAL_COUNT,
+    number: number
+}
+type setCurrentPageACType = {
+    type: typeof SET_CURRENT_PAGE,
+    number: number
+}
+type toggleLoadingACType = {
+    type: typeof TOGGLE_LOADING,
+    isLoading: boolean
+}
+type setDisableFollowACType = {
+    type: typeof SET_DISABLE_FOLLOW,
+    isDisable: boolean,
+    userId: number
+}
+export const followAC = (userId: number): followACType => ({type: FOLLOW, userId});
+export const unFollowAC = (userId: number): unFollowACType => ({type: UNFOLLOW, userId});
+export const uploadUsersAC = (users: Array<profileType>): uploadUsersACType => ({type: UPLOAD_USERS, users});
+export const setUsersTotalCountAC = (number: number): setUsersTotalCountACType => ({type: SET_USERS_TOTAL_COUNT, number});
+export const setCurrentPageAC = (number: number): setCurrentPageACType => ({type: SET_CURRENT_PAGE, number});
+export const toggleLoadingAC = (isLoading: boolean): toggleLoadingACType => ({type: TOGGLE_LOADING, isLoading});
+export const setDisableFollowAC = (isDisable: boolean, userId: number): setDisableFollowACType => ({type: SET_DISABLE_FOLLOW, isDisable, userId});
 
-
-export const getUsersTC = (currentPage, usersLimitPage) => async (dispatch) => {  // получить всех пользователей
+// Thunk Creators
+export const getUsersTC = (currentPage: number, usersLimitPage: number) => async (dispatch) => {  // получить всех пользователей
     dispatch(toggleLoadingAC(true));
 
     const response1 = await usersAPI.getUsers();
@@ -82,7 +114,7 @@ export const getUsersTC = (currentPage, usersLimitPage) => async (dispatch) => {
     dispatch(uploadUsersAC(response2.data));
     dispatch(toggleLoadingAC(false));
 };
-export const setCurrentPageTC = (page, usersLimitPage) => async (dispatch) => {  // установка текущей страницы пользователей
+export const setCurrentPageTC = (page: number, usersLimitPage: number) => async (dispatch) => {  // установка текущей страницы пользователей
     dispatch(toggleLoadingAC(true));
 
     const response = await usersAPI.getCurrentPage(page, usersLimitPage);
@@ -91,14 +123,14 @@ export const setCurrentPageTC = (page, usersLimitPage) => async (dispatch) => { 
     dispatch(setCurrentPageAC(page));
     dispatch(toggleLoadingAC(false));
 };
-export const unFollowTC = (userId, allInfoUser) => (dispatch) => {  // отписаться от пользователя
+export const unFollowTC = (userId: number, allInfoUser: profileType) => (dispatch) => {  // отписаться от пользователя
     followUnfollow(dispatch, usersAPI.putUnFollow.bind(usersAPI), unFollowAC, userId, allInfoUser);
 };
-export const followTC = (userId, allInfoUser) => async (dispatch) => {  // подписаться на пользователя
+export const followTC = (userId: number, allInfoUser: profileType) => async (dispatch) => {  // подписаться на пользователя
     followUnfollow(dispatch, usersAPI.putFollow.bind(usersAPI), followAC, userId, allInfoUser);
 };
 
-
+// Common Functions
 const followUnfollow = async (dispatch, apiMethod, actionCreator, userId, allInfoUser) => {  // общая функция для подписки и отписки
     dispatch(setDisableFollowAC(true, userId));
     await apiMethod(userId, allInfoUser);

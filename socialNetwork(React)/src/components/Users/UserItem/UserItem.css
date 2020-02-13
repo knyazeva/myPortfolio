@@ -1,8 +1,0 @@
-.friends-list .item {display: block; background: white; position: relative; min-height: 50px; border-radius: 5px; margin: 0 0 15px 60px; width: calc(100% - 60px); padding: 7px 10px; border: 1px solid transparent}
-.friends-list .item:hover {border: 1px solid black}
-.friends-list .img-container {position: absolute; left: -60px; top: 2px; height: 50px; width: 50px; border-radius: 50%}
-.friends-list .name {display: inline-block; font-weight: bold; font-size: 17px; margin-bottom: 3px; text-decoration: none}
-.friends-list .name span {font-size: 14px; color: grey; padding-left: 15px}
-.friends-list .follow {float: right; margin-top: 6px}
-.friends-list .location {color: grey; font-size: 14px}
-

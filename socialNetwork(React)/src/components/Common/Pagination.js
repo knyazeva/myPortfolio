@@ -1,18 +1,6 @@
-// @flow
 import React, {useState, useEffect} from "react";
 
-
-// Types Flow
-type PropsPagination = {
-    currentPage: number,
-    portionSize: number,
-    itemsTotalCount: number,
-    itemsLimitPage: number,
-    setCurrentPage: (number) => void
-}
-
-
-const Pagination = (props: PropsPagination) => {
+const Pagination = (props) => {
 
     let initialPortionCurrent = 1;
     if(props.currentPage > props.portionSize) {

@@ -1,20 +1,7 @@
-// @flow
 import React, {useState, useEffect} from "react";
 
 
-// Types Flow
-type PropsLikes = {
-    dataItem: {
-        likes: number,
-        myLikes: boolean
-    },
-    addLikeTC: (dataItem: {}, likes: number, userProfile: ?{}) => void,
-    deleteLikeTC: (dataItem: {}, likes: number, userProfile: ?{}) => void,
-    userProfile: {}
-}
-
-
-const Likes = (props: PropsLikes) => {
+const Likes = (props) => {
 
     let [likes, setLikes] = useState(0);
 
@@ -32,6 +19,7 @@ const Likes = (props: PropsLikes) => {
         setLikes(likes - 1);
         props.deleteLikeTC(props.dataItem, likes - 1, props.userProfile)
     };
+
 
     return (
         <div

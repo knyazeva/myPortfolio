@@ -273,7 +273,7 @@
   "users": [
     {
       "id": 1,
-      "followed": true,
+      "followed": false,
       "photo": "http://195.123.215.35/socialNetwork/assets/img/img5.jpg",
       "fullName": "Maxim Jerome",
       "status": "Only in Russia you can answer the question: What are you doing? Hear the answer: Yes, nothing, I work.",
@@ -288,14 +288,14 @@
         {
           "id": 1,
           "textPost": "Wise men speak because they have something to say; fools because they have to say something.",
-          "likes": 0,
-          "myLikes": false
+          "likes": 1,
+          "myLikes": true
         },
         {
           "id": 2,
           "textPost": "Chop your own wood and it will warm you twice.",
-          "likes": 0,
-          "myLikes": false
+          "likes": 1,
+          "myLikes": true
         },
         {
           "id": 3,
@@ -704,8 +704,8 @@
         {
           "id": 2,
           "textPost": "And now here is my secret, a very simple secret: it is only with the heart that one can see rightly, what is essential is invisible to the eye. ",
-          "likes": 2,
-          "myLikes": true
+          "likes": 1,
+          "myLikes": false
         }
       ]
     },

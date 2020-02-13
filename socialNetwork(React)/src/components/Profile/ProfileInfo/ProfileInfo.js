@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./ProfileInfo.scss";
 import ProfileStatic from "./ProfileStatic";
 import ProfileEdit from "./ProfileEdit";
+import ProfileBannerIMG from 'assets/img/img1.jpg';
 import UnknownIMG from 'assets/img/unknown.jpg';
 import ButtonFollow from "../../Common/ButtonFollow";
 

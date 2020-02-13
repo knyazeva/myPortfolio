@@ -6,7 +6,7 @@ import {Redirect} from "react-router-dom";
 
 const LoginContainer = (props) => {
 
-    const login = (dataForm) => {props.loginTC(dataForm)};
+    const login = (login, password) => {props.loginTC(login, password)};
     if(props.isAuth) {return <Redirect to="/profile" />}
 
     return (

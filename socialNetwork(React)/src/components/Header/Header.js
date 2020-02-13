@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import "./Header.scss";
 import {NavLink} from "react-router-dom";
 
-
 const Header = (props) => {
 
     const [mobileMenu, setMobileMenu] = useState(false);
@@ -24,7 +23,7 @@ const Header = (props) => {
                 <div className="logo">Your social network</div>
                 {
                     props.isAuth
-                        ? <div onClick={props.logout} className="logout" title="logout">{props.authName}</div>
+                        ? <div onClick={() => {props.logout()}} className="logout" title="logout">{props.authName}</div>
                         : <NavLink to="/auth" className="login" title="Login"> </NavLink>
                 }
             </div>

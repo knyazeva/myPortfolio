@@ -18,7 +18,7 @@ const LoginFormRedux = reduxForm({form: "login"})(LoginForm);
 
 const Login = (props) => {
     const onSubmit = (dataForm) => {
-        props.login(dataForm)
+        props.login(dataForm.login, dataForm.password)
     };
 
     return (

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true
+  }
+}
+
+

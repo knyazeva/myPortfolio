@@ -1,17 +1,21 @@
 import {profileAPI} from "../api/api";
+import { profileType, postType } from "../types/types";
 const SET_USER_PROFILE = "profile/SET_USER_PROFILE";
 const SET_POSTS = "profile/SET_POST";
 const ADD_POST = "profile/ADD_POST";
 const ADD_LIKE = "profile/ADD_LIKE";
 const DELETE_LIKE = "profile/DELETE_LIKE";
+const CLEAR_PROFILE = "profile/CLEAR_PROFILE";
 
 let initialState = {
-    userProfile: null,
-    isMyProfile: false,
-    postsData: []
+    userProfile: null as profileType | null,
+    isMyProfile: false as boolean,
+    postsData: [] as Array<postType>
 };
 
-const profileReducer = (state = initialState, action) => {
+type initialStateType = typeof initialState;
+
+const profileReducer = (state = initialState, action): initialStateType => {
     switch (action.type) {
         case ADD_LIKE:
             return {
@@ -39,17 +43,47 @@ const profileReducer = (state = initialState, action) => {
                 userProfile: action.profile,
                 isMyProfile: action.isMyProfile
             };
+        case CLEAR_PROFILE:
+            return {
+                ...state,
+                userProfile: null
+            };
         default:
             return state;
     }
 };
 
 // Action Creators
-export const addPostAC = (dataForm) => ({type: ADD_POST, dataForm});
-export const setPostsAC = (data) => ({type: SET_POSTS, data});
-export const setUserProfileAC = (profile, isMyProfile) => ({type: SET_USER_PROFILE, profile, isMyProfile});
-export const addLikeAC = (postId) => ({type: ADD_LIKE, postId});
-export const deleteLikeAC = (postId) => ({type: DELETE_LIKE, postId});
+type addPostACType = {
+    type: typeof ADD_POST,
+    dataForm: postType
+}
+type setPostsACType = {
+    type: typeof SET_POSTS,
+    data: Array<postType>
+}
+type setUserProfileAC = {
+    type: typeof SET_USER_PROFILE,
+    profile: profileType,
+    isMyProfile: boolean
+}
+type addLikeACType = {
+    type: typeof ADD_LIKE,
+    postId: number
+}
+type deleteLikeACType = {
+    type: typeof DELETE_LIKE,
+    postId: number
+}
+type clearProfileACType = {
+    type: typeof CLEAR_PROFILE
+}
+export const addPostAC = (dataForm: postType): addPostACType => ({type: ADD_POST, dataForm});
+export const setPostsAC = (data: Array<postType>): setPostsACType => ({type: SET_POSTS, data});
+export const setUserProfileAC = (profile: profileType, isMyProfile: boolean): setUserProfileAC => ({type: SET_USER_PROFILE, profile, isMyProfile});
+export const addLikeAC = (postId: number): addLikeACType => ({type: ADD_LIKE, postId});
+export const deleteLikeAC = (postId: number): deleteLikeACType => ({type: DELETE_LIKE, postId});
+export const clearProfileAC = (): clearProfileACType => ({type: CLEAR_PROFILE});
 
 // Thunk Creators
 export const getMyProfileTC = () => async (dispatch) => {  // получить профиль авторизованного пользователя
@@ -57,35 +91,36 @@ export const getMyProfileTC = () => async (dispatch) => {  // получить �
     dispatch(setUserProfileAC(response.data, true));
     dispatch(setPostsAC(response.data.posts));
 };
-export const getProfileTC = (userId) => async (dispatch) => {  // получить профиль любого человека по ID
+export const getProfileTC = (userId: number) => async (dispatch) => {  // получить профиль любого человека по ID
     const response = await profileAPI.getProfile(userId);
     dispatch(setUserProfileAC(response.data, false));
     dispatch(setPostsAC(response.data.posts));
 };
-export const saveMyProfileTC = (data) => (dispatch) => {  // сохранение изменений в профиле
+export const saveMyProfileTC = (data: profileType) => (dispatch) => {  // сохранение изменений в профиле
     profileAPI.saveMyProfile(data)
         .then(() => {
         dispatch(getMyProfileTC());
         document.body.scrollIntoView({behavior: 'smooth', block: 'start'})
     });
 };
-export const saveMyPhotoTC = (data) => (dispatch) => {
+export const saveMyPhotoTC = (data: profileType) => (dispatch) => {
     profileAPI.saveMyProfile(data)
         .then(() => {
             dispatch(getMyProfileTC());
         });
 };
-export const addPostTC = (dataForm, oldDataPosts, userProfile) => (dispatch) => {  // добавляем новый пост
-    dataForm.posts.likes = 0;
-    dataForm.posts.id = oldDataPosts.length + 1;
-    dispatch(addPostAC(dataForm.posts));
-    let newData = {...userProfile, posts: store.getState().profilePage.postsData};
+export const addPostTC = (dataForm: postType, oldDataPosts: Array<postType>, userProfile: profileType) => (dispatch, getState) => {  // добавляем новый пост
+    dataForm.likes = 0;
+    dataForm.id = oldDataPosts.length + 1;
+    console.log(dataForm);
+    dispatch(addPostAC(dataForm));
+    let newData = {...userProfile, posts: getState().profilePage.postsData};
     profileAPI.saveMyProfile(newData)
 };
-export const addLikeTC = (allDataAboutItem, numLike, userData) => (dispatch, getState) => {  // Добавить лайк
+export const addLikeTC = (allDataAboutItem: postType, numLike, userData: profileType) => (dispatch, getState) => {  // Добавить лайк
     setLike(dispatch, getState, addLikeAC, allDataAboutItem, numLike, userData);
 };
-export const deleteLikeTC = (allDataAboutItem, numLike, userData) => (dispatch, getState) => {  // Удалить лайк
+export const deleteLikeTC = (allDataAboutItem: postType, numLike: number, userData: profileType) => (dispatch, getState) => {  // Удалить лайк
     setLike(dispatch, getState, deleteLikeAC, allDataAboutItem, numLike, userData);
 
 };
@@ -93,7 +128,7 @@ export const deleteLikeTC = (allDataAboutItem, numLike, userData) => (dispatch, 
 // Common Functions
 const setLike = (dispatch, getState, actionCreator, allDataAboutItem, numLike, userData) => {  // общая функция для добавления/удаления лайков
     dispatch(actionCreator(allDataAboutItem.id));
-    let newPosts = store.getState().profilePage.postsData.map((item) => {
+    let newPosts = getState().profilePage.postsData.map((item) => {
         return (
             item.id === allDataAboutItem.id ? {id: item.id, textPost: item.textPost, likes: numLike, myLikes: item.myLikes} : item
         )

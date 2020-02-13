@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import Profile from "./Profile";
 import {connect} from "react-redux";
-import {getMyProfileTC, getProfileTC, saveMyPhotoTC, saveMyProfileTC} from "../../redux/profileReducer";
+import {clearProfileAC, getMyProfileTC, getProfileTC, saveMyPhotoTC, saveMyProfileTC} from "../../redux/profileReducer";
 import {withRouter} from "react-router-dom";
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 import {compose} from "redux";
@@ -13,6 +13,9 @@ const ProfileContainer = (props) => {
     useEffect(() => {
         let userId = props.match.params.userId;  // вытаскиваем userID из URL
         !userId ? props.getMyProfileTC() : props.getProfileTC(userId);
+
+        return () => props.clearProfileAC()
+
     }, [props.match.params.userId]);
 
     if(!props.infoProfile){return <Preloader />}
@@ -32,7 +35,7 @@ const MapStateToProps = (state) => {
 };
 
 export default compose(
-    connect(MapStateToProps, {getMyProfileTC, getProfileTC, saveMyProfileTC, saveMyPhotoTC, unFollowTC, followTC}),
+    connect(MapStateToProps, {getMyProfileTC, getProfileTC, saveMyProfileTC, saveMyPhotoTC, unFollowTC, followTC, clearProfileAC}),
     withRouter,
     withAuthRedirect
 )(ProfileContainer);
